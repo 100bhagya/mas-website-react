@@ -1,11 +1,11 @@
 import React from "react";
-import Circle from "./images/Ellipse 75.png";
+import Circle from "../images/Ellipse 75.png";
 import {
   PhoneIcon,
   MailIcon,
   LocationMarkerIcon,
 } from "@heroicons/react/solid";
-import Rectangle from "./images/Rectangle 528.png";
+import Rectangle from "../images/Rectangle 528.png";
 
 const Footer = () => {
   return (
