@@ -1,11 +1,26 @@
-import './App.css';
+import React from "react";
+import Contact from "./Contact";
+import Navbar from "./Navbar";
+import Intro from "./Intro";
+import Learning from "./Learning";
+import Working from "./Working";
+import Offers from "./Offers";
+import Footer from "./Footer";
+import Testimonial from "./Testimonial";
 
-function App() {
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>    
+    <div>
+      <Navbar />
+      <Intro />
+      <Learning />
+      <Working />
+      <Offers />
+      <Testimonial />
+      <Contact />
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;
