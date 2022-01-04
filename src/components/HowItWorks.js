@@ -1,8 +1,8 @@
 import React from "react";
-import Design1 from "./images/design1.png";
-import Grid from "./images/grid.png";
-import Design2 from "./images/design2.png";
-import Design3 from "./images/design3.png";
+import Design1 from "../images/design1.png";
+import Grid from "../images/grid.png";
+import Design2 from "../images/design2.png";
+import Design3 from "../images/design3.png";
 
 const Working = () => {
   return (
@@ -23,7 +23,7 @@ const Working = () => {
                   </h2>
                 </div>
                 <div class="flex-grow">
-                  <p class="leading-relaxed text-lg w-full text-base mt-12">
+                  <p class="leading-relaxed w-full text-base mt-12">
                     Get hold of the perfect placement preparation strategy in
                     order to get an edge over others by our extensive practice
                     tests, company-specific tests, courses, projects and regular
@@ -58,7 +58,7 @@ const Working = () => {
                   </h2>
                 </div>
                 <div class="flex-grow">
-                  <p class="leading-relaxed text-lg w-full text-base mt-12">
+                  <p class="leading-relaxed w-full text-base mt-12">
                     Learn to draft a winning resume, present it in a curated
                     manner and ace the job placements with our mock interviews
                     and GD sessions.
@@ -92,7 +92,7 @@ const Working = () => {
                   </h2>
                 </div>
                 <div class="flex-grow">
-                  <p class="leading-relaxed text-lg w-full text-base mt-12">
+                  <p class="leading-relaxed w-full text-base mt-12">
                     Off Campus placement is also in the books. Get connected to
                     the emerging market opportunities via our HR pipeline. We
                     are here to assist.

@@ -1,10 +1,10 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./index.css";
-import Picture from "./images/image 1.png";
-import Rectangle from "./images/Rectangle 27.png";
-import Comma from "./images/Vector.png";
+import "../index.css";
+import Picture from "../images/image 1.png";
+import Rectangle from "../images/Rectangle 27.png";
+import Comma from "../images/Vector.png";
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 
 const PreviousBtn = (props) => {

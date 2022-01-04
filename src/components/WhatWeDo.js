@@ -1,8 +1,8 @@
 import React from "react";
-import Copy from "./images/copy.png";
-import Books from "./images/e-books.png";
-import Portfolio from "./images/portfolio.png";
-import "./index.css";
+import Copy from "../images/copy.png";
+import Books from "../images/e-books.png";
+import Portfolio from "../images/portfolio.png";
+import "../index.css";
 
 const Learning = () => {
   return (

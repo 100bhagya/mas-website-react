@@ -1,7 +1,7 @@
 import React from "react";
-import "./index.css";
-import design1 from "./images/business.png";
-import design2 from "./images/Vector 3.png";
+import "../index.css";
+import design1 from "../images/business.png";
+import design2 from "../images/Vector 3.png";
 
 const Intro = () => {
   return (
