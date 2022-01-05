@@ -10,6 +10,29 @@ import Card8 from "../images/coworking 1.png";
 import Card9 from "../images/job-search 1.png";
 import Vector from "../images/Vector 15.png";
 
+const Card = ({ img, title, content }) => {
+  return (
+    <div class="p-4 ml-24 rounded-3xl md:w-1/4 lg:h-96 shadow-gray-300 shadow-lg">
+      <div class="rounded-lg h-48 overflow-hidden">
+        <img
+          alt="content"
+          class="object-cover object-center z-10 relative lg:left-8 lg:top-8 h-36 w-36"
+          src={img}
+        ></img>
+        <img
+          src={Vector}
+          alt="design"
+          className="h-24 w-36 relative lg:left-11 lg:bottom-12"
+        ></img>
+      </div>
+      <h2 class="text-3xl font-medium title-font text-gray-900 mt-5">
+        {title}
+      </h2>
+      <p class="text-base leading-relaxed lg:w-2/4 mt-2">{content}</p>
+    </div>
+  );
+};
+
 const Offers = () => {
   return (
     <section class="text-gray-600 body-font bg-gray-50">
@@ -21,190 +44,55 @@ const Offers = () => {
         </div>
 
         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div class="p-4 ml-24 rounded-3xl md:w-1/4 lg:h-96 shadow-gray-300 shadow-lg">
-            <div class="rounded-lg h-48 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center z-10 relative lg:left-8 lg:top-8 h-36 w-36"
-                src={Card1}
-              ></img>
-              <img
-                src={Vector}
-                alt="design"
-                className="h-24 w-36 relative lg:left-11 lg:bottom-12"
-              ></img>
-            </div>
-            <h2 class="text-3xl font-medium title-font text-gray-900 mt-5">
-              Internship Opportunities
-            </h2>
-            <p class="text-base leading-relaxed lg:w-2/4 mt-2">
-              Write a brief description of two lines maximum.
-            </p>
-          </div>
-          <div class="p-4 ml-24 rounded-3xl md:w-1/4 lg:h-96 shadow-gray-300 shadow-lg">
-            <div class="rounded-lg h-48 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center z-10 relative lg:left-8 lg:top-8 h-36 w-36"
-                src={Card2}
-              ></img>
-              <img
-                src={Vector}
-                alt="design"
-                className="h-24 w-36 relative lg:left-11 lg:bottom-12"
-              ></img>
-            </div>
-            <h2 class="text-3xl font-medium title-font text-gray-900 mt-5">
-              One To One Mentorship Programme
-            </h2>
-            <p class="text-base leading-relaxed lg:w-2/4 mt-2">
-              Write a brief description of two lines maximum.
-            </p>
-          </div>
-          <div class="p-4 ml-24 rounded-3xl md:w-1/4 lg:h-96 shadow-gray-300 shadow-lg">
-            <div class="rounded-lg h-48 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center z-10 relative lg:left-8 lg:top-8 h-36 w-36"
-                src={Card3}
-              ></img>
-              <img
-                src={Vector}
-                alt="design"
-                className="h-24 w-36 relative lg:left-11 lg:bottom-12"
-              ></img>
-            </div>
-            <h2 class="text-3xl font-medium title-font text-gray-900 mt-5">
-              Mock Tests & Performance Tracking
-            </h2>
-            <p class="text-base leading-relaxed lg:w-2/4 mt-2">
-              Write a brief description of two lines maximum.
-            </p>
-          </div>
+          <Card
+            img={Card1}
+            title="Internship Opportunities"
+            content="Write a brief description of two lines maximum."
+          />
+          <Card
+            img={Card2}
+            title="One To One Mentorship Programme"
+            content="Write a brief description of two lines maximum."
+          />
+          <Card
+            img={Card3}
+            title="Mock Tests & Performance Tracking"
+            content="Write a brief description of two lines maximum."
+          />
         </div>
         <div class="flex flex-wrap -mx-4 -mb-10 mt-20">
-          <div class="p-4 ml-24 rounded-3xl md:w-1/4 lg:h-96 shadow-gray-300 shadow-lg">
-            <div class="rounded-lg h-48 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center z-10 relative lg:left-8 lg:top-8 h-36 w-36"
-                src={Card4}
-              ></img>
-              <img
-                src={Vector}
-                alt="design"
-                className="h-24 w-36 relative lg:left-11 lg:bottom-12"
-              ></img>
-            </div>
-            <h2 class="text-3xl font-medium title-font text-gray-900 mt-5">
-              Certified Courses & Projects
-            </h2>
-            <p class="text-base leading-relaxed lg:w-2/4 mt-2">
-              Write a brief description of two lines maximum.
-            </p>
-          </div>
-          <div class="p-4 ml-24 rounded-3xl md:w-1/4 lg:h-96 shadow-gray-300 shadow-lg">
-            <div class="rounded-lg h-48 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center z-10 relative lg:left-8 lg:top-8 h-36 w-36"
-                src={Card5}
-              ></img>
-              <img
-                src={Vector}
-                alt="design"
-                className="h-24 w-36 relative lg:left-11 lg:bottom-12"
-              ></img>
-            </div>
-            <h2 class="text-3xl font-medium title-font text-gray-900 mt-5">
-              Communication Skill Enhancement
-            </h2>
-            <p class="text-base leading-relaxed lg:w-2/4 mt-2">
-              Write a brief description of two lines maximum.
-            </p>
-          </div>
-          <div class="p-4 ml-24 rounded-3xl md:w-1/4 lg:h-96 shadow-gray-300 shadow-lg">
-            <div class="rounded-lg h-48 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center z-10 relative lg:left-8 lg:top-8 h-36 w-36"
-                src={Card6}
-              ></img>
-              <img
-                src={Vector}
-                alt="design"
-                className="h-24 w-36 relative lg:left-11 lg:bottom-12"
-              ></img>
-            </div>
-            <h2 class="text-3xl font-medium title-font text-gray-900 mt-5">
-              Case Study & Guesstimate Sessions
-            </h2>
-            <p class="text-base leading-relaxed lg:w-2/4 mt-2">
-              Write a brief description of two lines maximum.
-            </p>
-          </div>
+          <Card
+            img={Card4}
+            title="Certified Courses & Projects"
+            content="Write a brief description of two lines maximum."
+          />
+          <Card
+            img={Card5}
+            title="Communication Skill Enhancement"
+            content="Write a brief description of two lines maximum."
+          />
+          <Card
+            img={Card6}
+            title="Case Study & Guesstimate Sessions"
+            content="Write a brief description of two lines maximum."
+          />
         </div>
         <div class="flex flex-wrap -mx-4 -mb-10 mt-28">
-          <div class="p-4 ml-24 rounded-3xl md:w-1/4 lg:h-96 shadow-gray-300 shadow-lg">
-            <div class="rounded-lg h-48 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center z-10 relative lg:left-8 lg:top-8 h-36 w-36"
-                src={Card7}
-              ></img>
-              <img
-                src={Vector}
-                alt="design"
-                className="h-24 w-36 relative lg:left-11 lg:bottom-12"
-              ></img>
-            </div>
-            <h2 class="text-3xl font-medium title-font text-gray-900 mt-5">
-              Resume Building
-            </h2>
-            <p class="text-base leading-relaxed lg:w-2/4 mt-2">
-              Write a brief description of two lines maximum.
-            </p>
-          </div>
-          <div class="p-4 ml-24 rounded-3xl md:w-1/4 lg:h-96 shadow-gray-300 shadow-lg">
-            <div class="rounded-lg h-48 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center z-10 relative lg:left-8 lg:top-8 h-36 w-36"
-                src={Card8}
-              ></img>
-              <img
-                src={Vector}
-                alt="design"
-                className="h-24 w-36 relative lg:left-11 lg:bottom-12"
-              ></img>
-            </div>
-            <h2 class="text-3xl font-medium title-font text-gray-900 mt-5">
-              Mock GDs & Interviews
-            </h2>
-            <p class="text-base leading-relaxed lg:w-2/4 mt-2">
-              Write a brief description of two lines maximum.
-            </p>
-          </div>
-          <div class="p-4 ml-24 rounded-3xl md:w-1/4 lg:h-96 shadow-gray-300 shadow-lg">
-            <div class="rounded-lg h-48 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center z-10 relative lg:left-8 lg:top-8 h-36 w-36"
-                src={Card9}
-              ></img>
-              <img
-                src={Vector}
-                alt="design"
-                className="h-24 w-36 relative lg:left-11 lg:bottom-12"
-              ></img>
-            </div>
-            <h2 class="text-3xl font-medium title-font text-gray-900 mt-5">
-              Off Campus Job Opportunities
-            </h2>
-            <p class="text-base leading-relaxed lg:w-2/4 mt-2">
-              Write a brief description of two lines maximum.
-            </p>
-          </div>
+          <Card
+            img={Card7}
+            title="Resume Building"
+            content="Write a brief description of two lines maximum."
+          />
+          <Card
+            img={Card8}
+            title="Mock GDs & Interviews"
+            content="Write a brief description of two lines maximum."
+          />
+          <Card
+            img={Card9}
+            title="Off Campus Job Opportunities"
+            content="Write a brief description of two lines maximum."
+          />
         </div>
       </div>
     </section>
