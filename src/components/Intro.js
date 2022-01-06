@@ -14,7 +14,7 @@ const Intro = () => {
             <br />
             <p className="relative bottom-5">Analytics Way</p>
           </h1>
-          <p className="pt-6 text-lg  text-gray-400 leading-loose">
+          <p className="pt-6 font text-lg  text-gray-400 leading-loose">
             Data analysis is a process of inspecting, cleansing, transforming,
             <br />
             and modelling data with the goal of discovering useful information,

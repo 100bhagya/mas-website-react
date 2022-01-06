@@ -7,6 +7,7 @@ import Working from "./components/HowItWorks";
 import Offers from "./components/Offers";
 import Footer from "./components/Footer";
 import Testimonial from "./components/Testimonial";
+import "./App.css";
 
 const App = () => {
   return (

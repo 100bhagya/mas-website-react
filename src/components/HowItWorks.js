@@ -10,7 +10,7 @@ const Card = ({ img, title, content }) => {
       <div class="flex rounded-3xl h-full bg-blue-50 p-16">
         <div className="w-6/12 mt-4">
           <div class="flex items-center mb-3">
-            <h2 class="text-gray-900 text-2xl title-font font-medium">
+            <h2 class="text-gray-900 text-2xl title-font font-semibold">
               {title}
             </h2>
           </div>
@@ -44,7 +44,7 @@ const Working = () => {
     <section class="text-gray-600 body-font bg-gray-50">
       <div class="container px-5 py-6 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+          <h1 class="lg:text-5xl md:text-3xl sm:text-2xl font-medium title-font text-gray-900">
             How It Works?
           </h1>
         </div>

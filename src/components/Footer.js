@@ -9,7 +9,7 @@ import Rectangle from "../images/Rectangle 528.png";
 
 const Footer = () => {
   return (
-    <footer class=" body-font bg-blue-700 md:h-96">
+    <footer class="font bg-blue-700 md:h-96">
       <div class="container px-24  mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div class="w-96 relative top-20">
           <span class=" text-2xl font-normal text-white">About</span>
