@@ -14,10 +14,12 @@ const Card = ({ img, title, content }) => {
           alt="blog"
         />
         <div class="p-6 pb-16">
-          <div class=" lg:text-2xl font-extrabold text-gray-900 mb-3">
-            {title}
-          </div>
-          <p class="leading-relaxed w-72 text-left pl-5 mb-3">{content}</p>
+
+          <div class=" lg:text-2xl font-bold text-gray-900 mb-3">{title}</div>
+          <p class="leading-relaxed font-normal font w-72 text-left pl-5 mb-3">
+            {content}
+          </p>
+
         </div>
       </div>
     </div>
@@ -28,19 +30,17 @@ const Learning = () => {
   return (
     <section class="text-gray-600 body-font bg-gray-50">
       <div class="text-center justify-center container px-5 py-24 mx-auto">
-        <div class="text-center lg:text-5xl mb-5">What We Do?</div>
+        <div class="text-center font-normal lg:text-5xl mb-5">What We Do?</div>
         <div class="flex justify-center flex-wrap -m-4">
           <Card
             img={Copy}
             title="Prepration Program"
-            content="Channelise your efforts through strategic preparation program.
-"
+            content="Channelise your efforts through strategic preparation program."
           />
           <Card
             img={Books}
             title="Improve Skill"
-            content="Help you hone your skills to make you job ready.
-"
+            content="Help you hone your skills to make you job ready."
           />
           <Card
             img={Portfolio}

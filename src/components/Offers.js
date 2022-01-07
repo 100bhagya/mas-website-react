@@ -25,10 +25,11 @@ const Card = ({ img, title, content }) => {
           className="h-24 w-36 relative lg:left-11 lg:bottom-12"
         ></img>
       </div>
-      <h2 class="text-3xl font-medium title-font text-gray-900 mt-5">
+      <h2 class="text-2xl ml-7 font-medium title-font text-gray-900 mt-5">
         {title}
       </h2>
-      <p class="text-base leading-relaxed lg:w-2/4 mt-2">{content}</p>
+      <p class="text-sm ml-7 font leading-relaxed lg:w-2/4 mt-2">{content}</p>
+
     </div>
   );
 };
