@@ -14,10 +14,12 @@ const Card = ({ img, title, content }) => {
           alt="blog"
         />
         <div class="p-6 pb-16">
+
           <div class=" lg:text-2xl font-bold text-gray-900 mb-3">{title}</div>
           <p class="leading-relaxed font-normal font w-72 text-left pl-5 mb-3">
             {content}
           </p>
+
         </div>
       </div>
     </div>
@@ -33,14 +35,12 @@ const Learning = () => {
           <Card
             img={Copy}
             title="Prepration Program"
-            content="Channelise your efforts through strategic preparation program.
-"
+            content="Channelise your efforts through strategic preparation program."
           />
           <Card
             img={Books}
             title="Improve Skill"
-            content="Help you hone your skills to make you job ready.
-"
+            content="Help you hone your skills to make you job ready."
           />
           <Card
             img={Portfolio}
