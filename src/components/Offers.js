@@ -29,6 +29,7 @@ const Card = ({ img, title, content }) => {
         {title}
       </h2>
       <p class="text-sm ml-7 font leading-relaxed lg:w-2/4 mt-2">{content}</p>
+
     </div>
   );
 };
