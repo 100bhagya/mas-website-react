@@ -84,7 +84,7 @@ const Testimonial = () => {
                     <img
                       src={post.image}
                       alt="pic"
-                      className="border-8 h-96 w-96 border-solid border-white rounded-xl"
+                      className="border-8 h-96 w-96 relative top-20 rounded-full border-solid border-white"
                     />
                   </div>
                 </div>
