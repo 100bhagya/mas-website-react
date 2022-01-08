@@ -12,7 +12,7 @@ import Vector from "../images/Vector 15.png";
 
 const Card = ({ img, title, content }) => {
   return (
-    <div class="p-4 ml-24 rounded-3xl md:w-1/4 lg:h-96 shadow-gray-300 shadow-lg">
+    <div class="p-4 ml-24 rounded-3xl md:w-1/4 lg:h-96 shadow-gray-300 bg-card shadow-lg">
       <div class="rounded-lg h-48 overflow-hidden">
         <img
           alt="content"
@@ -29,14 +29,13 @@ const Card = ({ img, title, content }) => {
         {title}
       </h2>
       <p class="text-sm ml-7 font leading-relaxed lg:w-2/4 mt-2">{content}</p>
-
     </div>
   );
 };
 
 const Offers = () => {
   return (
-    <section class="text-gray-600 body-font bg-gray-50">
+    <section class="text-gray-600 body-font bg-back">
       <div class="container px-5 py-24 mx-auto">
         <div class=" py-6 mb-12 ">
           <div class="text-center text-gray-900 font-medium text-5xl mb-2 sm:mb-0">

@@ -49,7 +49,7 @@ const NextBtn = (props) => {
 };
 const Testimonial = () => {
   return (
-    <div className="bg-gray-50 pt-1 mb-10">
+    <div className="bg-back pt-1 mb-10">
       <h1 className="text-center justify-center my-14 text-4xl font-medium">
         Testimonials
       </h1>
