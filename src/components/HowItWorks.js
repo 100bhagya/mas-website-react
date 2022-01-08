@@ -11,6 +11,7 @@ const Card = ({ img, title, content }) => {
         <div className="w-6/12 mt-4">
           <div class="flex items-center mb-3">
             <h2 class="text-gray-900 text-2xl title-font font-semibold">
+
               {title}
             </h2>
           </div>
