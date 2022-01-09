@@ -2,7 +2,8 @@ import React from "react";
 import Data from "./Data_About";
 import Rectangle from "../images/Rectangle 31.png";
 import LinkedIn from "../images/Linkedin.png";
-import Twitter from "../images/Twitter.png";
+import Facebook from "../images/facebook.png";
+import Instagram from "../images/instagram.png";
 
 const About_Testimonial = () => {
   return (
@@ -35,8 +36,27 @@ const About_Testimonial = () => {
                 <img src={Rectangle} alt="Rectangle" className="w-[120%]" />
               </div>
               <div className="flex text-center justify-center mt-10 mb-4">
-                <img src={LinkedIn} alt="icon" className="mx-4 hover:w-9" />
-                <img src={Twitter} alt="icon" className="mx-4 hover:w-12" />
+                <a href={post.Link_linkedin}>
+                  <img
+                    src={LinkedIn}
+                    alt="icon"
+                    className="mx-4 hover:w-9 relative top-2"
+                  />
+                </a>
+                <a href={post.Link_facebook}>
+                  <img
+                    src={Facebook}
+                    alt="icon"
+                    className="mx-4 hover:w-12 w-11"
+                  />
+                </a>
+                <a href={post.Link_instagram}>
+                  <img
+                    src={Instagram}
+                    alt="icon"
+                    className="mx-4 hover:w-12 w-11"
+                  />
+                </a>
               </div>
             </div>
           );
