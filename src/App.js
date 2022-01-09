@@ -1,25 +1,19 @@
 import React from "react";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Intro from "./components/Intro";
-import Learning from "./components/WhatWeDo";
-import Working from "./components/HowItWorks";
-import Offers from "./components/Offers";
-import Footer from "./components/Footer";
-import Testimonial from "./components/Testimonial";
+import LandingPage from "./pages/LandingPage";
+import About from "./pages/About";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "./App.css";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <Intro />
-      <Learning />
-      <Working />
-      <Offers />
-      <Testimonial />
-      <Contact />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<LandingPage />} />
+          <Route exact path="/about" element={<About />} />
+        </Routes>
+      </Router>
     </div>
   );
 };
