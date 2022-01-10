@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../images/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -22,10 +23,10 @@ const Navbar = () => {
         >
           <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
             <a
-              href="home"
+              href="/"
               className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-purple-500"
             >
-              <span>Home</span>
+              <Link to="/">Home</Link>
             </a>
             <a
               href="roadmap"
@@ -68,7 +69,7 @@ const Navbar = () => {
               href="about"
               className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-purple-500"
             >
-              <span>About Us</span>
+              <Link to="/about">About Us</Link>
             </a>
           </div>
         </div>
