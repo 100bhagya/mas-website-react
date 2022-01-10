@@ -38,7 +38,7 @@ const Navbar = () => {
               href="mentors"
               className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-purple-500"
             >
-              <span>Mentors</span>
+              <Link to="/mentors">Mentors</Link>
             </a>
             <a
               href="courses"
