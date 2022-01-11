@@ -40,21 +40,21 @@ const About_Testimonial = () => {
                   <img
                     src={LinkedIn}
                     alt="icon"
-                    className="mx-4 hover:w-9 relative top-2"
+                    className="mx-4 hover:scale-110 relative top-2"
                   />
                 </a>
                 <a href={post.Link_facebook}>
                   <img
                     src={Facebook}
                     alt="icon"
-                    className="mx-4 hover:w-12 w-11"
+                    className="mx-4 hover:scale-110 w-11"
                   />
                 </a>
                 <a href={post.Link_instagram}>
                   <img
                     src={Instagram}
                     alt="icon"
-                    className="mx-4 hover:w-12 w-11"
+                    className="mx-4 hover:scale-110 w-11"
                   />
                 </a>
               </div>
