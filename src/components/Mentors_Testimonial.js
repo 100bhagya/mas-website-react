@@ -21,7 +21,7 @@ const Mentors_Testimonial = () => {
                   <img
                     src={LinkedIn}
                     alt="icon"
-                    className="mx-4 hover:w-9 relative bottom-11 left-[140px]"
+                    className="mx-4 hover:scale-110 relative bottom-11 left-[140px]"
                   />
                 </a>
               </div>
