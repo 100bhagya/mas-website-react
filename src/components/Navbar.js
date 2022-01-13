@@ -29,12 +29,6 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </a>
             <a
-              href="roadmap"
-              className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-purple-500"
-            >
-              <span>Roadmap</span>
-            </a>
-            <a
               href="mentors"
               className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-purple-500"
             >
@@ -50,7 +44,7 @@ const Navbar = () => {
               href="tests"
               className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-purple-500"
             >
-              <span>Tests</span>
+              <Link to="/tests">Tests</Link>
             </a>
             <a
               href="blogs"
