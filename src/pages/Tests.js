@@ -66,6 +66,7 @@ const Tests = () => {
             </p>
             <a
               href="https://myanalyticsschool.ezexam.in/"
+
               className="text-[15px] bg-blue-600 py-3 px-6 text-white rounded-xl"
             >
               Visit platform

@@ -22,6 +22,7 @@ const App = () => {
           <Route exact path="/tests" element={<Tests />} />
           <Route exact path="/isa" element={<ISA />} />
           <Route exact path="/ts3" element={<TS3 />} />
+
         </Routes>
       </Router>
     </div>
