@@ -50,7 +50,7 @@ const Navbar = () => {
               href="blogs"
               className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-purple-500"
             >
-              <span>Blogs</span>
+              <a href="https://myanalyticsschool.com/blog/">Blogs</a>
             </a>
 
             <a

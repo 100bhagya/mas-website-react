@@ -15,7 +15,7 @@ const About_Intro = () => {
             className="relative lg:bottom-3 w-8"
             alt="Rectangle"
           ></img>
-          <p className="relative lg:top-12 font text-sm  text-black leading-8">
+          <p className="relative lg:top-12 font text-lg  text-black leading-8">
             My Analytics School aims to bridge the gap between the tremendous
             potential of the students and the acclaim they get. Through our
             strategic program, we aim to instil an industry-centric approach in

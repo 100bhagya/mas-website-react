@@ -28,6 +28,17 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
 }
 
 const Faqs = () => {
+  const [position, setPosition] = useState();
+  const [width, setWidth] = useState("w-4/5");
+  const [direction, setDirection] = useState("left-20");
+  const [pos_dir, setPos_dir] = useState("my-20");
+  const StickTag = () => {
+    setPosition("fixed");
+    setWidth("w-[28%]");
+    setDirection("left-[45rem]");
+    setPos_dir("bottom-32");
+  };
+
   const [faqs, setfaqs] = useState(Data);
   const toggleFAQ = (index, tag) => {
     setfaqs(
@@ -62,13 +73,17 @@ const Faqs = () => {
           Frequently Asked Questions
         </p>
       </div>
-      <div className="flex">
-        <div>
-          <div className="ml-28 lg:w-4/5 my-20">
+      <div className="flex sticky">
+        <div className="">
+          {/* <div className={`ml-28 lg:w-4/5 my-20 ${position}`}> */}
+          <div className={`ml-28 lg:${width} ${pos_dir} ${position}`}>
             {Data.map((post) => {
               return (
                 <a href={`#${post.tag}`}>
-                  <div className="flex p-6 bg-white rounded-2xl mt-6">
+                  <div
+                    className="flex p-6 bg-white rounded-2xl mt-6"
+                    onClick={StickTag}
+                  >
                     <img
                       src={post.icon}
                       alt="icon"
@@ -86,11 +101,11 @@ const Faqs = () => {
             })}
           </div>
         </div>
-        <div className="relative left-20">
+        <div className={`relative ${direction}`}>
           {Data.map((post) => {
             console.log(post);
             return (
-              <div className="bg-white w-[123%] my-20 rounded-3xl">
+              <div className="bg-white w-[123%] my-20 rounded-3xl ">
                 <div className="flex p-12 bg-white rounded-2xl mt-6">
                   <img
                     src={post.icon}
@@ -106,7 +121,7 @@ const Faqs = () => {
                     </p>
                   </div>
                 </div>
-                <div className="faqs relative left-[135px] pb-12">
+                <div className="faqs width1 relative left-[135px] pb-12">
                   {post.questions.map((faq, i) => (
                     <FAQ
                       faq={faq}

@@ -55,11 +55,18 @@ const Tests = () => {
               Overview Of Test Platform
             </div>
             <p className="text-lg font-normal mb-32">
-              Having trouble registering on our test platform, click here to
-              download instructions Download Pdf
+              Having trouble registering on our test platform, click{" "}
+              <a
+                href="https://myanalyticsschool.com/video/register.pdf"
+                className="text-blue-500 underline"
+              >
+                here
+              </a>{" "}
+              to download instructions
             </p>
             <a
-              href="platform"
+              href="https://myanalyticsschool.ezexam.in/"
+
               className="text-[15px] bg-blue-600 py-3 px-6 text-white rounded-xl"
             >
               Visit platform
