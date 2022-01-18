@@ -59,6 +59,14 @@
   width: 58%;
 }
 
+.faq_ques {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.faq_ques::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 .faqs .faq {
   margin-left: 15px;
   margin-right: 15px;

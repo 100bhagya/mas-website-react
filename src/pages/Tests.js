@@ -58,6 +58,8 @@ const Tests = () => {
               Having trouble registering on our test platform, click{" "}
               <a
                 href="https://myanalyticsschool.com/video/register.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-500 underline"
               >
                 here
@@ -66,7 +68,8 @@ const Tests = () => {
             </p>
             <a
               href="https://myanalyticsschool.ezexam.in/"
-
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[15px] bg-blue-600 py-3 px-6 text-white rounded-xl"
             >
               Visit platform
