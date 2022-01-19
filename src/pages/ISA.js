@@ -9,7 +9,9 @@ import Circle from "../images/Ellipse 7.png";
 
 const IncomeSlab = ({ income, status, color, round }) => {
   return (
-    <div className={`flex w-7/12 h-[75px] pt-1 ${color} ${round}`}>
+    <div
+      className={`flex w-full h-[75px] pt-1 bg-card border-solid border-b-[1px] ${color} ${round}`}
+    >
       <div className="text-sm font-normal w-1/4 text-center pt-6">{income}</div>
       <div className="text-sm font-normal w-3/4 text-center pt-6">{status}</div>
     </div>
@@ -157,41 +159,47 @@ const ISA = () => {
         </div>
       </div>
       <div className="relative left-[21%] mb-20 mt-28">
-        <div className="flex bg-[#2255B8] w-7/12 h-[75px] rounded-t-2xl">
-          <div className="text-2xl font-semibold w-1/4 text-white text-center pt-6">
-            Income Slab
+        <div className="w-7/12 shadow-2xl">
+          <div className="flex border-b-2 border-solid border-blue-600 bg-card w-full h-[75px] rounded-t-2xl">
+            <div className="text-2xl font-semibold w-1/4 text-blue-600 text-center pt-6">
+              Income Slab
+            </div>
+            <div className="text-2xl font-semibold w-3/4 text-blue-600 text-center pt-6">
+              ISA
+            </div>
           </div>
-          <div className="text-2xl font-semibold w-3/4 text-white text-center pt-6">
-            ISA
-          </div>
+
+          <IncomeSlab
+            income="< 6 LPA"
+            status="No Payment"
+            color="border-blue-500"
+          />
+
+          <IncomeSlab
+            color="border-blue-500"
+            income="6 - 9 LPA"
+            status="6000 for 6 months after your job starts or 29,999 one time payment once you are placed"
+          />
+
+          <IncomeSlab
+            color="border-blue-500"
+            income="9 - 12 LPA"
+            status="6000 for 8 months after your job starts or 39,999 one time payment once you are placed"
+          />
+
+          <IncomeSlab
+            color="border-blue-500"
+            income="12 - 15 LPA"
+            status="6000 for 10 months after your job starts or 49,999 one time payment once you are placed"
+          />
+
+          <IncomeSlab
+            round="rounded-b-2xl"
+            color="border-card"
+            income="> 15 LPA"
+            status="6000 for 12 months after your job starts or 59,999 one time payment once you are placed"
+          />
         </div>
-
-        <IncomeSlab income="< 6 LPA" status="No Payment" color="bg-[#DCE9FF]" />
-
-        <IncomeSlab
-          color="bg-[#BAD0F3]"
-          income="6 - 9 LPA"
-          status="6000 for 6 months after your job starts or 29,999 one time payment once you are placed"
-        />
-
-        <IncomeSlab
-          color="bg-[#DCE9FF]"
-          income="9 - 12 LPA"
-          status="6000 for 8 months after your job starts or 39,999 one time payment once you are placed"
-        />
-
-        <IncomeSlab
-          color="bg-[#BAD0F3]"
-          income="12 - 15 LPA"
-          status="6000 for 10 months after your job starts or 49,999 one time payment once you are placed"
-        />
-
-        <IncomeSlab
-          round="rounded-b-2xl"
-          color="bg-[#DCE9FF]"
-          income="> 15 LPA"
-          status="6000 for 12 months after your job starts or 59,999 one time payment once you are placed"
-        />
       </div>
       <div className="mt-28 mb-40">
         <div className="text-[40px] text-center my-12">FAQ</div>

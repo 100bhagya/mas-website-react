@@ -132,3 +132,10 @@
 .bg-4 {
   background-color: #a855f7;
 }
+.swiper-pagination {
+  position: relative;
+  top: 550px;
+}
+.swiper {
+  height: 600px;
+}

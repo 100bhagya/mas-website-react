@@ -10,7 +10,6 @@ import "swiper/scss/pagination";
 import Data from "../components/Data_swiper";
 import "../index.css";
 import Colon from "../images/upper colon.png";
-import Artboard1 from "../images/ts3_1.png";
 import Artboard2 from "../images/ts3_2.png";
 import Artboard3 from "../images/ts3_3.png";
 import Artboard4 from "../images/ts3_4.png";
@@ -71,7 +70,7 @@ const Card = ({ image, heading, content }) => {
   );
 };
 
-const TS3 = () => {
+const TS2 = () => {
   return (
     <div className="bg-back">
       <Navbar />
@@ -79,7 +78,7 @@ const TS3 = () => {
         <div className="mb-24 relative right-[12%]">
           <div className="lg:pt-20 pb-28 lg:bottom-12">
             <h1 className="font-medium text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
-              Test Series 3
+              Test Series 2
             </h1>
 
             <p className="relative justify-center lg:top-5 text-lg font  text-black leading-8">
@@ -101,13 +100,6 @@ const TS3 = () => {
       </div>
 
       <div className="flex justify-center mt-5">
-        <Card
-          image={Artboard1}
-          heading="Sectional test"
-          content="Quant Sectional (17 Tests)
-                       LRDI Sectional (15 Tests)
-                       Verbal Sectional (5 Tests)"
-        />
         <Card
           image={Artboard2}
           heading="combined test"
@@ -334,4 +326,4 @@ const TS3 = () => {
   );
 };
 
-export default TS3;
+export default TS2;

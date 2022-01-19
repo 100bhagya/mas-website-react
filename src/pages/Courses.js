@@ -7,6 +7,7 @@ import artboard4 from "../images/courses_artboard4.png";
 import artboard5 from "../images/courses_artboard5.png";
 import exclusive from "../images/exclusive.png";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
   return (
@@ -63,7 +64,7 @@ const Courses = () => {
                 href="explore"
                 className="text-sm font-medium px-4 py-3 relative left-32 rounded-xl mt-12 text-white bg-blue-600"
               >
-                Explore now
+                <Link to="/mas1O1">Explore Now</Link>
               </a>
             </div>
           </div>
@@ -94,7 +95,7 @@ const Courses = () => {
                 href="explore"
                 className="text-sm font-medium px-4 py-3 relative left-32 rounded-xl mt-12 text-white bg-blue-600"
               >
-                Explore Now
+                <Link to="/mas1O2">Explore Now</Link>
               </a>
             </div>
           </div>
@@ -113,8 +114,8 @@ const Courses = () => {
               <div className="px-4 py-2 rounded-xl mr-4 border-blue-600 border-solid border-2">
                 Apply now
               </div>
-              <div className="px-4 py-2 rounded-xl bg-blue-600 text-white ml-7">
-                Explore now
+              <div className="px-4 py-3 rounded-xl bg-blue-600 text-white ml-7">
+                <Link to="/ts1">Explore Now</Link>
               </div>
             </div>
           </div>
@@ -128,8 +129,8 @@ const Courses = () => {
               <div className="px-4 py-2 rounded-xl mr-4 border-blue-600 border-solid border-2">
                 Apply now
               </div>
-              <div className="px-4 py-2 rounded-xl bg-blue-600 text-white ml-7">
-                Explore now
+              <div className="px-4 py-3 rounded-xl bg-blue-600 text-white ml-7">
+                <Link to="/ts2">Explore Now</Link>
               </div>
             </div>
           </div>
@@ -146,8 +147,8 @@ const Courses = () => {
               <div className="px-4 py-2 rounded-xl mr-4 border-blue-600 border-solid border-2">
                 Apply now
               </div>
-              <div className="px-4 py-2 rounded-xl bg-blue-600 text-white ml-7">
-                Explore now
+              <div className="px-4 py-3 rounded-xl bg-blue-600 text-white ml-7">
+                <Link to="/ts3">Explore Now</Link>
               </div>
             </div>
           </div>

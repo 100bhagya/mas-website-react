@@ -6,8 +6,10 @@ const Navbar = () => {
   return (
     <div>
       <nav className="flex pl-20 py-0 items-center bg-white p-3 flex-wrap">
-        <a href="link" className="p-2 mr-4 inline-flex items-center">
-          <img src={Logo} alt="logo"></img>
+        <a href="/" className="p-2 mr-4 inline-flex items-center">
+          <Link to="/">
+            <img src={Logo} alt="logo"></img>
+          </Link>
         </a>
 
         {/* This is hamsburger */}

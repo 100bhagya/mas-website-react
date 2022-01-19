@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import Data from "../components/Data_timeline";
+import Data from "../components/Data_timeline1";
 import Rectangle from "../images/Rectangle 52.png";
 import Footer from "../components/Footer";
 
@@ -54,7 +54,7 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
   );
 }
 
-const Timeline = () => {
+const Timeline1 = () => {
   const [faqs, setfaqs] = useState(Data);
   const toggleFAQ = (index, tag) => {
     setfaqs(
@@ -131,4 +131,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default Timeline1;

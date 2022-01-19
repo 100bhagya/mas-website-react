@@ -19,7 +19,7 @@ import Mahi from "../images/Mahi.png";
 import Grid from "../images/grid.png";
 import Design2 from "../images/design2.png";
 import "../index.css";
-import Data from "../components/MAS1O1_Data";
+import Data from "../components/MAS1O2_Data";
 import Rectangle from "../images/Rectangle 52.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -105,7 +105,7 @@ function FAQ({ faq, index, toggleFAQ }) {
   );
 }
 
-const MAS1O1 = () => {
+const MAS1O2 = () => {
   const [faqs, setfaqs] = useState(Data);
 
   const toggleFAQ = (index) => {
@@ -128,7 +128,7 @@ const MAS1O1 = () => {
         <div className="mb-24 relative right-[12%]">
           <div className="lg:pt-20 pb-28 lg:bottom-12">
             <h1 className="font-medium text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
-              MAS 101
+              MAS 102
             </h1>
 
             <p className="relative justify-center lg:top-5 text-lg font  text-black leading-8">
@@ -297,7 +297,7 @@ const MAS1O1 = () => {
               href="timeline"
               className="px-3 py-4 bg-blue-600 rounded-2xl text-[15px] font-medium text-white"
             >
-              <Link to="/timeline1">Complete Timeline</Link>
+              <Link to="/timeline2">Complete Timeline</Link>
             </a>
           </div>
         </div>
@@ -307,4 +307,4 @@ const MAS1O1 = () => {
   );
 };
 
-export default MAS1O1;
+export default MAS1O2;
