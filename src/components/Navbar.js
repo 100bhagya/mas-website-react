@@ -6,8 +6,10 @@ const Navbar = () => {
   return (
     <div>
       <nav className="flex pl-20 py-0 items-center bg-white p-3 flex-wrap">
-        <a href="link" className="p-2 mr-4 inline-flex items-center">
-          <img src={Logo} alt="logo"></img>
+        <a href="/" className="p-2 mr-4 inline-flex items-center">
+          <Link to="/">
+            <img src={Logo} alt="logo"></img>
+          </Link>
         </a>
 
         {/* This is hamsburger */}
@@ -38,7 +40,7 @@ const Navbar = () => {
               href="courses"
               className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-purple-500"
             >
-              <span>Courses</span>
+              <Link to="/courses">Courses</Link>
             </a>
             <a
               href="tests"
@@ -47,10 +49,12 @@ const Navbar = () => {
               <Link to="/tests">Tests</Link>
             </a>
             <a
-              href="blogs"
+              href="https://myanalyticsschool.com/blog/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-purple-500"
             >
-              <a href="https://myanalyticsschool.com/blog/">Blogs</a>
+              Blogs
             </a>
 
             <a

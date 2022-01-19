@@ -148,7 +148,7 @@ const Data = [
         question:
           "What happens in case I leave my job or get fired in between?",
         answer:
-          "In case you are fired/you leave the job/you switch the job before completion of ISA, your ISA will be paused and will resume with your next job till completion. (Not applicable in case you don’t wish to do a job further).",
+          "In case you are fired/you leave the job/you switch the job before completion of ISA, your ISA will be paused and will resume with your next job till completion. (Not applicable in case you don't wish to do a job further).",
         open: false,
       },
     ],

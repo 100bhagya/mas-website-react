@@ -9,7 +9,7 @@ const Card = ({ img, title, content }) => {
     <div class="p-4 m-6 md:w-1/4">
       <div class="h-full image shadow-xl bg-card rounded-lg overflow-hidden">
         <img
-          class="lg:h-30 mt-7 p-4 bg-white rounded-full md:h-36"
+          class="lg:h-30 mt-7 p-4 bg-white rounded-full md:h-36 "
           src={img}
           alt="blog"
         />
