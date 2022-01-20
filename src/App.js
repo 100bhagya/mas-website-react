@@ -8,8 +8,8 @@ import ISA from "./pages/ISA";
 import TS3 from "./pages/TS3";
 import TS2 from "./pages/TS2";
 import TS1 from "./pages/TS1";
-import MAS1O1 from "./pages/MAS1O1";
-import MAS1O2 from "./pages/MAS1O2";
+import MAS101 from "./pages/MAS101";
+import MAS102 from "./pages/MAS102";
 import Courses from "./pages/Courses";
 import Timeline1 from "./pages/Timeline1";
 import Timeline2 from "./pages/Timeline2";
@@ -31,8 +31,8 @@ const App = () => {
           <Route exact path="/ts3" element={<TS3 />} />
           <Route exact path="/ts2" element={<TS2 />} />
           <Route exact path="/ts1" element={<TS1 />} />
-          <Route exact path="/mas1O1" element={<MAS1O1 />} />
-          <Route exact path="/mas1O2" element={<MAS1O2 />} />
+          <Route exact path="/mas101" element={<MAS101 />} />
+          <Route exact path="/mas102" element={<MAS102 />} />
           <Route exact path="/courses" element={<Courses />} />
           <Route exact path="/timeline1" element={<Timeline1 />} />
           <Route exact path="/timeline2" element={<Timeline2 />} />

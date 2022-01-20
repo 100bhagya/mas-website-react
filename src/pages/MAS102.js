@@ -19,7 +19,7 @@ import Mahi from "../images/Mahi.png";
 import Grid from "../images/grid.png";
 import Design2 from "../images/design2.png";
 import "../index.css";
-import Data from "../components/MAS1O2_Data";
+import Data from "../components/MAS102_Data";
 import Rectangle from "../images/Rectangle 52.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -105,7 +105,7 @@ function FAQ({ faq, index, toggleFAQ }) {
   );
 }
 
-const MAS1O2 = () => {
+const MAS102 = () => {
   const [faqs, setfaqs] = useState(Data);
 
   const toggleFAQ = (index) => {
@@ -307,4 +307,4 @@ const MAS1O2 = () => {
   );
 };
 
-export default MAS1O2;
+export default MAS102;

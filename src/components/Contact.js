@@ -43,11 +43,13 @@ const Contact = () => {
   };
   return (
     <div className="flex w-full min-h-screen justify-center items-center">
-      <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 bg-card w-full max-w-6xl p-8 sm:p-12 rounded-xl text-white">
+      <div className="flex flex-col md:flex-row space-y-6 md:space-y-0  w-full max-w-6xl p-8 sm:p-12 rounded-xl text-white">
         <div className="bg-white rounded-xl shadow-xl p-12 py-20 relative lg:right-28 text-gray-600 md:w-3/5">
           <form
+            action="https://formsubmit.co/admin@myanalyticsschool.com"
+            method="POST"
+            autocomplete="off"
             onSubmit={handleSubmit}
-            action=""
             className="flex flex-col font-pop space-y-4 md:w-10/12"
           >
             <h1 className="font-bold text-lg">Get in touch.</h1>

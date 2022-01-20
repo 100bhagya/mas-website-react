@@ -68,10 +68,10 @@ const ISA = () => {
           </p>
         </div>
       </div>
-      <div className="bg-card w-10/12 mt-20 ml-36 pt-8 px-20 pb-24 rounded-xl">
+      <div className="bg-card w-10/12 mt-20 ml-36 pt-8 px-20 pb-16 rounded-xl">
         <div className="text-center text-2xl font-semibold">About ISA</div>
         <div className="flex mt-16">
-          <div className="mt-14">
+          <div className="mt-14 relative bottom-5">
             <div className="flex mt-10 pr-56">
               <img
                 src={Circle}
@@ -107,7 +107,7 @@ const ISA = () => {
           </div>
           <img src={Artboard} alt="artboard" className="relative bottom-14" />
         </div>
-        <div className="">
+        <div className=" relative bottom-5">
           <div className="flex mt-10">
             <img
               src={Circle}
