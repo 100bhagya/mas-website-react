@@ -65,6 +65,7 @@ const Courses = () => {
                 className="text-sm font-medium px-4 py-3 relative left-32 rounded-xl mt-12 text-white bg-blue-600"
               >
                 <Link to="/mas101">Explore Now</Link>
+
               </a>
             </div>
           </div>
@@ -96,6 +97,7 @@ const Courses = () => {
                 className="text-sm font-medium px-4 py-3 relative left-32 rounded-xl mt-12 text-white bg-blue-600"
               >
                 <Link to="/mas102">Explore Now</Link>
+
               </a>
             </div>
           </div>
@@ -123,6 +125,7 @@ const Courses = () => {
                   Apply now
                 </div>
               </a>
+
               <div className="px-4 py-3 rounded-xl bg-blue-600 text-white ml-7">
                 <Link to="/ts1">Explore Now</Link>
               </div>

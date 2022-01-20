@@ -95,6 +95,7 @@ const Faqs = () => {
                 className="bg-white w-[95%] mb-20  rounded-3xl"
                 id={post.tag}
               >
+
                 <div className="flex p-12 bg-white rounded-2xl">
                   <img
                     src={post.icon}
