@@ -91,7 +91,11 @@ const Faqs = () => {
           {Data.map((post) => {
             console.log(post);
             return (
-              <div className="bg-white w-[95%] mb-20  rounded-3xl">
+              <div
+                className="bg-white w-[95%] mb-20  rounded-3xl"
+                id={post.tag}
+              >
+
                 <div className="flex p-12 bg-white rounded-2xl">
                   <img
                     src={post.icon}
@@ -99,9 +103,7 @@ const Faqs = () => {
                     className={`px-5 py-4 rounded-lg bg-${post.id}`}
                   />
                   <div className="ml-6 mt-2">
-                    <p className="lg:text-[22px] font-medium" id={post.tag}>
-                      {post.tag}
-                    </p>
+                    <p className="lg:text-[22px] font-medium">{post.tag}</p>
                     <p className="lg:text-[16px] font-normal text-gray-400">
                       New around here? Start with the basics.
                     </p>

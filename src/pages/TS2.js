@@ -12,11 +12,8 @@ import "../index.css";
 import Colon from "../images/upper colon.png";
 import Artboard2 from "../images/ts3_2.png";
 import Artboard3 from "../images/ts3_3.png";
-import Artboard4 from "../images/ts3_4.png";
-import Artboard5 from "../images/ts3_5.png";
 import Artboard6 from "../images/image 21.png";
 import tick from "../images/tick.png";
-import cross from "../images/crossmark.png";
 import { Link } from "react-router-dom";
 
 const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
@@ -31,7 +28,7 @@ const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
         {no_1 === true ? (
           <img src={tick} alt="tick" className="relative left-[47%]"></img>
         ) : no_1 === false ? (
-          <img src={cross} alt="cross" className="relative left-[47%]"></img>
+          <span>✗</span>
         ) : (
           no_1
         )}
@@ -40,7 +37,7 @@ const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
         {no_2 === true ? (
           <img src={tick} alt="tick" className="relative left-[47%]"></img>
         ) : no_2 === false ? (
-          <img src={cross} alt="cross" className="relative left-[47%]"></img>
+          <span>✗</span>
         ) : (
           no_2
         )}
@@ -49,7 +46,7 @@ const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
         {no_3 === true ? (
           <img src={tick} alt="tick" className="relative left-[47%]"></img>
         ) : no_3 === false ? (
-          <img src={cross} alt="cross" className="relative left-[47%]"></img>
+          <span>✗</span>
         ) : (
           no_3
         )}
@@ -109,18 +106,6 @@ const TS2 = () => {
           image={Artboard3}
           heading="Company wise test"
           content="Company-wise (15 Tests)"
-        />
-      </div>
-      <div className="flex justify-center">
-        <Card
-          image={Artboard4}
-          heading="Interview prep"
-          content="Write a brief description of two lines maximum."
-        />
-        <Card
-          image={Artboard5}
-          heading="Practice quiz"
-          content="Write a brief description of two lines maximum."
         />
       </div>
 

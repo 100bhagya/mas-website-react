@@ -64,7 +64,8 @@ const Courses = () => {
                 href="explore"
                 className="text-sm font-medium px-4 py-3 relative left-32 rounded-xl mt-12 text-white bg-blue-600"
               >
-                <Link to="/mas1O1">Explore Now</Link>
+                <Link to="/mas101">Explore Now</Link>
+
               </a>
             </div>
           </div>
@@ -95,7 +96,8 @@ const Courses = () => {
                 href="explore"
                 className="text-sm font-medium px-4 py-3 relative left-32 rounded-xl mt-12 text-white bg-blue-600"
               >
-                <Link to="/mas1O2">Explore Now</Link>
+                <Link to="/mas102">Explore Now</Link>
+
               </a>
             </div>
           </div>
@@ -109,11 +111,21 @@ const Courses = () => {
             <img src={artboard3} alt="artboard" className=""></img>
             <p className="mb-4 mt-12">Sectional tests </p>
             <p className="my-4">Combined test</p>
-            <p className="mt-4 mb-[150px]">₹ 2499</p>
+            <p className="mt-4 mb-[150px] text-[15px] text-blue-600 font-semibold">
+              ₹ 2499
+            </p>
             <div className="flex">
-              <div className="px-4 py-2 rounded-xl mr-4 border-blue-600 border-solid border-2">
-                Apply now
-              </div>
+              <a
+                href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
+                type="submit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="px-4 py-2 rounded-xl mr-4 border-blue-600 border-solid border-2">
+                  Apply now
+                </div>
+              </a>
+
               <div className="px-4 py-3 rounded-xl bg-blue-600 text-white ml-7">
                 <Link to="/ts1">Explore Now</Link>
               </div>
@@ -124,11 +136,20 @@ const Courses = () => {
             <img src={artboard4} alt="artboard" className=""></img>
             <p className="mb-4 mt-9">Combined test</p>
             <p className="my-4">Company wise test</p>
-            <p className="mt-4 mb-[150px]">₹ 3999</p>
+            <p className="mt-4 mb-[150px] text-[15px] text-blue-600 font-semibold">
+              ₹ 3999
+            </p>
             <div className="flex">
-              <div className="px-4 py-2 rounded-xl mr-4 border-blue-600 border-solid border-2">
-                Apply now
-              </div>
+              <a
+                href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
+                type="submit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="px-4 py-2 rounded-xl mr-4 border-blue-600 border-solid border-2">
+                  Apply now
+                </div>
+              </a>
               <div className="px-4 py-3 rounded-xl bg-blue-600 text-white ml-7">
                 <Link to="/ts2">Explore Now</Link>
               </div>
@@ -142,11 +163,20 @@ const Courses = () => {
             <p className="my-4">Company wise test </p>
             <p className="my-4">Practice quizzes</p>
             <p className="my-4">Interview prep</p>
-            <p className="mt-4 mb-9">₹ 5999</p>
+            <p className="mt-4 mb-9 text-[15px] text-blue-600 font-semibold">
+              ₹ 5999
+            </p>
             <div className="flex">
-              <div className="px-4 py-2 rounded-xl mr-4 border-blue-600 border-solid border-2">
-                Apply now
-              </div>
+              <a
+                href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
+                type="submit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="px-4 py-2 rounded-xl mr-4 border-blue-600 border-solid border-2">
+                  Apply now
+                </div>
+              </a>
               <div className="px-4 py-3 rounded-xl bg-blue-600 text-white ml-7">
                 <Link to="/ts3">Explore Now</Link>
               </div>

@@ -10,7 +10,7 @@ const About_Intro = () => {
             Meet the Mentors
           </h1>
 
-          <p className="relative lg:top-12 text-lg font  text-black leading-8">
+          <p className="relative lg:top-12 text-xl font  text-black leading-8">
             Experienced mentors to steer you through the journey from being a
             student to an industry-driven professional. With a constant
             interactive support from our mentors with a personalized touch, get
