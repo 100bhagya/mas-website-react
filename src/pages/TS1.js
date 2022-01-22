@@ -12,9 +12,6 @@ import "../index.css";
 import Colon from "../images/upper colon.png";
 import Artboard1 from "../images/ts3_1.png";
 import Artboard2 from "../images/ts3_2.png";
-import Artboard3 from "../images/ts3_3.png";
-import Artboard4 from "../images/ts3_4.png";
-import Artboard5 from "../images/ts3_5.png";
 import Artboard6 from "../images/image 21.png";
 import tick from "../images/tick.png";
 import { Link } from "react-router-dom";
@@ -70,7 +67,7 @@ const Card = ({ image, heading, content }) => {
   );
 };
 
-const TS3 = () => {
+const TS1 = () => {
   return (
     <div className="bg-back">
       <Navbar />
@@ -78,7 +75,7 @@ const TS3 = () => {
         <div className="mb-24 relative right-[12%]">
           <div className="lg:pt-20 pb-28 lg:bottom-12">
             <h1 className="font-medium text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
-              Test Series 3
+              Test Series 1
             </h1>
 
             <p className="relative justify-center lg:top-5 text-lg font  text-black leading-8">
@@ -110,24 +107,7 @@ const TS3 = () => {
         <Card
           image={Artboard2}
           heading="combined test"
-          content="Combined (20 Tests + 7 FREE Tests)"
-        />
-        <Card
-          image={Artboard3}
-          heading="Company wise test"
-          content="Company-wise (15 Tests)"
-        />
-      </div>
-      <div className="flex justify-center">
-        <Card
-          image={Artboard4}
-          heading="Interview prep"
-          content="Write a brief description of two lines maximum."
-        />
-        <Card
-          image={Artboard5}
-          heading="Practice quiz"
-          content="Write a brief description of two lines maximum."
+          content="Combined (5 Tests)"
         />
       </div>
 
@@ -333,4 +313,4 @@ const TS3 = () => {
   );
 };
 
-export default TS3;
+export default TS1;

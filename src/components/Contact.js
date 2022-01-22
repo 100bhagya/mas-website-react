@@ -1,3 +1,5 @@
+/* eslint-disable no-fallthrough */
+/* eslint-disable default-case */
 import React, { useState, useEffect } from "react";
 import {
   PhoneIcon,
@@ -15,19 +17,26 @@ const Contact = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormValues({ ...formValues, [name]: value });
-    console.log(formValues);
+    switch (name) {
+      case "username":
+        formErrors.username = "";
+      case "email":
+        formErrors.email = "";
+      case "phone":
+        formErrors.phone = "";
+    }
   };
   const handleSubmit = (event) => {
     event.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
   };
-  useEffect(() => {
-    console.log(formErrors);
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues);
-    }
-  }, [formErrors]);
+  // useEffect(() => {
+  //   console.log(formErrors);
+  //   if (Object.keys(formErrors).length === 0 && isSubmit) {
+  //     console.log(formValues);
+  //   }
+  // }, [formErrors]);
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -43,11 +52,12 @@ const Contact = () => {
   };
   return (
     <div className="flex w-full min-h-screen justify-center items-center">
-      <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 bg-card w-full max-w-6xl p-8 sm:p-12 rounded-xl text-white">
-        <div className="bg-white rounded-xl shadow-xl p-12 py-20 relative lg:right-28 text-gray-600 md:w-3/5">
+      <div className="flex flex-col md:flex-row space-y-6 md:space-y-0  w-full max-w-6xl p-8 sm:p-12 rounded-xl text-white">
+        <div className="bg-white rounded-xl shadow-xl p-12 pb-8 py-20 relative lg:right-28 text-gray-600 md:w-3/5">
           <form
+            action="https://formsubmit.co/admin@myanalyticsschool.com"
+            method="POST"
             onSubmit={handleSubmit}
-            action=""
             className="flex flex-col font-pop space-y-4 md:w-10/12"
           >
             <h1 className="font-bold text-lg">Get in touch.</h1>
@@ -117,6 +127,14 @@ const Contact = () => {
             <button className="inline-block self-end w-full bg-blue-700 text-white font-bold rounded-lg px-6 py-3 uppercase text-sm ">
               Submit
             </button>
+
+            {Object.keys(formErrors).length === 0 && isSubmit ? (
+              <div className="text-green-500 justify-center text-center">
+                Submitted successfully!!
+              </div>
+            ) : (
+              <div></div>
+            )}
           </form>
         </div>
         <div className="flex flex-col space-y-8  px-8 ml-8 justify-between w-full md:w-3/5">
