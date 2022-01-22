@@ -19,7 +19,7 @@ import Mahi from "../images/Mahi.png";
 import Grid from "../images/grid.png";
 import Design2 from "../images/design2.png";
 import "../index.css";
-import Data from "../components/MAS102_Data";
+import Data from "../data/MAS102Data";
 import Rectangle from "../images/Rectangle 52.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -48,7 +48,7 @@ const Card = ({ img, title }) => {
 
 const Testimonial = ({ image, linkedin, name, position }) => {
   return (
-    <div class="py-4 m-8 md:w-1/3 lg:w-[17%] shadow-gray-300 bg-card shadow-lg">
+    <div class="py-4 m-8 md:w-1/3 lg:w-[17%] shadow-gray-300 bg-card shadow-lg rounded-2xl">
       <div class="rounded-lg w-full h-48 overflow-hidden">
         <img
           alt="content"
@@ -124,7 +124,7 @@ const MAS102 = () => {
   return (
     <div>
       <Navbar />
-      <div className="lg:flex pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
+      <div className="lg:flex pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
         <div className="mb-24 relative right-[12%]">
           <div className="lg:pt-20 pb-28 lg:bottom-12">
             <h1 className="font-medium text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[50px]  leading-8 font-primary">

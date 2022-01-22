@@ -14,7 +14,7 @@ const Courses = () => {
     <div>
       <Navbar />
       <div className="lg:flex pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-        <div className="lg:pt-16 pb-36 lg:bottom-12">
+        <div className="lg:pt-28 pb-36 lg:bottom-12">
           <h1 className="font-medium text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[48px]  leading-8 font-primary">
             Courses
           </h1>

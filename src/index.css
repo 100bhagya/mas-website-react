@@ -11,10 +11,7 @@
 .font-pop {
   font-family: "Poppins", sans-serif;
 }
-.design1 {
-  height: 80%;
-  top: 105px;
-}
+
 .image {
   text-align: -webkit-center;
 }
@@ -23,6 +20,10 @@
 }
 .card {
   width: 83%;
+}
+
+.active {
+  border-bottom: 4px solid #2563eb;
 }
 .testimonial .slick-arrow.slick-prev,
 .testimonial .slick-arrow.slick-next {
@@ -138,4 +139,10 @@
 }
 .swiper {
   height: 600px;
+}
+
+@media only screen and (max-width: 780px) {
+  .navbar {
+    display: none;
+  }
 }

@@ -8,7 +8,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
-import Data from "../components/Data_swiper";
+import Data from "../data/SwiperData";
 import "../index.css";
 import Colon from "../images/upper colon.png";
 
@@ -17,7 +17,7 @@ const Tests = () => {
     <div className="bg-back">
       <Navbar />
       <div className="lg:flex pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-        <div className="lg:pt-16 pb-32 lg:bottom-12">
+        <div className="lg:pt-28 pb-32 lg:bottom-12">
           <h1 className="font-medium text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[48px]  leading-8 font-primary">
             Tests
           </h1>
