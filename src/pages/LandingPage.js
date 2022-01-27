@@ -17,33 +17,34 @@ import Testimonial from "../components/Testimonial";
 
 const Card1 = ({ img, title, content }) => {
   return (
-    <div class="px-24 mt-12">
-      <div class="flex rounded-3xl h-full bg-works p-16">
-        <div className="w-6/12 mt-4">
-          <div class="flex items-center mb-3">
-            <h2 class="text-gray-900 text-2xl title-font font-semibold">
+    <div class="md:px-24 md:mt-12">
+      <div class="flex flex-col-reverse lg:flex-row md:rounded-3xl h-[425px] bg-works p-16">
+        <div className="md:w-6/12 w-full mt-4 relative top-10 md:top-0">
+          <div class=" items-center mb-3">
+            <h2 class="text-gray-900 lg:text-2xl text-center md:text-left text-[12px] title-font font-semibold">
               {title}
             </h2>
           </div>
-          <div class="flex-grow">
-            <p class="leading-relaxed w-full text-base mt-12">{content}</p>
-          </div>
+
+          <p class="leading-relaxed w-full lg:text-base text-[12px] lg:mt-12 mt-5">
+            {content}
+          </p>
         </div>
 
         <img
           src={img}
           alt="design"
-          className="h-64 w-96 relative z-10 lg:left-96 border-8 border-solid rounded-2xl border-white"
+          className="lg:h-64 lg:w-96 -bottom-6 md:-bottom-0  relative z-10 lg:left-96 border-8 border-solid rounded-2xl border-white"
         />
         <img
           src={Grid}
           alt="grid"
-          className="h-24 w-48 relative md:top-52 md:left-72"
+          className="h-24 w-48 relative top-56 -left-6  md:top-52 md:left-72"
         ></img>
         <img
           src={Grid}
           alt="grid"
-          className="h-24 w-48 relative md:bottom-10 md:right-56"
+          className="h-24 w-48 relative -bottom-[175px] -right-[162px] md:bottom-10 md:right-56"
         ></img>
       </div>
     </div>
@@ -74,41 +75,42 @@ const LandingPage = () => {
   return (
     <div>
       <Navbar />
-      <div className="lg:flex pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+      <div className="flex flex-col-reverse lg:flex-row pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="lg:flex lg:items-center px-4 pt-9 max-w-lg md:max-w-xl lg:max-w-4xl mx-auto">
-          <div className="lg:pt-16 pb-32 relative lg:right-24 lg:top-3">
-            <h1 className="font-normal  text-black text-xl xs:text-2xl lg:text-5xl leading-relaxed font-primary">
+          <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
+            <h1 className="lg:font-normal font-semibold  text-black text-2xl md:text-3xl lg:text-5xl leading-relaxed font-primary">
               Learn Analytics, The
-              <br />
-              <br />
-              <p className="relative bottom-5">Analytics Way</p>
+              <p className="relative bottom-5 lg:mt-10 mt-4">Analytics Way</p>
             </h1>
-            <p className="pt-6 font text-lg  text-gray-400 leading-loose">
+            <p className="lg:pt-6 font text-sm lg:text-lg  text-[#787B7D] leading-loose lg:w-[68%] ">
               Data analysis is a process of inspecting, cleansing, transforming,
-              <br />
               and modelling data with the goal of discovering useful
               information,
             </p>
             <a
               href="download"
-              className="inline-block bg-blue-600 mt-20 px-10 py-3 text-white rounded-lg font-normal uppercase font-primary tracking-wide text-sm mr-4"
+              className="inline-block bg-blue-600 lg:mt-20 mt-8 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-normal uppercase font-primary tracking-wide lg:text-sm text-[12px] mr-4"
             >
               Join Today
             </a>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex justify-center">
           <img
             src={design1}
             alt=""
-            className="absolute design1  z-10 lg:right-16 lg:top-[68px] h-[70%]"
+            className="lg:absolute relative design1  z-10 lg:right-16 lg:top-[120px] lg:h-[70%] h-[250px] top-5"
           />
-          <img src={design2} alt="" className="relative design2 lg:bottom-16" />
+          <img
+            src={design2}
+            alt=""
+            className="relative design2 lg:bottom-16 hidden lg:block"
+          />
         </div>
       </div>
       <section class="text-gray-600 body-font bg-back">
-        <div class="text-center justify-center container px-5 py-24 mx-auto">
-          <div class="text-center font-normal lg:text-5xl mb-5">
+        <div class="text-center justify-center container px-5 lg:py-24 md:py-14 pt-14 pb-7 mx-auto">
+          <div class="text-center font-normal text-3xl md:text-4xl lg:text-5xl mb-5">
             What We Do?
           </div>
           <div class="flex justify-center flex-wrap -m-4">
@@ -133,7 +135,7 @@ const LandingPage = () => {
       <section class="text-gray-600 body-font bg-back">
         <div class="container px-5 py-6 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="lg:text-5xl md:text-3xl sm:text-2xl font-medium title-font text-gray-900">
+            <h1 class="lg:text-5xl md:text-3xl sm:text-2xl text-3xl font-medium title-font text-gray-900">
               How It Works?
             </h1>
           </div>

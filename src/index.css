@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body,
+html {
+  overflow-x: hidden;
+}
 .design2 {
   height: 111%;
 }
@@ -24,6 +28,33 @@
 
 .active {
   border-bottom: 4px solid #2563eb;
+}
+@media screen and (orientation: portrait) {
+  .active {
+    width: 33%;
+  }
+  .mob_pos {
+    position: relative;
+    left: 10%;
+    top: 20px;
+    margin-top: 15px;
+  }
+  .mob_pos1 {
+    position: relative;
+    left: 10%;
+    width: 41%;
+  }
+  .back_arrow {
+    font-size: "40px";
+  }
+  .slick-slider {
+    right: 112px;
+  }
+  iframe {
+    height: 210px;
+    width: 308px;
+    border-radius: 12px;
+  }
 }
 .testimonial .slick-arrow.slick-prev,
 .testimonial .slick-arrow.slick-next {
@@ -53,7 +84,7 @@
 }
 
 .width1 {
-  width: 100%;
+  width: 80%;
   max-width: 750px;
 }
 .width {
