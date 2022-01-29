@@ -96,6 +96,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="relative md:left-20 md:h-[88vh] md:overflow-y-scroll faq_ques top-20 md:w-[59%] md:overflow-x-hidden">
+
             {Data.map((post) => {
               console.log(post);
               return (
