@@ -90,7 +90,7 @@ const FaqPage = () => {
               })}
             </div>
           </div>
-          <div className="relative left-20 h-[80vh] overflow-y-scroll faq_ques top-20 w-[59%] overflow-x-hidden">
+          <div className="relative left-20 h-[88vh] overflow-y-scroll faq_ques top-20 w-[59%] overflow-x-hidden">
             {Data.map((post) => {
               console.log(post);
               return (

@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable no-fallthrough */
 /* eslint-disable default-case */
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   PhoneIcon,
   MailIcon,
@@ -53,7 +54,7 @@ const Contact = () => {
   return (
     <div className="flex w-full min-h-screen justify-center items-center">
       <div className="flex flex-col md:flex-row space-y-6 md:space-y-0  w-full max-w-6xl p-8 sm:p-12 rounded-xl text-white">
-        <div className="bg-white rounded-xl shadow-xl p-12 pb-8 py-20 relative lg:right-28 text-gray-600 md:w-3/5">
+        <div className="bg-white rounded-xl border-solid border-2 border-gray-200 md:border-gray-100 shadow-xl p-12 pb-8 py-20 relative lg:right-28 text-gray-600 md:w-3/5">
           <form
             action="https://formsubmit.co/admin@myanalyticsschool.com"
             method="POST"
@@ -73,10 +74,10 @@ const Contact = () => {
                 name="username"
                 value={formValues.username}
                 onChange={handleChange}
-                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 text-[14px] md:text-[16px] outline-none focus:ring-2 focus:ring-teal-300"
               />
             </div>
-            <p>{formErrors.username}</p>
+            <p className=" text-[12px] md:text-[16px]">{formErrors.username}</p>
 
             <div>
               <label htmlFor="" className="text-sm font-medium">
@@ -91,10 +92,12 @@ const Contact = () => {
                 name="email"
                 value={formValues.email}
                 onChange={handleChange}
-                class="ring-1 ring-gray-300 w-full rounded-md relative bottom-5 px-10 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
+                class="ring-1 ring-gray-300 w-full text-[14px] md:text-[16px]  rounded-md relative bottom-5 px-10 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
               />
             </div>
-            <p className="text-red-500 relative bottom-7">{formErrors.email}</p>
+            <p className="text-red-500 relative bottom-7 text-[12px] md:text-[16px]">
+              {formErrors.email}
+            </p>
             <div>
               <label htmlFor="" className="text-sm font-medium">
                 Phone Number
@@ -108,10 +111,12 @@ const Contact = () => {
                 name="phone"
                 onChange={handleChange}
                 value={formValues.phone}
-                class="ring-1 ring-gray-300 w-full rounded-md relative bottom-5 px-10 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
+                class="ring-1 ring-gray-300 w-full text-[14px] md:text-[16px]  rounded-md relative bottom-5 px-10 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
               />
             </div>
-            <p className="text-red-500 relative bottom-7">{formErrors.phone}</p>
+            <p className="text-red-500 relative bottom-7 text-[12px] md:text-[16px]">
+              {formErrors.phone}
+            </p>
             <div>
               <label htmlFor="" className="text-sm font-medium">
                 Enter your message
@@ -121,7 +126,7 @@ const Contact = () => {
                 placeholder="Type your message here"
                 rows="4"
                 required
-                class="ring-1 ring-gray-300 w-full rounded-md relative bottom-5 px-10 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
+                class="ring-1 ring-gray-300 w-full text-[14px] md:text-[16px]  rounded-md relative bottom-5 px-10 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"
               />
             </div>
             <button className="inline-block self-end w-full bg-blue-700 text-white font-bold rounded-lg px-6 py-3 uppercase text-sm ">
@@ -129,7 +134,7 @@ const Contact = () => {
             </button>
 
             {Object.keys(formErrors).length === 0 && isSubmit ? (
-              <div className="text-green-500 justify-center text-center">
+              <div className="text-green-500 justify-center text-center text-[12px] md:text-[16px]">
                 Submitted successfully!!
               </div>
             ) : (
@@ -137,21 +142,21 @@ const Contact = () => {
             )}
           </form>
         </div>
-        <div className="flex flex-col space-y-8  px-8 ml-8 justify-between w-full md:w-3/5">
+        <div className="flex lg:flex-col flex-col-reverse space-y-8  md:px-8 md:ml-8 justify-between w-full md:w-3/5">
           <div className="py-6">
-            <h3 className="font-bold text-2xl text-blue-700 tracking-wide">
+            <h3 className="lg:font-bold lg:text-2xl text-lg font-semibold text-blue-700 tracking-wide">
               Office Address
             </h3>
             <a href="/#">
-              <p className="pt-2 text-2xl font text-black ">
+              <p className="pt-2 md:text-2xl text-sm font text-black ">
                 HP Keluskar marg Opp Equinox Business <br></br> Center, BKC
                 Crossing, Mumbai,<br></br> Maharashtra 400070
               </p>
             </a>
           </div>
-          <div className="inline-flex space-y-6 bg-blue-200 rounded-3xl w-2/5 relative top-2 md:top-12 justify-center items-center">
+          <div className="inline-flex md:space-y-6 space-y-5 bg-blue-200 rounded-3xl md:w-2/5 w-[45%] relative top-0 md:top-12 justify-center items-center">
             <LocationMarkerIcon className="h-5 w-5 text-blue-500" />
-            <p className="text-blue-700 ml-4 font text-sm relative bottom-3.5 right-1">
+            <p className="text-blue-700 md:ml-4 ml-3 font md:text-sm text-[12px] relative md:bottom-3.5 bottom-3 right-1">
               View us on map
             </p>
           </div>
