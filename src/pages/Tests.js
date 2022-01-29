@@ -11,58 +11,85 @@ import "swiper/scss/pagination";
 import Data from "../data/SwiperData";
 import "../index.css";
 import Colon from "../images/upper colon.png";
+import Testimonial from "../components/Testimonial";
 
 const Tests = () => {
   return (
     <div className="bg-back">
       <Navbar />
       <div className="lg:flex pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-        <div className="lg:pt-28 pb-32 lg:bottom-12">
-          <h1 className="font-medium text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[48px]  leading-8 font-primary">
+        <div className="lg:pt-28 md:pb-32 pb-12 lg:bottom-12">
+          <h1 className="md:font-medium font-semibold mt-16 md:mt-0  text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[48px]  leading-8 font-primary">
             Tests
           </h1>
 
-          <p className="relative justify-center lg:top-12 text-lg font  text-black leading-8">
+          <p className="relative justify-center lg:top-12 md:text-lg text-[14px] mt-8 md:mt-0 font  text-black leading-8">
             Our specialised test portal to challenge youself
           </p>
         </div>
       </div>
-      <div className="pb-32">
-        <div className="flex ml-4">
+      <div className="md:pb-32 pb-10">
+        <div className="md:flex">
           <div>
-            <div className="bg-card shadow-2xl my-20 ml-28 mr-12  w-3/4 relative left-1/5  rounded-xl">
+            <div className="bg-card shadow-2xl my-20 md:ml-28 md:mr-12 mx-3  md:w-3/4 relative left-1/5  rounded-xl">
               <div className="px-12 py-8">
-                <div className="text-2xl font-medium mb-6 mt-8">We Offer</div>
-                <p className="text-lg my-4">Quant Sectional Tests</p>
-                <p className="text-lg my-4"> LRDI Sectional Tests</p>
-                <p className="text-lg my-4"> Verbal Sectional Tests</p>
-                <p className="text-lg my-4"> Combined Tests</p>
-                <p className="text-lg my-4"> Company Wise Tests</p>
-                <p className="text-lg my-4"> Weekly Tests</p>
-                <p className="text-lg my-4"> Quizzes (Self Evaluation)</p>
+                <div className="md:text-2xl text-xl md:font-medium font-semibold md:mb-6 mb-9 mt-8">
+                  We Offer
+                </div>
+                <p className="md:text-lg text-[14px] my-4">
+                  Quant Sectional Tests
+                </p>
+                <p className="md:text-lg text-[14px] my-4">
+                  {" "}
+                  LRDI Sectional Tests
+                </p>
+                <p className="md:text-lg text-[14px] my-4">
+                  {" "}
+                  Verbal Sectional Tests
+                </p>
+                <p className="md:text-lg text-[14px] my-4"> Combined Tests</p>
+                <p className="md:text-lg text-[14px] my-4">
+                  {" "}
+                  Company Wise Tests
+                </p>
+                <p className="md:text-lg text-[14px] my-4"> Weekly Tests</p>
+                <p className="md:text-lg text-[14px] my-4">
+                  {" "}
+                  Quizzes (Self Evaluation)
+                </p>
               </div>
             </div>
           </div>
-          <div className="bg-blue-50 h-[460px] w-[1000px] my-20 ml-12 rounded-3xl">
+          <div className="bg-blue-50 my-20 md:ml-12 md:rounded-3xl md:shadow-2xl">
             <div className="flex">
-              <div className="ml-16 mt-16 mr-36">
-                <div className="text-2xl mb-28">Sample test</div>
-                <p className="text-lg my-6 underline">
+              <div className="md:ml-16 md:mt-16 md:mr-36 ml-8 mt-10 mb-6 md:mb-0">
+                <div className="md:text-2xl text-xl md:font-medium font-semibold md:mb-28 mb-6">
+                  Sample test
+                </div>
+                <p className="md:text-lg text-[12px] md:my-6 my-3 underline">
                   Analytics Mock Placement Test
                 </p>
-                <p className="text-lg my-6 underline">Quant Sectional Test</p>
-                <p className="text-lg my-6 underline">Verbal Sectional Test</p>
+                <p className="md:text-lg text-[12px] md:my-6 my-3 underline">
+                  Quant Sectional Test
+                </p>
+                <p className="md:text-lg text-[12px] md:my-6 my-3 underline">
+                  Verbal Sectional Test
+                </p>
               </div>
-              <img src={Artboard} alt="artboard" className="relative top-10" />
+              <img
+                src={Artboard}
+                alt="artboard"
+                className="relative top-10 md:left-0 test_artboard"
+              />
             </div>
           </div>
         </div>
-        <div className="bg-blue-50 w-[84%] ml-32 rounded-[30px] flex">
-          <div className="w-[37%] my-32 mx-20">
-            <div className="text-2xl font-semibold mb-16">
+        <div className="bg-blue-50 md:w-[86%] md:ml-28 md:rounded-[30px] flex flex-col-reverse md:flex-row md:shadow-2xl">
+          <div className="md:w-[37%] md:my-32 md:mx-20 mb-12 md:mb-0">
+            <div className="md:text-2xl text-lg text-center md:text-left font-semibold mb-6 md:mb-16">
               Overview Of Test Platform
             </div>
-            <p className="text-lg font-normal mb-32">
+            <p className="md:text-lg text-[14px] font-normal md:mb-32 mb-12 w-[80%] ml-10 md:ml-0">
               Having trouble registering on our test platform, click{" "}
               <a
                 href="https://myanalyticsschool.com/video/register.pdf"
@@ -78,7 +105,7 @@ const Tests = () => {
               href="https://myanalyticsschool.ezexam.in/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[15px] bg-blue-600 py-3 px-6 text-white rounded-xl"
+              className="text-[15px] bg-blue-600 py-3 px-6 text-white rounded-xl relative left-[30%] md:left-0"
             >
               Visit platform
             </a>
@@ -87,9 +114,9 @@ const Tests = () => {
             <img
               src={Grid}
               alt="grid"
-              className="w-96 relative top-10 right-2"
+              className="md:w-96 w-72 relative md:top-10 top-5 right-2"
             />
-            <div className=" ml-12 relative bottom-16 z-10">
+            <div className=" md:ml-12 ml-8 relative bottom-16 z-10">
               <iframe
                 width="590"
                 height="340"
@@ -104,16 +131,16 @@ const Tests = () => {
             <img
               src={Grid}
               alt="grid"
-              className="w-96 relative bottom-32 left-[450px]"
+              className="md:w-96 w-72 relative md:bottom-32 bottom-[140px] left-[57%] md:left-[450px]"
             />
           </div>
         </div>
       </div>
 
-      <div className="text-[40px] font-medium text-center mb-20">
-        Testimonial
-      </div>
-      <div className="bg-back">
+      <div className="bg-back md:block hidden">
+        <div className="text-[40px] font-medium text-center mb-20">
+          Testimonials
+        </div>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={10}
@@ -123,7 +150,7 @@ const Tests = () => {
           scrollbar={{ draggable: true }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
-          className="w-10/12"
+          className="w-10/12 "
         >
           {Data.map((post) => {
             return (
@@ -153,15 +180,17 @@ const Tests = () => {
             );
           })}
         </Swiper>
-
-        <div className="text-center mb-28 mt-10">
-          <a
-            href="apply"
-            className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
-          >
-            Apply Now
-          </a>
-        </div>
+      </div>
+      <div className="md:hidden">
+        <Testimonial />
+      </div>
+      <div className="text-center mb-28 mt-10">
+        <a
+          href="apply"
+          className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
+        >
+          Apply Now
+        </a>
       </div>
 
       <Footer />

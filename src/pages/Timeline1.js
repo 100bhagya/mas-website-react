@@ -85,33 +85,36 @@ const Timeline1 = () => {
     <div className="bg-back">
       <Navbar />
       <div className="lg:flex pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-        <div className="lg:pt-16 pb-20 lg:bottom-12">
-          <h1 className="font-medium text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
+        <div className="lg:pt-16 mt-4 md:mt-0 pb-20 lg:bottom-12">
+          <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
             Timeline
           </h1>
 
-          <p className="relative justify-center lg:top-5 text-lg font  text-black leading-8">
+          <p className="relative mt-8 md:mt-0 justify-center lg:top-5 md:text-lg text-sm font  text-black leading-8">
             The complete timeline of the course
           </p>
         </div>
       </div>
-      <div className="relative lg:left-96 md:left faq_ques top-20 w-[59%] pb-32">
+      <div className="relative lg:left-96 md:left faq_ques top-20 md:w-[59%] pb-32">
         {Data.map((post) => {
           return (
-            <div className="bg-white w-[95%] mb-20  rounded-3xl shadow-2xl flex">
-              <div className={`rounded-l-3xl w-10 ${post.sidecolor}`}></div>
+            <div className="md:bg-white bg-back w-[95%] md:mb-20 mb-12  rounded-3xl md:shadow-2xl flex">
+              <div className={`rounded-l-3xl w-10 md:${post.sidecolor}`}></div>
               <div>
-                <div className="flex p-12 bg-white rounded-2xl">
-                  <div className="ml-24 mt-2">
-                    <p className="lg:text-[24px] font-semibold" id={post.tag}>
+                <div className="flex md:p-12 md:bg-white bg-back rounded-2xl">
+                  <div className="md:ml-24 md:mt-2 px-4 md:px-0">
+                    <p
+                      className="lg:text-[24px] text-lg font-medium md:font-semibold"
+                      id={post.tag}
+                    >
                       {post.tag}
                     </p>
-                    <p className="lg:text-[14px] w-8/12 font-normal text-gray-400">
+                    <p className="lg:text-[14px] md:w-8/12 text-[12px] font-normal text-gray-400">
                       {post.offer}
                     </p>
                   </div>
                 </div>
-                <div className="faqs width1 relative left-[100px] pb-12">
+                <div className="faqs md:w-[80%] md:max-w-[750px] relative md:left-[100px] md:pb-12">
                   {post.questions.map((faq, i) => (
                     <FAQ
                       faq={faq}
