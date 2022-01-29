@@ -4,6 +4,7 @@ import "../index.css";
 import QandA from "../images/question-and-answer.png";
 import Data from "../data/FaqData";
 import Rectangle from "../images/Rectangle 52.png";
+import Footer from "../components/Footer";
 
 function FAQ({ faq, index, toggleFAQ, tag }) {
   return (
@@ -13,14 +14,14 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
       name={tag}
       onClick={() => toggleFAQ(index, tag)}
     >
-      <div className="faq-question text-lg font font-semibold">
+      <div className="faq-question md:text-lg text-[12px] font font-semibold">
         {faq.question}
       </div>
-      <div className="faq-answer text-sm font flex font-medium">
+      <div className="faq-answer md:text-sm text-[11px] font flex font-medium">
         <img
           src={Rectangle}
           alt="rectangle"
-          className="w-4 h-1 mr-7 relative my-5 left-1 rounded-xl"
+          className="md:w-4 w-3 md:h-1 h-[3px] md:mr-7 mr-4 relative md:my-5 my-4 md:left-1 rounded-xl"
         />
         {faq.answer}
       </div>
@@ -58,17 +59,21 @@ const FaqPage = () => {
   return (
     <div>
       <Navbar />
-      <div className="gradient">
-        <div className="flex ml-28 pt-24">
-          <img src={QandA} alt="Question" />
-          <p className="pt-9 ml-20 lg:text-[40px] font-medium">
+      <div className="md:bg-gradient-to-b md:from-blue-300 md:to-blue-100 pb-20">
+        <div className="flex md:ml-28 pl-8 md:pl-0 pt-24 top_bg">
+          <img
+            src={QandA}
+            alt="Question"
+            className="h-20 w-20 mr-5 md:h-[123px] md:w-[123px]"
+          />
+          <p className="md:pt-9 pt-4 md:ml-20 lg:text-[40px] text-2xl font-semibold  md:font-medium">
             Frequently Asked Questions
           </p>
         </div>
-        <div className="flex">
+        <div className="flex ">
           <div className="">
             {/* <div className={`ml-28 lg:w-4/5 my-20 ${position}`}> */}
-            <div className={`ml-28 lg:4/5 my-20`}>
+            <div className={`ml-28 lg:4/5 my-20 hidden md:block`}>
               {Data.map((post) => {
                 return (
                   <a href={`#${post.tag}`}>
@@ -90,28 +95,31 @@ const FaqPage = () => {
               })}
             </div>
           </div>
-          <div className="relative left-20 h-[88vh] overflow-y-scroll faq_ques top-20 w-[59%] overflow-x-hidden">
+          <div className="relative md:left-20 md:h-[88vh] md:overflow-y-scroll faq_ques top-20 md:w-[59%] md:overflow-x-hidden">
+
             {Data.map((post) => {
               console.log(post);
               return (
                 <div
-                  className="bg-white w-[95%] mb-20  rounded-3xl"
+                  className="md:bg-white  md:w-[95%] md:mb-20  md:rounded-3xl"
                   id={post.tag}
                 >
-                  <div className="flex p-12 bg-white rounded-2xl">
+                  <div className="flex ml-5 md:p-12 md:bg-white rounded-2xl">
                     <img
                       src={post.icon}
                       alt="icon"
-                      className={`px-5 py-4 rounded-lg bg-${post.id}`}
+                      className={`px-4 md:px-5 py-4 rounded-lg bg-${post.id}`}
                     />
-                    <div className="ml-6 mt-2">
-                      <p className="lg:text-[22px] font-medium">{post.tag}</p>
-                      <p className="lg:text-[16px] font-normal text-gray-400">
+                    <div className="md:ml-6 ml-3 mt-2">
+                      <p className="lg:text-[22px] text-xl font-medium">
+                        {post.tag}
+                      </p>
+                      <p className="lg:text-[16px] text-[13px] font-normal text-gray-400">
                         New around here? Start with the basics.
                       </p>
                     </div>
                   </div>
-                  <div className="faqs width1 relative left-[135px] pb-12">
+                  <div className="faqs relative md:w-[80%] md:max-w-[750px] md:left-[135px] pb-12">
                     {post.questions.map((faq, i) => (
                       <FAQ
                         faq={faq}
@@ -127,6 +135,7 @@ const FaqPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
