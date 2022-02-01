@@ -18,7 +18,7 @@ const Tests = () => {
     <div className="bg-back">
       <Navbar />
       <div className="lg:flex pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-        <div className="lg:pt-28 md:pb-32 pb-12 lg:bottom-12">
+        <div className="md:pt-28 md:pb-32 pb-12 lg:bottom-12">
           <h1 className="md:font-medium font-semibold mt-16 md:mt-0  text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[48px]  leading-8 font-primary">
             Tests
           </h1>
@@ -31,7 +31,7 @@ const Tests = () => {
       <div className="md:pb-32 pb-10">
         <div className="md:flex">
           <div>
-            <div className="bg-card shadow-2xl my-20 md:ml-28 md:mr-12 mx-3  md:w-3/4 relative left-1/5  rounded-xl">
+            <div className="bg-card shadow-2xl my-20 lg:ml-28 md:ml-8 lg:mr-12 mx-3  lg:w-3/4 md:w-[87%] relative left-1/5  rounded-xl">
               <div className="px-12 py-8">
                 <div className="md:text-2xl text-xl md:font-medium font-semibold md:mb-6 mb-9 mt-8">
                   We Offer
@@ -60,9 +60,9 @@ const Tests = () => {
               </div>
             </div>
           </div>
-          <div className="bg-blue-50 my-20 md:ml-12 md:rounded-3xl md:shadow-2xl">
+          <div className="bg-blue-50 my-20 md:ml-6 lg:ml-12 md:mr-[22px] lg:mr-0 md:rounded-3xl md:shadow-2xl">
             <div className="flex">
-              <div className="md:ml-16 md:mt-16 md:mr-36 ml-8 mt-10 mb-6 md:mb-0">
+              <div className="md:ml-16 md:mt-16 lg:mr-36 md:mr-4 ml-8 mt-10 mb-6 md:mb-0">
                 <div className="md:text-2xl text-xl md:font-medium font-semibold md:mb-28 mb-6">
                   Sample test
                 </div>
@@ -79,17 +79,17 @@ const Tests = () => {
               <img
                 src={Artboard}
                 alt="artboard"
-                className="relative top-10 md:left-0 test_artboard"
+                className="relative top-10 md:top-48 lg:top-10  md:right-9 lg:right-0 test_artboard"
               />
             </div>
           </div>
         </div>
-        <div className="bg-blue-50 md:w-[86%] md:ml-28 md:rounded-[30px] flex flex-col-reverse md:flex-row md:shadow-2xl">
-          <div className="md:w-[37%] md:my-32 md:mx-20 mb-12 md:mb-0">
+        <div className="bg-blue-50 lg:w-[86%] md:w-[92%] lg:ml-28 md:ml-8 md:rounded-[30px] flex flex-col-reverse md:flex-row md:shadow-2xl">
+          <div className="md:w-[37%] md:my-32 md:mx-20 mb-12 md:mb-16 lg:mb-0">
             <div className="md:text-2xl text-lg text-center md:text-left font-semibold mb-6 md:mb-16">
               Overview Of Test Platform
             </div>
-            <p className="md:text-lg text-[14px] font-normal md:mb-32 mb-12 w-[80%] ml-10 md:ml-0">
+            <p className="md:text-lg text-[14px] font-normal md:mb-16 lg:mb-32 mb-12 w-[80%] ml-10 md:ml-0">
               Having trouble registering on our test platform, click{" "}
               <a
                 href="https://myanalyticsschool.com/video/register.pdf"
@@ -114,9 +114,9 @@ const Tests = () => {
             <img
               src={Grid}
               alt="grid"
-              className="md:w-96 w-72 relative md:top-10 top-5 right-2"
+              className="md:w-96 w-72 relative top-5 right-2  md:top-24 lg:top-5 md:right-14 lg:right-2"
             />
-            <div className=" md:ml-12 ml-8 relative bottom-16 z-10">
+            <div className=" lg:ml-12 md:-ml-4 ml-8 relative bottom-16 md:bottom-0 lg:bottom-16 z-10">
               <iframe
                 width="590"
                 height="340"
@@ -131,13 +131,15 @@ const Tests = () => {
             <img
               src={Grid}
               alt="grid"
-              className="md:w-96 w-72 relative md:bottom-32 bottom-[140px] left-[57%] md:left-[450px]"
+              className="md:w-96 w-72 relative md:bottom-20 lg:bottom-32 bottom-[140px] left-[57%] lg:left-[450px] md:left-[138px]"
+
             />
           </div>
         </div>
       </div>
 
-      <div className="bg-back md:block hidden">
+      <div className="bg-back lg:block hidden">
+
         <div className="text-[40px] font-medium text-center mb-20">
           Testimonials
         </div>
@@ -181,7 +183,8 @@ const Tests = () => {
           })}
         </Swiper>
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
+
         <Testimonial />
       </div>
       <div className="text-center mb-28 mt-10">

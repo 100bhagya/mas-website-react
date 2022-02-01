@@ -1,7 +1,7 @@
 const Data = [
   {
     id: 1,
-    sidecolor: "bg-blue-100",
+    sidecolor: "md:bg-blue-100",
     tag: "Technical Skills",
     offer:
       "This section will cover data wrangling, data visualisation, statistics and machine learning.",
@@ -152,7 +152,7 @@ const Data = [
   },
   {
     id: 2,
-    sidecolor: "bg-blue-200",
+    sidecolor: "md:bg-blue-200",
     tag: "Test Preparation",
     offer:
       "This section will cover the quant, LRDI and verbal skills to get shortlisted for interviews.",
@@ -297,7 +297,7 @@ const Data = [
   },
   {
     id: 3,
-    sidecolor: "bg-blue-300",
+    sidecolor: "md:bg-blue-300",
     tag: "Non Tech Preparation",
     offer:
       "This section will enhance the business understanding and boost the case solving skills.",
@@ -360,7 +360,7 @@ const Data = [
   },
   {
     id: 4,
-    sidecolor: "bg-blue-400",
+    sidecolor: "md:bg-blue-400",
     tag: "Interview Preparation",
     offer:
       "This section will cater up to all your requirements for acing the interviews.",

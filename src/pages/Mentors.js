@@ -9,13 +9,15 @@ const Mentors = () => {
   return (
     <div>
       <Navbar />
-      <div className="lg:flex pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 justify-center">
-        <div className="lg:flex lg:items-center max-w-lg md:max-w-xl lg:max-w-[950px]">
+      <div className="lg:flex pt-16 md:pt-40 lg:pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 justify-center">
+        <div className="lg:flex lg:items-center lg:max-w-[950px]">
+
           <div className="lg:pt-28 md:pb-44 pb-16 lg:bottom-12">
             <h1 className="font-medium hidden md:block text-center justify-center relative bottom-6  text-black md:text-3xl lg:text-[48px]  leading-8 font-primary">
               Meet the Mentors
             </h1>
-            <h1 className=" font-semibold md:hidden  text-center justify-center mt-16 text-black text-2xl  leading-8 font-primary">
+            <h1 className="font-semibold md:hidden  text-center justify-center mt-16 text-black text-2xl  leading-8 font-primary">
+
               Mentors
             </h1>
 
@@ -37,7 +39,8 @@ const Mentors = () => {
               <div class=" w-full md:h-48 overflow-hidden">
                 <img
                   alt="content"
-                  class="relative lg:left-[22%] lg:top-8 md:h-36 md:w-36 h-28 w-28 left-[15%]"
+                  class="relative lg:left-[22%] lg:top-8 md:top-7 md:h-36 md:w-36 h-28 w-28 left-[15%] md:left-[23%] lg:[15%]"
+
                   src={post.image}
                 ></img>
               </div>
