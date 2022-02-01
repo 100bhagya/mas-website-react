@@ -47,6 +47,7 @@ const About = () => {
             <div class="p-4 m-8 md:m-4 lg:m-8 rounded-3xl md:w-[45%] lg:w-[43%] shadow-gray-300 bg-card shadow-lg">
               <div className="flex justify-center md:block lg:flex">
                 <div class="rounded-lg md:w-[42%] h-48 md:h-40">
+
                   <img
                     alt="content"
                     class="object-cover object-center z-10 relative md:left-8 md:top-8 top-5 h-28 w-28 md:h-36 md:w-36"
@@ -55,6 +56,7 @@ const About = () => {
                 </div>
                 <div className="md:pt-8 pt-5">
                   <h2 class="md:text-4xl text-xl ml-7 md:pr-16 font-semibold text-gray-900 mt-5">
+
                     {post.name}
                   </h2>
                   <h2 class="md:text-[26px] text-[16px] ml-7 font-normal text-gray-400 mt-2 md:mt-5">
@@ -73,6 +75,7 @@ const About = () => {
                 />
               </div>
               <div className="flex text-center justify-center md:mt-6 lg:mt-10 mt-3 md:mb-2">
+
                 <a href={post.Link_linkedin}>
                   <img
                     src={LinkedIn}

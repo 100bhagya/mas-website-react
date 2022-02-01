@@ -21,6 +21,7 @@ const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
   return (
     <div
       className={`flex w-full lg:h-[75px] pb-4 border-b-[1px] border-solid border-blue-500 pt-1 ${color}`}
+
     >
       <div className="text-sm font-normal w-[48%] md:px-14 md:text-center md:pt-6 pt-4">
         {name}
@@ -59,6 +60,7 @@ const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
 const Card = ({ image, heading, content }) => {
   return (
     <div className="bg-white lg:w-[18%] md:w-[34%] w-[50%]  md:m-10 md:mx-12 mx-2 mt-10 pt-8 md:pl-6 md:pr-16 pb-7 rounded-3xl">
+
       <div className="">
         <img src={image} alt="" className="h-32 ml-5 md:ml-0" />
       </div>
@@ -78,6 +80,7 @@ const TS1 = () => {
       <Navbar />
       <div className="flex flex-col-reverse md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
         <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2 lg:w-auto">
+
           <div className="lg:pt-20 md:pb-28 pb-10 lg:bottom-12">
             <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
               Test Series 1
@@ -98,6 +101,7 @@ const TS1 = () => {
           src={Artboard}
           alt="artboard"
           className="relative lg:left-[20%] left-[10%] md:left-0 bottom-6 md:bottom-12 w-[75%] md:w-fit"
+
         ></img>
       </div>
 
@@ -120,6 +124,7 @@ const TS1 = () => {
         <div className="flex justify-center mt-16">
           <div className="lg:w-10/12 flex bg-blue-50 md:rounded-3xl">
             <div className="lg:ml-16 lg:mt-44 md:mt-20 lg:mr-72 md:ml-20">
+
               <p className="md:text-lg text-[12px] font-normal flex ml-3 md:ml-0 mt-12 md:mt-0">
                 Get hold of the perfect timeline for placement preparation
                 strategy in order to get an edge over others by our extensive
@@ -136,6 +141,7 @@ const TS1 = () => {
                   <a
                     href="download"
                     className="md:text-[15px] text-[12px] font-medium ml-2 md:ml-0 md:px-6 lg:px-10 px-3 py-2 md:py-3 bg-blue-600 md:rounded-xl rounded-md text-white"
+
                   >
                     Download test series timeline
                   </a>
@@ -144,6 +150,7 @@ const TS1 = () => {
                   <a
                     href="tests"
                     className="md:text-[15px] text-[12px] font-medium mr-2 md:mr-0 lg:px-[103.5px] md:px-[90px] md:left-4 relative lg:left-0 px-5 py-2 md:py-3 bg-blue-600 md:rounded-xl rounded-md text-white"
+
                   >
                     Sample tests
                   </a>
@@ -154,6 +161,7 @@ const TS1 = () => {
               src={Artboard6}
               alt=""
               className="my-28 mr-10 md:mr-2 lg:mr-10 hidden md:block"
+
             />
           </div>
         </div>
@@ -165,6 +173,7 @@ const TS1 = () => {
             Test Series Comparison
           </div>
           <div className="md:shadow-2xl lg:w-10/12 w-11/12">
+
             <div className="flex border-b-2 border-solid md:bg-card bg-back border-blue-600 w-full h-[95px] rounded-t-2xl">
               <div className="md:text-2xl text-xl font-semibold w-[48%] text-blue-600 md:text-center md:pt-8 pt-14">
                 Offerings
@@ -271,6 +280,7 @@ const TS1 = () => {
         </div>
       </div>
       <div className="bg-back lg:block hidden">
+
         <div className="text-[40px] font-medium text-center mb-20">
           Testimonial
         </div>
@@ -316,6 +326,7 @@ const TS1 = () => {
         </Swiper>
       </div>
       <div className="lg:hidden">
+
         <Testimonial />
       </div>
 

@@ -105,16 +105,19 @@ const Timeline1 = () => {
                   <div className="lg:ml-24 md:ml-8 md:mt-2 px-4 md:px-0">
                     <p
                       className="lg:text-[24px] md:text-xl text-lg font-medium md:font-semibold"
+
                       id={post.tag}
                     >
                       {post.tag}
                     </p>
                     <p className="md:text-[14px] md:w-8/12 text-[12px] font-normal text-gray-400">
+
                       {post.offer}
                     </p>
                   </div>
                 </div>
                 <div className="faqs lg:w-[80%] md:w-[87%] md:max-w-[750px] relative lg:left-[100px] md:left-[60px] md:pb-12">
+
                   {post.questions.map((faq, i) => (
                     <FAQ
                       faq={faq}

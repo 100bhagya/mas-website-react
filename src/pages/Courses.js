@@ -28,6 +28,7 @@ const Courses = () => {
       </div>
       <div className="bg-back">
         <div className="lg:flex pt-20 pb-20 justify-center">
+
           <div className="flex flex-col-reverse md:flex-row bg-card md:m-12 md:p-12 m-4 p-7 pb-0 rounded-2xl shadow-2xl">
             <div className="mr-20">
               <p className="text-2xl hidden md:block font-semibold mb-8">
@@ -49,7 +50,9 @@ const Courses = () => {
 
               <Link
                 to="/mas101"
+
                 className="text-sm lg:hidden md:left-96 md:bottom-1  font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
+
               >
                 Explore Now
               </Link>
@@ -59,13 +62,17 @@ const Courses = () => {
                 <p className="text-2xl md:hidden font-semibold relative top-3">
                   MAS 101
                 </p>
+
                 <p className="lg:text-[22px] md:left-72 text-lg font-semibold relative lg:left-48 left-52 text-white lg:bottom-[8px] bottom-4 z-10">
+
                   Exclusive
                 </p>
                 <img
                   src={exclusive}
                   alt="exclusive"
+
                   className="relative left-[142px] md:left-[216px] lg:left-[142px] lg:bottom-10 bottom-12"
+
                 />
               </div>
               <img
@@ -102,7 +109,7 @@ const Courses = () => {
               <Link
                 to="/mas102"
                 className="text-sm lg:hidden md:left-96 md:bottom-1 font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
-              >
+
                 Explore Now
               </Link>
             </div>
@@ -140,6 +147,7 @@ const Courses = () => {
               </p>
             </div>
             <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
+
               <a
                 href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
@@ -166,6 +174,7 @@ const Courses = () => {
               </p>
             </div>
             <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
+
               <a
                 href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
@@ -195,6 +204,7 @@ const Courses = () => {
               </p>
             </div>
             <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
+
               <a
                 href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
