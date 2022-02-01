@@ -152,7 +152,7 @@ const ISA = () => {
         </p>
       </div>
       <div className="relative md:left-[21%] md:mb-20 md:mt-28 mt-6">
-        <div className="lg:w-7/12 md:w-[85%] relative md:right-28 md:shadow-2xl mx-4 md:mx-0">
+        <div className="lg:w-[59%] md:w-[85%] relative md:right-28 lg:right-2 md:shadow-2xl mx-4 md:mx-0">
           <div className="flex border-b-2 border-solid border-blue-600 md:bg-card w-full md:h-[75px] rounded-t-2xl">
             <div className="md:text-2xl text-xl font-semibold w-1/4 text-blue-600 text-center pt-6">
               Income Slab
