@@ -21,7 +21,7 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
         <img
           src={Rectangle}
           alt="rectangle"
-          className="md:w-4 w-3 md:h-1 h-[3px] md:mr-7 mr-4 relative md:my-5 my-4 md:left-1 rounded-xl"
+          className="lg:w-4 w-3 lg:h-1 h-[3px] lg:mr-7 mr-4 relative lg:my-5 my-4 lg:left-1 rounded-xl"
         />
         {faq.answer}
       </div>
@@ -59,21 +59,21 @@ const FaqPage = () => {
   return (
     <div>
       <Navbar />
-      <div className="md:bg-gradient-to-b md:from-blue-300 md:to-blue-100 pb-20">
-        <div className="flex md:ml-28 pl-8 md:pl-0 pt-24 top_bg">
+      <div className="lg:bg-gradient-to-b lg:from-blue-300 lg:to-blue-100 pb-20">
+        <div className="flex lg:ml-28 pl-8 lg:pl-0 pt-24 top_bg">
           <img
             src={QandA}
             alt="Question"
-            className="h-20 w-20 mr-5 md:h-[123px] md:w-[123px]"
+            className="h-20 w-20 mr-5 lg:h-[123px] lg:w-[123px]"
           />
-          <p className="md:pt-9 pt-4 md:ml-20 lg:text-[40px] text-2xl font-semibold  md:font-medium">
+          <p className="lg:pt-9 pt-4 lg:ml-20 lg:text-[40px] md:text-3xl text-2xl font-semibold  lg:font-medium">
             Frequently Asked Questions
           </p>
         </div>
-        <div className="flex ">
+        <div className="flex justify-center lg:justify-start">
           <div className="">
             {/* <div className={`ml-28 lg:w-4/5 my-20 ${position}`}> */}
-            <div className={`ml-28 lg:4/5 my-20 hidden md:block`}>
+            <div className={`ml-28 lg:4/5 my-20 hidden lg:block`}>
               {Data.map((post) => {
                 return (
                   <a href={`#${post.tag}`}>
@@ -95,30 +95,30 @@ const FaqPage = () => {
               })}
             </div>
           </div>
-          <div className="relative md:left-20 md:h-[88vh] md:overflow-y-scroll faq_ques top-20 md:w-[59%] md:overflow-x-hidden">
+          <div className="relative lg:left-20 lg:h-[88vh] lg:overflow-y-scroll faq_ques top-20 lg:w-[59%] lg:overflow-x-hidden">
             {Data.map((post) => {
               console.log(post);
               return (
                 <div
-                  className="md:bg-white  md:w-[95%] md:mb-20  md:rounded-3xl"
+                  className="lg:bg-white  lg:w-[95%] lg:mb-20  lg:rounded-3xl"
                   id={post.tag}
                 >
-                  <div className="flex ml-5 md:p-12 md:bg-white rounded-2xl">
+                  <div className="flex ml-5 lg:p-12 lg:bg-white rounded-2xl">
                     <img
                       src={post.icon}
                       alt="icon"
-                      className={`px-4 md:px-5 py-4 rounded-lg bg-${post.id}`}
+                      className={`px-4 lg:px-5 py-4 rounded-lg bg-${post.id}`}
                     />
-                    <div className="md:ml-6 ml-3 mt-2">
-                      <p className="lg:text-[22px] text-xl font-medium">
+                    <div className="lg:ml-6 ml-3 mt-2">
+                      <p className="md:text-[22px] text-xl font-medium">
                         {post.tag}
                       </p>
-                      <p className="lg:text-[16px] text-[13px] font-normal text-gray-400">
+                      <p className="md:text-[16px] text-[13px] font-normal text-gray-400">
                         New around here? Start with the basics.
                       </p>
                     </div>
                   </div>
-                  <div className="faqs relative md:w-[80%] md:max-w-[750px] md:left-[135px] pb-12">
+                  <div className="faqs relative lg:w-[80%] lg:max-w-[750px] lg:left-[135px] pb-12">
                     {post.questions.map((faq, i) => (
                       <FAQ
                         faq={faq}

@@ -53,13 +53,13 @@ const Contact = () => {
   };
   return (
     <div className="flex w-full min-h-screen justify-center items-center">
-      <div className="flex flex-col md:flex-row space-y-6 md:space-y-0  w-full max-w-6xl p-8 sm:p-12 rounded-xl text-white">
-        <div className="bg-white rounded-xl border-solid border-2 border-gray-200 md:border-gray-100 shadow-xl p-12 pb-8 py-20 relative lg:right-28 text-gray-600 md:w-3/5">
+      <div className="flex flex-col md:flex-row space-y-6 md:space-y-0  w-full max-w-6xl p-4 lg:p-12 rounded-xl text-white">
+        <div className="bg-white rounded-xl border-solid border-2 border-gray-200 md:border-gray-100 shadow-xl lg:p-12 p-4 pb-8 py-20 relative lg:right-28 text-gray-600 md:w-3/5">
           <form
             action="https://formsubmit.co/admin@myanalyticsschool.com"
             method="POST"
             onSubmit={handleSubmit}
-            className="flex flex-col font-pop space-y-4 md:w-10/12"
+            className="flex flex-col font-pop space-y-4 lg:w-10/12"
           >
             <h1 className="font-bold text-lg">Get in touch.</h1>
             <div>
@@ -144,19 +144,19 @@ const Contact = () => {
         </div>
         <div className="flex lg:flex-col flex-col-reverse space-y-8  md:px-8 md:ml-8 justify-between w-full md:w-3/5">
           <div className="py-6">
-            <h3 className="lg:font-bold lg:text-2xl text-lg font-semibold text-blue-700 tracking-wide">
+            <h3 className="lg:font-bold lg:text-2xl text-lg md:text-xl font-semibold text-blue-700 tracking-wide">
               Office Address
             </h3>
             <a href="/#">
-              <p className="pt-2 md:text-2xl text-sm font text-black ">
+              <p className="pt-2 md:text-xl lg:text-2xl text-sm font text-black ">
                 HP Keluskar marg Opp Equinox Business <br></br> Center, BKC
                 Crossing, Mumbai,<br></br> Maharashtra 400070
               </p>
             </a>
           </div>
-          <div className="inline-flex md:space-y-6 space-y-5 bg-blue-200 rounded-3xl md:w-2/5 w-[45%] relative top-0 md:top-12 justify-center items-center">
+          <div className="inline-flex md:space-y-6 space-y-5 bg-blue-200  rounded-3xl lg:w-2/5 md:w-[60%] w-[45%] relative top-0 md:top-12 justify-center items-center">
             <LocationMarkerIcon className="h-5 w-5 text-blue-500" />
-            <p className="text-blue-700 md:ml-4 ml-3 font md:text-sm text-[12px] relative md:bottom-3.5 bottom-3 right-1">
+            <p className="text-blue-700 md:ml-4 ml-3 font md:text-lg text-[12px] lg:text-sm relative md:bottom-3.5 bottom-3 right-1">
               View us on map
             </p>
           </div>

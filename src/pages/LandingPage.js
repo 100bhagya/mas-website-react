@@ -17,16 +17,16 @@ import Testimonial from "../components/Testimonial";
 
 const Card1 = ({ img, title, content }) => {
   return (
-    <div class="md:px-24 md:mt-12">
+    <div class="md:px-24 md:mt-40 lg:mt-12">
       <div class="flex flex-col-reverse lg:flex-row md:rounded-3xl h-[425px] bg-works p-16">
         <div className="md:w-6/12 w-full mt-4 relative top-10 md:top-0">
           <div class=" items-center mb-3">
-            <h2 class="text-gray-900 lg:text-2xl text-center md:text-left text-[12px] title-font font-semibold">
+            <h2 class="text-gray-900 lg:text-2xl md:text-lg text-center md:text-left text-[12px] title-font font-semibold">
               {title}
             </h2>
           </div>
 
-          <p class="leading-relaxed w-full lg:text-base text-[12px] lg:mt-12 mt-5">
+          <p class="leading-relaxed w-full lg:text-base  text-[12px] lg:mt-12 mt-5">
             {content}
           </p>
         </div>
@@ -39,12 +39,12 @@ const Card1 = ({ img, title, content }) => {
         <img
           src={Grid}
           alt="grid"
-          className="h-24 w-48 relative top-56 -left-6  md:top-52 md:left-72"
+          className="h-24 w-48 relative top-56 -left-6 md:hidden lg:block  md:top-52 md:left-72"
         ></img>
         <img
           src={Grid}
           alt="grid"
-          className="h-24 w-48 relative -bottom-[175px] -right-[162px] md:bottom-10 md:right-56"
+          className="h-24 w-48 relative -bottom-[175px] -right-[162px] md:hidden lg:block  md:bottom-10 md:right-56"
         ></img>
       </div>
     </div>
@@ -53,7 +53,7 @@ const Card1 = ({ img, title, content }) => {
 
 const Card = ({ img, title, content }) => {
   return (
-    <div class="p-4 m-6 md:w-1/4">
+    <div class="p-4 lg:m-6 md:m-0 md:mt-5 m-6 md:w-1/3 lg:w-1/4">
       <div class="h-full image shadow-xl bg-card rounded-lg overflow-hidden">
         <img
           class="lg:h-30 mt-7 p-4 bg-white rounded-full md:h-36 "
@@ -62,7 +62,7 @@ const Card = ({ img, title, content }) => {
         />
         <div class="p-6 pb-16">
           <div class=" lg:text-2xl font-bold text-gray-900 mb-3">{title}</div>
-          <p class="leading-relaxed font-normal font w-72 text-left pl-5 mb-3">
+          <p class="leading-relaxed font-normal md:text-center font lg:w-72 text-left lg:text-left lg:pl-5 lg:mb-3">
             {content}
           </p>
         </div>
@@ -139,7 +139,7 @@ const LandingPage = () => {
               How It Works?
             </h1>
           </div>
-          <div class="block flex-wrap -m-4">
+          <div class="block flex-wrap -m-4 md:mt-48 lg:mt-0">
             <Card1
               img={Design3}
               title="Test Preparation & Upskilling"

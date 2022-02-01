@@ -8,7 +8,7 @@ import "../index.css";
 
 function SideMenu() {
   return (
-    <div className="fixed h-screen w-[75%] lg:hidden bg-white z-50 top-[60px]">
+    <div className="fixed h-screen w-[75%] md:hidden bg-white z-50 top-[60px]">
       <div className="w-full items-start flex flex-col">
         <NavLink
           to="/"
@@ -81,7 +81,7 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <nav className="flex pl-20 py-0 items-center bg-white p-3 flex-wrap navbar fixed w-full z-[100000]">
+      <nav className="flex lg:pl-20 pl-6 py-0 items-center bg-white p-3 flex-wrap navbar fixed w-full z-[100000]">
         <a href="/" className="p-2 mr-4 inline-flex items-center">
           <Link to="/">
             <img src={Logo} alt="logo"></img>
@@ -89,15 +89,15 @@ const Navbar = () => {
         </a>
 
         <div
-          className=" w-full lg:inline-flex lg:flex-grow-0 lg:w-auto"
+          className=" w-full md:inline-flex md:flex-grow-0 md:w-auto"
           id="navigation"
         >
-          <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
+          <div className="md:inline-flex text-[12px] lg:text-[16px] md:flex-row md:ml-auto md:w-auto w-full md:items-center items-start flex flex-col md:h-auto">
             <NavLink
               to="/"
               exact
               activeClassName="active"
-              className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
+              className="md:inline-flex md:w-auto w-full lg:px-5 px-4 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
             >
               Home
             </NavLink>
@@ -105,7 +105,7 @@ const Navbar = () => {
             <NavLink
               to="/mentors"
               activeClassName="active"
-              className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
+              className="md:inline-flex md:w-auto w-full lg:px-5 px-4 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
             >
               Mentors
             </NavLink>
@@ -113,7 +113,7 @@ const Navbar = () => {
             <NavLink
               to="/courses"
               activeClassName="active"
-              className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
+              className="md:inline-flex md:w-auto w-full lg:px-5 px-4 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
             >
               Courses
             </NavLink>
@@ -121,7 +121,7 @@ const Navbar = () => {
             <NavLink
               to="/tests"
               activeClassName="active"
-              className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
+              className="md:inline-flex md:w-auto w-full lg:px-5 px-4 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
             >
               Tests
             </NavLink>
@@ -130,7 +130,7 @@ const Navbar = () => {
               href="https://myanalyticsschool.com/blog/"
               target="_blank"
               rel="noopener noreferrer"
-              className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
+              className="md:inline-flex md:w-auto w-full lg:px-5 px-4 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
             >
               Blogs
             </a>
@@ -138,7 +138,7 @@ const Navbar = () => {
             <NavLink
               to="/faq"
               activeClassName="active"
-              className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
+              className="md:inline-flex md:w-auto w-full lg:px-5 px-4 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
             >
               FAQs
             </NavLink>
@@ -146,16 +146,16 @@ const Navbar = () => {
             <NavLink
               to="/about"
               activeClassName="active"
-              className="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
+              className="md:inline-flex md:w-auto w-full lg:px-5 px-4 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
             >
               About Us
             </NavLink>
           </div>
         </div>
-        <div className=" w-full lg:inline-flex lg:flex-grow justify-end lg:w-auto">
+        <div className=" w-full md:inline-flex md:flex-grow justify-end md:w-auto">
           <a
             href="register"
-            className="lg:inline-flex lg:w-auto w-full px-12 mr-20 border-2 border-blue-500 py-2 rounded-xl text-gray-800 items-center justify-center hover:bg-green-500 hover:text-white"
+            className="md:inline-flex md:w-auto lg:text-lg text-[12px] lg:px-12 px-4 lg:mr-20 mr-3 border-2  border-blue-500 lg:py-2 py-1 rounded-xl text-gray-800 items-center justify-center hover:bg-green-500 hover:text-white"
           >
             <span>Register</span>
           </a>
@@ -166,7 +166,7 @@ const Navbar = () => {
           onClick={() => {
             showSideMenu();
           }}
-          className="lg:hidden menu-button relative left-[7%]"
+          className="md:hidden menu-button relative left-[7%]"
         >
           {isSideMenuOpen ? (
             <img src={CloseIcon} className="fixed px-1 top-6" alt="close"></img>
@@ -186,7 +186,7 @@ const Navbar = () => {
         <div className=" w-full justify-end">
           <a
             href="register"
-            className=" px-5 relative left-[186px] text-[15px] top-[18px] border-2 border-blue-500 py-1 rounded-lg text-gray-800 items-center justify-center hover:bg-green-500 hover:text-white"
+            className=" px-5 relative left-[186px] text-[15px] top-[18px] border-2 border-blue-500 py-1 rounded-md text-gray-800 items-center justify-center hover:bg-green-500 hover:text-white"
           >
             <span>Register</span>
           </a>

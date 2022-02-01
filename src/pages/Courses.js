@@ -27,7 +27,7 @@ const Courses = () => {
         </div>
       </div>
       <div className="bg-back">
-        <div className="md:flex pt-20 pb-20 justify-center">
+        <div className="lg:flex pt-20 pb-20 justify-center">
           <div className="flex flex-col-reverse md:flex-row bg-card md:m-12 md:p-12 m-4 p-7 pb-0 rounded-2xl shadow-2xl">
             <div className="mr-20">
               <p className="text-2xl hidden md:block font-semibold mb-8">
@@ -49,7 +49,7 @@ const Courses = () => {
 
               <Link
                 to="/mas101"
-                className="text-sm md:hidden font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
+                className="text-sm lg:hidden md:left-96 md:bottom-1  font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
               >
                 Explore Now
               </Link>
@@ -59,13 +59,13 @@ const Courses = () => {
                 <p className="text-2xl md:hidden font-semibold relative top-3">
                   MAS 101
                 </p>
-                <p className="md:text-[22px] text-lg font-semibold relative md:left-48 left-52 text-white md:bottom-[8px] bottom-4 z-10">
+                <p className="lg:text-[22px] md:left-72 text-lg font-semibold relative lg:left-48 left-52 text-white lg:bottom-[8px] bottom-4 z-10">
                   Exclusive
                 </p>
                 <img
                   src={exclusive}
                   alt="exclusive"
-                  className="relative left-[142px] md:bottom-10 bottom-12"
+                  className="relative left-[142px] md:left-[216px] lg:left-[142px] lg:bottom-10 bottom-12"
                 />
               </div>
               <img
@@ -101,7 +101,7 @@ const Courses = () => {
               </p>
               <Link
                 to="/mas102"
-                className="text-sm md:hidden font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
+                className="text-sm lg:hidden md:left-96 md:bottom-1 font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
               >
                 Explore Now
               </Link>
@@ -128,78 +128,84 @@ const Courses = () => {
       </div>
       <div className="bg-back md:pb-40 pb-20">
         <div className="text-[40px] text-center mb-16">Our Test Series</div>
-        <div className="md:flex justify-center">
-          <div className="bg-card md:mx-8 mx-3 md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
-            <p className="text-2xl font-semibold mb-10">Test Series 1</p>
-            <img src={artboard3} alt="artboard" className=""></img>
-            <p className="mb-4 mt-12">Sectional tests </p>
-            <p className="my-4">Combined test</p>
-            <p className="mt-4 md:mb-[150px] mb-10 text-[15px] text-blue-600 font-semibold">
-              ₹ 2499
-            </p>
-            <div className="flex">
+        <div className="lg:flex justify-center">
+          <div className="bg-card md:mx-8 md:h-[445px] lg:h-[auto] mx-3 md:flex lg:block md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
+            <div className="">
+              <p className="text-2xl font-semibold mb-10">Test Series 1</p>
+              <img src={artboard3} alt="artboard" className=""></img>
+              <p className="mb-4 mt-12">Sectional tests </p>
+              <p className="my-4">Combined test</p>
+              <p className="mt-4 md:mb-[150px] mb-10 text-[15px] text-blue-600 font-semibold">
+                ₹ 2499
+              </p>
+            </div>
+            <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
               <a
                 href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="px-4 py-2 rounded-xl mr-4 border-blue-600 border-solid border-2">
+                <div className="px-4 py-2 h-12 rounded-xl mr-4 border-blue-600 border-solid border-2">
                   Apply now
                 </div>
               </a>
-              <div className="px-4 py-3 rounded-xl bg-blue-600 text-white ml-7">
+              <div className="px-4 py-3 h-12 md:mt-14 lg:mt-0 mt-0 lg:right-0 right-0 relative md:right-10 rounded-xl bg-blue-600 text-white ml-7">
                 <Link to="/ts1">Explore Now</Link>
               </div>
             </div>
           </div>
-          <div className="bg-card md:mx-8 mx-3 md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
-            <p className="text-2xl font-semibold mb-10">Test Series 2</p>
-            <img src={artboard4} alt="artboard" className=""></img>
-            <p className="mb-4 mt-9">Combined test</p>
-            <p className="my-4">Company wise test</p>
-            <p className="mt-4 md:mb-[150px] mb-10 text-[15px] text-blue-600 font-semibold">
-              ₹ 3999
-            </p>
-            <div className="flex">
+          <div className="bg-card md:mx-8 md:h-[445px] lg:h-[auto] mx-3 md:flex lg:block md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
+            <div className="">
+              <p className="text-2xl font-semibold mb-10">Test Series 2</p>
+              <img src={artboard4} alt="artboard" className=""></img>
+              <p className="mb-4 mt-9">Combined test</p>
+              <p className="my-4">Company wise test</p>
+              <p className="mt-4 md:mb-[150px] mb-10 text-[15px] text-blue-600 font-semibold">
+                ₹ 3999
+              </p>
+            </div>
+            <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
               <a
                 href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="px-4 py-2 rounded-xl mr-4 border-blue-600 border-solid border-2">
+                <div className="px-4 py-2 h-12 rounded-xl mr-4 border-blue-600 border-solid border-2">
                   Apply now
                 </div>
               </a>
-              <div className="px-4 py-3 rounded-xl bg-blue-600 text-white ml-7">
+              <div className="px-4 py-3 h-12 md:mt-14 lg:mt-0 mt-0 lg:right-0 right-0 relative md:right-10 rounded-xl bg-blue-600 text-white ml-7">
                 <Link to="/ts2">Explore Now</Link>
               </div>
             </div>
           </div>
-          <div className="bg-card md:mx-8 mx-3 md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
-            <p className="text-2xl font-semibold mb-10">Test Series 3</p>
-            <img src={artboard5} alt="artboard" className=""></img>
-            <p className="my-4">Sectional tests</p>
-            <p className="my-4">Combined test</p>
-            <p className="my-4">Company wise test </p>
-            <p className="my-4">Practice quizzes</p>
-            <p className="my-4">Interview prep</p>
-            <p className="mt-4 mb-9 text-[15px] text-blue-600 font-semibold">
-              ₹ 5999
-            </p>
-            <div className="flex">
+          <div className="bg-card md:mx-8 mx-3 md:flex lg:block md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
+            <div className="">
+              <p className="text-2xl font-semibold mb-10">Test Series 3</p>
+              <img src={artboard5} alt="artboard" className=""></img>
+              <p className="my-4">Sectional tests</p>
+              <p className="my-4">Combined test</p>
+              <p className="my-4">Company wise test </p>
+              <p className="my-4">Practice quizzes</p>
+              <p className="my-4">Interview prep</p>
+              <p className="mt-4 mb-9 text-[15px] text-blue-600 font-semibold">
+                ₹ 5999
+              </p>
+            </div>
+            <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
               <a
                 href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="px-4 py-2 rounded-xl mr-4 border-blue-600 border-solid border-2">
+                <div className="px-4 py-2 h-12 rounded-xl mr-4 border-blue-600 border-solid border-2">
                   Apply now
                 </div>
               </a>
-              <div className="px-4 py-3 rounded-xl bg-blue-600 text-white ml-7">
+              <div className="px-4 py-3 h-12 md:mt-14 lg:mt-0 mt-0 lg:right-0 right-0 relative md:right-10 rounded-xl bg-blue-600 text-white ml-7">
                 <Link to="/ts3">Explore Now</Link>
               </div>
             </div>

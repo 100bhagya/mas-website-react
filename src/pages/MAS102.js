@@ -1,16 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Artboard from "../images/Artboard2.png";
-import Card1 from "../images/id-card 1.png";
-import Card2 from "../images/consultation 1.png";
-import Card3 from "../images/growth 1.png";
-import Card4 from "../images/award 1.png";
-import Card5 from "../images/conversation 1.png";
-import Card6 from "../images/meeting 1.png";
-import Card7 from "../images/online-resume 1.png";
-import Card8 from "../images/coworking 1.png";
-import Card9 from "../images/job-search 1.png";
-import Vector from "../images/Vector 15.png";
 import LinkedIn from "../images/Linkedin.png";
 import Tanay from "../images/Tanay Kedia.png";
 import Suyash from "../images/Suyash Ratna.png";
@@ -23,35 +13,7 @@ import Data from "../data/MAS102Data";
 import Rectangle from "../images/Rectangle 52.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-
-const Card = ({ img, title, content, flex_direction }) => {
-  return (
-    <div
-      class={`p-4 md:ml-24 flex ${flex_direction} md:block h-[125px] lg:from-transparent lg:to-transparent bg-gradient-to-b from-blue-100 to-blue-50 md:rounded-3xl w-full md:w-1/4 lg:h-96 shadow-gray-300 lg:bg-card shadow-lg`}
-    >
-      <div class="rounded-lg h-48 overflow-hidden w-[30%] md:w-full">
-        <img
-          alt="content"
-          class="object-cover object-center z-10 relative lg:left-8 lg:top-8 lg:h-36 lg:w-36 h-20 w-20"
-          src={img}
-        ></img>
-        <img
-          src={Vector}
-          alt="design"
-          className="lg:h-24 lg:w-36 h-14 w-20 relative lg:left-11 left-2 bottom-12"
-        ></img>
-      </div>
-      <div>
-        <h2 class="md:text-2xl text-[12px] font-semibold lg:ml-7 mr-2 md:font-medium title-font text-gray-900 mt-5">
-          {title}
-        </h2>
-        <p class="md:text-sm text-[9px] lg:ml-7 mr-2 font leading-relaxed lg:w-2/4 mt-2 md:hidden">
-          {content}
-        </p>
-      </div>
-    </div>
-  );
-};
+import Offers from "../components/Offers";
 
 const Testimonial = ({ image, linkedin, name, position }) => {
   return (
@@ -59,7 +21,7 @@ const Testimonial = ({ image, linkedin, name, position }) => {
       <div class="rounded-lg w-full md:h-48 h-32 overflow-hidden">
         <img
           alt="content"
-          class="relative lg:left-14 lg:top-8 h-36 w-36"
+          class="relative lg:left-14 lg:top-8 md:h-36 md:w-36 h-28 w-28 ml-5 md:ml-0 md:mt-0 mt-4"
           src={image}
         ></img>
       </div>
@@ -132,7 +94,7 @@ const MAS102 = () => {
     <div>
       <Navbar />
       <div className="flex flex-col-reverse md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-        <div className="md:mb-24 mb-16 relative md:right-[12%]">
+        <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2 lg:w-auto">
           <div className="lg:pt-20 md:pb-28 pb-10 lg:bottom-12">
             <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
               MAS 102
@@ -153,86 +115,17 @@ const MAS102 = () => {
         <img
           src={Artboard}
           alt="artboard"
-          className="relative md:left-[10%] bottom-12 px-16 md:px-0 md:mt-0 mt-8"
+          className="relative lg:left-[10%] md:left-[4%] bottom-12 px-16 md:px-0 md:mt-0 mt-8"
         ></img>
       </div>
-      <section class="text-gray-600 body-font bg-back">
-        <div class="container px-5 md:py-24 py-16 mx-auto">
-          <div class=" lg:py-6 py-2 mb-12 ">
-            <div class="text-center text-gray-900 font-medium lg:text-5xl text-2xl mb-2 sm:mb-0">
-              Our Unique Offerings
-            </div>
-          </div>
-
-          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            <Card
-              flex_direction="flex-row-reverse"
-              img={Card1}
-              title="Internship Opportunities"
-              content="Write a brief description of two lines maximum."
-            />
-            <Card
-              flex_direction="flex-row"
-              img={Card2}
-              title="One To One Mentorship Programme"
-              content="Write a brief description of two lines maximum."
-            />
-            <Card
-              flex_direction="flex-row-reverse"
-              img={Card3}
-              title="Mock Tests & Performance Tracking"
-              content="Write a brief description of two lines maximum."
-            />
-          </div>
-          <div class="flex flex-wrap -mx-4 -mb-10 md:mt-20 mt-10">
-            <Card
-              flex_direction="flex-row"
-              img={Card4}
-              title="Certified Courses & Projects"
-              content="Write a brief description of two lines maximum."
-            />
-            <Card
-              flex_direction="flex-row-reverse"
-              img={Card5}
-              title="Communication Skill Enhancement"
-              content="Write a brief description of two lines maximum."
-            />
-            <Card
-              flex_direction="flex-row"
-              img={Card6}
-              title="Case Study & Guesstimate Sessions"
-              content="Write a brief description of two lines maximum."
-            />
-          </div>
-          <div class="flex flex-wrap -mx-4 -mb-10 md:mt-28 mt-10">
-            <Card
-              flex_direction="flex-row-reverse"
-              img={Card7}
-              title="Resume Building"
-              content="Write a brief description of two lines maximum."
-            />
-            <Card
-              flex_direction="flex-row"
-              img={Card8}
-              title="Mock GDs & Interviews"
-              content="Write a brief description of two lines maximum."
-            />
-            <Card
-              flex_direction="flex-row-reverse"
-              img={Card9}
-              title="Off Campus Job Opportunities"
-              content="Write a brief description of two lines maximum."
-            />
-          </div>
-        </div>
-      </section>
+      <Offers />
       <section class="text-gray-600 body-font bg-back">
         <div class="container px-5 py-6 mx-auto">
           <div class="block flex-wrap -m-4">
-            <div class="md:px-24 md:mt-28 mt-12">
+            <div class="lg:px-24 md:mt-28 mt-12">
               <div class="flex flex-col-reverse md:flex-row md:rounded-3xl h-full bg-works md:px-16 py-12 md:py-8">
                 <div className="md:w-[43%] w-full mt-4">
-                  <div class="md:flex items-center mb-3 mt-28 hidden">
+                  <div class="md:flex items-center mb-3 mt-28 md:mt-16 lg:mt-28 hidden">
                     <h2 class="text-gray-900 text-2xl title-font font-semibold">
                       Mentors
                     </h2>
@@ -261,7 +154,7 @@ const MAS102 = () => {
                       Mentors
                     </h2>
                   </div>
-                  <div className="flex w-[355%] relative md:left-[21%]">
+                  <div className="flex md:block lg:flex w-[355%] relative md:left-[21%]">
                     <Testimonial
                       name="Tanay Kedia"
                       position="Fractal Analytics"
@@ -275,7 +168,7 @@ const MAS102 = () => {
                       image={Suyash}
                     />
                   </div>
-                  <div className="md:flex w-[355%] relative left-[21%] hidden">
+                  <div className="lg:flex w-[355%] relative left-[21%] hidden">
                     <Testimonial
                       name="Dirghayu Kaushik"
                       position="ICICI Bank"
@@ -298,10 +191,10 @@ const MAS102 = () => {
       <section class="text-gray-600 body-font bg-back">
         <div class="container px-5 py-6 mx-auto">
           <div class="block flex-wrap -m-4">
-            <div class="md:px-24 md:mt-28 mt-20 mb-12">
+            <div class="lg:px-24 md:mt-28 mt-20 mb-12">
               <div class="flex md:rounded-3xl flex-col-reverse md:flex-row h-full bg-works md:p-16">
                 <div className="md:w-[47%] mt-4 mb-12 md:mb-0">
-                  <div class="flex items-center mb-3 mt-20 text-center justify-center">
+                  <div class="flex items-center mb-3 mt-20 text-center justify-center md:justify-start">
                     <h2 class="text-gray-900 text-2xl title-font font-semibold">
                       Fees & ISA
                     </h2>
@@ -325,17 +218,17 @@ const MAS102 = () => {
                   <img
                     src={Grid}
                     alt="grid"
-                    className="lg:h-[200px] h-32 w-64 lg:w-[400px] relative lg:left-14"
+                    className="lg:h-[200px] h-32 w-64 lg:w-[400px] relative lg:left-14 md:top-28 lg:top-0"
                   ></img>
                   <img
                     src={Design2}
                     alt="design"
-                    className=" relative z-10 lg:left-28 lg:bottom-32 bottom-20 ml-8 md:ml-0 rounded-2xl lg:w-[530px] w-[300px] "
+                    className=" relative z-10 lg:left-28 lg:bottom-32 bottom-20 md:-bottom-8 ml-8 lg:ml-0 md:ml-12 rounded-2xl lg:w-[530px] w-[300px] "
                   />
                   <img
                     src={Grid}
                     alt="grid"
-                    className="lg:h-[200px] h-32 w-64 lg:w-[400px] relative lg:bottom-56 bottom-36 left-[220px] lg:left-[450px]"
+                    className="lg:h-[200px] h-32 w-64 lg:w-[400px] relative lg:bottom-56 bottom-36 md:bottom-8 left-[220px] lg:left-[450px] md:left-[240px]"
                   ></img>
                 </div>
               </div>
@@ -343,9 +236,9 @@ const MAS102 = () => {
           </div>
         </div>
       </section>
-      <div className="pt-1 md:pb-36 pb-16 bg-back">
-        <div className="text-[40px] text-center md:my-12 mt-12">Timeline</div>
-        <div className="faqs md:w-[58%] w-full relative md:left-[21%] bg-back md:bg-white md:py-10 md:px-20 rounded-3xl">
+      <div className="pt-1 lg:pb-36 pb-16 bg-back">
+        <div className="text-[40px] text-center lg:my-12 mt-12">Timeline</div>
+        <div className="faqs lg:w-[58%] md:w-[90%] w-full relative lg:left-[21%] md:left-[5%] bg-back lg:bg-white lg:py-10 lg:px-20 rounded-3xl">
           {faqs.map((faq, i) => (
             <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
           ))}

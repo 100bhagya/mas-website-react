@@ -13,22 +13,22 @@ import Vector from "../images/Vector 15.png";
 const Card = ({ img, title, content, flex_direction }) => {
   return (
     <div
-      class={`p-4 md:ml-24 flex ${flex_direction} md:block h-[125px] lg:from-transparent lg:to-transparent bg-gradient-to-b from-blue-100 to-blue-50 md:rounded-3xl w-full md:w-1/4 lg:h-96 shadow-gray-300 lg:bg-card shadow-lg`}
+      class={`p-4 lg:ml-24 md:ml-4 flex ${flex_direction} md:block h-[125px] md:h-auto lg:from-transparent lg:to-transparent bg-gradient-to-b from-blue-100 to-blue-50 md:rounded-3xl w-full md:w-[30%] lg:w-1/4 lg:h-96 shadow-gray-300 lg:bg-card shadow-lg`}
     >
       <div class="rounded-lg h-48 overflow-hidden w-[30%] md:w-full">
         <img
           alt="content"
-          class="object-cover object-center z-10 relative lg:left-8 lg:top-8 lg:h-36 lg:w-36 h-20 w-20"
+          class="lg:object-cover object-center z-10 relative lg:left-8 lg:top-8 lg:h-36 lg:w-36 md:h-auto md:w-auto md:my-3 md:mx-6 lg:mx-0 lg:my-0 h-20 w-20"
           src={img}
         ></img>
         <img
           src={Vector}
           alt="design"
-          className="lg:h-24 lg:w-36 h-14 w-20 relative lg:left-11 left-2 bottom-12"
+          className="lg:h-24 lg:w-36 md:bottom-14  h-14 w-20 relative lg:left-11 left-2 bottom-12"
         ></img>
       </div>
       <div>
-        <h2 class="md:text-2xl text-[12px] font-semibold lg:ml-7 mr-2 md:font-medium title-font text-gray-900 mt-5">
+        <h2 class="lg:text-2xl md:text-lg text-[12px] font-semibold lg:ml-7 mr-2 md:font-medium title-font text-gray-900 mt-5">
           {title}
         </h2>
         <p class="md:text-sm text-[9px] lg:ml-7 mr-2 font leading-relaxed lg:w-2/4 mt-2">

@@ -95,26 +95,26 @@ const Timeline2 = () => {
           </p>
         </div>
       </div>
-      <div className="relative lg:left-96 md:left faq_ques top-20 md:w-[59%] pb-32">
+      <div className="relative lg:left-96 md:left-12 faq_ques top-20 lg:w-[59%] md:w-[93%] pb-32">
         {Data.map((post) => {
           return (
             <div className="md:bg-white bg-back w-[95%] md:mb-20 mb-12  rounded-3xl md:shadow-2xl flex">
-              <div className={`rounded-l-3xl w-10 md:${post.sidecolor}`}></div>
+              <div className={`rounded-l-3xl w-10 ${post.sidecolor}`}></div>
               <div>
                 <div className="flex md:p-12 md:bg-white bg-back rounded-2xl">
-                  <div className="md:ml-24 md:mt-2 px-4 md:px-0">
+                  <div className="lg:ml-24 md:ml-8 md:mt-2 px-4 md:px-0">
                     <p
-                      className="lg:text-[24px] text-lg font-medium md:font-semibold"
+                      className="lg:text-[24px] md:text-xl text-lg font-medium md:font-semibold"
                       id={post.tag}
                     >
                       {post.tag}
                     </p>
-                    <p className="lg:text-[14px] md:w-8/12 text-[12px] font-normal text-gray-400">
+                    <p className="md:text-[14px] md:w-8/12 text-[12px] font-normal text-gray-400">
                       {post.offer}
                     </p>
                   </div>
                 </div>
-                <div className="faqs md:w-[80%] md:max-w-[750px] relative md:left-[100px] md:pb-12">
+                <div className="faqs lg:w-[80%] md:w-[87%] md:max-w-[750px] relative lg:left-[100px] md:left-[60px] md:pb-12">
                   {post.questions.map((faq, i) => (
                     <FAQ
                       faq={faq}
