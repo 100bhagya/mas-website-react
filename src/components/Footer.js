@@ -3,7 +3,7 @@ import Bar from "../images/bar.png";
 import Circle from "../images/Ellipse 75.png";
 import { PhoneIcon, MailIcon } from "@heroicons/react/solid";
 import Instagram from "../images/instagram_icon.png";
-import Twitter from "../images/twitter_icon.png";
+import Facebook from "../images/facebook_white.png";
 import LinkedIn from "../images/linked_in.png";
 import Logo from "../images/logo_white.png";
 
@@ -32,17 +32,23 @@ const Footer = () => {
             <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
               <PhoneIcon className="w-6 h-8 relative top-1 left-[6px] text-white" />
             </div>
-            <a href="link" class="text-white hover:text-red-500 relative top-4">
-              +919999999999
+            <a
+              href="tel:9604077455"
+              class="text-white hover:text-red-500 relative top-4"
+            >
+              +919604077455
             </a>
           </div>
           <div className="flex mt-4">
             <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
-              <MailIcon className="w-6 h-8 relative top-1 left-[6px] text-white" />
+              <MailIcon className="w-6 h-8 relative top-[2px] left-[6px] text-white" />
             </div>
 
-            <a href="link" class="text-white hover:text-red-500 relative top-4">
-              name@example.com
+            <a
+              href="mailto:admin@myanalyticsschool.com"
+              class="text-white hover:text-red-500 relative top-4 text-[14px]"
+            >
+              admin@myanalyticsschool.com
             </a>
           </div>
         </div>
@@ -110,10 +116,10 @@ const Footer = () => {
                   <PhoneIcon className="w-6 h-8 relative top-1 left-[6px] text-white" />
                 </div>
                 <a
-                  href="link"
+                  href="tel:9604077455"
                   class="text-white hover:text-red-500 relative top-4"
                 >
-                  +919999999999
+                  +919604077455
                 </a>
               </div>
               <div className="flex mt-4">
@@ -122,23 +128,16 @@ const Footer = () => {
                 </div>
 
                 <a
-                  href="link"
+                  href="mailto:admin@myanalyticsschool.com"
                   class="text-white hover:text-red-500 relative top-4"
                 >
-                  name@example.com
+                  admin@myanalyticsschool.com
                 </a>
               </div>
             </div>
             <div className="mt-10">
               <div className="text-xl font-semibold text-white">Follow Us</div>
               <div className="flex mt-3">
-                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
-                  <img
-                    src={Instagram}
-                    alt="icon"
-                    className="w-5 h-5 relative top-2 left-2 text-white"
-                  />
-                </div>
                 <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
                   <img
                     src={LinkedIn}
@@ -148,9 +147,16 @@ const Footer = () => {
                 </div>
                 <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
                   <img
-                    src={Twitter}
+                    src={Instagram}
                     alt="icon"
                     className="w-5 h-5 relative top-2 left-2 text-white"
+                  />
+                </div>
+                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
+                  <img
+                    src={Facebook}
+                    alt="icon"
+                    className="w-7 h-7 relative top-[3px] left-[3px] text-white"
                   />
                 </div>
               </div>
