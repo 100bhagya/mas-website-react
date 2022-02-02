@@ -28,7 +28,6 @@ const Courses = () => {
       </div>
       <div className="bg-back">
         <div className="lg:flex pt-20 pb-20 justify-center">
-
           <div className="flex flex-col-reverse md:flex-row bg-card md:m-12 md:p-12 m-4 p-7 pb-0 rounded-2xl shadow-2xl">
             <div className="mr-20">
               <p className="text-2xl hidden md:block font-semibold mb-8">
@@ -50,7 +49,6 @@ const Courses = () => {
 
               <Link
                 to="/mas101"
-
                 className="text-sm lg:hidden md:left-96 md:bottom-1  font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
 
               >
@@ -106,11 +104,11 @@ const Courses = () => {
               <p className="text-[15px] font-semibold text-blue-600 mb-5">
                 ₹ 2500 + ISA
               </p>
-              <Link
-                to="/mas102"
-                className="text-sm lg:hidden md:left-96 md:bottom-1 font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
+              <Link>
+                to="/mas102" className="text-sm lg:hidden md:left-96 md:bottom-1
+                font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl
+                text-white bg-blue-600" Explore Now
 
-                Explore Now
               </Link>
             </div>
             <div className="">
@@ -147,7 +145,6 @@ const Courses = () => {
               </p>
             </div>
             <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
-
               <a
                 href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
@@ -174,7 +171,6 @@ const Courses = () => {
               </p>
             </div>
             <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
-
               <a
                 href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
@@ -204,7 +200,6 @@ const Courses = () => {
               </p>
             </div>
             <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
-
               <a
                 href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
