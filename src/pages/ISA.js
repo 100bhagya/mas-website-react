@@ -67,7 +67,6 @@ const ISA = () => {
           <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
             ISA
           </h1>
-
           <p className="relative lg:top-12 md:text-[16px] font  text-black md:leading-8 mt-10 md:mt-8 lg:mt-0 text-[13px] px-6 lg:px-64 md:px-28 justify-center text-center">
             Our Income Share Agreement (ISA) is an investment in students'
             career. Students can benefit from our services just by paying a
@@ -76,7 +75,6 @@ const ISA = () => {
           </p>
         </div>
       </div>
-
       <div className="flex flex-col-reverse lg:flex-row relative md:left-[9%] md:w-[84%] lg:w-auto mt-24">
         <div className="lg:w-[45%] md:w-full md:pb-12 lg:pb-0 w-[83%] md:bg-card mt-12 md:mt-0 text-center lg:text-left md:pr-28 md:text-lg mx-8 md:mx-0 text-[12px] lg:pt-36 md:pt-0 md:pl-28 lg:pl-12 rounded-l-2xl">
           Our ISA model helps students to utilise our well researched strategic

@@ -22,6 +22,7 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
           src={Rectangle}
           alt="rectangle"
           className="lg:w-4 w-3 lg:h-1 h-[3px] lg:mr-7 mr-4 relative lg:my-5 my-4 lg:left-1 rounded-xl"
+
         />
         {faq.answer}
       </div>
@@ -74,6 +75,7 @@ const FaqPage = () => {
           <div className="">
             {/* <div className={`ml-28 lg:w-4/5 my-20 ${position}`}> */}
             <div className={`ml-28 lg:4/5 my-20 hidden lg:block`}>
+
               {Data.map((post) => {
                 return (
                   <a href={`#${post.tag}`}>
@@ -96,6 +98,7 @@ const FaqPage = () => {
             </div>
           </div>
           <div className="relative lg:left-20 lg:h-[88vh] lg:overflow-y-scroll faq_ques top-20 lg:w-[59%] lg:overflow-x-hidden">
+
             {Data.map((post) => {
               console.log(post);
               return (
@@ -119,6 +122,7 @@ const FaqPage = () => {
                     </div>
                   </div>
                   <div className="faqs relative lg:w-[80%] lg:max-w-[750px] lg:left-[135px] pb-12">
+
                     {post.questions.map((faq, i) => (
                       <FAQ
                         faq={faq}

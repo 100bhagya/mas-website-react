@@ -15,6 +15,7 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import Offers from "../components/Offers";
 
+
 const Testimonial = ({ image, linkedin, name, position }) => {
   return (
     <div class="py-4 md:m-8 m-3 md:w-1/3 w-[12%] lg:w-[17%] shadow-gray-300 bg-card shadow-lg rounded-2xl">
@@ -94,7 +95,9 @@ const MAS101 = () => {
     <div>
       <Navbar />
       <div className="flex flex-col-reverse md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
+
         <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2 lg:w-auto">
+
           <div className="lg:pt-20 md:pb-28 pb-10 lg:bottom-12">
             <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
               MAS 101
@@ -155,6 +158,7 @@ const MAS101 = () => {
                     </h2>
                   </div>
                   <div className="flex md:block lg:flex w-[355%] relative md:left-[21%]">
+
                     <Testimonial
                       name="Tanay Kedia"
                       position="Fractal Analytics"
@@ -169,6 +173,7 @@ const MAS101 = () => {
                     />
                   </div>
                   <div className="lg:flex w-[355%] relative left-[21%] hidden">
+
                     <Testimonial
                       name="Dirghayu Kaushik"
                       position="ICICI Bank"
@@ -195,6 +200,7 @@ const MAS101 = () => {
               <div class="flex md:rounded-3xl flex-col-reverse md:flex-row h-full bg-works md:p-16">
                 <div className="md:w-[47%] mt-4 mb-12 md:mb-0">
                   <div class="flex items-center mb-3 mt-20 text-center justify-center md:justify-start">
+
                     <h2 class="text-gray-900 text-2xl title-font font-semibold">
                       Fees & ISA
                     </h2>
@@ -219,16 +225,19 @@ const MAS101 = () => {
                     src={Grid}
                     alt="grid"
                     className="lg:h-[200px] h-32 w-64 lg:w-[400px] relative lg:left-14 md:top-28 lg:top-0"
+
                   ></img>
                   <img
                     src={Design2}
                     alt="design"
                     className=" relative z-10 lg:left-28 lg:bottom-32 bottom-20 md:-bottom-8 ml-8 lg:ml-0 md:ml-12 rounded-2xl lg:w-[530px] w-[300px] "
+
                   />
                   <img
                     src={Grid}
                     alt="grid"
                     className="lg:h-[200px] h-32 w-64 lg:w-[400px] relative lg:bottom-56 bottom-36 md:bottom-8 left-[220px] lg:left-[450px] md:left-[240px]"
+
                   ></img>
                 </div>
               </div>
@@ -239,6 +248,7 @@ const MAS101 = () => {
       <div className="pt-1 lg:pb-36 pb-16 bg-back">
         <div className="text-[40px] text-center lg:my-12 mt-12">Timeline</div>
         <div className="faqs lg:w-[58%] md:w-[90%] w-full relative lg:left-[21%] md:left-[5%] bg-back lg:bg-white lg:py-10 lg:px-20 rounded-3xl">
+
           {faqs.map((faq, i) => (
             <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
           ))}

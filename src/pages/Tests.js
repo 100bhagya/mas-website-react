@@ -132,12 +132,14 @@ const Tests = () => {
               src={Grid}
               alt="grid"
               className="md:w-96 w-72 relative md:bottom-20 lg:bottom-32 bottom-[140px] left-[57%] lg:left-[450px] md:left-[138px]"
+
             />
           </div>
         </div>
       </div>
 
       <div className="bg-back lg:block hidden">
+
         <div className="text-[40px] font-medium text-center mb-20">
           Testimonials
         </div>
@@ -182,6 +184,7 @@ const Tests = () => {
         </Swiper>
       </div>
       <div className="lg:hidden">
+
         <Testimonial />
       </div>
       <div className="text-center mb-28 mt-10">
