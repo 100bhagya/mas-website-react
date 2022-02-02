@@ -50,6 +50,7 @@ const Courses = () => {
               <Link
                 to="/mas101"
                 className="text-sm lg:hidden md:left-96 md:bottom-1  font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
+
               >
                 Explore Now
               </Link>
@@ -61,12 +62,15 @@ const Courses = () => {
                 </p>
 
                 <p className="lg:text-[22px] md:left-72 text-lg font-semibold relative lg:left-48 left-52 text-white lg:bottom-[8px] bottom-4 z-10">
+
                   Exclusive
                 </p>
                 <img
                   src={exclusive}
                   alt="exclusive"
+
                   className="relative left-[142px] md:left-[216px] lg:left-[142px] lg:bottom-10 bottom-12"
+
                 />
               </div>
               <img
@@ -104,6 +108,7 @@ const Courses = () => {
                 to="/mas102" className="text-sm lg:hidden md:left-96 md:bottom-1
                 font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl
                 text-white bg-blue-600" Explore Now
+
               </Link>
             </div>
             <div className="">
