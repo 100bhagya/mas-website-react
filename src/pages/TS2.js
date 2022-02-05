@@ -2,23 +2,13 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Artboard from "../images/Artboard.png";
 import Footer from "../components/Footer";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import "swiper/scss";
-import "swiper/scss/navigation";
-import "swiper/scss/pagination";
-import Data from "../data/SwiperData";
 import "../index.css";
-import Colon from "../images/upper colon.png";
-import Artboard1 from "../images/ts3_1.png";
 import Artboard2 from "../images/ts3_2.png";
 import Artboard3 from "../images/ts3_3.png";
-import Artboard4 from "../images/ts3_4.png";
-import Artboard5 from "../images/ts3_5.png";
 import Artboard6 from "../images/image 21.png";
 import tick from "../images/tick.png";
 import { Link } from "react-router-dom";
-import Testimonial from "../components/Testimonial";
+import TestimonialOtherPages from "../components/TestimonialOtherPages";
 
 const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
   return (
@@ -82,14 +72,15 @@ const TS2 = () => {
     <div className="bg-back">
       <Navbar />
       <div className="flex flex-col-reverse md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-        <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2 lg:w-auto">
+        <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2">
           <div className="lg:pt-20 md:pb-28 pb-10 lg:bottom-12">
             <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
               Test Series 2
             </h1>
 
             <p className="relative justify-center lg:top-5 md:text-lg text-sm font  text-black leading-8">
-              An intense series to test your limits
+              This will act as your shotgun to smash and ace placement tests to
+              get an interview opportunity in your dream company.
             </p>
           </div>
           <a
@@ -102,7 +93,7 @@ const TS2 = () => {
         <img
           src={Artboard}
           alt="artboard"
-          className="relative md:left-[20%] left-[10%] bottom-6 md:bottom-12 w-[75%] md:w-fit"
+          className="relative md:left-[20%] left-[10%] lg:left-[5%]  bottom-6 md:bottom-12 w-[75%] md:w-fit"
         ></img>
       </div>
 
@@ -273,54 +264,7 @@ const TS2 = () => {
           </div>
         </div>
       </div>
-      <div className="bg-back lg:block hidden">
-        <div className="text-[40px] font-medium text-center mb-20">
-          Testimonial
-        </div>
-
-        <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={10}
-          slidesPerView={3}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-          className="w-10/12"
-        >
-          {Data.map((post) => {
-            return (
-              <div className="">
-                <SwiperSlide className="relative left-[59px]">
-                  <div className="w-[75%] bg-white relative top-20 rounded-2xl h-[440px]">
-                    <div className="text-center h-[155px] bg-blue-100 rounded-t-2xl">
-                      <img
-                        src={post.picture}
-                        alt="testimonial"
-                        className="h-36 w-36 relative left-[102px] bottom-20"
-                      />
-                      <div className="text-[15px] font-semibold relative bottom-14">
-                        {post.name}
-                      </div>
-                      <div className="text-[15px] relative bottom-12">
-                        {post.position}
-                      </div>
-                    </div>
-                    <div className="m-10">
-                      <img src={Colon} alt="colon" className="" />
-                      <div className="mt-8">{post.about}</div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              </div>
-            );
-          })}
-        </Swiper>
-      </div>
-      <div className="lg:hidden">
-        <Testimonial />
-      </div>
+      <TestimonialOtherPages />
 
       <div className="text-center mb-28 mt-10">
         <a

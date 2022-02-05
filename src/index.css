@@ -65,7 +65,6 @@ html {
   .top_bg {
     background-image: linear-gradient(180deg, #bdcdfc, #ffffff);
   }
-
 }
 .testimonial .slick-arrow.slick-prev,
 .testimonial .slick-arrow.slick-next {
@@ -187,4 +186,26 @@ html {
   .navbar {
     display: none;
   }
+}
+
+.show {
+  display: block;
+  transition: 800ms;
+  opacity: 1;
+}
+
+.show.active {
+  transform: translateY(100px) scale(0) rotateY(180deg);
+  opacity: 0;
+}
+
+.required:after {
+  content: "*";
+  color: red;
+  margin-left: 3px;
+}
+.marked:before {
+  content: "*";
+  color: red;
+  margin-right: 3px;
 }

@@ -21,8 +21,9 @@ const Courses = () => {
           </h1>
 
           <p className="relative justify-center mt-8 lg:top-5 text-[14px] font  text-black leading-8">
-            Explore MAS courses and test series drafted to the industry
-            standards by professionals
+            We provide an arsenal of a wide range of offerings from internships
+            to placements which are strategically curated and drafted by
+            Analytics professionals as per industry standards.
           </p>
         </div>
       </div>
@@ -61,7 +62,7 @@ const Courses = () => {
                 </p>
 
                 <p className="lg:text-[22px] md:left-72 text-lg font-semibold relative lg:left-48 left-52 text-white lg:bottom-[8px] bottom-4 z-10">
-                  Exclusive
+                  For IIT
                 </p>
                 <img
                   src={exclusive}
@@ -100,27 +101,34 @@ const Courses = () => {
               <p className="text-[15px] font-semibold text-blue-600 mb-5">
                 ₹ 2500 + ISA
               </p>
-              <Link
-                to="/mas102"
-                className="text-sm lg:hidden md:left-96 md:bottom-1
-                font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl
-                text-white bg-blue-600"
-              >
-                {" "}
-                Explore Now
 
+              <Link
+                to="/mas101"
+                className="text-sm lg:hidden md:left-96 md:bottom-1  font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
+              >
+                Explore Now
               </Link>
             </div>
             <div className="">
-              <p className="text-2xl md:hidden font-semibold relative top-3">
-                MAS 102
-              </p>
+              <div className="">
+                <p className="text-2xl md:hidden font-semibold relative top-3">
+                  MAS 102
+                </p>
+
+                <p className="lg:text-lg text-[16px] md:left-[250px] font-semibold relative lg:left-40 left-44 text-white lg:bottom-[8px] bottom-5 z-10">
+                  For NIT,Bits,etc
+                </p>
+                <img
+                  src={exclusive}
+                  alt="exclusive"
+                  className="relative left-[142px] md:left-[216px] lg:left-[136px] lg:bottom-10 bottom-12"
+                />
+              </div>
               <img
                 src={artboard2}
                 alt="artboard"
-                className="h-44 relative bottom-6 md:mb-12 mt-[68px]"
+                className="h-44 relative bottom-6 md:mb-12"
               />
-
               <Link
                 to="/mas102"
                 className="text-sm explore font-medium px-4 py-3 relative left-32 rounded-xl mt-12 text-white bg-blue-600"

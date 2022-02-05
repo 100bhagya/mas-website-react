@@ -14,7 +14,19 @@ import Rectangle from "../images/Rectangle 52.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import Offers from "../components/Offers";
-
+import Fractal from "../images/fractal.png";
+import Ola from "../images/ola.png";
+import MasterCard from "../images/mastercard.png";
+import ICICI from "../images/icici.png";
+import AmericaLogo from "../images/america logo.png";
+import BankOfAmerica from "../images/bank of america.png";
+import Morgan from "../images/morgan.png";
+import Express from "../images/american express.png";
+import Accenture from "../images/Accenture.png";
+import AB from "../images/AB.png";
+import PhonePe from "../images/phonepe.png";
+import Mynthra from "../images/mynthra.png";
+import TestimonialOtherPages from "../components/TestimonialOtherPages";
 
 const Testimonial = ({ image, linkedin, name, position }) => {
   return (
@@ -95,17 +107,16 @@ const MAS101 = () => {
     <div>
       <Navbar />
       <div className="flex flex-col-reverse md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-
-        <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2 lg:w-auto">
-
+        <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2">
           <div className="lg:pt-20 md:pb-28 pb-10 lg:bottom-12">
             <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
               MAS 101
             </h1>
 
             <p className="relative px-8 md:px-0 justify-center md:top-5 mt-5 md:mt-0 md:text-lg text-sm font  text-black leading-8">
-              Our flagship placement programme for IITs, NITs and similar
-              college students
+              This will act as your Tank and Bazooka to smash your placements
+              and get placed in your dream company specifically designed for
+              IITs
             </p>
           </div>
           <a
@@ -158,7 +169,6 @@ const MAS101 = () => {
                     </h2>
                   </div>
                   <div className="flex md:block lg:flex w-[355%] relative md:left-[21%]">
-
                     <Testimonial
                       name="Tanay Kedia"
                       position="Fractal Analytics"
@@ -173,7 +183,6 @@ const MAS101 = () => {
                     />
                   </div>
                   <div className="lg:flex w-[355%] relative left-[21%] hidden">
-
                     <Testimonial
                       name="Dirghayu Kaushik"
                       position="ICICI Bank"
@@ -200,7 +209,6 @@ const MAS101 = () => {
               <div class="flex md:rounded-3xl flex-col-reverse md:flex-row h-full bg-works md:p-16">
                 <div className="md:w-[47%] mt-4 mb-12 md:mb-0">
                   <div class="flex items-center mb-3 mt-20 text-center justify-center md:justify-start">
-
                     <h2 class="text-gray-900 text-2xl title-font font-semibold">
                       Fees & ISA
                     </h2>
@@ -225,19 +233,16 @@ const MAS101 = () => {
                     src={Grid}
                     alt="grid"
                     className="lg:h-[200px] h-32 w-64 lg:w-[400px] relative lg:left-14 md:top-28 lg:top-0"
-
                   ></img>
                   <img
                     src={Design2}
                     alt="design"
                     className=" relative z-10 lg:left-28 lg:bottom-32 bottom-20 md:-bottom-8 ml-8 lg:ml-0 md:ml-12 rounded-2xl lg:w-[530px] w-[300px] "
-
                   />
                   <img
                     src={Grid}
                     alt="grid"
                     className="lg:h-[200px] h-32 w-64 lg:w-[400px] relative lg:bottom-56 bottom-36 md:bottom-8 left-[220px] lg:left-[450px] md:left-[240px]"
-
                   ></img>
                 </div>
               </div>
@@ -248,7 +253,6 @@ const MAS101 = () => {
       <div className="pt-1 lg:pb-36 pb-16 bg-back">
         <div className="text-[40px] text-center lg:my-12 mt-12">Timeline</div>
         <div className="faqs lg:w-[58%] md:w-[90%] w-full relative lg:left-[21%] md:left-[5%] bg-back lg:bg-white lg:py-10 lg:px-20 rounded-3xl">
-
           {faqs.map((faq, i) => (
             <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
           ))}
@@ -261,6 +265,84 @@ const MAS101 = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div className="pb-28 bg-back">
+        <div className="text-center text-4xl">Placements</div>
+        <div className="bg-gradient-to-b from-blue-50 to-white">
+          <div className="flex justify-center mt-8 pt-8">
+            <img
+              src={Fractal}
+              alt="logo"
+              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+            />
+            <img
+              src={Ola}
+              alt="logo"
+              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+            />
+            <img
+              src={MasterCard}
+              alt="logo"
+              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+            />
+            <img
+              src={ICICI}
+              alt="logo"
+              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+            />
+          </div>
+          <div className="flex justify-center mt-14">
+            <div className="lg:mx-8 md:mx-3 mx-2">
+              <img
+                src={AmericaLogo}
+                alt=""
+                className="relative left-[35%] h-5 md:h-auto"
+              />
+              <img src={BankOfAmerica} alt="logo" className="w-24 md:w-auto" />
+            </div>
+            <img
+              src={Morgan}
+              alt="logo"
+              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+            />
+            <img
+              src={Express}
+              alt="logo"
+              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+            />
+            <img
+              src={Accenture}
+              alt="logo"
+              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+            />
+          </div>
+          <div className="flex justify-center mt-14 pb-10">
+            <img
+              src={AB}
+              alt=""
+              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+            />
+            <img
+              src={PhonePe}
+              alt=""
+              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+            />
+            <img
+              src={Mynthra}
+              alt=""
+              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+            />
+          </div>
+        </div>
+      </div>
+      <TestimonialOtherPages />
+      <div className="text-center pt-12 pb-24 bg-back">
+        <a
+          href="apply"
+          className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
+        >
+          Apply Now
+        </a>
       </div>
       <Footer />
     </div>
