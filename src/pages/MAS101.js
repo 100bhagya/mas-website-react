@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Artboard from "../images/Artboard2.png";
 import LinkedIn from "../images/Linkedin.png";
-import Tanay from "../images/Tanay Kedia.png";
-import Suyash from "../images/Suyash Ratna.png";
-import Dirghayu from "../images/Dirghayu.png";
-import Mahi from "../images/Mahi.png";
+import Aditi from "../images/Aditi.jpg";
+import Shruti from "../images/Shruti.jpg";
+import Nallani from "../images/Nallani.jpg";
+import Yash from "../images/Yash.jpg";
 import Grid from "../images/grid.png";
 import Design2 from "../images/design2.png";
 import "../index.css";
@@ -30,11 +30,11 @@ import TestimonialOtherPages from "../components/TestimonialOtherPages";
 
 const Testimonial = ({ image, linkedin, name, position }) => {
   return (
-    <div class="py-4 md:m-8 m-3 md:w-1/3 w-[12%] lg:w-[17%] shadow-gray-300 bg-card shadow-lg rounded-2xl">
+    <div class="py-4 md:m-8 m-3 md:w-1/3 w-[12%] lg:w-[16%] shadow-gray-300 bg-card shadow-lg rounded-2xl">
       <div class="rounded-lg w-full md:h-48 h-32 overflow-hidden">
         <img
           alt="content"
-          class="relative lg:left-14 lg:top-8 md:h-36 md:w-36 h-28 w-28 ml-5 md:ml-0 md:mt-0 mt-4"
+          class="relative lg:left-14 md:left-[21%] lg:top-8 md:top-9 md:h-36 md:w-36 h-28 w-28 ml-5 md:ml-0 md:mt-0 mt-4"
           src={image}
         ></img>
       </div>
@@ -170,30 +170,30 @@ const MAS101 = () => {
                   </div>
                   <div className="flex md:block lg:flex w-[355%] relative md:left-[21%]">
                     <Testimonial
-                      name="Tanay Kedia"
-                      position="Fractal Analytics"
-                      linkedin="https://www.linkedin.com/in/tanay-kedia/"
-                      image={Tanay}
+                      name="Kumari Aditi"
+                      image={Aditi}
+                      position="Accenture"
+                      Link_linkedin="https://www.linkedin.com/in/kumari-aditi-936935184"
                     />
                     <Testimonial
-                      name="Suyash Ratna"
-                      position="PhonePe"
-                      linkedin="https://www.linkedin.com/in/suyash-ratna-ba324714a/"
-                      image={Suyash}
+                      name="Shruti Pandey"
+                      image={Shruti}
+                      position="JPMC"
+                      Link_linkedin="https://www.linkedin.com/in/shruti-pandey-86567b164/"
                     />
                   </div>
                   <div className="lg:flex w-[355%] relative left-[21%] hidden">
                     <Testimonial
-                      name="Dirghayu Kaushik"
-                      position="ICICI Bank"
-                      linkedin="https://www.linkedin.com/in/dirghayukaushik/"
-                      image={Dirghayu}
+                      name="Nallani Venkata Harsha"
+                      image={Nallani}
+                      position="Mastercard"
+                      Link_linkedin="https://www.linkedin.com/in/nallani-venkata-harsha-886579174/"
                     />
                     <Testimonial
-                      name="Mahi Asati"
-                      position="Fractal Analytics"
-                      linkedin="https://www.linkedin.com/in/mahiasati/"
-                      image={Mahi}
+                      name="Yash Paliwal"
+                      image={Yash}
+                      position="Nobroker"
+                      Link_linkedin="https://www.linkedin.com/in/yash-paliwal-102164170/"
                     />
                   </div>
                 </div>
