@@ -4,6 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 import CloseIcon from "../images/cross_head.png";
 import MenuIcon from "../images/menu_head.png";
 import Logo_mobile from "../images/logo_head.png";
+import LoginForm from "./LoginForm";
 import "../index.css";
 
 function SideMenu() {
@@ -73,8 +74,14 @@ function SideMenu() {
 }
 
 const Navbar = () => {
+  const [isShowLogin, setIsShowLogin] = useState(true);
+  const handleClick = () => {
+    setIsShowLogin((isShowLogin) => !isShowLogin);
+  };
   const [isSideMenuOpen, setisSideMenuOpen] = useState(false);
-
+  const closeLogin = () => {
+    setIsShowLogin(!isShowLogin);
+  };
   const showSideMenu = () => {
     isSideMenuOpen ? setisSideMenuOpen(false) : setisSideMenuOpen(true);
   };
@@ -153,12 +160,12 @@ const Navbar = () => {
           </div>
         </div>
         <div className=" w-full md:inline-flex md:flex-grow justify-end md:w-auto">
-          <a
-            href="register"
-            className="md:inline-flex md:w-auto lg:text-lg text-[12px] lg:px-12 px-4 lg:mr-20 mr-3 border-2  border-blue-500 lg:py-2 py-1 rounded-xl text-gray-800 items-center justify-center hover:bg-green-500 hover:text-white"
+          <div
+            className="md:inline-flex cursor-pointer md:w-auto lg:text-lg text-[12px] lg:px-12 px-4 lg:mr-20 mr-3 border-2  border-blue-500 lg:py-2 py-1 rounded-xl text-gray-800 items-center justify-center hover:bg-green-500 hover:text-white"
+            onClick={handleClick}
           >
             <span>Register</span>
-          </a>
+          </div>
         </div>
       </nav>
       <div className="h-[60px] fixed w-full bg-white z-50 flex">
@@ -184,13 +191,14 @@ const Navbar = () => {
           </Link>
         </a>
         <div className=" w-full justify-end">
-          <a
-            href="register"
+          <div
+            onClick={handleClick}
             className=" px-5 relative left-[186px] text-[15px] top-[18px] border-2 border-blue-500 py-1 rounded-md text-gray-800 items-center justify-center hover:bg-green-500 hover:text-white"
           >
             <span>Register</span>
-          </a>
+          </div>
         </div>
+        <LoginForm isShowLogin={isShowLogin} closeLogin={closeLogin} />
       </div>
     </div>
   );

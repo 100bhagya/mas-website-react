@@ -13,7 +13,7 @@ import Vector from "../images/Vector 15.png";
 const Card = ({ img, title, content, flex_direction }) => {
   return (
     <div
-      class={`p-4 lg:ml-24 md:ml-4 flex ${flex_direction} md:block h-[125px] md:h-auto lg:from-transparent lg:to-transparent bg-gradient-to-b from-blue-100 to-blue-50 md:rounded-3xl w-full md:w-[30%] lg:w-1/4 lg:h-96 shadow-gray-300 lg:bg-card shadow-lg`}
+      class={`p-4 lg:ml-24 md:ml-4 flex ${flex_direction} md:block h-[125px] md:h-auto lg:from-transparent lg:to-transparent bg-gradient-to-b from-blue-100 to-blue-50 md:rounded-3xl w-full md:w-[30%] lg:w-1/4 lg:h-[432px] shadow-gray-300 lg:bg-card shadow-lg`}
     >
       <div class="rounded-lg h-48 overflow-hidden w-[30%] md:w-full">
         <img
@@ -27,11 +27,11 @@ const Card = ({ img, title, content, flex_direction }) => {
           className="lg:h-24 lg:w-36 md:bottom-14  h-14 w-20 relative lg:left-11 left-2 bottom-12"
         ></img>
       </div>
-      <div>
+      <div className="w-[80%] md:w-full">
         <h2 class="lg:text-2xl md:text-lg text-[12px] font-semibold lg:ml-7 mr-2 md:font-medium title-font text-gray-900 mt-5">
           {title}
         </h2>
-        <p class="md:text-sm text-[9px] lg:ml-7 mr-2 font leading-relaxed lg:w-2/4 mt-2">
+        <p class="md:text-sm text-[9px] lg:ml-7 mr-2 font leading-relaxed mt-2">
           {content}
         </p>
       </div>
@@ -54,19 +54,19 @@ const Offers = () => {
             flex_direction="flex-row-reverse"
             img={Card1}
             title="Internship Opportunities"
-            content="Write a brief description of two lines maximum."
+            content="An internship is a professional learning experience that offers meaningful, practical work related to a student’s field of Interest and MAS helps you to get ONE."
           />
           <Card
             flex_direction="flex-row"
             img={Card2}
             title="One To One Mentorship Programme"
-            content="Write a brief description of two lines maximum."
+            content="This program will help you connect with an appropriate mentor to provide you guidance, support, encouragement, and growth in a competitive environment."
           />
           <Card
             flex_direction="flex-row-reverse"
             img={Card3}
             title="Mock Tests & Performance Tracking"
-            content="Write a brief description of two lines maximum."
+            content="Self-evaluation, sectional, combined, and company-specific tests are provided to prepare you for the worst, and performance tracking helps you to achieve the goal. "
           />
         </div>
         <div class="flex flex-wrap -mx-4 -mb-10 md:mt-20 mt-10">
@@ -74,19 +74,19 @@ const Offers = () => {
             flex_direction="flex-row"
             img={Card4}
             title="Certified Courses & Projects"
-            content="Write a brief description of two lines maximum."
+            content="Learning opportunities are tremendous with projects. It provides the students with the opportunity to collaborate their learnings with practical implementation."
           />
           <Card
             flex_direction="flex-row-reverse"
             img={Card5}
             title="Communication Skill Enhancement"
-            content="Write a brief description of two lines maximum."
+            content="It gives the interviewer an idea about the personality, attitude, and etiquette of the candidate. We at MAS, would help ameliorate your communication skills."
           />
           <Card
             flex_direction="flex-row"
             img={Card6}
             title="Case Study & Guesstimate Sessions"
-            content="Write a brief description of two lines maximum."
+            content="Interviews test problem-solving, analytical, reasoning and communication skills. With comprehensive practice and learning sessions we help you develop these skills."
           />
         </div>
         <div class="flex flex-wrap -mx-4 -mb-10 md:mt-28 mt-10">
@@ -94,19 +94,19 @@ const Offers = () => {
             flex_direction="flex-row-reverse"
             img={Card7}
             title="Resume Building"
-            content="Write a brief description of two lines maximum."
+            content="The job market is competitive – you’ll need an edge to stand out. We at MAS, will help you build a winning resume that will surely turn the tables in your favor. "
           />
           <Card
             flex_direction="flex-row"
             img={Card8}
             title="Mock GDs & Interviews"
-            content="Write a brief description of two lines maximum."
+            content="Mocks by MAS in a stress-free environment gives you an edge over others by familiarizing yourself with the actual interview environment beforehand."
           />
           <Card
             flex_direction="flex-row-reverse"
             img={Card9}
             title="Off Campus Job Opportunities"
-            content="Write a brief description of two lines maximum."
+            content="We will direct and emphasize  on how one should present themself in a poised, unfazed manner and shine in an interview. Our well established pipeline connects you to off-campus opportunities."
           />
         </div>
       </div>

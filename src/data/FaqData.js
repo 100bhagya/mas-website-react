@@ -7,6 +7,7 @@ const Data = [
   {
     id: 1,
     tag: "General",
+    description: "New around here? Start with the basics.",
     icon: Gear,
     bgcolor: "blue",
     questions: [
@@ -54,6 +55,7 @@ const Data = [
   {
     id: 2,
     tag: "Courses",
+    description: "Courses are the backbone of the program. Want to know more?",
     icon: Book,
     bgcolor: "red",
     questions: [
@@ -112,6 +114,7 @@ const Data = [
   {
     id: 3,
     tag: "ISA",
+    description: "Get your doubts clear on what the fee structure is.",
     icon: Mail,
 
     questions: [
@@ -156,6 +159,8 @@ const Data = [
   {
     id: 4,
     tag: "HR",
+    description:
+      "We have got you covered even in the worst-case scenario, here’s how.",
     icon: User,
     questions: [
       {
