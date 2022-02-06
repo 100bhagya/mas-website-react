@@ -1,130 +1,141 @@
-import Suyash from "../images/Suyash Ratna.png";
-import Anuj from "../images/Anuj Agrawal.png";
-import SuyashJain from "../images/Suyash Jain.png";
-import Saket from "../images/Saket Bihari.png";
-import Satwant from "../images/Satwant Singh.png";
-import Anjali from "../images/Anjali.png";
-import Bharat from "../images/Bharat Panwar.png";
-import Shivam from "../images/Shivam Mondal.png";
-import Rahul from "../images/Rahul Kumar.png";
-import Anmol from "../images/Anmol Agrawal.png";
-import Mobasshir from "../images/Mobasshir Ali.png";
-import Bhavik from "../images/Bhavik Jain.png";
-import Anirudh from "../images/Anirudh Shivam.png";
-import Tanay from "../images/Tanay Kedia.png";
+import Aashish from "../images/Aashish.jpg";
+import Ajeya from "../images/Ajeya.jpg";
+// import Dinesh from "../images/Dinesh.jpg";
+import Divyansh from "../images/Divyansh.jpg";
+import Harsh from "../images/Harsh.jpg";
+import Himanshu from "../images/Himanshu.jpg";
+// import Kishan from "../images/Kishan.jpg";
+import Narashiv from "../images/Narashiv.jpg";
+import Nandini from "../images/Nandini.jpg";
+import Prakhar from "../images/Prakhar.jpg";
+import Priyansh from "../images/Priyansh.jpg";
+import Puneet from "../images/Puneet.jpg";
+import Pushpak from "../images/Pushpak.jpg";
+import Shruti from "../images/Shruti.jpg";
+import Dhvani from "../images/Dhvani.jpg";
+import Snehitha from "../images/Snehitha.jpg";
+import Bharat from "../images/Bharat.jpg";
 
 const Data = [
   {
     id: 1,
-    name: "Suyash Ratna",
-    position: "PhonePe",
-    image: Suyash,
+    name: "Aashish Raika",
+    image: Aashish,
+    position: "Chargebee Technologies",
     about:
-      "Until march 2020, I was preparing for software roles but could neither get an internship nor was I able to crack any test for SDE. I got an internship in JSW on an analytics based project and then I decided to get into analytics based companies. I was totally clueless about the resume and the right way for preparation ahead. Aryan bhaiya curated a time-based study plan to ace placement and recommended some must-do courses and projects to have a strong resume. Under his guidance, I was able to work on my aptitude and managed to crack my tests. He constantly helped me till the end and made me well-prepared for GDs and interviews. So I recommend you all to join the programme organised by aryan bhaiya and MAS team.",
+      "From not having intern , to have multiple offers, all credit goes to MAS, thanks MAS. MAS is a place where i learned how to explain and express myself. It also helped me a lot in developing my thinking capability and how to approach different kinds of problems. Also , all mentors were super great, they all were very humble and kind and you can ask them doubts whenever you want.",
   },
   {
     id: 2,
-    name: "Anuj Agrawal",
-    position: "Mastercard",
-    image: Anuj,
+    name: "Shruti Pandey",
+    image: Shruti,
+    position: "JPMC",
     about:
-      "Getting placed in a reputed firm like MasterCard is defintely the headstart a graduate can aspire for, but the road wasn't as easy as it seems, thanks to the pandemic and lockdown. Mentorship from seniors like Sajan bhaiya proved to be of great help. The structured roadmap, custom curated resources, effective tracking, personalized sessions and mocks not only enhanced my preparation but also bolstered my confidence. As I feel that getting the right mentorship is the key to getting sucessfully placed , I would recommend juniors preparing for Analytics and data role to get themselves enrolled in the mentorship programme offered by MySchoolAnalytics.",
+      "From the text on Day 1 of MAS101 that was somewhat on the lines of ‘I am so scared and clueless, I really need some guidance’ The whole team of My Analytics School helped me get to the point where on 30th November  I remember saying ‘Don’t worry sir, by the end of the day tomorrow I will have an offer letter’.With a very exhaustive, and well curated timeline, covering every topic with ease and never for once making us feel overburdened, or overworked, and most importantly, creating an environment of healthy competition where all of us kept each other motivated to keep going, My Analytics School helped us in every way possible. Joining MAS was one of the best decisions that I made.",
   },
   {
     id: 3,
-    name: "Suyash Jain",
-    position: "EXL Services",
-    image: SuyashJain,
+    name: "Divyansh Goyal",
+    image: Divyansh,
+    position: "Flipkart",
     about:
-      "Aryan bhaiya, one of the most down-to-earth seniors I have ever met, eased out my journey to getting placed on day 1 especially during these tough times. I was not sure about the placement process, he was the one who solved all my doubts and helped me in writing an effective resume that would convey my capabilities to the employers. He was always ready to help be it mock case studies, interviews or any other step. I would whole-heartedly recommend My Analytics School to the juniors, especially those who are looking for Data/product analyst roles.",
+      "Being at home during lockdown There was no proper pathway for my placement prepration.Moreover there was lack of motivation and connection with my peers.Then I got to know about MyAnalyticsSchool from one of my friend. After that placement season was like piece of cake for me. Being from circuital branch everyone tends to go towards software side but I had realised that it wasn't my cup of tea.MyAnalyticsSchool took care of everything From providing me with projects and sorting my internship.They provided with all the resources related to analytics, product,ML field and also bit of software fieldThe main perk of MAS was that they moulded their structure of course according to the students need.There were regular meetups, project discussion , Case studies & Guesstimates,JAM sessions and one to one mentorship program too.Also the community which was build with other students of MAS provided an edge in my placement prepration.I got placed in Flipkart as an assistant manager in business development role.The Flipkart interview was like the first professional interview I ever gave.And thanks to MAS that I was well prepared and confident in giving the interview.Feel free to contact me anytime regarding placement or anything else u think I could be of help.",
   },
   {
     id: 4,
-    name: "Saket Bihari",
-    position: "OYO",
-    image: Saket,
+    name: "N Narashiv Shenoy",
+    image: Narashiv,
+    position: "Citi Bank",
     about:
-      "I decided to go in analytics only a few months before the placement season. So These seniors helped me a lot in exploring the field. Whether it was study material, interview preparation, or the motivation required in tough times, they guided me very well like a friend. Overall it was really very helpful to get their guidance and I would recommend their mentorship program to all.",
+      "Like any other final yearite, I was sceptical and restless about my placements. And then I came across MAS which changed this all for good.I just wanted to share a quick note and let them know that they did a really phenomenal job and I can't thank them enough for everything. I’m glad I decided to join the MAS family. Their help has made a significant impact on my interview preparation. They made it so simple.  MAS curated the best possible roadmap, showered us with best resources, created a healthy competitive atmosphere with the best-of peers and had been the emotional pillar in the times of self doubt. And I won't shy away from saying that My Analytics School played a huge role in my success.",
   },
   {
     id: 5,
-    name: "Satwant Singh",
-    position: "ZS Associates",
-    image: Satwant,
+    name: "Nandini Gupta",
+    image: Nandini,
+    position: "ABInBev",
     about:
-      "After struggling relentlessly for months, I am really glad to join ZS Associates as a Decision Analytics Associate after graduating from IIT-BHU. All credit goes to My Analytics School team for their constant support, proper guidance and supplied apt resources. They also provided personalized sessions for profile-oriented placement and hassle-free interview preparation. The concise resources they provided me along with helping me to work on time management and dealing with doubtful questions in interviews boosted my preparation. It is a complete go-to guide for placement preparation.",
+      "I remember exactly one year ago, amongst all the bewilderment of the upcoming placement season, I came across the solution to all my dilemmas, and joining it was the key turning point in my placement journey.From making us practice numerous problems for clearing tests to raising our confidence levels before the final interviews, MAS has assisted me with the best frameworks, systemised my preparation process, supported me with full zeal and enthusiasm, and provided me with a healthy and competitive environment to stay calm and motivated throughout the placement journey. Thanks, MAS for providing the best mentors anybody could ever ask for. It was your guidance and resources that allowed me to crack the placements in a stress-free manner.",
   },
   {
     id: 6,
-    name: "Anjali",
-    position: "Deutsche Bank",
-    image: Anjali,
+    name: "Ajeya Krishna",
+    image: Ajeya,
+    position: "Saas Labs",
     about:
-      "Mock do...mock do..and mock do, interview opportunity kab mil jaayegi pta nhi chalega.” that's what Sajan Bhaiya kept telling me when I was preparing for my placements. I am going to work as a Graduate Analyst at Deutsche bank this summer. Being a student of chemical engineering, it was tough to convince companies that you can excel in a non-core job and that's where the My Analytics Team's assistance turned out to be my savior. I am grateful to my seniors for giving me the most useful resources, roadmaps and organising mock interviews. All those sessions with mentors helped a lot in enhancing my skills and confidence. I would definitely recommend My Analytics School to all the juniors who are planning to get placed in the coming years.",
+      "I was determined from the first day of placements, but there were two things that concerned me much throughout the early stages. They are proper preparation and guidance. The MAS team had my back at this point. They devised the ideal timeframe, as well as challenging sectional tests, company tests, and combined tests. They also had seminars on GD, Mock Interviews, Resume Preparation, Case Study Preparation, and Communication Skills Improvement, all of which were quite beneficial to me. With time, I gained confidence in my quantitative and presentation skills. The MAS team's greatest asset is the community they have built. The placement session is obviously one of the most stressful, but the MAS team made it a fun journey. The MAS team had always gone out of their way to assist me in every way they could, and picking them was one of my greatest decisions.",
   },
   {
     id: 7,
-    name: "Bharat Panwar",
-    position: "Verizon",
-    image: Bharat,
+    name: "Prakhar Kamal",
+    image: Prakhar,
+    position: "ICICI",
     about:
-      "Coming from an entirely different background, I was lucky to receive structured mentorship from seniors like Saransh bhaiya and Sajan bhaiya who helped me to choose the right courses for improving my skills, projects and resume. Feedback from seniors helped me a lot in improving my overall skills. I would like to recommend the programme offered by My Analytics School to all the juniors as it will provide you a structured guidance to get through the placements.",
+      "I was absolutely clueless about campus placements, and I didn’t know how to go about it. Also, my extremely low GPA also shrinked up my chances at many firms. So, I had less opportunities, which needed targeted preparation. MAS provided us with amazing company wise content, due to which I was able to secure a good job.",
   },
   {
     id: 8,
-    name: "Shivam Kumar Mondal",
-    position: "Innoplexus",
-    image: Shivam,
+    name: "Harsh Singhal",
+    image: Harsh,
+    position: "PhonePe",
     about:
-      "I would be joining Innoplexus after completing my B.tech from IIT-BHU. Special thanks to mentors like Saransh bhaiya and Saubhagya bhaiya who mentored me constructively through their proper guidance. Not only they provided DSA and CS theoretical questions but also helped me to enhance my communication skills and self-confidence. In order to get an edge in the placement process, I would definitely recommend My Analytics School to the upcoming batches.",
+      "There was a time last year when everyone around me was preparing for their placements, whether be in core, software, or analytics, but I was still struggling to figure out what I really wanted to do. Then there came the MAS team, which not only cleared all my confusion, but also helped me in figuring out what I really wanted and was good at, and helped me get the best out of myself.On the last day before placements, instead of being nervous, I was happy that I had given my best, and learned a lot during these times, which transformed me into a more worthy person. I would like to thank the whole MAS team for their immense efforts, and recommend MAS to everyone who would like to explore analytics and consulting at its best.",
   },
   {
     id: 9,
-    name: "Rahul Kumar",
-    position: "Teg Analytics",
-    image: Rahul,
+    name: "Priyansh Patidar",
+    image: Priyansh,
+    position: "FPL Technologies",
     about:
-      "Aryan bhaiya and Sajan bhaiya were my constant guides throughout my placement journey right from building my resume, preparing for tests and interviews. Sometimes when I was feeling quite low then they motivated me as well. I would like to appreciate their efforts and recommend My Analytics School to all the juniors out there.",
+      "At first, I wasn't sure whether I should enroll in placements or not. Because back then, as per my preassumption, to grab an offer, you needed to code. But then MAS came into the picture, and I got to know about the analytics field, and after their orientation, I decided to prepare for that. After 8-9 months of intense preparation, when placements began, I was not nervous but confident enough because I knew I did my best that was in my hand.Enrolling with MAS was the best decision I took in my preparation because it made this process easier and much more effective. The best thing I like about MAS is the availability of experts from various fields and their commitment to their prepared schedule. So, I would highly recommend MAS to anyone who wants to pursue a career in analytics.",
   },
   {
     id: 10,
-    name: "Anmol Agrawal",
-    position: "Deutsche Bank",
-    image: Anmol,
+    name: "Puneet Mandil",
+    image: Puneet,
+    position: "MasterCard",
     about:
-      "After months of consistent efforts and hardwork, it has finally paid off. During placement having an experienced guide who has gone through the same journey is really important besides having ample knowledge of your subject. The mentors provided every info about the hiring process so easily, apart from solving our queries. For all juniors, My Analytics School’s placement programme will be the best to enhance their learning curve and to get their dream job.",
+      "Being the second batch who will be going through online placement procedure, i was highly concerned about keeping the preparation upto the mark and finding the right peers to evaluate myself. MAS helped immensely in both the aspects of my worries; from being able to compete and learn in a fabulous peer group to providing wonderful learning materials.Mentors at MAS provided personalized guidance to maximize an individual output, as well as organised several sessions such as berif about companies and work culture to help us prepare better and make the right decision. Joining MAS was one of the best decision I made during placements.",
   },
   {
     id: 11,
-    name: "Mobasshir Ali",
-    position: "American Express",
-    image: Mobasshir,
+    name: "Pushpak Musram",
+    image: Pushpak,
+    position: "Mynthra",
     about:
-      "Earlier I used to struggle with internship interviews and faced rejection each and every time. After a few months of proper guidance and practice, I am going to join American Express as a software engineer. All thanks to seniors like Saransh bhaiya and Saubhagya bhaiya for taking multiple mocks and keenly providing valuable insights to ace the interview. For those who are from non-cse background, this programme is a must. In addition, I would like to thank them for their constant support and motivation during tough times.",
+      "Like every final yearite, I was also anxious, doubtful,and scared for the placement season, and I searched for every help that I could get. Surprisingly very next day, I had an opportunity to attend the MAS workshop, and it was so impressive that I made my decision to join MAS at the exact moment.Being a skeptical person, I had many silly questions, but the core team members were just a call away and always encouraged us to talk to them.The journey was about 8-9 months, which included a lot of daily quizzes, tech tasks, project works, mock group discussions, a lot of motivation, and strategies. All were superb.With a very exhaustive and well-curated timeline, covering every topic withease and never for once making us feel overburdened or overworked, and most importantly,creating an environment of healthy competition where all of us kept each other motivated to keep going,My Analytics School helped us in every way possible. Joining this institute was one of the best decisions that I made.",
   },
   {
     id: 12,
-    name: "Bhavik Jain",
-    position: "Myntra",
-    image: Bhavik,
+    name: "Himanshu Gupta",
+    image: Himanshu,
+    position: "Fractal Analytics",
     about:
-      "I was really blessed to have such seniors who lifted off the immense pressure usually felt during placement even during the pandemic. They guided me in refining my resume, enhancing my skillls and preparing for interviews. Their supportive mentorship and feedback helped me to work on my analytical skills and I successfully landed up with a job in analytics profile.",
+      "I am in IIT and that thing was giving me more tension that how will i face all my friends and neighbours if i dont get the placement.Seniors told me that Analytics is easy that coding so i decided to go in that but i still have no idea about that then I hear about MAS and as I started following their schedule my confidence start increasing and as soon as October comes i was so confident that i just gave up studying.One of the thing that MAS helped me immensely is Resume making.Thanks",
   },
   {
     id: 13,
-    name: "Anirudh Shivam",
-    position: "Optum - UnitedHealth Group",
-    image: Anirudh,
+    name: "Dhvani Shah",
+    image: Dhvani,
+    position: "Accenture",
     about:
-      "I must thank Aryan bhaiya for his constant support and mentorship from the very beginning of preparation to handling the interviews. His company-centric strategy boosted my final preparation. I got an offer from EXL Analytics for the position of Consultant. I would highly recommend this programme to all the juniors who plan to ace their placement.",
+      "Being with MAS, my placement prep has been a cake walk. From being skeptical about myself to gaining confidence in myself, the journey has been nothing but exhilarating. The step-by-step curated preparation timeline covering A to Z of skills requirement starting from test preparation to interview preparation made the entire 4 months of my placement prep a very worthy one. Needless to say, joining MAS was one of the best decisions I ever made. The entire team of MAS helpful and supportive and I could not have asked for better mentors.Thank you MAS!",
   },
   {
     id: 14,
-    name: "Tanay Kedia",
-    position: "Fractal Analytics",
-    image: Tanay,
+    name: "Snehitha Chinthoju",
+    image: Snehitha,
+    position: "Applied Materials",
     about:
-      "The must-have requisite for placement is not your skills, but your plan thus said Aryan bhaiya while laying out the most optimal timeline for a well-planned placement preparation, his most crucial lesson which was going to be used a lot in the coming 8 months. Whenever I needed someone to confide in, he was just a call away. Right from exclusive analytics tips to company level inside info, he proved to be of great help. At times when I used to lose self-confidence, his brotherly scoldings were elixir enough to help me grab 2 offers on day 1. I'll recommend My school analytics to all. It's worth a try, definitely.",
+      "My Analytics School is the best for placement preparation with guidance from our own seniors. From the starting day of preparation to the day of interviews, the mentors were always there from saying you have to do this, study that to you can do it, ace your interview. Everything is well planned and scheduled from the preparation of tests, group discussions and interviews with neatly sorted out courses, materials, practice tests,case studys, projects etc. I felt good when someone is already out there making my schedule what to do on that day while also providing with the content for the entire placement season. Hence deciding to join MAS was one of the best decisions I made at the right time.",
+  },
+  {
+    id: 15,
+    name: "Bharat Bhusan Rath",
+    image: Bharat,
+    position: "PwC",
+    about:
+      "Back in August, I was so underconfident to sit in the placements that I was contemplating a dual-degree program. I had some experience in the field of Data Analytics, but all I needed was a little push. That was when I joined MAS101. The entire team of MAS guided me through the placement season, who created a well-crafted timeline and provided necessary study materials. They also made sure that I followed the timeline and constantly kept a check on me. In a matter of three months, I went from being completely clueless and underconfident to being able to realize my value. MAS created an atmosphere where each and every one of us enjoyed the challenge of the placement season. Joining MAS truly opened my eyes. Thanks MAS in every possible way.",
   },
 ];
 

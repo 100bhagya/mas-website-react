@@ -14,6 +14,7 @@ import Design5 from "../images/design3.png";
 import Offers from "../components/Offers";
 import Footer from "../components/Footer";
 import Testimonial from "../components/Testimonial";
+import { Link } from "react-router-dom";
 
 const Card1 = ({ img, title, content }) => {
   return (
@@ -87,12 +88,12 @@ const LandingPage = () => {
               and modelling data with the goal of discovering useful
               information,
             </p>
-            <a
-              href="download"
+            <Link
+              to="/"
               className="inline-block bg-blue-600 lg:mt-20 mt-8 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-normal uppercase font-primary tracking-wide lg:text-sm text-[12px] mr-4"
             >
               Join Today
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex justify-center">

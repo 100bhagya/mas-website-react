@@ -1,309 +1,421 @@
-import Tanay from "../images/Tanay Kedia.png";
-import Suyash from "../images/Suyash Ratna.png";
-import Dirghayu from "../images/Dirghayu.png";
-import Mahi from "../images/Mahi.png";
-import Poojan from "../images/Poojan.png";
-import Anuj from "../images/Anuj Agrawal.png";
-import SuyashJain from "../images/Suyash Jain.png";
-import Ayush from "../images/Ayush.png";
-import Saurabh from "../images/Saurabh Bhatia.png";
-import SaurabhVerma from "../images/Saurabh Verma.png";
-import Avinash from "../images/avinash.png";
-import Aishwarya from "../images/Aishwarya.png";
-import Supriya from "../images/Supriya Gupta.png";
-import Bhaskar from "../images/bhaskar.png";
-import Sourav from "../images/sourav das.png";
-import Roshni from "../images/roshni.png";
-import Prakhar from "../images/prakhar.png";
-import Abhay from "../images/Abhay Joshi.png";
-import Anshuman from "../images/Anshuman Mishra.png";
-import Bhavik from "../images/Bhavik Jain.png";
-import Saket from "../images/Saket Bihari.png";
-import Satwant from "../images/Satwant.png";
-import Sakshi from "../images/sakshi patil.png";
-import Mobassir from "../images/ali.png";
-import Anirudh from "../images/anirudh.png";
-import Shantanu from "../images/Shantanu Sharma.png";
-import Ronak from "../images/ronak.png";
-import Sourabh from "../images/Sourabh Kumar.png";
-import Ashish from "../images/Ashish Sen.png";
-import Varnit from "../images/varnit sharan.png";
-import Abhishek from "../images/Abhishek Mohaptra.png";
-import Priyanka from "../images/priyanka.png";
-import Ashutosh from "../images/Ashutosh Gupta.png";
-import Charul from "../images/charul.png";
-import AshutoshKesharwani from "../images/Ashutosh Kesarwani.png";
-import Dinesh from "../images/dinesh.png";
-import Aayush from "../images/Aayush Agrawal.png";
-import Utkarsh from "../images/utkarsh.png";
+import Aditi from "../images/Aditi.jpg";
+import Shruti from "../images/Shruti.jpg";
+import Nallani from "../images/Nallani.jpg";
+import Yash from "../images/Yash.jpg";
+import Devanshu from "../images/Devanshu.jpg";
+import Ajeya from "../images/Ajeya.jpg";
+import Abhay from "../images/Abhay.jpg";
+import Harsh from "../images/Harsh.jpg";
+import Arpit from "../images/Arpit.jpg";
+import Mohit from "../images/Mohit.jpg";
+// import Prateek from "../images/prateek.jpg";
+import Shibangi from "../images/Shibangi.jpg";
+import Nandini from "../images/Nandini.jpg";
+import Chirag from "../images/Chirag.jpg";
+// import Kishan from "../images/Kishan.jpg";
+import Vaibhav from "../images/Vaibhav.jpg";
+import Himanshu from "../images/Himanshu.jpg";
+import Dhvani from "../images/Dhvani.jpg";
+import Vinamra from "../images/Vinamra.jpg";
+import Shaikh from "../images/Shaikh.jpg";
+import Mayukh from "../images/Mayukh.jpg";
+import Aashish from "../images/Aashish.jpg";
+import Divyansh from "../images/Divyansh.jpg";
+import Pushpak from "../images/Pushpak.jpg";
+import Ratnesh from "../images/Ratnesh.jpg";
+import Shivam from "../images/Shivam.jpg";
+import Priyansh from "../images/Priyansh.jpg";
+import Puneet from "../images/Puneet.jpg";
+import Aashi from "../images/Aashi.jpg";
+// import Siddhant from "../images/Siddhant.jpg";
+import Dhiraj from "../images/Dhiraj.jpg";
+import Narashiv from "../images/Narashiv.jpg";
+import Bharat from "../images/Bharat.jpg";
+// import Anurag from "../images/Anurag.jpg";
+// import Hrishabh from "../images/Hrishabh.jpg";
+import Bagul from "../images/Bagul.jpg";
+import Snehitha from "../images/Snehitha.jpg";
+import Riya from "../images/Riya.jpg";
+// import Muskan from "../images/Muskan.jpg";
+import Dusi from "../images/Dusi.jpg";
+import Poojith from "../images/Poojith.jpg";
+import Kaushkey from "../images/Kaushkey.jpg";
+import Ayush from "../images/Ayush.jpg";
+import Utkarsh from "../images/Utkarsh.jpg";
+import Rohit from "../images/Rohit.jpg";
+import Shubhangi from "../images/Shubhangi.jpg";
+import Antriksh from "../images/Antriksh.jpg";
+import Prakhar from "../images/Prakhar.jpg";
+// import Bhanudas from "../images/Bhanudas.jpg";
+import BharatRegar from "../images/Bharat Regar.jpg";
+// import Dinesh from "../images/Dinesh.jpg";
+import Ameya from "../images/Ameya.jpg";
 
 const Data = [
   {
     id: 1,
-    name: "Tanay Kedia",
-    image: Tanay,
-    position: "Fractal Analytics",
-    Link_linkedin: "https://www.linkedin.com/in/tanay-kedia/",
+    name: "Kumari Aditi",
+    image: Aditi,
+    position: "Accenture",
+    Link_linkedin: "https://www.linkedin.com/in/kumari-aditi-936935184",
   },
   {
     id: 2,
-    name: "Suyash Ratna",
-    image: Suyash,
-    position: "PhonePe",
-    Link_linkedin: "https://www.linkedin.com/in/suyash-ratna-ba324714a/",
+    name: "Shruti Pandey",
+    image: Shruti,
+    position: "JPMC",
+    Link_linkedin: "https://www.linkedin.com/in/shruti-pandey-86567b164/",
   },
   {
     id: 3,
-    name: "Dirghayu Kaushik",
-    image: Dirghayu,
-    position: "ICICI Bank",
-    Link_linkedin: "https://www.linkedin.com/in/dirghayukaushik/",
+    name: "Nallani Venkata Harsha",
+    image: Nallani,
+    position: "Mastercard",
+    Link_linkedin:
+      "https://www.linkedin.com/in/nallani-venkata-harsha-886579174/",
   },
   {
     id: 4,
-    name: "Mahi Asati",
-    image: Mahi,
-    Link_linkedin: "https://www.linkedin.com/in/mahiasati/",
-    position: "Fractal Analytics",
+    name: "Yash Paliwal",
+    image: Yash,
+    position: "Nobroker",
+    Link_linkedin: "https://www.linkedin.com/in/yash-paliwal-102164170/",
   },
   {
     id: 5,
-    name: "Poojan Dabakra",
-    image: Poojan,
-    Link_linkedin: "https://www.linkedin.com/in/poojandabakra/",
-    position: "Axxela Advisory",
+    name: "Devanshu Abrol",
+    image: Devanshu,
+    position: "Accenture",
+    Link_linkedin: "https://www.linkedin.com/in/devanshu-abrol-4ab6901a5/",
   },
   {
     id: 6,
-    name: "Anuj Agrawal",
-    image: Anuj,
-    Link_linkedin: "https://www.linkedin.com/in/anuj-agrawal-iit-bhu/",
-    position: "MasterCard",
+    name: "Ajeya Krishna",
+    image: Ajeya,
+    position: "Saas Labs",
+    Link_linkedin: "https://www.linkedin.com/in/ajeya-krishna12/",
   },
   {
     id: 7,
-    name: "Suyash Jain",
-    image: SuyashJain,
-    Link_linkedin: "https://www.linkedin.com/in/jainuineaadmi/",
-    position: "EXL",
+    name: "Abhay Porwal",
+    image: Abhay,
+    position: "OLA",
+    Link_linkedin: "https://www.linkedin.com/in/abhay-porwal-016397171/",
   },
   {
     id: 8,
-    name: "Ayush C.",
-    image: Ayush,
-    Link_linkedin: "https://www.linkedin.com/in/ayush-chakraborty-20693513a/",
-    position: "AB In BEV",
+    name: "Harsh Singhal",
+    image: Harsh,
+    position: "PhonePe",
+    Link_linkedin: "https://www.linkedin.com/in/harsh-singhal1026/",
   },
   {
     id: 9,
-    name: "Saurabh Bhatia",
-    image: Saurabh,
-    Link_linkedin: "https://www.linkedin.com/in/saurabh-bhatia-b65ab6179/",
-    position: "Spyne",
+    name: "Arpit Gupta",
+    image: Arpit,
+    position: "JPMC",
+    Link_linkedin: "https://www.linkedin.com/in/arpit-gupta-19133617a/",
   },
   {
     id: 10,
-    name: "Saurabh Verma",
-    image: SaurabhVerma,
-    Link_linkedin: "https://www.linkedin.com/in/saurabh-verma-a45936146/",
-    position: "Iqvia",
+    name: "Mohit Agrawal",
+    image: Mohit,
+    position: "PhonePe",
+    Link_linkedin: "https://www.linkedin.com/in/mohit-agrawal-7bb431187/",
   },
-  {
-    id: 11,
-    name: "Avinash Dubey",
-    image: Avinash,
-    Link_linkedin: "https://www.linkedin.com/in/avidubey99/",
-    position: "HealthifyMe",
-  },
+  // {
+  //   id: 11,
+  //   name: "Prateek Raman",
+  //   image: Prateek,
+  //   Link_linkedin: "https://www.linkedin.com/in/prateek-raman/",
+  //   position: "Axis Bank",
+  // },
   {
     id: 12,
-    name: "Aishwarya Sharma",
-    image: Aishwarya,
-    Link_linkedin: "https://www.linkedin.com/in/aishwaryasharma0805/",
-    position: "CITI Bank",
+    name: "Shibangi Barau",
+    image: Shibangi,
+    Link_linkedin: "https://www.linkedin.com/in/shibangibarua/",
+    position: "ABInBev",
   },
   {
     id: 13,
-    name: "Supriya Gupta",
-    image: Supriya,
-    Link_linkedin: "https://www.linkedin.com/in/supriya-gupta-597353118/",
-    position: "PhonePe",
+    name: "Nandini Gupta",
+    image: Nandini,
+    position: "ABInBev",
+    Link_linkedin: "https://www.linkedin.com/in/nandini-gupta-611bb7183/",
   },
   {
     id: 14,
-    name: "Bhaskar Anand",
-    image: Bhaskar,
-    Link_linkedin: "https://www.linkedin.com/in/bhaskar-anand-379074132/",
-    position: "Lumenci",
+    name: "Chirag Jangra",
+    image: Chirag,
+    Link_linkedin: "https://www.linkedin.com/in/chirag-jangra-0a9417181/",
+    position: "Bank of America",
   },
-  {
-    id: 15,
-    name: "Sourav Das",
-    image: Sourav,
-    Link_linkedin: "https://www.linkedin.com/in/sourav-das-069198151/",
-    position: "Optum-UHG",
-  },
+  // {
+  //   id: 15,
+  //   name: "Kishan Verma",
+  //   image: Kishan,
+  //   Link_linkedin: "https://www.linkedin.com/in/kishan-verma-520678176/",
+  //   position: "Tiger Analytics",
+  // },
   {
     id: 16,
-    name: "Roshni S.",
-    image: Roshni,
-    Link_linkedin: "https://www.linkedin.com/in/roshni-sonkhedkar-170966133/",
-    position: "ICICI Bank",
+    name: "Vaibhav Singh",
+    image: Vaibhav,
+    position: "JPMC",
+    Link_linkedin: "https://www.linkedin.com/in/vaibhav-singh-108672177/",
   },
   {
     id: 17,
-    name: "Prakhar Doorwar",
-    image: Prakhar,
-    Link_linkedin: "https://www.linkedin.com/in/prakhardoorwar/",
-    position: "Kline & Company",
+    name: "Himanshu Gupta",
+    image: Himanshu,
+    position: "Fractal Analytics",
+    Link_linkedin: "https://www.linkedin.com/in/himanshu-gupta-ba9b9b1a3/",
   },
   {
     id: 18,
-    name: "Abhay Joshi",
-    image: Abhay,
-    Link_linkedin: "https://www.linkedin.com/in/abhay-joshi-iitbhu/",
-    position: "EXL",
+    name: "Dhvani Shah",
+    image: Dhvani,
+    position: "Accenture",
+    Link_linkedin: "https://www.linkedin.com/in/sdhvani/",
   },
   {
     id: 19,
-    name: "Anshuman Mishra",
-    image: Anshuman,
-    Link_linkedin: "https://www.linkedin.com/in/anshuman-mishra-94068b145/",
-    position: "HCAS INDIA",
+    name: "Vinamra Bansal",
+    image: Vinamra,
+    position: "OLA",
+    Link_linkedin: "https://www.linkedin.com/in/vinamra-bansal-95246919a/",
   },
   {
     id: 20,
-    name: "Bhavik Jain",
-    image: Bhavik,
-    Link_linkedin: "https://www.linkedin.com/in/bhavik-jain-335259157/",
-    position: "Myntra",
+    name: "Shaikh Awais",
+    image: Shaikh,
+    Link_linkedin: "https://www.linkedin.com/in/awaissk/",
+    position: "OLA",
   },
   {
     id: 21,
-    name: "Saket Bihari",
-    image: Saket,
-    Link_linkedin: "https://www.linkedin.com/in/saket-bihari-59b41b15b/",
-    position: "OYO",
+    name: "Mayukh Sarkar",
+    image: Mayukh,
+    Link_linkedin: "https://www.linkedin.com/in/mayukh-sarkar-253134170/",
+    position: "Exl",
   },
   {
     id: 22,
-    name: "Satwant Singh",
-    image: Satwant,
-    Link_linkedin:
-      "https://www.linkedin.com/in/chaudhary-satwant-singh-601b9815b/",
-    position: "ZS Associates",
+    name: "Aashish Raika",
+    image: Aashish,
+    position: "Chargebee Technologies",
+    Link_linkedin: "https://www.linkedin.com/in/aashish-raika-54b260164/",
   },
   {
     id: 23,
-    name: "Sakshi Patil",
-    image: Sakshi,
-    Link_linkedin: "https://www.linkedin.com/in/sakshi-patil/",
-    position: "CITI Bank",
+    name: "Divyansh Goyal",
+    image: Divyansh,
+    position: "Flipkart",
+    Link_linkedin: "https://www.linkedin.com/in/divyansh-goyal-2856b61ba/",
   },
   {
     id: 24,
-    name: "Mobassir Ali",
-    image: Mobassir,
-    Link_linkedin: "https://www.linkedin.com/in/mobasshir-ali-b4b496157/",
-    position: "American Express",
+    name: "Pushpak Musram",
+    image: Pushpak,
+    position: "Mynthra",
+    Link_linkedin: "https://www.linkedin.com/in/pushpak-musram/",
   },
   {
     id: 25,
-    name: "Anirudh Shivam",
-    image: Anirudh,
-    Link_linkedin: "https://www.linkedin.com/in/anirudh-shivam-702600155/",
-    position: "Optum-UHG",
+    name: "Shivam Kumar Singh",
+    image: Shivam,
+    Link_linkedin: "https://www.linkedin.com/in/shivam-singh-295a791a7/",
+    position: "Mynthra",
   },
   {
     id: 26,
-    name: "Shantanu Sharma",
-    image: Shantanu,
-    Link_linkedin: "https://www.linkedin.com/in/shantanusharmaiitbhu/",
-    position: "ZS Associates",
+    name: "Priyansh Patidar",
+    image: Priyansh,
+    position: "FPL Technologies",
+    Link_linkedin: "https://www.linkedin.com/in/priyansh-patidar-56093a1b2/",
   },
   {
     id: 27,
-    name: "Ronak Gangwal",
-    image: Ronak,
-    Link_linkedin: "https://www.linkedin.com/in/ronak-gangwal/",
-    position: "Fractal Analytics",
+    name: "Ratnesh Kumar",
+    image: Ratnesh,
+    Link_linkedin: "https://www.linkedin.com/in/ratnesh-kumar-5665a3184/",
+    position: "Axtria",
   },
   {
     id: 28,
-    name: "Sourabh Kumar",
-    image: Sourabh,
-    Link_linkedin: "https://www.linkedin.com/in/sourabh-kumar-7b963516a/",
-    position: "Xpressbees",
+    name: "Puneet Mandil",
+    image: Puneet,
+    position: "MasterCard",
+    Link_linkedin: "https://www.linkedin.com/in/puneet-mandil-8a84b7156/",
   },
   {
     id: 29,
-    name: "Ashish Sen",
-    image: Ashish,
-    Link_linkedin: "https://www.linkedin.com/in/ashishsen98/",
-    position: "Deloitte",
+    name: "Aashi Pathak",
+    image: Aashi,
+    Link_linkedin: "https://www.linkedin.com/in/aashi-p/",
+    position: "Rakuten mobile",
   },
-  {
-    id: 30,
-    name: "Varnit Sharan",
-    image: Varnit,
-    Link_linkedin: "https://www.linkedin.com/in/varnit-sh/",
-    position: "Virohan",
-  },
+  // {
+  //   id: 30,
+  //   name: "Siddhant Bhandari",
+  //   image: Siddhant,
+  //   Link_linkedin: "https://www.linkedin.com/in/siddhant-bhandari-bb4101170/",
+  //   position: "Merilytics",
+  // },
   {
     id: 31,
-    name: "Abhishek M.",
-    image: Abhishek,
-    Link_linkedin: "https://www.linkedin.com/in/abhishek-mohapatra-b77a95150/",
-    position: "ICICI Bank",
+    name: "Dhiraj Kumar Gupta",
+    image: Dhiraj,
+    Link_linkedin: "https://www.linkedin.com/in/dhiraj-kumar-gupta-632663177/",
+    position: "EXL",
   },
   {
     id: 32,
-    name: "Priyanka Golchha",
-    image: Priyanka,
-    Link_linkedin: "https://www.linkedin.com/in/gappi/",
-    position: "Nference Lab",
+    name: "N Narashiv Shenoy",
+    image: Narashiv,
+    position: "Citi Bank",
+    Link_linkedin: "https://www.linkedin.com/in/narashiv-shenoy/",
   },
   {
     id: 33,
-    name: "Ashutosh Gupta",
-    image: Ashutosh,
-    Link_linkedin: "https://www.linkedin.com/in/ashutosh-gupta-3b4654118/",
-    position: "ICICI Bank",
+    name: "Bharat Bhusan Rath",
+    image: Bharat,
+    position: "PwC",
+    Link_linkedin: "https://www.linkedin.com/in/bharat-bhusan-rath-14ab5819a/",
   },
-  {
-    id: 34,
-    name: "Charul Soni",
-    image: Charul,
-    Link_linkedin: "https://www.linkedin.com/in/charul-soni-151892114/",
-    position: "ATCS",
-  },
-  {
-    id: 35,
-    name: "Ashutosh K.",
-    image: AshutoshKesharwani,
-    Link_linkedin: "https://www.linkedin.com/in/ashutosh-kesarwani/",
-    position: "OYO",
-  },
+  // {
+  //   id: 34,
+  //   name: "Anurag Harsh",
+  //   image: Anurag,
+  //   Link_linkedin: "https://www.linkedin.com/in/bharat-bhusan-rath-14ab5819a/",
+  //   position: "ATCS",
+  // },
+  // {
+  //   id: 35,
+  //   name: "Hrishabh Verma",
+  //   image: Hrishabh,
+  //   Link_linkedin: "https://www.linkedin.com/in/ashutosh-kesarwani/",
+  //   position: "Park+",
+  // },
   {
     id: 36,
-    name: "Dinesh Seervi",
-    image: Dinesh,
-    Link_linkedin: "https://www.linkedin.com/in/dinesh-seervi-9984one0one552/",
-    position: "BYJU'S",
+    name: "Bagul Prathamesh",
+    image: Bagul,
+    Link_linkedin: "https://www.linkedin.com/in/prathamesh-bagul-4860b8174/",
+    position: "MasterCard",
   },
   {
     id: 37,
-    name: "Aayush Agrawal",
-    image: Aayush,
-    Link_linkedin: "https://www.linkedin.com/in/aayush54/",
-    position: "CITI Bank",
+    name: "Snehitha Chinthoju",
+    image: Snehitha,
+    position: "Applied Materials",
+    Link_linkedin: "https://www.linkedin.com/in/snehitha-chintoju/",
   },
   {
     id: 38,
-    name: "Utkarsh Srivastava",
+    name: "Riya Zaveri",
+    image: Riya,
+    Link_linkedin: "https://www.linkedin.com/in/riyazaveri3004/",
+    position: "Tiger Analytics",
+  },
+  // {
+  //   id: 39,
+  //   name: "Muskan Kulmethi",
+  //   image: Muskan,
+  //   Link_linkedin: "https://www.linkedin.com/in/utkarsh-srivastava-06aa02117/",
+  //   position: "EXL",
+  // },
+  {
+    id: 40,
+    name: "Dusi Sobha Khyati",
+    image: Dusi,
+    Link_linkedin: "https://www.linkedin.com/in/dusi-sobha-khyati-448862184/",
+    position: "J.P.Morgan",
+  },
+  {
+    id: 41,
+    name: "Poojith V",
+    image: Poojith,
+    Link_linkedin: "https://www.linkedin.com/in/poojith-valasingam-31210a170/",
+    position: "Deloitte",
+  },
+  {
+    id: 42,
+    name: "Kaushkey Prakash",
+    image: Kaushkey,
+    Link_linkedin: "https://www.linkedin.com/in/kaushkey-prakash-958720192/",
+    position: "Accenture",
+  },
+  {
+    id: 43,
+    name: "Ayush Bichpuria",
+    image: Ayush,
+    Link_linkedin: "https://www.linkedin.com/in/ayush-bichpuria-644906187/",
+    position: "Auronova",
+  },
+  {
+    id: 44,
+    name: "Utkarsh Kumar",
     image: Utkarsh,
-    Link_linkedin: "https://www.linkedin.com/in/utkarsh-srivastava-06aa02117/",
-    position: "MasterCard",
+    Link_linkedin: "https://www.linkedin.com/in/utkarsh-k-a03bba158/",
+    position: "Schlumberger",
+  },
+  {
+    id: 45,
+    name: "Rohit Kumar Jangid",
+    image: Rohit,
+    Link_linkedin: "https://www.linkedin.com/in/rohit-jangid-150289171/",
+    position: "FPL Technology",
+  },
+  {
+    id: 46,
+    name: "Shubhangi",
+    image: Shubhangi,
+    Link_linkedin: "https://www.linkedin.com/in/shubhangi-sharma-99a091185/",
+    position: "American Express",
+  },
+  {
+    id: 47,
+    name: "Antriksh Karloopia",
+    image: Antriksh,
+    Link_linkedin: "https://www.linkedin.com/in/antriksh-karloopia-445790171/",
+    position: "Cubastion consulting",
+  },
+  {
+    id: 48,
+    name: "Prakhar Kamal",
+    image: Prakhar,
+    position: "ICICI",
+    Link_linkedin: "https://www.linkedin.com/in/prakhar-kamal-83a28b13a/",
+  },
+  // {
+  //   id: 49,
+  //   name: "Bhanudas Sarpate",
+  //   image: Bhanudas,
+  //   Link_linkedin: "https://www.linkedin.com/in/utkarsh-srivastava-06aa02117/",
+  //   position: "HCL",
+  // },
+  {
+    id: 50,
+    name: "Bharat Regar",
+    image: BharatRegar,
+    Link_linkedin: "https://www.linkedin.com/in/bharat-regar-38133019a/",
+    position: "Iffco-Tokio",
+  },
+  // {
+  //   id: 51,
+  //   name: "Dinesh Singh",
+  //   image: Dinesh,
+  //   Link_linkedin: "https://www.linkedin.com/in/dinesh-singh-22b266152/",
+  //   position: "Rxlogix corporation Inc",
+  // },
+  {
+    id: 52,
+    name: "Ameya",
+    image: Ameya,
+    Link_linkedin: "https://www.linkedin.com/in/ameya-sinha-024b5019a/",
+    position: "ITC",
   },
 ];
 
