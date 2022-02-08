@@ -48,7 +48,7 @@ function SideMenu() {
           href="https://myanalyticsschool.com/blog/"
           target="_blank"
           rel="noopener noreferrer"
-          className=" mob_pos w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent hover:border-blue-600"
+          className=" mob_pos w-full px-5 py-2 rounded text-gray-800 items-center justify-center transition duration-150 border-b-4 border-transparent"
         >
           Blogs
         </a>
