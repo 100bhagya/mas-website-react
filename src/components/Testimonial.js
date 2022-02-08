@@ -24,7 +24,7 @@ const PreviousBtn = (props) => {
         bottom: "230px",
         paddingLeft: "11px",
       },
-      [theme.breakpoints.down("md")]: {
+      [theme.breakpoints.up("md")]: {
         fontSize: "60px",
         backgroundColor: "black",
         color: "white",
@@ -42,6 +42,7 @@ const PreviousBtn = (props) => {
         borderRadius: "9999px",
         height: "60px",
         position: "relative",
+        top: "0px",
         left: "5px",
         paddingLeft: "16px",
       },
@@ -71,7 +72,7 @@ const NextBtn = (props) => {
         paddingRight: "-3px",
         paddingLeft: "9px",
       },
-      [theme.breakpoints.down("md")]: {
+      [theme.breakpoints.up("md")]: {
         fontSize: "60px",
         backgroundColor: "black",
         color: "white",
@@ -90,6 +91,7 @@ const NextBtn = (props) => {
         height: "60px",
         position: "relative",
         right: "50px",
+        top: "0px",
         paddingRight: "3px",
         paddingLeft: "12px",
       },
