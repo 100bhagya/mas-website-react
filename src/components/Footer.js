@@ -61,37 +61,37 @@ const Footer = () => {
                 Explore
               </div>
               <div className="flex relative md:bottom-12 top-4 md:top-6 lg:top-0">
-                <a
-                  href="links"
+                <Link
+                  to="/"
                   className="mr-6 md:text-[16px] text-[14px] font-normal "
                 >
                   Home
-                </a>
+                </Link>
                 <img src={Bar} alt="circle" className="md:mx-1" />
-                <a
-                  href="links"
+                <Link
+                  to="/courses"
                   className="mx-6 md:text-[16px] text-[14px] font-normal"
                 >
                   Courses
-                </a>
+                </Link>
                 <img src={Bar} alt="circle" className="md:mx-1" />
-                <a
-                  href="links"
+                <Link
+                  to="/mentors"
                   className="mx-6 md:text-[16px] text-[14px] font-normal"
                 >
                   Mentors
-                </a>
+                </Link>
               </div>
               <div className="relative md:bottom-1 mt-14 text-[16px] font-semibold">
                 Helpful Links
               </div>
               <div className="flex md:flex-col mt-3">
-                <a
-                  href="links"
+                <Link
+                  to="/faq"
                   className="mr-5 md:text-[16px] text-[14px] font-normal"
                 >
                   FAQs
-                </a>
+                </Link>
                 <img src={Bar} alt="circle" className="md:mx-1 md:hidden" />
                 <a
                   href="links"
@@ -100,12 +100,12 @@ const Footer = () => {
                   Blogs
                 </a>
                 <img src={Bar} alt="circle" className="md:mx-1 md:hidden" />
-                <a
-                  href="links"
+                <Link
+                  to="/about"
                   className="mx-5 md:mx-0 md:text-[16px] text-[14px] font-normal"
                 >
                   About Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>
