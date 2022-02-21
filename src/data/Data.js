@@ -107,14 +107,6 @@ const Data = [
   },
   {
     id: 12,
-    name: "Himanshu Gupta",
-    image: Himanshu,
-    position: "Fractal Analytics",
-    about:
-      "I am in IIT and that thing was giving me more tension that how will i face all my friends and neighbours if i dont get the placement.Seniors told me that Analytics is easy that coding so i decided to go in that but i still have no idea about that then I hear about MAS and as I started following their schedule my confidence start increasing and as soon as October comes i was so confident that i just gave up studying.One of the thing that MAS helped me immensely is Resume making.Thanks",
-  },
-  {
-    id: 13,
     name: "Dhvani Shah",
     image: Dhvani,
     position: "Accenture",
@@ -122,7 +114,7 @@ const Data = [
       "Being with MAS, my placement prep has been a cake walk. From being skeptical about myself to gaining confidence in myself, the journey has been nothing but exhilarating. The step-by-step curated preparation timeline covering A to Z of skills requirement starting from test preparation to interview preparation made the entire 4 months of my placement prep a very worthy one. Needless to say, joining MAS was one of the best decisions I ever made. The entire team of MAS helpful and supportive and I could not have asked for better mentors.Thank you MAS!",
   },
   {
-    id: 14,
+    id: 13,
     name: "Snehitha Chinthoju",
     image: Snehitha,
     position: "Applied Materials",
@@ -130,7 +122,7 @@ const Data = [
       "My Analytics School is the best for placement preparation with guidance from our own seniors. From the starting day of preparation to the day of interviews, the mentors were always there from saying you have to do this, study that to you can do it, ace your interview. Everything is well planned and scheduled from the preparation of tests, group discussions and interviews with neatly sorted out courses, materials, practice tests,case studys, projects etc. I felt good when someone is already out there making my schedule what to do on that day while also providing with the content for the entire placement season. Hence deciding to join MAS was one of the best decisions I made at the right time.",
   },
   {
-    id: 15,
+    id: 14,
     name: "Bharat Bhusan Rath",
     image: Bharat,
     position: "PwC",

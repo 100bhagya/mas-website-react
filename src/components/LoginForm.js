@@ -22,6 +22,8 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
         formErrors.email = "";
       case "phone":
         formErrors.phone = "";
+      case "graduation":
+        formErrors.graduation = "";
     }
   };
   const handleSubmit = (event) => {
@@ -34,11 +36,15 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     const phoneRegex =
       /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/i;
+    const year = /^(19|20)\d{2}$/i;
     if (!regex.test(values.email)) {
       errors.email = "This is not a valid Email!";
     }
     if (!phoneRegex.test(values.phone)) {
       errors.phone = "This is not a valid Phone Number!";
+    }
+    if (!year.test(values.graduation)) {
+      errors.graduation = "This is not a valid year";
     }
     return errors;
   };
@@ -77,7 +83,9 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
                   class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 text-[12px] outline-none focus:ring-2 focus:ring-teal-300"
                 />
               </div>
-              <p className=" text-[12px] ">{formErrors.username}</p>
+              <p className=" text-[12px] text-red-500 relative bottom-4 ">
+                {formErrors.username}
+              </p>
 
               <div className="mt-6">
                 <label htmlFor="" className="text-sm font-medium required">
@@ -166,10 +174,15 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
                   type="text"
                   placeholder="Enter your graduation year here"
                   required
+                  onChange={handleChange}
+                  value={formValues.graduation}
                   name="graduation"
                   class="ring-1 ring-gray-300 w-full text-[12px] rounded-md relative bottom-5 px-4 py-2 mt-8 outline-none focus:ring-2 focus:ring-teal-300"
                 />
               </div>
+              <p className="text-red-500 relative bottom-4 text-[12px] ">
+                {formErrors.graduation}
+              </p>
               <div>
                 <label htmlFor="" className="text-sm font-medium">
                   Interested in
