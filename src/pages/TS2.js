@@ -264,7 +264,7 @@ const TS2 = () => {
           </div>
         </div>
       </div>
-      <TestimonialOtherPages />
+      {/* <TestimonialOtherPages />
 
       <div className="text-center mb-28 mt-10">
         <a
@@ -273,7 +273,7 @@ const TS2 = () => {
         >
           Apply Now
         </a>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );
