@@ -225,7 +225,7 @@ const MAS101 = () => {
                     href="apply"
                     className=" py-3 px-8 bg-blue-700 rounded-2xl text-white relative left-[28%] md:left-0"
                   >
-                    <Link to="/isa">Learn more</Link>
+                    <Link to="/isa-101">Learn more</Link>
                   </a>
                 </div>
                 <div className="lg:h-[450px] h-[230px]">
@@ -335,7 +335,7 @@ const MAS101 = () => {
           </div>
         </div>
       </div>
-      <TestimonialOtherPages />
+      {/* <TestimonialOtherPages />
       <div className="text-center pt-12 pb-24 bg-back">
         <a
           href="apply"
@@ -343,7 +343,7 @@ const MAS101 = () => {
         >
           Apply Now
         </a>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

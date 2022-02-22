@@ -138,7 +138,7 @@ const Tests = () => {
         </div>
       </div>
 
-      <div className="bg-back lg:block hidden">
+      {/* <div className="bg-back lg:block hidden">
 
         <div className="text-[40px] font-medium text-center mb-20">
           Testimonials
@@ -194,7 +194,7 @@ const Tests = () => {
         >
           Apply Now
         </a>
-      </div>
+      </div> */}
 
       <Footer />
     </div>

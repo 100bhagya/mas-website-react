@@ -4,7 +4,8 @@ import About from "./pages/About";
 import Mentors from "./pages/Mentors";
 import FaqPage from "./pages/FaqPage";
 import Tests from "./pages/Tests";
-import ISA from "./pages/ISA";
+import ISA101 from "./pages/ISA-101";
+import ISA102 from "./pages/ISA-102";
 import TS3 from "./pages/TS3";
 import TS2 from "./pages/TS2";
 import TS1 from "./pages/TS1";
@@ -27,7 +28,8 @@ const App = () => {
           <Route exact path="/mentors" element={<Mentors />} />
           <Route exact path="/faq" element={<FaqPage />} />
           <Route exact path="/tests" element={<Tests />} />
-          <Route exact path="/isa" element={<ISA />} />
+          <Route exact path="/isa-101" element={<ISA101 />} />
+          <Route exact path="/isa-102" element={<ISA102 />} />
           <Route exact path="/ts3" element={<TS3 />} />
           <Route exact path="/ts2" element={<TS2 />} />
           <Route exact path="/ts1" element={<TS1 />} />

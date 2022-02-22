@@ -6,20 +6,20 @@ import Footer from "../components/Footer";
 import Rectangle from "../images/Rectangle 52.png";
 import Artboard1 from "../images/isa_image.png";
 
-const IncomeSlab = ({ income, status, color, round }) => {
-  return (
-    <div
-      className={`flex md:px-3 lg:px-0 w-full md:h-[75px] pb-4 md:pb-0 pt-1 md:bg-card border-solid border-b-[1px] ${color} ${round}`}
-    >
-      <div className="md:text-sm text-[12px] font-normal w-1/4 text-center pt-6">
-        {income}
-      </div>
-      <div className="md:text-sm text-[12px] font-normal w-3/4 text-center pt-6">
-        {status}
-      </div>
-    </div>
-  );
-};
+// const IncomeSlab = ({ income, status, color, round }) => {
+//   return (
+//     <div
+//       className={`flex md:px-3 lg:px-0 w-full md:h-[75px] pb-4 md:pb-0 pt-1 md:bg-card border-solid border-b-[1px] ${color} ${round}`}
+//     >
+//       <div className="md:text-sm text-[12px] font-normal w-1/4 text-center pt-6">
+//         {income}
+//       </div>
+//       <div className="md:text-sm text-[12px] font-normal w-3/4 text-center pt-6">
+//         {status}
+//       </div>
+//     </div>
+//   );
+// };
 
 function FAQ({ faq, index, toggleFAQ }) {
   return (
@@ -43,7 +43,7 @@ function FAQ({ faq, index, toggleFAQ }) {
   );
 }
 
-const ISA = () => {
+const ISA101 = () => {
   const [faqs, setfaqs] = useState(Data);
 
   const toggleFAQ = (index) => {
@@ -117,7 +117,7 @@ const ISA = () => {
           <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[7px] md:pt-[2px] pt-[3px]">
             4
           </p>
-          After registration, the student will have an option to pay 34,000
+          After registration, the student will have an option to pay ₹ 34,000
           upfront. No need to pay anything after getting placed, if you have
           chosen upfront payment mode.
         </p>
@@ -140,7 +140,7 @@ const ISA = () => {
           a job further).
         </p>
       </div>
-      <div className="relative md:left-[21%] md:mb-20 md:mt-28 mt-6">
+      {/* <div className="relative md:left-[21%] md:mb-20 md:mt-28 mt-6">
         <div className="lg:w-[59%] md:w-[85%] relative md:right-28 lg:right-2 md:shadow-2xl mx-4 md:mx-0">
           <div className="flex border-b-2 border-solid border-blue-600 md:bg-card w-full md:h-[75px] rounded-t-2xl">
             <div className="md:text-2xl text-xl font-semibold w-1/4 text-blue-600 text-center pt-6">
@@ -181,7 +181,7 @@ const ISA = () => {
             status="6000 for 12 months after your job starts or 59,999 one time payment once you are placed"
           />
         </div>
-      </div>
+      </div> */}
       <div className="md:mt-28 mt-16 md:mb-40 mb-10">
         <div className="text-[40px] text-center md:my-12">FAQ</div>
         <div className="faqs lg:w-[58%] md:w-[85%] relative lg:left-[21%] md:left-[7%] md:bg-white md:py-10 py-5 lg:px-20 md:px-8 rounded-3xl">
@@ -195,4 +195,4 @@ const ISA = () => {
   );
 };
 
-export default ISA;
+export default ISA101;
