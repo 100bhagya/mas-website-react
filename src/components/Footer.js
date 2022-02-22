@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Bar from "../images/bar.png";
 import Circle from "../images/Ellipse 75.png";
 import { PhoneIcon, MailIcon } from "@heroicons/react/solid";
@@ -7,8 +7,20 @@ import Facebook from "../images/facebook_white.png";
 import LinkedIn from "../images/linked_in.png";
 import Logo from "../images/logo_white.png";
 import { Link } from "react-router-dom";
+import Privacy from "./Privacy";
 
 const Footer = () => {
+  const [isShowPrivacy, setIsShowPrivacy] = useState(true);
+  const handleClick = () => {
+    setIsShowPrivacy((isShowPrivacy) => !isShowPrivacy);
+  };
+  const closePrivacy = () => {
+    setIsShowPrivacy(!isShowPrivacy);
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <footer class="bg-blue-900">
       <div class="container lg:px-24 px-10 md:px-0  mx-auto md:flex lg:items-start ">
@@ -186,20 +198,19 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <Privacy isShowPrivacy={isShowPrivacy} closePrivacy={closePrivacy} />
       <div className="h-[2px] md:mt-10 mt-20 w-[85%] justify-center text-center relative left-[6.3%] bg-white"></div>
       <div className="lg:text-center md:text-left ml-6 lg:ml-0 md:ml-14 mt-3 md:mt-3 lg:mt-7 text-white md:text-lg text-[9px] font-normal">
         myanalyticsschool © 2021
       </div>
       <div className="relative lg:left-[73%] md:left-[58%] left-[54%] bottom-8 flex">
-        <a
-          href="https://docs.google.com/document/d/1XIVLCoo_91ZfX2-vffUVt8UVUmQsTrzWpME4R1wmro8/edit?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          className="text-white md:text-lg text-[9px] mt-5 md:mt-0 "
+          onClick={handleClick}
         >
-          <div className="text-white md:text-lg text-[9px] mt-5 md:mt-0 ">
-            Privacy{" "}
-          </div>
-        </a>
+          Privacy{" "}
+        </div>
+
         <img
           src={Circle}
           alt=""

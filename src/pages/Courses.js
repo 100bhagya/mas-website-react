@@ -45,7 +45,7 @@ const Courses = () => {
                 Off campus job oppurtunities
               </p>
               <p className="text-[15px] font-semibold text-blue-600 mb-5">
-                ₹ 2500 + ISA
+                ₹ 3000 + ISA
               </p>
 
               <Link
@@ -99,7 +99,7 @@ const Courses = () => {
                 Off campus job oppurtunities
               </p>
               <p className="text-[15px] font-semibold text-blue-600 mb-5">
-                ₹ 2500 + ISA
+                ₹ 3000 + ISA
               </p>
 
               <Link

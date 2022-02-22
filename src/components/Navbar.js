@@ -78,10 +78,10 @@ const Navbar = () => {
   const handleClick = () => {
     setIsShowLogin((isShowLogin) => !isShowLogin);
   };
-  const [isSideMenuOpen, setisSideMenuOpen] = useState(false);
   const closeLogin = () => {
     setIsShowLogin(!isShowLogin);
   };
+  const [isSideMenuOpen, setisSideMenuOpen] = useState(false);
   const showSideMenu = () => {
     isSideMenuOpen ? setisSideMenuOpen(false) : setisSideMenuOpen(true);
   };

@@ -162,7 +162,7 @@ const Contact = () => {
           </div>
           <div className="relative md:bottom-4 ">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60333.685390438026!2d72.87721700000002!3d19.070097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8931a0a8ae1%3A0xde7d09e4bd547394!2sOmkar%20Meridia%2C%20BKC%20Crossing%2C%20Lal%20Bahadur%20Shastri%20Rd%2C%20BMC%20Colony%2C%20Kurla%20West%2C%20Kurla%2C%20Mumbai%2C%20Maharashtra%20400070%2C%20India!5e0!3m2!1sen!2sus!4v1641314551635!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d60333.716951423754!2d72.8769323!3d19.0700103!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3be7c8931a0a8ae1%3A0xde7d09e4bd547394!2sOmkar%20Meridia%20BKC%20Crossing%20Lal%20Bahadur%20Shastri%20Rd%2C%20BMC%20Colony%2C%20Kurla%20West%2C%20Kurla%20Mumbai%2C%20Maharashtra%20400070!3m2!1d19.0700103!2d72.87693229999999!5e0!3m2!1sen!2sin!4v1645357321858!5m2!1sen!2sin"
               width="450"
               height="300"
               style={{ border: 0 }}

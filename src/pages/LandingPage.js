@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
 import "../index.css";
@@ -14,7 +14,8 @@ import Design5 from "../images/design3.png";
 import Offers from "../components/Offers";
 import Footer from "../components/Footer";
 import Testimonial from "../components/Testimonial";
-import { Link } from "react-router-dom";
+import LoginForm from "../components/LoginForm";
+// import { Link } from "react-router-dom";
 
 const Card1 = ({ img, title, content }) => {
   return (
@@ -73,9 +74,17 @@ const Card = ({ img, title, content }) => {
 };
 
 const LandingPage = () => {
+  const [isShowLogin, setIsShowLogin] = useState(true);
+  const handleClick = () => {
+    setIsShowLogin((isShowLogin) => !isShowLogin);
+  };
+  const closeLogin = () => {
+    setIsShowLogin(!isShowLogin);
+  };
   return (
     <div>
       <Navbar />
+
       <div className="flex flex-col-reverse lg:flex-row pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="lg:flex lg:items-center px-4 pt-9 max-w-lg md:max-w-xl lg:max-w-4xl mx-auto">
           <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
@@ -84,17 +93,18 @@ const LandingPage = () => {
               <p className="relative bottom-5 lg:mt-10 mt-4">Analytics Way</p>
             </h1>
             <p className="lg:pt-6 font text-sm lg:text-lg  text-[#787B7D] leading-loose lg:w-[68%] ">
-              Data analysis is a process of inspecting, cleansing, transforming,
-              and modelling data with the goal of discovering useful
-              information,
+              My Analytics School is an Ed-Tech start-up founded by IIT alumni,
+              providing an end-to-end solution for analytics, data science
+              placements and related job preparation
             </p>
-            <Link
-              to="/"
-              className="inline-block bg-blue-600 lg:mt-20 mt-8 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-normal uppercase font-primary tracking-wide lg:text-sm text-[12px] mr-4"
+            <div
+              onClick={handleClick}
+              className="inline-block cursor-pointer bg-blue-600 lg:mt-20 mt-8 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-normal uppercase font-primary tracking-wide lg:text-sm text-[12px] mr-4"
             >
               Join Today
-            </Link>
+            </div>
           </div>
+          <LoginForm isShowLogin={isShowLogin} closeLogin={closeLogin} />
         </div>
         <div className="flex justify-center">
           <img
@@ -117,7 +127,7 @@ const LandingPage = () => {
           <div class="flex justify-center flex-wrap -m-4">
             <Card
               img={Copy}
-              title="Prepration Program"
+              title="Preparation Program"
               content="Channelise your efforts through strategic preparation program."
             />
             <Card
