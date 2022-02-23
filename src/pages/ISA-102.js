@@ -130,14 +130,25 @@ const ISA102 = () => {
           other documents for assuring proper ISA transactions.
         </p>
 
-        <p className="md:text-[16px] text-[12px] flex md:py-6 py-4">
-          <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[9px] md:pt-[2px] pt-[4px]">
+        <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
+          <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-2 rounded-full pl-[8px] pr-[10px] pt-[3px] md:pt-[2px]">
             6
           </p>
           In case you are fired/you leave the job/you switch the job before
           completion of ISA, your ISA will be paused and will resume with your
           next job till completion. (Not applicable in case you don’t wish to do
           a job further).
+        </p>
+
+        <p className="md:text-[16px] text-[12px] flex md:py-6 py-4">
+          <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[9px] md:pt-[2px] pt-[4px]">
+            7
+          </p>
+          <a href="https://bit.ly/3Hd9IIU"                   
+               target="_blank"
+               rel="noopener noreferrer" className="text-blue-600">
+            Click here to calculate your ISA payment through our ISA calculator 
+            </a>
         </p>
       </div>
       {/* <div className="relative md:left-[21%] md:mb-20 md:mt-28 mt-6">

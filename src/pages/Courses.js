@@ -103,7 +103,7 @@ const Courses = () => {
               </p>
 
               <Link
-                to="/mas101"
+                to="/mas102"
                 className="text-sm lg:hidden md:left-96 md:bottom-1  font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
               >
                 Explore Now
