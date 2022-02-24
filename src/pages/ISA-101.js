@@ -6,21 +6,6 @@ import Footer from "../components/Footer";
 import Rectangle from "../images/Rectangle 52.png";
 import Artboard1 from "../images/isa_image.png";
 
-// const IncomeSlab = ({ income, status, color, round }) => {
-//   return (
-//     <div
-//       className={`flex md:px-3 lg:px-0 w-full md:h-[75px] pb-4 md:pb-0 pt-1 md:bg-card border-solid border-b-[1px] ${color} ${round}`}
-//     >
-//       <div className="md:text-sm text-[12px] font-normal w-1/4 text-center pt-6">
-//         {income}
-//       </div>
-//       <div className="md:text-sm text-[12px] font-normal w-3/4 text-center pt-6">
-//         {status}
-//       </div>
-//     </div>
-//   );
-// };
-
 function FAQ({ faq, index, toggleFAQ }) {
   return (
     <div
@@ -44,15 +29,9 @@ function FAQ({ faq, index, toggleFAQ }) {
 }
 
 const ISA101 = () => {
-  const [faqs, setfaqs] = useState(Data);
-  const [monthlypay, setMonthlypay] = useState(4879);
+  const [faqs, setfaqs] = useState(Data);  
   const [ctc, setCtc] = useState(12);
-
-  const Pay = (e) => {
-    setCtc(e.target.value);
-    setMonthlypay((ctc / 12) * 100000 * 0.04879);
-    console.log(monthlypay);
-  };
+  const [upperLimit, setUpperLimit] = useState();
 
   const toggleFAQ = (index) => {
     setfaqs(
@@ -162,55 +141,14 @@ const ISA101 = () => {
           </a>
         </p>
       </div>
-      {/* <div className="relative md:left-[21%] md:mb-20 md:mt-28 mt-6">
-        <div className="lg:w-[59%] md:w-[85%] relative md:right-28 lg:right-2 md:shadow-2xl mx-4 md:mx-0">
-          <div className="flex border-b-2 border-solid border-blue-600 md:bg-card w-full md:h-[75px] rounded-t-2xl">
-            <div className="md:text-2xl text-xl font-semibold w-1/4 text-blue-600 text-center pt-6">
-              Income Slab
-            </div>
-            <div className="text-2xl font-semibold  w-3/4 text-blue-600 text-center pt-6">
-              ISA
-            </div>
-          </div>
 
-          <IncomeSlab
-            income="< 6 LPA"
-            status="No Payment"
-            color="border-blue-500"
-          />
-
-          <IncomeSlab
-            color="border-blue-500"
-            income="6 - 9 LPA"
-            status="6000 for 6 months after your job starts or 29,999 one time payment once you are placed"
-          />
-
-          <IncomeSlab
-            color="border-blue-500"
-            income="9 - 12 LPA"
-            status="6000 for 8 months after your job starts or 39,999 one time payment once you are placed"
-          />
-
-          <IncomeSlab
-            color="border-blue-500"
-            income="12 - 15 LPA"
-            status="6000 for 10 months after your job starts or 49,999 one time payment once you are placed"
-          />
-
-          <IncomeSlab
-            round="rounded-b-2xl"
-            income="> 15 LPA"
-            status="6000 for 12 months after your job starts or 59,999 one time payment once you are placed"
-          />
-        </div>
-      </div> */}
       <div className="mt-32">
         <div className="text-center text-3xl mb-16">
           Calculate Your ISA Charge
         </div>
         <div className="flex justify-center">
           <div className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-2xl">
-            Your CTC (LPA)
+            Enter CTC (LPA) to find ISA
           </div>
           <div className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-2xl">
             Monthly Pay
@@ -220,19 +158,19 @@ const ISA101 = () => {
           <input
             type="number"
             placeholder="12"
-            value={ctc}
-            onChange={Pay}
+            onChange={e => {setCtc(e.target.value)}}
+            value={ctc}          
             // style={{ caretColor: "rgba(0,0,0,0)" }}
             className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-5xl"
           ></input>
           <div className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-5xl">
-            {monthlypay}
+            {Math.ceil(((ctc*100000*0.048786)/12)/100)*100}
           </div>
         </div>
         <div className="flex justify-center">
           <div className="mt-14">
             <div className="">*Registration Fees: 3000/-</div>
-            <div className="mt-4">*Payment will be paid for 12 months</div>
+            <div className="mt-4">*Payments will be made for 12 months</div>
           </div>
           <div className="mt-10 ml-52">
             <div className="py-2 px-20  border-[2px] border-solid border-black">
@@ -241,13 +179,13 @@ const ISA101 = () => {
 
             <div className="flex w-[20%]">
               <div className="py-2 px-10 border-[2px] border-solid border-black">
-                90000
+              {(((ctc*100000)/12) - (ctc*15000)/12).toFixed(0)}
               </div>
               <div className="py-2 px-6 border-[2px] border-solid border-black">
                 to
               </div>
               <div className="py-2 px-10 border-[2px] border-solid border-black">
-                100000
+                {(((ctc*100000)/12) - (ctc*5000)/12).toFixed(0)}
               </div>
             </div>
           </div>
