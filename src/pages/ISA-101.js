@@ -45,6 +45,14 @@ function FAQ({ faq, index, toggleFAQ }) {
 
 const ISA101 = () => {
   const [faqs, setfaqs] = useState(Data);
+  const [monthlypay, setMonthlypay] = useState(4879);
+  const [ctc, setCtc] = useState(12);
+
+  const Pay = (e) => {
+    setCtc(e.target.value);
+    setMonthlypay((ctc / 12) * 100000 * 0.04879);
+    console.log(monthlypay);
+  };
 
   const toggleFAQ = (index) => {
     setfaqs(
@@ -144,11 +152,14 @@ const ISA101 = () => {
           <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[9px] md:pt-[2px] pt-[4px]">
             7
           </p>
-            <a href="https://bit.ly/3Hd9IIU"                   
-               target="_blank"
-               rel="noopener noreferrer" className="text-blue-600">
-            Click here to calculate your ISA payment through our ISA calculator 
-            </a>
+          <a
+            href="https://bit.ly/3Hd9IIU"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600"
+          >
+            Click here to calculate your ISA payment through our ISA calculator
+          </a>
         </p>
       </div>
       {/* <div className="relative md:left-[21%] md:mb-20 md:mt-28 mt-6">
@@ -193,6 +204,56 @@ const ISA101 = () => {
           />
         </div>
       </div> */}
+      <div className="mt-32">
+        <div className="text-center text-3xl mb-16">
+          Calculate Your ISA Charge
+        </div>
+        <div className="flex justify-center">
+          <div className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-2xl">
+            Your CTC (LPA)
+          </div>
+          <div className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-2xl">
+            Monthly Pay
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <input
+            type="number"
+            placeholder="12"
+            value={ctc}
+            onChange={Pay}
+            // style={{ caretColor: "rgba(0,0,0,0)" }}
+            className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-5xl"
+          ></input>
+          <div className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-5xl">
+            {monthlypay}
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <div className="mt-14">
+            <div className="">*Registration Fees: 3000/-</div>
+            <div className="mt-4">*Payment will be paid for 12 months</div>
+          </div>
+          <div className="mt-10 ml-52">
+            <div className="py-2 px-20  border-[2px] border-solid border-black">
+              Your Salary Per Month
+            </div>
+
+            <div className="flex w-[20%]">
+              <div className="py-2 px-10 border-[2px] border-solid border-black">
+                90000
+              </div>
+              <div className="py-2 px-6 border-[2px] border-solid border-black">
+                to
+              </div>
+              <div className="py-2 px-10 border-[2px] border-solid border-black">
+                100000
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mt-16 relative left-[38%]"></div>
       <div className="md:mt-28 mt-16 md:mb-40 mb-10">
         <div className="text-[40px] text-center md:my-12">FAQ</div>
         <div className="faqs lg:w-[58%] md:w-[85%] relative lg:left-[21%] md:left-[7%] md:bg-white md:py-10 py-5 lg:px-20 md:px-8 rounded-3xl">
