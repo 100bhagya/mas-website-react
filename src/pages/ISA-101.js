@@ -31,7 +31,6 @@ function FAQ({ faq, index, toggleFAQ }) {
 const ISA101 = () => {
   const [faqs, setfaqs] = useState(Data);
   const [ctc, setCtc] = useState(12);
-  const [upperLimit, setUpperLimit] = useState();
 
   const toggleFAQ = (index) => {
     setfaqs(
@@ -128,15 +127,15 @@ const ISA101 = () => {
         </p>
       </div>
 
-      <div className="mt-32">
-        <div className="text-center text-3xl mb-16">
+      <div className="md:mt-32">
+        <div className="text-center md:text-3xl text-2xl mb-16">
           Calculate Your ISA Charge
         </div>
         <div className="flex justify-center">
-          <div className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-2xl">
+          <div className="border-[2px] border-solid border-black lg:w-[28%] w-[48%]  text-center py-4 text-lg lg:text-2xl">
             Enter CTC (LPA) to find ISA
           </div>
-          <div className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-2xl">
+          <div className="border-[2px] border-solid border-black lg:w-[28%] w-[48%]  text-center py-4 text-lg lg:text-2xl">
             Monthly Pay
           </div>
         </div>
@@ -149,30 +148,30 @@ const ISA101 = () => {
             }}
             value={ctc}
             // style={{ caretColor: "rgba(0,0,0,0)" }}
-            className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-5xl"
+            className="border-[2px] border-solid border-black lg:w-[28%] w-[48%] text-center py-4 text-5xl"
           ></input>
-          <div className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-5xl">
+          <div className="border-[2px] border-solid border-black lg:w-[28%] w-[48%] text-center py-4 text-5xl">
             {Math.ceil((ctc * 100000 * 0.048786) / 12 / 100) * 100}
           </div>
         </div>
-        <div className="flex justify-center">
-          <div className="mt-14">
+        <div className="flex flex-col-reverse md:flex-row justify-center">
+          <div className="md:mt-14 mt-8 ml-5 lg:ml-0">
             <div className="">*Registration Fees: 3000/-</div>
             <div className="mt-4">*Payments will be made for 12 months</div>
           </div>
-          <div className="mt-10 ml-52">
-            <div className="py-2 px-20  border-[2px] border-solid border-black">
+          <div className="mt-10 lg:ml-44 md:ml-24 ml-3">
+            <div className="py-2 md:px-20 text-center md:text-left w-[96%] md:w-full border-[2px] border-solid border-black">
               Your Salary Per Month
             </div>
 
-            <div className="flex w-[20%]">
-              <div className="py-2 px-12 border-[2px] border-solid border-black">
+            <div className="flex md:w-[20%]">
+              <div className="py-2 md:px-12 px-11 border-[2px] border-solid border-black">
                 {((ctc * 100000) / 12 - (ctc * 15000) / 12).toFixed(0)}
               </div>
-              <div className="py-2 px-6 border-[2px] border-solid border-black">
+              <div className="py-2 md:px-6 px-5 border-[2px] border-solid border-black">
                 to
               </div>
-              <div className="py-2 px-12 border-[2px] border-solid border-black">
+              <div className="py-2 md:px-12 px-11 border-[2px] border-solid border-black">
                 {((ctc * 100000) / 12 - (ctc * 5000) / 12).toFixed(0)}
               </div>
             </div>

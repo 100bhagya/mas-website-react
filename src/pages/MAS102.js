@@ -152,9 +152,9 @@ const MAS102 = () => {
                     </p>
                   </div>
                   <Link to="/mentors">
-                  <div className=" py-3 px-8 bg-blue-700 rounded-2xl text-white relative left-[28%] md:left-0">
-                    Learn more
-                  </div>
+                    <div className="lg:w-[31%] md:w-[60%] w-[43%]  py-3 px-8 bg-blue-700 rounded-2xl text-white relative left-[28%] md:left-0">
+                      Learn more
+                    </div>
                   </Link>
                 </div>
 
@@ -218,7 +218,7 @@ const MAS102 = () => {
                     </p>
                   </div>
                   <Link to="/isa-102">
-                    <div className="w-[29%] py-3 px-8 bg-blue-700 rounded-2xl text-white relative left-[28%] md:left-0">
+                    <div className="lg:w-[29%] md:w-[57%] w-[43%] py-3 px-8 bg-blue-700 rounded-2xl text-white relative left-[28%] md:left-0">
                       Learn more
                     </div>
                   </Link>
