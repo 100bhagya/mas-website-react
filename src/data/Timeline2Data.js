@@ -7,8 +7,8 @@ const Data = [
       "This section will cover data wrangling, data visualisation, statistics and machine learning.",
     questions: [
       {
-        question: "Week 1 - Week 3",
-        Status: "Machine Learning Course (2 Aug - 22 Aug)",
+        question: "Week 14 - Week 17",
+        Status: "Machine Learning Course (30 May - 24 June)",
         answer: [
           {
             role: "Understanding Python Libraries",
@@ -35,8 +35,8 @@ const Data = [
         open: true,
       },
       {
-        question: "Week 4 - Week 6",
-        Status: "Hands-On-Experience (23 Aug - 12 Sept)",
+        question: "Week 18 - Week 24",
+        Status: "Hands-On-Experience (27 June - 7 Aug)",
         answer: [
           {
             role: "MS-Excel Project",
@@ -51,8 +51,8 @@ const Data = [
         open: false,
       },
       {
-        question: "Week 7 - Week 8",
-        Status: "MS-Excel + Stats Course (13 Sept - 26 Sept)",
+        question: "Week 8 - Week 10",
+        Status: "MS-Excel + Stats Course (18 Apr - 8 May)",
         answer: [
           {
             role: "Introduction To MS-Excel",
@@ -79,8 +79,8 @@ const Data = [
         open: false,
       },
       {
-        question: "Week 1 - Week 8",
-        Status: "Python Programming (2 Aug - 26 Sept)",
+        question: "Week 12 - Week 14",
+        Status: "Python Programming (16 May - 29 May)",
         answer: [
           {
             role: "Introduction To Python",
@@ -98,8 +98,8 @@ const Data = [
         open: false,
       },
       {
-        question: "Week 9 - Week 11",
-        Status: "SQL Course (27 Sept - 17 Oct)",
+        question: "Week 3 - Week 4",
+        Status: "SQL Course (14 Mar - 20 Mar)",
         answer: [
           {
             role: "Basic Commands In SQL",
@@ -120,8 +120,8 @@ const Data = [
         open: false,
       },
       {
-        question: "Week 12 - Till Getting Placed",
-        Status: "Concept Brushing (18 Oct Onwards)",
+        question: "Week 14 - Till Getting Placed",
+        Status: "Concept Brushing",
         answer: [
           {
             role: "Resume Tech Preparation",
