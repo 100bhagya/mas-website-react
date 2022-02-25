@@ -10,13 +10,7 @@ import { Link } from "react-router-dom";
 import Privacy from "./Privacy";
 
 const Footer = () => {
-  const [isShowPrivacy, setIsShowPrivacy] = useState(true);
-  const handleClick = () => {
-    setIsShowPrivacy((isShowPrivacy) => !isShowPrivacy);
-  };
-  const closePrivacy = () => {
-    setIsShowPrivacy(!isShowPrivacy);
-  };
+  const [isShowPrivacy, setIsShowPrivacy] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -198,7 +192,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <Privacy isShowPrivacy={isShowPrivacy} closePrivacy={closePrivacy} />
+      { isShowPrivacy ? <Privacy setIsShowPrivacy={setIsShowPrivacy} /> : null }
       <div className="h-[2px] md:mt-10 mt-20 w-[85%] justify-center text-center relative left-[6.3%] bg-white"></div>
       <div className="lg:text-center md:text-left ml-6 lg:ml-0 md:ml-14 mt-3 md:mt-3 lg:mt-7 text-white md:text-lg text-[9px] font-normal">
         myanalyticsschool © 2021
@@ -206,7 +200,10 @@ const Footer = () => {
       <div className="relative lg:left-[73%] md:left-[58%] left-[54%] bottom-8 flex">
         <div
           className="text-white md:text-lg text-[9px] mt-5 md:mt-0 "
-          onClick={handleClick}
+          onClick={e => {
+            setIsShowPrivacy(!isShowPrivacy);            
+            }
+          }
         >
           Privacy{" "}
         </div>

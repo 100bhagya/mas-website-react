@@ -1,15 +1,19 @@
 import React from "react";
 import CloseIcon from "../images/cross_head.png";
 
-const Privacy = (isShowPrivacy, closePrivacy) => {
+const Privacy = ({setIsShowPrivacy}) => {
+  const updateIsShowPrivacy = (event) => {
+    event.preventDefault();
+    setIsShowPrivacy(false)
+  }
   return (
-    <div className={`${isShowPrivacy ? "active" : ""} show`}>
+    <div>
       <div className="bg-white">
         <div className="flex">
           <h1 className="font-bold text-lg mt-5">Register.</h1>
           <img
             src={CloseIcon}
-            onClick={closePrivacy}
+            onClick={updateIsShowPrivacy}
             alt="close"
             className="w-4 h-4 relative left-[70%] top-5 cursor-pointer"
           />
