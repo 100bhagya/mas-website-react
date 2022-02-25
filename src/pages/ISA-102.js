@@ -6,21 +6,6 @@ import Footer from "../components/Footer";
 import Rectangle from "../images/Rectangle 52.png";
 import Artboard1 from "../images/isa_image.png";
 
-// const IncomeSlab = ({ income, status, color, round }) => {
-//   return (
-//     <div
-//       className={`flex md:px-3 lg:px-0 w-full md:h-[75px] pb-4 md:pb-0 pt-1 md:bg-card border-solid border-b-[1px] ${color} ${round}`}
-//     >
-//       <div className="md:text-sm text-[12px] font-normal w-1/4 text-center pt-6">
-//         {income}
-//       </div>
-//       <div className="md:text-sm text-[12px] font-normal w-3/4 text-center pt-6">
-//         {status}
-//       </div>
-//     </div>
-//   );
-// };
-
 function FAQ({ faq, index, toggleFAQ }) {
   return (
     <div
@@ -45,6 +30,7 @@ function FAQ({ faq, index, toggleFAQ }) {
 
 const ISA102 = () => {
   const [faqs, setfaqs] = useState(Data);
+  const [ctc, setCtc] = useState(12);
 
   const toggleFAQ = (index) => {
     setfaqs(
@@ -130,8 +116,8 @@ const ISA102 = () => {
           other documents for assuring proper ISA transactions.
         </p>
 
-        <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
-          <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-2 rounded-full pl-[8px] pr-[10px] pt-[3px] md:pt-[2px]">
+        <p className="md:text-[16px] text-[12px] flex md:py-6 py-4">
+          <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[9px] md:pt-[2px] pt-[4px]">
             6
           </p>
           In case you are fired/you leave the job/you switch the job before
@@ -139,60 +125,58 @@ const ISA102 = () => {
           next job till completion. (Not applicable in case you don’t wish to do
           a job further).
         </p>
-
-        <p className="md:text-[16px] text-[12px] flex md:py-6 py-4">
-          <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[9px] md:pt-[2px] pt-[4px]">
-            7
-          </p>
-          <a href="https://bit.ly/3Hd9IIU"                   
-               target="_blank"
-               rel="noopener noreferrer" className="text-blue-600">
-            Click here to calculate your ISA payment through our ISA calculator 
-            </a>
-        </p>
       </div>
-      {/* <div className="relative md:left-[21%] md:mb-20 md:mt-28 mt-6">
-        <div className="lg:w-[59%] md:w-[85%] relative md:right-28 lg:right-2 md:shadow-2xl mx-4 md:mx-0">
-          <div className="flex border-b-2 border-solid border-blue-600 md:bg-card w-full md:h-[75px] rounded-t-2xl">
-            <div className="md:text-2xl text-xl font-semibold w-1/4 text-blue-600 text-center pt-6">
-              Income Slab
+      <div className="md:mt-32">
+        <div className="text-center md:text-3xl text-2xl mb-16">
+          Calculate Your ISA Charge
+        </div>
+        <div className="flex justify-center">
+          <div className="border-[2px] border-solid border-black lg:w-[28%] w-[48%]  text-center py-4 text-lg lg:text-2xl">
+            Enter CTC (LPA) to find ISA
+          </div>
+          <div className="border-[2px] border-solid border-black lg:w-[28%] w-[48%]  text-center py-4 text-lg lg:text-2xl">
+            Monthly Pay
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <input
+            type="number"
+            placeholder="12"
+            onChange={(e) => {
+              setCtc(e.target.value);
+            }}
+            value={ctc}
+            // style={{ caretColor: "rgba(0,0,0,0)" }}
+            className="border-[2px] border-solid border-black lg:w-[28%] w-[48%] text-center py-4 text-5xl"
+          ></input>
+          <div className="border-[2px] border-solid border-black lg:w-[28%] w-[48%] text-center py-4 text-5xl">
+            {Math.ceil((ctc * 100000 * 0.048786) / 12 / 100) * 100}
+          </div>
+        </div>
+        <div className="flex flex-col-reverse md:flex-row justify-center">
+          <div className="md:mt-14 mt-8 ml-5 lg:ml-0">
+            <div className="">*Registration Fees: 3000/-</div>
+            <div className="mt-4">*Payments will be made for 12 months</div>
+          </div>
+          <div className="mt-10 lg:ml-44 md:ml-24 ml-3">
+            <div className="py-2 md:px-20 text-center md:text-left w-[96%] md:w-full border-[2px] border-solid border-black">
+              Your Salary Per Month
             </div>
-            <div className="text-2xl font-semibold  w-3/4 text-blue-600 text-center pt-6">
-              ISA
+
+            <div className="flex md:w-[20%]">
+              <div className="py-2 md:px-12 px-11 border-[2px] border-solid border-black">
+                {((ctc * 100000) / 12 - (ctc * 15000) / 12).toFixed(0)}
+              </div>
+              <div className="py-2 md:px-6 px-5 border-[2px] border-solid border-black">
+                to
+              </div>
+              <div className="py-2 md:px-12 px-11 border-[2px] border-solid border-black">
+                {((ctc * 100000) / 12 - (ctc * 5000) / 12).toFixed(0)}
+              </div>
             </div>
           </div>
-
-          <IncomeSlab
-            income="< 6 LPA"
-            status="No Payment"
-            color="border-blue-500"
-          />
-
-          <IncomeSlab
-            color="border-blue-500"
-            income="6 - 9 LPA"
-            status="6000 for 6 months after your job starts or 29,999 one time payment once you are placed"
-          />
-
-          <IncomeSlab
-            color="border-blue-500"
-            income="9 - 12 LPA"
-            status="6000 for 8 months after your job starts or 39,999 one time payment once you are placed"
-          />
-
-          <IncomeSlab
-            color="border-blue-500"
-            income="12 - 15 LPA"
-            status="6000 for 10 months after your job starts or 49,999 one time payment once you are placed"
-          />
-
-          <IncomeSlab
-            round="rounded-b-2xl"
-            income="> 15 LPA"
-            status="6000 for 12 months after your job starts or 59,999 one time payment once you are placed"
-          />
         </div>
-      </div> */}
+      </div>
       <div className="md:mt-28 mt-16 md:mb-40 mb-10">
         <div className="text-[40px] text-center md:my-12">FAQ</div>
         <div className="faqs lg:w-[58%] md:w-[85%] relative lg:left-[21%] md:left-[7%] md:bg-white md:py-10 py-5 lg:px-20 md:px-8 rounded-3xl">

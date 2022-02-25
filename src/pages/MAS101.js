@@ -119,12 +119,9 @@ const MAS101 = () => {
               IITs
             </p>
           </div>
-          <a
-            href="apply"
-            className=" py-3 px-8 bg-blue-700 rounded-2xl text-white"
-          >
+          <Link to="" className=" py-3 px-8 bg-blue-700 rounded-2xl text-white">
             Apply now
-          </a>
+          </Link>
         </div>
         <img
           src={Artboard}
@@ -154,12 +151,11 @@ const MAS101 = () => {
                       at tackling your doubts and queries.
                     </p>
                   </div>
-                  <a
-                    href="apply"
-                    className=" py-3 px-8 bg-blue-700 rounded-2xl text-white relative left-[28%] md:left-0"
-                  >
-                    <Link to="/mentors">Learn more</Link>
-                  </a>
+                  <Link to="/mentors">
+                    <div className="lg:w-[31%] md:w-[60%] w-[43%] py-3 px-8 bg-blue-700 rounded-2xl text-white relative left-[28%] md:left-0">
+                      Learn more
+                    </div>
+                  </Link>
                 </div>
 
                 <div className="">
@@ -221,12 +217,11 @@ const MAS101 = () => {
                       small part of their income once they are placed.
                     </p>
                   </div>
-                  <a
-                    href="apply"
-                    className=" py-3 px-8 bg-blue-700 rounded-2xl text-white relative left-[28%] md:left-0"
-                  >
-                    <Link to="/isa-101">Learn more</Link>
-                  </a>
+                  <Link to="/isa-101">
+                    <div className="lg:w-[29%] md:w-[60%] w-[43%] py-3 px-8 bg-blue-700 rounded-2xl text-white relative left-[28%] md:left-0">
+                      Learn more
+                    </div>
+                  </Link>
                 </div>
                 <div className="lg:h-[450px] h-[230px]">
                   <img
