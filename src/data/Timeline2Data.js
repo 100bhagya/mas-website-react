@@ -7,52 +7,30 @@ const Data = [
       "This section will cover data wrangling, data visualisation, statistics and machine learning.",
     questions: [
       {
-        question: "Week 1 - Week 3",
-        Status: "Machine Learning Course (2 Aug - 22 Aug)",
+        question: "Week 3 - Week 4",
+        Status: "SQL Course (14 Mar - 20 Mar)",
         answer: [
           {
-            role: "Understanding Python Libraries",
+            role: "Basic Commands In SQL",
           },
           {
-            role: "Data Visualization Using Matplotlib & Seaborn",
+            role: "Advanced Commands In SQL",
           },
           {
-            role: "Data Wrangling Using Pandas",
+            role: "Joins In SQL",
           },
           {
-            role: "Supervised Learning",
+            role: "Subqueries",
           },
           {
-            role: "Unsupervised Learning",
-          },
-          {
-            role: "Evaluation Metrics",
-          },
-          {
-            role: "Feature Engineering",
+            role: "Query Writing",
           },
         ],
         open: true,
       },
       {
-        question: "Week 4 - Week 6",
-        Status: "Hands-On-Experience (23 Aug - 12 Sept)",
-        answer: [
-          {
-            role: "MS-Excel Project",
-          },
-          {
-            role: "Data Analytics Project",
-          },
-          {
-            role: "Data Science Project",
-          },
-        ],
-        open: false,
-      },
-      {
-        question: "Week 7 - Week 8",
-        Status: "MS-Excel + Stats Course (13 Sept - 26 Sept)",
+        question: "Week 8 - Week 10",
+        Status: "MS-Excel + Stats Course (18 Apr - 8 May)",
         answer: [
           {
             role: "Introduction To MS-Excel",
@@ -79,8 +57,8 @@ const Data = [
         open: false,
       },
       {
-        question: "Week 1 - Week 8",
-        Status: "Python Programming (2 Aug - 26 Sept)",
+        question: "Week 12 - Week 14",
+        Status: "Python Programming (16 May - 29 May)",
         answer: [
           {
             role: "Introduction To Python",
@@ -98,30 +76,52 @@ const Data = [
         open: false,
       },
       {
-        question: "Week 9 - Week 11",
-        Status: "SQL Course (27 Sept - 17 Oct)",
+        question: "Week 14 - Week 17",
+        Status: "Machine Learning Course (30 May - 24 June)",
         answer: [
           {
-            role: "Basic Commands In SQL",
+            role: "Understanding Python Libraries",
           },
           {
-            role: "Advanced Commands In SQL",
+            role: "Data Visualization Using Matplotlib & Seaborn",
           },
           {
-            role: "Joins In SQL",
+            role: "Data Wrangling Using Pandas",
           },
           {
-            role: "Subqueries",
+            role: "Supervised Learning",
           },
           {
-            role: "Query Writing",
+            role: "Unsupervised Learning",
+          },
+          {
+            role: "Evaluation Metrics",
+          },
+          {
+            role: "Feature Engineering",
           },
         ],
         open: false,
       },
       {
-        question: "Week 12 - Till Getting Placed",
-        Status: "Concept Brushing (18 Oct Onwards)",
+        question: "Week 18 - Week 24",
+        Status: "Hands-On-Experience (27 June - 7 Aug)",
+        answer: [
+          {
+            role: "MS-Excel Project",
+          },
+          {
+            role: "Data Analytics Project",
+          },
+          {
+            role: "Data Science Project",
+          },
+        ],
+        open: false,
+      },    
+      {
+        question: "Week 14 - Till Getting Placed",
+        Status: "Concept Brushing",
         answer: [
           {
             role: "Resume Tech Preparation",
@@ -148,8 +148,24 @@ const Data = [
       "This section will cover the quant, LRDI and verbal skills to get shortlisted for interviews.",
     questions: [
       {
-        question: "Week 1 - Week 5",
-        Status: "Aptitude Course (2 Aug - 5 Sept)",
+        question: "Week 1 - Week 3",
+        Status: "Self Evaluation Program (1 Mar - 20 Mar)",
+        answer: [
+          {
+            role: "Self Evaluation",
+          },
+          {
+            role: "Get Internship",
+          },
+          {
+            role: "Tech BuildUp",
+          },
+        ],
+        open: false,
+      },
+      {
+        question: "Week 4 - Week 6",
+        Status: "Aptitude Course (21 Mar - 10 Apr)",
         answer: [
           {
             role: "Tricks For Calculation",
@@ -188,9 +204,9 @@ const Data = [
         open: false,
       },
       {
-        question: "Week 6 - Week 9",
-        Status: "LRDI Course (6 Sept - 3 Oct)",
-        Status1: "Verbal Preparation (6 Sept - 3 Oct)",
+        question: "Week 7 - Week 14",
+        Status: "LRDI Course (11 Apr - 8 May)",
+        Status1: "Verbal Preparation (23 Apr - 8 May)",
         answer: [
           {
             role: "Arrangements, Distributions & Selections",
@@ -246,8 +262,8 @@ const Data = [
         open: false,
       },
       {
-        question: "Week 20 - Till Getting Placed",
-        Status: "Practice Mode On! (30 Aug Onwards)",
+        question: "Week 15 - Till Getting Placed",
+        Status: "Practice Mode On! (6 June Onwards)",
         answer: [
           {
             role: "100+ Chapter Wise Practice Tests",
@@ -277,7 +293,7 @@ const Data = [
       "This section will enhance the business understanding and boost the case solving skills.",
     questions: [
       {
-        question: "Week 3 - Week 7",
+        question: "Week 15 - Week 16",
         Status: "Product Brainstorming (16 Aug - 19 Sept)",
         answer: [
           {
@@ -293,8 +309,8 @@ const Data = [
         open: false,
       },
       {
-        question: "Week 8 - Week 9",
-        Status: "Business KT Sessions (20 Sept - 3 Oct)",
+        question: "Week 16 - Week 17",
+        Status: "Business KT Sessions (13 June - 26 June)",
         answer: [
           {
             role: "Case Study Webinars",
@@ -309,8 +325,8 @@ const Data = [
         open: false,
       },
       {
-        question: "Week 10 - Till Getting Placed",
-        Status: "Practice Sessions (4 Oct Onwards)",
+        question: "Week 15 - Till Getting Placed",
+        Status: "Practice Sessions (4 June Onwards)",
         answer: [
           {
             role: "Conventional Case Study Practice",
@@ -340,24 +356,8 @@ const Data = [
       "This section will cater up to all your requirements for acing the interviews.",
     questions: [
       {
-        question: "Week 1 - Week 4",
-        Status: "Resume Building (2 Aug - 29 Aug)",
-        answer: [
-          {
-            role: "Webinar On How To Build A Winning Resume",
-          },
-          {
-            role: "Personalized & Curated Suggestions",
-          },
-          {
-            role: "Resume Review By Industry Experts",
-          },
-        ],
-        open: false,
-      },
-      {
-        question: "Week 10 - Week 13",
-        Status: "Communication Skill Enhancement (4 Oct - 31 Oct)",
+        question: "Week 5 - Week 13",
+        Status: "Communication Skill Enhancement (1 Apr - 31 May)",
         answer: [
           {
             role: "Suggested Articles & Videos",
@@ -375,8 +375,24 @@ const Data = [
         open: false,
       },
       {
+        question: "Week 20 - Week 22",
+        Status: "Resume Building (11 July - 31 July)",
+        answer: [
+          {
+            role: "Webinar On How To Build A Winning Resume",
+          },
+          {
+            role: "Personalized & Curated Suggestions",
+          },
+          {
+            role: "Resume Review By Industry Experts",
+          },
+        ],
+        open: false,
+      },
+      {
         question: "Week 14 - Till Getting Placed",
-        Status: "Getting Interview Ready (1 Nov Onwards)",
+        Status: "Getting Interview Ready (1 June Onwards)",
         answer: [
           {
             role: "Mock Interviews",
@@ -392,7 +408,7 @@ const Data = [
           },
         ],
         open: false,
-      },
+      },      
     ],
   },
 ];
