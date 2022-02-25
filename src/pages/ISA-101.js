@@ -29,7 +29,7 @@ function FAQ({ faq, index, toggleFAQ }) {
 }
 
 const ISA101 = () => {
-  const [faqs, setfaqs] = useState(Data);  
+  const [faqs, setfaqs] = useState(Data);
   const [ctc, setCtc] = useState(12);
   const [upperLimit, setUpperLimit] = useState();
 
@@ -126,7 +126,6 @@ const ISA101 = () => {
           next job till completion. (Not applicable in case you don’t wish to do
           a job further).
         </p>
-
       </div>
 
       <div className="mt-32">
@@ -145,13 +144,15 @@ const ISA101 = () => {
           <input
             type="number"
             placeholder="12"
-            onChange={e => {setCtc(e.target.value)}}
-            value={ctc}          
+            onChange={(e) => {
+              setCtc(e.target.value);
+            }}
+            value={ctc}
             // style={{ caretColor: "rgba(0,0,0,0)" }}
             className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-5xl"
           ></input>
           <div className="border-[2px] border-solid border-black w-[28%] text-center py-4 text-5xl">
-            {Math.ceil(((ctc*100000*0.048786)/12)/100)*100}
+            {Math.ceil((ctc * 100000 * 0.048786) / 12 / 100) * 100}
           </div>
         </div>
         <div className="flex justify-center">
@@ -165,14 +166,14 @@ const ISA101 = () => {
             </div>
 
             <div className="flex w-[20%]">
-              <div className="py-2 px-10 border-[2px] border-solid border-black">
-              {(((ctc*100000)/12) - (ctc*15000)/12).toFixed(0)}
+              <div className="py-2 px-12 border-[2px] border-solid border-black">
+                {((ctc * 100000) / 12 - (ctc * 15000) / 12).toFixed(0)}
               </div>
               <div className="py-2 px-6 border-[2px] border-solid border-black">
                 to
               </div>
-              <div className="py-2 px-10 border-[2px] border-solid border-black">
-                {(((ctc*100000)/12) - (ctc*5000)/12).toFixed(0)}
+              <div className="py-2 px-12 border-[2px] border-solid border-black">
+                {((ctc * 100000) / 12 - (ctc * 5000) / 12).toFixed(0)}
               </div>
             </div>
           </div>
