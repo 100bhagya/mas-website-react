@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CloseIcon from "../images/cross_head.png";
 
-const Privacy = ({ setIsShowPrivacy }) => {
+const Privacy = ({ setIsShowPrivacy, isShowTerms }) => {
   const updateIsShowPrivacy = (event) => {
     event.preventDefault();
     setIsShowPrivacy(false);
   };
+  useEffect(() => {
+    if (isShowTerms) {
+      setIsShowPrivacy(false);
+    }
+  });
   return (
     <div>
-      <div className="bg-white lg:w-[55%] md:w-[80%] absolute text-[10px] md:text-sm top-[6700px] md:top-[7000px] md:left-[100px] lg:top-[5500px] lg:left-[500px] p-2 md:p-10 z-50 rounded-2xl shadow-2xl">
+      <div className="bg-white lg:w-[55%] md:w-[80%] absolute text-[10px] md:text-sm top-[7200px] md:top-[7050px] md:left-[100px] lg:top-[6200px] lg:left-[500px] p-2 md:p-10 z-50 rounded-2xl shadow-2xl">
         <div className="flex">
           <h1 className="font-bold text-lg mb-5">Privacy Policy</h1>
           <img
@@ -18,7 +23,7 @@ const Privacy = ({ setIsShowPrivacy }) => {
             className="w-4 h-4 relative top-2 md:top-0 left-[55%] md:left-[80%] cursor-pointer"
           />
         </div>
-        <div className="">
+        <div className="overflow-y-auto h-[60vh]">
           MAS is all about data and we understand how important data and data
           privacy is for everyone. By visiting this Website you agree to be
           bound by the terms and conditions of this Privacy Policy. By mere use

@@ -19,8 +19,15 @@ const Footer = () => {
   }, []);
   return (
     <footer class="bg-blue-900">
-      {isShowPrivacy ? <Privacy setIsShowPrivacy={setIsShowPrivacy} /> : null}
-      {isShowTerms ? <Terms setIsShowTerms={setIsShowTerms} /> : null}
+      {isShowPrivacy ? (
+        <Privacy
+          setIsShowPrivacy={setIsShowPrivacy}
+          isShowTerms={isShowTerms}
+        />
+      ) : null}
+      {isShowTerms ? (
+        <Terms setIsShowTerms={setIsShowTerms} isShowPrivacy={isShowPrivacy} />
+      ) : null}
       <div class="container lg:px-24 px-10 md:px-0  mx-auto md:flex lg:items-start ">
         <div class="w-[380px] relative md:top-20 top-10 left-[11%] lg:left-0">
           <img
