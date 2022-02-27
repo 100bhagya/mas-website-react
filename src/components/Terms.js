@@ -15,12 +15,11 @@ const Terms = ({ setIsShowTerms, isShowPrivacy }) => {
     <div>
       <div className="bg-white lg:w-[55%] md:w-[80%] fixed text-[10px] md:text-sm top-[100px] md:top-[200px] md:left-[100px] lg:top-[100px] lg:left-[500px] p-2 md:p-10 z-50 rounded-2xl shadow-2xl">
         <div className="flex">
-          <h1 className="font-bold text-lg mb-5">Terms and Condition</h1>
           <img
             src={CloseIcon}
             onClick={updateIsShowTerms}
             alt="close"
-            className="w-4 h-4 relative -top-3 md:-top-3 lg:bottom-2 left-[90%] cursor-pointer"
+            className="w-4 h-4 relative -top-1 md:-top-3 lg:bottom-2 left-[90%] md:left-[95%] cursor-pointer"
           />
         </div>
         <div className="overflow-y-auto h-[60vh]">

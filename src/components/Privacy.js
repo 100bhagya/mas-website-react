@@ -20,7 +20,7 @@ const Privacy = ({ setIsShowPrivacy, isShowTerms }) => {
             src={CloseIcon}
             onClick={updateIsShowPrivacy}
             alt="close"
-            className="w-4 h-4 relative -top-3 md:top-0 left-[55%] md:left-[70%] lg:left-[80%] cursor-pointer"
+            className="w-4 h-4 relative top-2 md:top-0 left-[55%] md:left-[70%] lg:left-[80%] cursor-pointer"
           />
         </div>
         <div className="overflow-y-auto h-[60vh]">

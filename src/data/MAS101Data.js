@@ -91,6 +91,63 @@ const Data = [
     ],
     open: false,
   },
+  {
+    id: 5,
+    question: "Week 13 - Week 14",
+    Status: "SQL Course (12 July - 25 July)",
+    answer: [
+      {
+        role: "Basic Commands In SQL",
+      },
+      {
+        role: "Advanced Commands In SQL",
+      },
+      {
+        role: "Joins In SQL",
+      },
+      {
+        role: "Subqueries",
+      },
+    ],
+    open: false,
+  },
+  {
+    id: 6,
+    question: "Week 15 - Week 23",
+    Status: "Hands-On-Experience (26 July - 26 Sept)",
+    answer: [
+      {
+        role: "MS-Excel Project",
+      },
+      {
+        role: "Data Analytics Project",
+      },
+      {
+        role: "Data Science Project",
+      },
+    ],
+    open: false,
+  },
+  {
+    id: 7,
+    question: "Week 24 - Till Getting Placed",
+    Status: "Concept Brushing (27 Sept Onwards)",
+    answer: [
+      {
+        role: "Resume Tech Preparation",
+      },
+      {
+        role: "Excel/Stats/ML/DL/SQL Articles To Read",
+      },
+      {
+        role: "Excel/Stats/ML/DL/SQL Videos",
+      },
+      {
+        role: "Technical Knowledge Transfer Sessions",
+      },
+    ],
+    open: false,
+  },
 ];
 
 export default Data;
