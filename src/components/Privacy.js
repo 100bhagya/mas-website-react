@@ -13,7 +13,7 @@ const Privacy = ({ setIsShowPrivacy, isShowTerms }) => {
   });
   return (
     <div>
-      <div className="bg-white lg:w-[55%] md:w-[80%] absolute text-[10px] md:text-sm top-[7200px] md:top-[7050px] md:left-[100px] lg:top-[6200px] lg:left-[500px] p-2 md:p-10 z-50 rounded-2xl shadow-2xl">
+      <div className="bg-white lg:w-[55%] md:w-[80%] fixed text-[10px] md:text-sm top-[100px] md:top-[200px] md:left-[100px] lg:top-[100px] lg:left-[500px] p-2 md:p-10 z-50 rounded-2xl shadow-2xl">
         <div className="flex">
           <h1 className="font-bold text-lg mb-5">Privacy Policy</h1>
           <img
