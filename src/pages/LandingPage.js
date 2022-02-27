@@ -84,7 +84,7 @@ const LandingPage = () => {
   return (
     <div>
       <Navbar />
-
+      <LoginForm isShowLogin={isShowLogin} closeLogin={closeLogin} />
       <div className="flex flex-col-reverse lg:flex-row pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="lg:flex lg:items-center px-4 pt-9 max-w-lg md:max-w-xl lg:max-w-4xl mx-auto">
           <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
@@ -104,7 +104,6 @@ const LandingPage = () => {
               Join Today
             </div>
           </div>
-          <LoginForm isShowLogin={isShowLogin} closeLogin={closeLogin} />
         </div>
         <div className="flex justify-center">
           <img

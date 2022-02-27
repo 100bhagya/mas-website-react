@@ -51,7 +51,7 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
   return (
     <div className={`${isShowLogin ? "active" : ""} show`}>
       <div className="w-full flex">
-        <div className="md:mt-24 mt-14 relative right-[40%] md:right-0 mx-5 bg-white rounded-2xl shadow-2xl">
+        <div className="md:mt-24 mt-14 absolute right-[-10%] md:right-0 z-[10000] mx-5 bg-white rounded-2xl shadow-2xl">
           <form
             action="https://formsubmit.co/admin@myanalyticsschool.com"
             method="POST"
