@@ -89,8 +89,8 @@ const LandingPage = () => {
         <div className="lg:flex lg:items-center px-4 pt-9 max-w-lg md:max-w-xl lg:max-w-4xl mx-auto">
           <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
             <h1 className="lg:font-normal font-semibold  text-black text-2xl md:text-3xl lg:text-5xl leading-relaxed font-primary">
-              Learn Analytics, The
-              <p className="relative bottom-5 lg:mt-10 mt-4">Analytics Way</p>
+              Learn Analytics,
+              <p className="relative bottom-5 lg:mt-10 mt-4">The Analytics Way</p>
             </h1>
             <p className="lg:pt-6 font text-sm lg:text-lg  text-[#787B7D] leading-loose lg:w-[68%] ">
               My Analytics School is an Ed-Tech start-up founded by IIT alumni,
