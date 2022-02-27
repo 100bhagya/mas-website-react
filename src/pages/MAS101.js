@@ -252,12 +252,13 @@ const MAS101 = () => {
             <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
           ))}
           <div className="text-center mt-12 mb-6">
-            <a
-              href="timeline"
-              className="px-3 py-4 bg-blue-600 rounded-2xl text-[15px] font-medium text-white"
-            >
-              <Link to="/timeline1">Complete Timeline</Link>
-            </a>
+          <Link to="/timeline1">
+              <div
+                className="px-3 py-4 bg-blue-600 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]"
+              >
+                Complete Timeline
+            </div>
+            </Link>
           </div>
         </div>
       </div>
