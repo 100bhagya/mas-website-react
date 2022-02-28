@@ -13,7 +13,7 @@ const Terms = ({ setIsShowTerms, isShowPrivacy }) => {
   });
   return (
     <div>
-      <div className="bg-white lg:w-[55%] md:w-[80%] fixed text-[10px] md:text-sm top-[100px] md:top-[200px] md:left-[100px] lg:top-[100px] lg:left-[500px] p-2 md:p-10 z-50 rounded-2xl shadow-2xl">
+      <div className="bg-back lg:w-[55%] md:w-[80%] fixed text-[10px] md:text-sm top-[100px] md:top-[200px] md:left-[100px] lg:top-[100px] lg:left-[500px] p-2 md:p-10 z-50 rounded-2xl shadow-2xl">
         <div className="flex">
           <img
             src={CloseIcon}
@@ -33,57 +33,10 @@ const Terms = ({ setIsShowTerms, isShowPrivacy }) => {
           <br />
           <h1 className="font-bold text-lg mb-5">Refund Policy</h1>
           <div>
-            YOU AGREE THAT YOUR USE OF THE SITE SHALL BE AT YOUR SOLE RISK, AND
-            My Analytics School WILL NOT BE HELD LIABLE IN ANY WAY FOR YOUR USE
-            OF THE SITE OR FOR ANY INFORMATION CONTAINED ON THE SITE. ALL
-            CONTENT CONTAINED IN OR REFERRED TO ON THE SITE IS PROVIDED "AS IS,"
-            WITHOUT ANY REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. TO
-            THE FULLEST EXTENT PERMITTED BY LAW, My Analytics School DISCLAIMS
-            ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION,
-            ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
-            PARTICULAR PURPOSE. My Analytics School MAKES NO WARRANTIES THAT THE
-            SITE WILL BE ERROR-FREE, OR THAT ANY ERRORS WILL BE CORRECTED, OR
-            THAT THE SITE OR THE SERVER FROM WHICH THE SITE IS OPERATED WILL BE
-            FREE OF VIRUSES OR OTHER POTENTIALLY HARMFUL CODES. UNDER NO
-            CIRCUMSTANCES, INCLUDING NEGLIGENCE, SHALL My Analytics School BE
-            HELD LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR
-            CONSEQUENTIAL DAMAGES AND EXPENSES OF ANY KIND (INCLUDING, WITHOUT
-            LIMITATION, PERSONAL INJURY OR PROPERTY DAMAGE, LOST PROFITS, AND
-            DAMAGES ARISING FROM COMPUTER VIRUSES, BUSINESS INTERRUPTION, LOST
-            DATA, UNAUTHORIZED ACCESS TO OR USE OF SITE SERVERS OR ANY PERSONAL
-            INFORMATION STORED THEREIN, OR ANY INTERRUPTION OR CESSATION OF
-            OPERATION OF THE SITE) ARISING OUT OF OR IN ANY WAY CONNECTED WITH
-            THE USE OF THE SITE OR ANY INFORMATION CONTAINED ON THE SITE,
-            WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT, STRICT LIABILITY
-            OR OTHERWISE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-            You agree to indemnify, hold harmless and defend My Analytics School
-            from and against any and all claims, damages, losses, liabilities,
-            judgments, awards, settlements, costs and expenses (including
-            attorney's fees and court costs) arising out of or resulting from
-            your use of this Website or the violation by you of any of these
-            Terms of Use. YOU AGREE THAT ANY CAUSE OF ACTION ARISING OUT OF OR
-            RELATED TO THIS SITE OR YOUR USE OF THIS SITE MUST COMMENCE WITHIN
-            ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES, AND WILL THEREAFTER
-            BE PERMANENTLY BARRED. These Terms of Use constitute the entire
-            agreement between you and My Analytics School concerning your use of
-            the Website and the contents of the Website. If any provision is
-            deemed invalid by a court of competent jurisdiction, the remaining
-            provisions shall remain in full force and effect. No waiver of any
-            the Terms of Use shall be deemed a further or continuing waiver of
-            such term or condition or any other term or condition, and any
-            failure by My Analytics School to assert any right or provision
-            under these Terms of Use shall not constitute a waiver of such right
-            or provision. Refund Policy Returns and Refunds Policy. Thank you
-            for shopping at www.myanalyticsschool.com Non-tangible irrevocable
-            goods ("Digital products") We do not issue refunds for non-tangible
-            irrevocable goods ("digital products") once the order is confirmed
-            and the product is sent. We recommend contacting us for assistance
-            if you experience any issues receiving or downloading our products.
-            Contact us for any issues: If you have any questions about our
-            Returns and Refunds Policy,
+            Returns and Refunds Policy. Thank you for shopping at www.myanalyticsschool.com
+            Non-tangible irrevocable goods ("Digital products")
+            We do not issue refunds for non-tangible irrevocable goods ("digital products") once the order is confirmed and the product is sent. We recommend contacting us for assistance if you experience any issues receiving or downloading our products. If you have any questions about our Returns and Refunds Policy, please email us at admin@myanalyticsschool.com
           </div>
-          <br /> please contact us: - By email: admin@myanalyticsschool.com
-
         </div>
       </div>
     </div>
