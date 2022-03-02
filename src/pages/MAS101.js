@@ -27,6 +27,8 @@ import AB from "../images/AB.png";
 import PhonePe from "../images/phonepe.png";
 import Mynthra from "../images/mynthra.png";
 import TestimonialOtherPages from "../components/TestimonialOtherPages";
+import Pdf from "../components/MAS Placement Report'21.pdf";
+import Banner from "../images/placement banner.png";
 
 const Testimonial = ({ image, linkedin, name, position }) => {
   return (
@@ -122,6 +124,13 @@ const MAS101 = () => {
           <Link to="" className=" py-3 px-8 bg-blue-700 rounded-2xl text-white">
             Apply now
           </Link>
+          <a href={Pdf} target="_blank" rel="noopener noreferrer">
+            <img
+              src={Banner}
+              alt=""
+              className="absolute lg:top-[200px] md:top-[150px] top-[150px] lg:left-[65%] md:left-[75%] left-[75%] h-32 md:h-48"
+            />
+          </a>
         </div>
         <img
           src={Artboard}
@@ -252,12 +261,10 @@ const MAS101 = () => {
             <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
           ))}
           <div className="text-center mt-12 mb-6">
-          <Link to="/timeline1">
-              <div
-                className="px-3 py-4 bg-blue-600 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]"
-              >
+            <Link to="/timeline1">
+              <div className="px-3 py-4 bg-blue-600 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]">
                 Complete Timeline
-            </div>
+              </div>
             </Link>
           </div>
         </div>

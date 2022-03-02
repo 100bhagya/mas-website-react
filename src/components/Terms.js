@@ -14,6 +14,7 @@ const Terms = ({ setIsShowTerms, isShowPrivacy }) => {
   return (
     <div>
       <div className="bg-back lg:w-[55%] md:w-[80%] fixed text-[10px] md:text-sm top-[100px] md:top-[200px] md:left-[100px] lg:top-[100px] lg:left-[500px] p-2 md:p-10 z-50 rounded-2xl shadow-2xl">
+
         <div className="flex">
           <img
             src={CloseIcon}
@@ -33,6 +34,7 @@ const Terms = ({ setIsShowTerms, isShowPrivacy }) => {
           <br />
           <h1 className="font-bold text-lg mb-5">Refund Policy</h1>
           <div>
+
             Returns and Refunds Policy. Thank you for shopping at www.myanalyticsschool.com
             Non-tangible irrevocable goods ("Digital products")
             We do not issue refunds for non-tangible irrevocable goods ("digital products") once the order is confirmed and the product is sent. We recommend contacting us for assistance if you experience any issues receiving or downloading our products. If you have any questions about our Returns and Refunds Policy, please email us at admin@myanalyticsschool.com
