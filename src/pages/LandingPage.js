@@ -91,13 +91,7 @@ const LandingPage = () => {
           Checkout MAS Placement Report
         </div>
       </a> */}
-      <a href={Pdf} target="_blank" rel="noopener noreferrer">
-        <img
-          src={Banner}
-          alt=""
-          className="absolute lg:top-[450px] top-[530px] md:top-[490px] left-[70%] lg:left-[25%] h-32 lg:h-48"
-        />
-      </a>
+
       <LoginForm isShowLogin={isShowLogin} closeLogin={closeLogin} />
       <div className="flex flex-col-reverse lg:flex-row pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="lg:flex lg:items-center px-4 pt-9 max-w-lg md:max-w-xl lg:max-w-4xl mx-auto">
@@ -119,6 +113,13 @@ const LandingPage = () => {
             >
               Join Today
             </div>
+            <a href={Pdf} target="_blank" rel="noopener noreferrer">
+              <img
+                src={Banner}
+                alt=""
+                className="absolute lg:top-[330px] top-[190px] md:top-[140px] left-[70%] lg:left-[25%] h-32 lg:h-48"
+              />
+            </a>
           </div>
         </div>
         <div className="flex justify-center">
