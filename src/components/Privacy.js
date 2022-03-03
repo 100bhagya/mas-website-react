@@ -13,14 +13,14 @@ const Privacy = ({ setIsShowPrivacy, isShowTerms }) => {
   });
   return (
     <div>
-      <div className="bg-back lg:w-[55%] md:w-[80%] absolute text-[10px] md:text-sm top-[7200px] md:top-[7050px] md:left-[100px] lg:top-[6200px] lg:left-[500px] px-5 py-10 md:p-10 z-50 rounded-2xl shadow-2xl">
+      <div className="bg-back lg:w-[55%] md:w-[80%] fixed text-[10px] md:text-sm top-[100px] md:top-[200px] md:left-[100px] lg:top-[100px] lg:left-[500px] p-2 md:p-10 z-50 rounded-2xl shadow-2xl">
         <div className="flex">
           <h1 className="font-bold text-lg mb-5">Privacy Policy</h1>
           <img
             src={CloseIcon}
             onClick={updateIsShowPrivacy}
             alt="close"
-            className="w-4 h-4 relative -top-3 md:top-0 left-[55%] md:left-[70%] lg:left-[80%] cursor-pointer"
+            className="w-4 h-4 relative top-2 md:top-0 left-[55%] md:left-[70%] lg:left-[80%] cursor-pointer"
           />
         </div>
         <div className="overflow-y-auto h-[60vh]">

@@ -15,7 +15,9 @@ import Offers from "../components/Offers";
 import Footer from "../components/Footer";
 import Testimonial from "../components/Testimonial";
 import LoginForm from "../components/LoginForm";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Pdf from "../components/MAS Placement Report'21.pdf";
+import Banner from "../images/placement banner.png";
 
 const Card1 = ({ img, title, content }) => {
   return (
@@ -84,6 +86,12 @@ const LandingPage = () => {
   return (
     <div>
       <Navbar />
+      {/* <a href={Pdf} target="_blank" rel="noopener noreferrer">
+        <div className="w-[35%] left-[33%] bg-black text-2xl text-white px-10 py-5 absolute top-[60px] text-center">
+          Checkout MAS Placement Report
+        </div>
+      </a> */}
+
       <LoginForm isShowLogin={isShowLogin} closeLogin={closeLogin} />
       <div className="flex flex-col-reverse lg:flex-row pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="lg:flex lg:items-center px-4 pt-9 max-w-lg md:max-w-xl lg:max-w-4xl mx-auto">
@@ -105,6 +113,13 @@ const LandingPage = () => {
             >
               Join Today
             </div>
+            <a href={Pdf} target="_blank" rel="noopener noreferrer">
+              <img
+                src={Banner}
+                alt=""
+                className="absolute lg:top-[330px] top-[190px] md:top-[140px] left-[70%] lg:left-[25%] h-32 lg:h-48"
+              />
+            </a>
           </div>
         </div>
         <div className="flex justify-center">
