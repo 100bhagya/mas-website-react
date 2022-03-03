@@ -29,7 +29,7 @@ const Courses = () => {
       </div>
       <div className="bg-back">
         <div className="lg:flex pt-20 pb-20 justify-center">
-          <div className="flex flex-col-reverse md:flex-row bg-card md:m-12 md:p-12 m-4 p-7 pb-0 rounded-2xl shadow-2xl">
+          <div className="flex flex-col-reverse md:flex-row bg-card relative right-6 md:m-12 lg:m-0 md:p-12 m-4 p-7 pb-0 rounded-2xl shadow-2xl">
             <div className="mr-20">
               <p className="text-2xl hidden md:block font-semibold mb-8">
                 MAS 101
@@ -83,7 +83,7 @@ const Courses = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col-reverse md:flex-row bg-card md:m-12 md:p-12 m-4 p-7 pb-0 rounded-2xl shadow-2xl">
+          <div className="flex flex-col-reverse md:flex-row bg-card md:m-12 relative left-6 lg:m-0 md:p-12 m-4 p-7 pb-0 rounded-2xl shadow-2xl">
             <div className="mr-20">
               <p className="text-2xl hidden md:block font-semibold mb-8">
                 MAS 102
