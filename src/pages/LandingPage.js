@@ -20,7 +20,7 @@ import LoginForm from "../components/LoginForm";
 const Card1 = ({ img, title, content }) => {
   return (
     <div class="md:px-24 md:mt-40 lg:mt-12">
-      <div class="flex flex-col-reverse lg:flex-row md:rounded-3xl h-[425px] bg-works p-16">
+      <div class="flex flex-col-reverse lg:flex-row md:rounded-3xl h-[425px] md:h-auto bg-works p-16">
         <div className="md:w-6/12 w-full mt-4 relative top-10 md:top-0">
           <div class=" items-center mb-3">
             <h2 class="text-gray-900 lg:text-2xl md:text-lg text-center md:text-left text-[12px] title-font font-semibold">
@@ -90,7 +90,9 @@ const LandingPage = () => {
           <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
             <h1 className="lg:font-normal font-semibold  text-black text-2xl md:text-3xl lg:text-5xl leading-relaxed font-primary">
               Learn Analytics,
-              <p className="relative bottom-5 lg:mt-10 mt-4">The Analytics Way</p>
+              <p className="relative bottom-5 lg:mt-10 mt-4">
+                The Analytics Way
+              </p>
             </h1>
             <p className="lg:pt-6 font text-sm lg:text-lg  text-[#787B7D] leading-loose lg:w-[68%] ">
               My Analytics School is an Ed-Tech start-up founded by IIT alumni,
