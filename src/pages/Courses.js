@@ -142,7 +142,7 @@ const Courses = () => {
       <div className="bg-back md:pb-40 pb-20">
         <div className="text-[40px] text-center mb-16">Our Test Series</div>
         <div className="lg:flex justify-center">
-          <div className="bg-card md:mx-8 md:h-[445px] lg:h-[auto] mx-3 md:flex lg:block md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
+          <div className="bg-card md:mx-8 lg:mr-8 lg:ml-0 md:h-[445px] lg:h-[auto] mx-3 md:flex lg:block md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
             <div className="">
               <p className="text-2xl font-semibold mb-10">Test Series 1</p>
               <img src={artboard3} alt="artboard" className=""></img>
@@ -194,7 +194,7 @@ const Courses = () => {
               </div>
             </div>
           </div>
-          <div className="bg-card md:mx-8 mx-3 md:flex lg:block md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
+          <div className="bg-card md:mx-8 lg:ml-8 lg:mr-0 mx-3 md:flex lg:block md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
             <div className="">
               <p className="text-2xl font-semibold mb-10">Test Series 3</p>
               <img src={artboard5} alt="artboard" className=""></img>
