@@ -45,7 +45,7 @@ const Mentors = () => {
                 ></img>
               </div>
               <div>
-                <a href={post.Link_linkedin}>
+                <a href={post.Link_linkedin} target="_blank" rel="noopener noreferrer">
                   <img
                     src={LinkedIn}
                     alt="icon"
