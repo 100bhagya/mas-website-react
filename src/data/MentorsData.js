@@ -133,13 +133,7 @@ const Data = [
     position: "ICICI Bank",
     Link_linkedin: "https://www.linkedin.com/in/ashutosh-gupta-3b4654118/",
   },
-  {
-    id: 9,
-    name: "Bhavik Jain",
-    image: Arpit,
-    position: "Myntra",
-    Link_linkedin: "https://www.linkedin.com/in/bhavik-jain-335259157/",
-  },
+
   {
     id: 10,
     name: "Saket Bihari",
@@ -197,13 +191,7 @@ const Data = [
     position: "Kline&Company",
     Link_linkedin: "https://www.linkedin.com/in/prakhardoorwar/",
   },
-  {
-    id: 18,
-    name: "Utkarsh Srivastava",
-    image: Dhvani,
-    position: "Mastercard",
-    Link_linkedin: "https://www.linkedin.com/in/utkarsh-srivastava-06aa02117/",
-  },
+
   {
     id: 19,
     name: "Supriya Gupta",
@@ -231,27 +219,6 @@ const Data = [
     image: Sakshi,
     position: "CITI Bank",
     Link_linkedin: "https://www.linkedin.com/in/sakshi-patil/",
-  },
-  {
-    id: 23,
-    name: "Swasti Arya",
-    image: Divyansh,
-    position: "Accenture",
-    Link_linkedin: "https://www.linkedin.com/in/swasti-arya",
-  },
-  {
-    id: 24,
-    name: "Piyush Gupta",
-    image: Pushpak,
-    position: "LG Ads",
-    Link_linkedin: "https://www.linkedin.com/in/piyushiitk/",
-  },
-  {
-    id: 25,
-    name: "Shikha Raj",
-    image: Shivam,
-    Link_linkedin: "https://www.linkedin.com/in/shikha-raj/",
-    position: "Mastercard",
   },
   {
     id: 26,
