@@ -15,6 +15,7 @@ import Offers from "../components/Offers";
 import Footer from "../components/Footer";
 import Testimonial from "../components/Testimonial";
 import LoginForm from "../components/LoginForm";
+import JoinToday from "../components/JoinToday";
 import { Link } from "react-router-dom";
 import Pdf from "../components/MAS Placement Report'21.pdf";
 import Banner from "../images/placement banner.png";
@@ -92,7 +93,8 @@ const LandingPage = () => {
         </div>
       </a> */}
 
-      <LoginForm isShowLogin={isShowLogin} closeLogin={closeLogin} />
+      {/* <LoginForm isShowLogin={isShowLogin} closeLogin={closeLogin} /> */}
+      <JoinToday isShowLogin={isShowLogin} closeLogin={closeLogin} />
       <div className="flex flex-col-reverse lg:flex-row pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="lg:flex lg:items-center px-4 pt-9 max-w-lg md:max-w-xl lg:max-w-4xl mx-auto">
           <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
