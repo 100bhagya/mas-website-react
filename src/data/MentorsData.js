@@ -140,6 +140,7 @@ const Data = [
     position: "Myntra",
     Link_linkedin: "https://www.linkedin.com/in/bhavik-jain-335259157/",
   },
+
   {
     id: 10,
     name: "Saket Bihari",
@@ -204,6 +205,7 @@ const Data = [
     position: "Mastercard",
     Link_linkedin: "https://www.linkedin.com/in/utkarsh-srivastava-06aa02117/",
   },
+
   {
     id: 19,
     name: "Supriya Gupta",
@@ -254,6 +256,7 @@ const Data = [
     position: "Mastercard",
   },
   {
+
     id: 26,
     name: "Kumari Aditi",
     image: Aditi,
