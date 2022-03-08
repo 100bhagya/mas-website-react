@@ -66,15 +66,33 @@ const Tests = () => {
                 <div className="md:text-2xl text-xl md:font-medium font-semibold md:mb-28 mb-6">
                   Sample test
                 </div>
-                <p className="md:text-lg text-[12px] md:my-6 my-3 underline">
+                <a 
+                  href="https://ezex.in/4ea7xl"
+                  className="md:text-lg text-[12px] md:my-6 my-3 hover:underline text-blue-600"
+                  target="_blank"
+                  rel="noopener noreferrer">
                   Analytics Mock Placement Test
-                </p>
-                <p className="md:text-lg text-[12px] md:my-6 my-3 underline">
+                </a>
+                <br />
+                <br />
+                <a
+                  href="https://ezex.in/e896c7"
+                  className="md:text-lg text-[12px] md:my-6 my-3 hover:underline text-blue-600"
+                  target="_blank"
+                  rel="noopener noreferrer"              
+                  >
                   Quant Sectional Test
-                </p>
-                <p className="md:text-lg text-[12px] md:my-6 my-3 underline">
+                </a>
+                <br />
+                <br />
+                <a
+                  href="https://ezex.in/8fphur" 
+                  className="md:text-lg text-[12px] md:my-6 my-3 hover:underline text-blue-600"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
                   Verbal Sectional Test
-                </p>
+                </a>
               </div>
               <img
                 src={Artboard}
