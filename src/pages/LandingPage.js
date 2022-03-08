@@ -76,25 +76,33 @@ const Card = ({ img, title, content }) => {
   );
 };
 
-const LandingPage = () => {
-  const [isShowLogin, setIsShowLogin] = useState(true);
-  const handleClick = () => {
-    setIsShowLogin((isShowLogin) => !isShowLogin);
+const LandingPage = ({ isShowLogin, setIsShowLogin }) => {
+  const [isShowJoin, setIsShowJoin] = useState(true);
+  const handleJoin = () => {
+    // if (isShowJoin) {
+    //   setIsShowLogin(!isShowLogin);
+    // }
+    setIsShowJoin((isShowJoin) => !isShowJoin);
   };
-  const closeLogin = () => {
-    setIsShowLogin(!isShowLogin);
+  const closeJoin = () => {
+    setIsShowJoin(!isShowJoin);
   };
+
   return (
     <div>
-      <Navbar />
+      <Navbar
+        isShowLogin={isShowLogin}
+        setIsShowLogin={setIsShowLogin}
+        setIsShowJoin={setIsShowJoin}
+        isShowJoin={isShowJoin}
+      />
       {/* <a href={Pdf} target="_blank" rel="noopener noreferrer">
         <div className="w-[35%] left-[33%] bg-black text-2xl text-white px-10 py-5 absolute top-[60px] text-center">
           Checkout MAS Placement Report
         </div>
       </a> */}
 
-      {/* <LoginForm isShowLogin={isShowLogin} closeLogin={closeLogin} /> */}
-      <JoinToday isShowLogin={isShowLogin} closeLogin={closeLogin} />
+      <JoinToday isShowJoin={isShowJoin} closeJoin={closeJoin} />
       <div className="flex flex-col-reverse lg:flex-row pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="lg:flex lg:items-center px-4 pt-9 max-w-lg md:max-w-xl lg:max-w-4xl mx-auto">
           <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
@@ -110,7 +118,7 @@ const LandingPage = () => {
               placements and related job preparation
             </p>
             <div
-              onClick={handleClick}
+              onClick={handleJoin}
               className="inline-block cursor-pointer bg-blue-600 lg:mt-20 mt-8 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-normal uppercase font-primary tracking-wide lg:text-sm text-[12px] mr-4"
             >
               Join Today

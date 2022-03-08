@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../images/logo.png";
 import { NavLink, Link } from "react-router-dom";
 import CloseIcon from "../images/cross_head.png";
@@ -73,9 +73,12 @@ function SideMenu() {
   );
 }
 
-const Navbar = () => {
+const Navbar = ({ isShowJoin, setIsShowJoin }) => {
   const [isShowLogin, setIsShowLogin] = useState(true);
   const handleClick = () => {
+    if (isShowLogin) {
+      setIsShowJoin(!isShowJoin);
+    }
     setIsShowLogin((isShowLogin) => !isShowLogin);
   };
   const closeLogin = () => {

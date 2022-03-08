@@ -6,7 +6,7 @@ import "../index.css";
 import CloseIcon from "../images/cross_head.png";
 import { PhoneIcon, MailIcon, ChatAltIcon } from "@heroicons/react/solid";
 
-const JoinToday = ({ isShowLogin, closeLogin }) => {
+const JoinToday = ({ isShowJoin, closeJoin }) => {
   const initialValues = { username: "", email: "", phone: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
@@ -49,9 +49,9 @@ const JoinToday = ({ isShowLogin, closeLogin }) => {
     return errors;
   };
   return (
-    <div className={`${isShowLogin ? "active" : ""} show`}>
+    <div className={`${isShowJoin ? "active" : ""} show`}>
       <div className="w-full flex">
-        <div className="md:mt-24 mt-14 fixed w-[400px] left-[40%] md:right-0 z-[10000] mx-5 bg-white rounded-2xl shadow-2xl">
+        <div className="md:mt-24 mt-14 fixed w-[400px] md:left-[40%] -left-[5%] md:right-0 z-[10000] mx-5 bg-white rounded-2xl shadow-2xl">
           <form
             action="https://formsubmit.co/admin@myanalyticsschool.com"
             method="POST"
@@ -62,7 +62,7 @@ const JoinToday = ({ isShowLogin, closeLogin }) => {
               <h1 className="font-bold text-lg mt-5">Register.</h1>
               <img
                 src={CloseIcon}
-                onClick={closeLogin}
+                onClick={closeJoin}
                 alt="close"
                 className="w-4 h-4 relative left-[70%] top-5 cursor-pointer"
               />
