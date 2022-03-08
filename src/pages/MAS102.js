@@ -119,9 +119,13 @@ const MAS102 = () => {
               NITs, IIITs, BITS, and similar colleges.
             </p>
           </div>
-          <Link to="" className=" py-3 px-8 bg-blue-700 rounded-2xl text-white">
+          <a 
+            href="https://forms.gle/cXWbbK3aJMSdXDkW7"
+            className="py-3 px-8 bg-blue-700 rounded-2xl text-white"
+            target="_blank"
+            rel="noopener noreferrer">
             Apply now
-          </Link>
+          </a>
         </div>
         <img
           src={Artboard}

@@ -121,9 +121,13 @@ const MAS101 = () => {
               IITs
             </p>
           </div>
-          <Link to="" className=" py-3 px-8 bg-blue-700 rounded-2xl text-white">
+          <a 
+            href="https://forms.gle/ZUh3tNwVDVYjEKjC8" 
+            className=" py-3 px-8 bg-blue-700 rounded-2xl text-white"
+            target="_blank"
+            rel="noopener noreferrer">
             Apply now
-          </Link>
+          </a>
           <a href={Pdf} target="_blank" rel="noopener noreferrer">
             <img
               src={Banner}
