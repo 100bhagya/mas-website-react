@@ -32,6 +32,16 @@ const ISA102 = () => {
   const [faqs, setfaqs] = useState(Data);
   const [ctc, setCtc] = useState(12);
 
+  const calculateMonthlyPay = (ctc) => {
+    if (ctc > 18) {
+      return 7400;
+    } else if (ctc <= 7) {
+      return 0;
+    } else {
+      return Math.ceil((ctc * 100000 * 0.048786) / 12 / 100) * 100;
+    }
+  }
+
   const toggleFAQ = (index) => {
     setfaqs(
       faqs.map((faq, i) => {
@@ -150,7 +160,7 @@ const ISA102 = () => {
             className="border-[2px] border-solid border-black lg:w-[28%] w-[48%] text-center py-4 text-5xl"
           ></input>
           <div className="border-[2px] border-solid border-black lg:w-[28%] w-[48%] text-center py-4 text-5xl">
-            {Math.ceil((ctc * 100000 * 0.048786) / 12 / 100) * 100}
+            {calculateMonthlyPay(ctc)}            
           </div>
         </div>
         <div className="flex flex-col-reverse md:flex-row justify-center">

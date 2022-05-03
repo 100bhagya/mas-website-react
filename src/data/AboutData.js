@@ -18,7 +18,7 @@ const Data = [
   {
     id: 2,
     name: "SAUBHAGYA GAURAV",
-    position: "Software Engineer",
+    position: "Software Entrepreneur",
     image: Saubhagya,
     Link_linkedin: "https://www.linkedin.com/in/saubhagya-gaurav-762738159",
     Link_instagram: "https://instagram.com/100_bhagya/",
