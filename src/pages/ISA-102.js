@@ -35,7 +35,7 @@ const ISA102 = () => {
   const calculateMonthlyPay = (ctc) => {
     if (ctc > 18) {
       return 7400;
-    } else if (ctc <= 7) {
+    } else if (ctc < 6) {
       return 0;
     } else {
       return Math.ceil((ctc * 100000 * 0.048786) / 12 / 100) * 100;
