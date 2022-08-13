@@ -139,22 +139,28 @@ const Courses = () => {
           </div>
         </div>
       </div>
+
       <div className="bg-back md:pb-40 pb-20">
-        <div className="text-[40px] text-center mb-16">Our Test Series</div>
+        <div className="text-[40px] text-center mb-16">MAS Prep Drills</div>
         <div className="lg:flex justify-center">
           <div className="bg-card md:mx-8 lg:mr-8 lg:ml-0 md:h-[445px] lg:h-[auto] mx-3 md:flex lg:block md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
             <div className="">
-              <p className="text-2xl font-semibold mb-10">Test Series 1</p>
+              <p className="text-2xl font-semibold mb-10">Test Drill</p>
               <img src={artboard3} alt="artboard" className=""></img>
-              <p className="mb-4 mt-12">Sectional tests </p>
-              <p className="my-4">Combined test</p>
+              <p className="mb-4 mt-12">DPPs / Combined / Company Tests</p>              
+              <p className="my-4">Quant Sectional Tests</p>
+              <p className="my-4">LRDI Sectional Tests</p>
+              <p className="my-4">Verbal Sectional Tests</p>
+              <p className="my-4">Weekly Test</p>
+              <p className="my-4">Price - <span className="line-through">₹ 9000</span></p>
+              <p className="my-4">Discount - 50%</p>
               <p className="mt-4 md:mb-[150px] mb-10 text-[15px] text-blue-600 font-semibold">
-                ₹ 2499
+                Final Price - ₹ 4500 (Incl. 18 % GST)
               </p>
             </div>
-            <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
+            <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">            
               <a
-                href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
+                href="https://razorpay.com/payment-button/pl_K4pHLfrzbEotPb/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -164,52 +170,28 @@ const Courses = () => {
                 </div>
               </a>
               <div className="px-4 py-3 h-12 md:mt-14 lg:mt-0 mt-0 lg:right-0 right-0 relative md:right-10 rounded-xl bg-blue-600 text-white ml-7">
-                <Link to="/ts1">Explore Now</Link>
-              </div>
-            </div>
-          </div>
-          <div className="bg-card md:mx-8 md:h-[445px] lg:h-[auto] mx-3 md:flex lg:block md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
-            <div className="">
-              <p className="text-2xl font-semibold mb-10">Test Series 2</p>
-              <img src={artboard4} alt="artboard" className=""></img>
-              <p className="mb-4 mt-9">Combined test</p>
-              <p className="my-4">Company wise test</p>
-              <p className="mt-4 md:mb-[150px] mb-10 text-[15px] text-blue-600 font-semibold">
-                ₹ 3999
-              </p>
-            </div>
-            <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
-              <a
-                href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
-                type="submit"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="px-4 py-2 h-12 rounded-xl mr-4 border-blue-600 border-solid border-2">
-                  Apply now
-                </div>
-              </a>
-              <div className="px-4 py-3 h-12 md:mt-14 lg:mt-0 mt-0 lg:right-0 right-0 relative md:right-10 rounded-xl bg-blue-600 text-white ml-7">
-                <Link to="/ts2">Explore Now</Link>
+                <Link to="/testDrill">Explore Now</Link>
               </div>
             </div>
           </div>
           <div className="bg-card md:mx-8 lg:ml-8 lg:mr-0 mx-3 md:flex lg:block md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
             <div className="">
-              <p className="text-2xl font-semibold mb-10">Test Series 3</p>
+              <p className="text-2xl font-semibold mb-10">Placement Drill</p>
               <img src={artboard5} alt="artboard" className=""></img>
-              <p className="my-4">Sectional tests</p>
-              <p className="my-4">Combined test</p>
-              <p className="my-4">Company wise test </p>
-              <p className="my-4">Practice quizzes</p>
-              <p className="my-4">Interview prep</p>
+              <p className="my-4">DPPs / Combined / Company Tests</p>
+              <p className="my-4">Case Study Expertise</p>
+              <p className="my-4">Guesstimates Expertise</p>
+              <p className="my-4">Interview Prep & Mocks</p>
+              <p className="my-4">GD / Puzzles / Non-Tech Mocks</p>
+              <p className="my-4">Price - <span className="line-through">₹ 15000</span></p>
+              <p className="my-4">Discount - 50%</p>
               <p className="mt-4 mb-9 text-[15px] text-blue-600 font-semibold">
-                ₹ 5999
+                Final Price - ₹ 7500 (Incl. 18 % GST)
               </p>
             </div>
             <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
               <a
-                href="https://razorpay.com/payment-button/pl_HiD8BM0f5CORWM/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
+                href="https://razorpay.com/payment-button/pl_K4pQUWotXrqO4Z/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -219,7 +201,7 @@ const Courses = () => {
                 </div>
               </a>
               <div className="px-4 py-3 h-12 md:mt-14 lg:mt-0 mt-0 lg:right-0 right-0 relative md:right-10 rounded-xl bg-blue-600 text-white ml-7">
-                <Link to="/ts3">Explore Now</Link>
+                <Link to="/placementDrill">Explore Now</Link>
               </div>
             </div>
           </div>
