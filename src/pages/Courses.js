@@ -166,7 +166,7 @@ const Courses = () => {
                 rel="noopener noreferrer"
               >
                 <div className="px-4 py-2 h-12 rounded-xl mr-4 border-blue-600 border-solid border-2">
-                  Apply now
+                  Buy now
                 </div>
               </a>
               <div className="px-4 py-3 h-12 md:mt-14 lg:mt-0 mt-0 lg:right-0 right-0 relative md:right-10 rounded-xl bg-blue-600 text-white ml-7">
@@ -197,7 +197,7 @@ const Courses = () => {
                 rel="noopener noreferrer"
               >
                 <div className="px-4 py-2 h-12 rounded-xl mr-4 border-blue-600 border-solid border-2">
-                  Apply now
+                  Buy now
                 </div>
               </a>
               <div className="px-4 py-3 h-12 md:mt-14 lg:mt-0 mt-0 lg:right-0 right-0 relative md:right-10 rounded-xl bg-blue-600 text-white ml-7">
