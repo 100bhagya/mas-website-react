@@ -72,7 +72,7 @@ const PlacementDrill = () => {
 
             <p className="relative justify-center lg:top-5 md:text-lg text-sm font  text-black leading-8">
               This will act as your AK47 to smash and ace placement tests and
-              get interview-ready with mock cases, interviews, and HR sessions
+              get interview-ready with mock cases and interviews
               to convert your dream company.
             </p>
           </div>
