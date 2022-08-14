@@ -10,7 +10,7 @@ import tick from "../images/tick.png";
 import { Link } from "react-router-dom";
 import TestimonialOtherPages from "../components/TestimonialOtherPages";
 
-const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
+const IncomeSlab = ({ name, no_1, no_2, color }) => {
   return (
     <div
       className={`flex w-full lg:h-[75px] pb-4 border-b-[1px] border-solid border-blue-500 pt-1 ${color}`}
@@ -35,22 +35,6 @@ const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
         ) : (
           no_2
         )}
-      </div>
-    </div>
-  );
-};
-
-const Card = ({ image, heading, content }) => {
-  return (
-    <div className="bg-white lg:w-[18%] md:w-[34%] w-[50%]  md:m-10 md:mx-12 mx-2 mt-10 pt-8 md:pl-6 md:pr-16 pb-7 rounded-3xl">
-      <div className="">
-        <img src={image} alt="" className="h-32 ml-5 md:ml-0" />
-      </div>
-      <div className="text-[19px] font-semibold mt-5 md:mb-10 mb-5 text-center md:text-left">
-        {heading}
-      </div>
-      <div className="md:text-sm text-[11px] font-normal px-2 md:px-0  text-center md:text-left">
-        {content}
       </div>
     </div>
   );
@@ -100,7 +84,7 @@ const TestDrill = () => {
             <ul>
               <li>Quant Sectional (17 Tests)</li>
               <li>LRDI Sectional (15 Tests)</li>
-              <li>Verbal Sectional (5 Tests)</li>
+              <li>Verbal Sectional (10 Tests)</li>
             </ul>
           </div>
         </div>        

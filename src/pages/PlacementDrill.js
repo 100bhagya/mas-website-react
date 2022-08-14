@@ -43,22 +43,6 @@ const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
   );
 };
 
-const Card = ({ image, heading, content, mobile, laptop }) => {
-  return (
-    <div className={`bg-white lg:w-[18%] md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl ${mobile} ${laptop}`}>
-      <div className="">
-        <img src={image} alt="" className="h-32 ml-5 md:ml-0" />
-      </div>
-      <div className="text-[19px] font-semibold mt-5 md:mb-10 mb-5 text-center md:text-left">
-        {heading}
-      </div>
-      <div className="md:text-sm text-[11px] font-normal px-2 md:px-0  text-center md:text-left">
-        {content}
-      </div>
-    </div>
-  );
-};
-
 const PlacementDrill = () => {
   return (
     <div className="bg-back">
