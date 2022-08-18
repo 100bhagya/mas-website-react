@@ -53,7 +53,7 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
       <div className="w-full flex">
         <div className="md:mt-24 mt-14 absolute right-[-10%] md:right-0 z-[10000] mx-5 bg-white rounded-2xl shadow-2xl">
           <form
-            action="https://formsubmit.co/admin@myanalyticsschool.com"
+            action="https://formsubmit.co/el/saburu"
             method="POST"
             onSubmit={handleSubmit}
             className="flex flex-col space-y-4 px-8 w-[400px] mb-2"
@@ -200,15 +200,12 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
                   <option value="mas102" className="text-black">
                     MAS102
                   </option>
-                  <option value="ts1" className="text-black">
-                    TS1
+                  <option value="placement drill" className="text-black">
+                    Placement Drill
                   </option>
-                  <option value="ts2" className="text-black">
-                    TS2
-                  </option>
-                  <option value="ts3" className="text-black">
-                    TS3
-                  </option>
+                  <option value="test drill" className="text-black">
+                    Test Drill
+                  </option>                  
                 </select>
               </div>
               <div>
