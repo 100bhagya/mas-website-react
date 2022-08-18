@@ -5,9 +5,10 @@ import React, { useState } from "react";
 import "../index.css";
 import CloseIcon from "../images/cross_head.png";
 import { PhoneIcon, MailIcon, ChatAltIcon } from "@heroicons/react/solid";
+import emailjs from 'emailjs-com'
 
 const LoginForm = ({ isShowLogin, closeLogin }) => {
-  const initialValues = { username: "", email: "", phone: "" };
+  const initialValues = { name: "", email: "", phone: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
@@ -16,8 +17,8 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
     const { name, value } = event.target;
     setFormValues({ ...formValues, [name]: value });
     switch (name) {
-      case "username":
-        formErrors.username = "";
+      case "name":
+        formErrors.name = "";
       case "email":
         formErrors.email = "";
       case "phone":
@@ -30,6 +31,11 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
     event.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
+    emailjs.sendForm('service_9op7uj3', 'template_b7i1qy9', event.target, '1P3LXCmw9LVoYCXwA')
+    .then(res => {
+      console.log(res)
+    }).catch(err => console.log(err))
+  
   };
   const validate = (values) => {
     const errors = {};
@@ -53,8 +59,6 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
       <div className="w-full flex">
         <div className="md:mt-24 mt-14 absolute right-[-10%] md:right-0 z-[10000] mx-5 bg-white rounded-2xl shadow-2xl">
           <form
-            action="https://formsubmit.co/el/saburu"
-            method="POST"
             onSubmit={handleSubmit}
             className="flex flex-col space-y-4 px-8 w-[400px] mb-2"
           >
@@ -70,21 +74,21 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
             <div className="overflow-y-scroll h-[58vh] pr-10 pl-1">
               <div>
                 <label htmlFor="" className="text-sm font-medium required">
-                  Username
+                  Name
                 </label>
 
                 <input
                   type="text"
-                  placeholder="Enter your username"
+                  placeholder="Enter your name"
                   required
-                  name="username"
-                  value={formValues.username}
+                  name="name"
+                  value={formValues.name}
                   onChange={handleChange}
                   class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 text-[12px] outline-none focus:ring-2 focus:ring-teal-300"
                 />
               </div>
               <p className=" text-[12px] text-red-500 relative bottom-4 ">
-                {formErrors.username}
+                {formErrors.name}
               </p>
 
               <div className="mt-6">
