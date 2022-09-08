@@ -22,16 +22,16 @@ import Banner from "../images/placement banner.png";
 
 const Card1 = ({ img, title, content }) => {
   return (
-    <div class="md:px-24 md:mt-40 lg:mt-12">
-      <div class="flex flex-col-reverse lg:flex-row md:rounded-3xl h-[425px] md:h-auto bg-works p-16">
+    <div className="md:px-24 md:mt-40 lg:mt-12">
+      <div className="flex flex-col-reverse lg:flex-row md:rounded-3xl h-[425px] md:h-auto bg-works p-16">
         <div className="md:w-6/12 w-full mt-4 relative top-10 md:top-0">
-          <div class=" items-center mb-3">
-            <h2 class="text-gray-900 lg:text-2xl md:text-lg text-center md:text-left text-[12px] title-font font-semibold">
+          <div className=" items-center mb-3">
+            <h2 className="text-gray-900 lg:text-2xl md:text-lg text-center md:text-left text-[12px] title-font font-semibold">
               {title}
             </h2>
           </div>
 
-          <p class="leading-relaxed w-full lg:text-base  text-[12px] lg:mt-12 mt-5">
+          <p className="leading-relaxed w-full lg:text-base  text-[12px] lg:mt-12 mt-5">
             {content}
           </p>
         </div>
@@ -57,22 +57,18 @@ const Card1 = ({ img, title, content }) => {
 };
 
 const Card = ({ img, title, content }) => {
-  return (
-    <div class="p-4 lg:m-6 md:m-0 md:mt-5 m-6 md:w-1/3 lg:w-1/4">
-      <div class="h-full image shadow-xl bg-card rounded-lg overflow-hidden">
+  return (    
+      <div className="flex flex-col items-center justify-center space-y-4 shadow-xl bg-card rounded-xl p-8">
         <img
-          class="lg:h-30 mt-7 p-4 bg-white rounded-full md:h-36 "
+          className="h-36 rounded-full mt-6 bg-white p-2"
           src={img}
           alt="blog"
-        />
-        <div class="p-6 pb-16">
-          <div class=" lg:text-2xl font-bold text-gray-900 mb-3">{title}</div>
-          <p class="leading-relaxed font-normal md:text-center font lg:w-72 text-left lg:text-left lg:pl-5 lg:mb-3">
-            {content}
-          </p>
-        </div>
-      </div>
-    </div>
+        />        
+        <div className="text-md lg:text-xl font-semibold text-gray-900 mb-3">{title}</div>
+        <p className="text-center max-w-sm text-sm">
+          {content}
+        </p>      
+      </div>    
   );
 };
 
@@ -94,7 +90,7 @@ const LandingPage = () => {
       </a> */}
 
       {/* <LoginForm isShowLogin={isShowLogin} closeLogin={closeLogin} /> */}
-      <JoinToday isShowLogin={isShowLogin} closeLogin={closeLogin} />
+      {/* <JoinToday isShowLogin={isShowLogin} closeLogin={closeLogin} /> */}
       <div className="flex flex-col-reverse lg:flex-row pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="lg:flex lg:items-center px-4 pt-9 max-w-lg md:max-w-xl lg:max-w-4xl mx-auto">
           <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
@@ -137,38 +133,33 @@ const LandingPage = () => {
           />
         </div>
       </div>
-      <section class="text-gray-600 body-font bg-back">
-        <div class="text-center justify-center container px-5 lg:py-24 md:py-14 pt-14 pb-7 mx-auto">
-          <div class="text-center font-normal text-3xl md:text-4xl lg:text-5xl mb-5">
+      <section className="bg-back py-8">      
+          <h1 className="font-serif text-gray-900 text-center py-12 lg:pt-24 text-3xl lg:text-4xl font-bold">
             What We Do?
-          </div>
-          <div class="flex justify-center flex-wrap -m-4">
+          </h1>
+          <div className="flex flex-col md:flex-row items-center justify-center m-4 space-y-6 md:space-y-0 md:space-x-6">
             <Card
               img={Copy}
               title="Preparation Program"
-              content="Channelise your efforts through strategic preparation program."
+              content="Channelise your efforts via strategic preparation program."
             />
             <Card
               img={Books}
               title="Improve Skill"
-              content="Help you hone your skills to make you job ready."
+              content="Help you hone your skills to make you land your dream job."
             />
             <Card
               img={Portfolio}
               title="Job Opportunities"
               content="Provide exposure and connect you to market job opportunities."
             />
-          </div>
-        </div>
+          </div>        
       </section>
-      <section class="text-gray-600 body-font bg-back">
-        <div class="container px-5 py-6 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="lg:text-5xl md:text-3xl sm:text-2xl text-3xl font-medium title-font text-gray-900">
+      <section className="text-gray-600 bg-back py-8">                  
+            <h1 className="font-serif text-gray-900 text-center py-12 lg:pt-24 text-3xl md:text-3xl lg:text-4xl font-bold">
               How It Works?
-            </h1>
-          </div>
-          <div class="block flex-wrap -m-4 md:mt-48 lg:mt-0">
+            </h1>          
+          <div className="flex flex-col m-4">
             <Card1
               img={Design3}
               title="Test Preparation & Upskilling"
@@ -184,8 +175,7 @@ const LandingPage = () => {
               title="Off-Campus Opportunities"
               content="Off Campus placement is also in the books. Get connected to the emerging market opportunities via our HR pipeline. We are here to assist."
             />
-          </div>
-        </div>
+          </div>        
       </section>
       <Offers />
       <Testimonial />

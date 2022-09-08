@@ -14,199 +14,201 @@ const Courses = () => {
   return (
     <div>
       <Navbar />
-      <div className="lg:flex pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-        <div className="lg:pt-28 md:pb-36 pb-16 lg:bottom-12">
-          <h1 className="md:font-medium font-semibold mt-16 text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[48px]  leading-8 font-primary">
-            Courses
-          </h1>
 
-          <p className="relative justify-center mt-8 lg:top-5 text-[14px] font  text-black leading-8">
-            We provide an arsenal of a wide range of offerings from internships
-            to placements which are strategically curated and drafted by
-            Analytics professionals as per industry standards.
-          </p>
-        </div>
-      </div>
-      <div className="bg-back">
-        <div className="lg:flex pt-20 pb-20 justify-center">
-          <div className="flex flex-col-reverse md:flex-row bg-card relative right-6 md:m-12 lg:m-0 md:p-12 m-4 p-7 pb-0 rounded-2xl shadow-2xl">
-            <div className="mr-20">
-              <p className="text-2xl hidden md:block font-semibold mb-8">
+      <section className="pt-24 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+        <h1 className="text-center text-black text-3xl font-bold font-serif py-8">
+          Courses
+        </h1>
+
+        <p className="px-8 md:px-24 pb-8 lg:top-5 text-sm text-black">
+          We provide an arsenal of a wide range of offerings from internships
+          to placements which are strategically curated and drafted by
+          Analytics professionals as per industry standards.
+        </p>        
+      </section>
+
+      <section className="bg-back py-16">
+        <div className="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-6 justify-center items-center">
+          <div className="flex flex-col space-y-4 bg-white rounded-2xl pl-6 py-6 md:pl-12 md:py-12 shadow-2xl">
+            <div className="flex justify-between items-center w-full pb-4 space-x-12">
+              <h3 className="text-2xl font-bold">
                 MAS 101
-              </p>
-              <p className="text-sm font-normal mb-5">One to one mentorship</p>
-              <p className="text-sm font-normal mb-5">
-                <b>120+</b> practice tests
-              </p>
-              <p className="text-sm font-normal mb-5">
-                <b>20+ </b> Company specific tests
-              </p>
-              <p className="text-sm font-normal mb-5">
-                Off campus job oppurtunities
-              </p>
-              <p className="text-[15px] font-semibold text-blue-600 mb-5">
-                ₹ 3000 + ISA
-              </p>
-
-              <Link
-                to="/mas101"
-                className="text-sm lg:hidden md:left-96 md:bottom-1  font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
-              >
-                Explore Now
-              </Link>
-            </div>
-            <div className="">
-              <div className="">
-                <p className="text-2xl md:hidden font-semibold relative top-3">
-                  MAS 101
-                </p>
-
-                <p className="lg:text-[22px] md:left-72 text-lg font-semibold relative lg:left-48 left-52 text-white lg:bottom-[8px] bottom-4 z-10">
-                  For IIT
-                </p>
+              </h3>
+              <div className="relative">                            
                 <img
-                  src={exclusive}
-                  alt="exclusive"
-                  className="relative left-[142px] md:left-[216px] lg:left-[142px] lg:bottom-10 bottom-12"
+                    src={exclusive}
+                    alt="exclusive"
+                    className="h-full z-0"
                 />
-              </div>
+                <p className="absolute text-white z-10 top-1.5 right-8 font-bold">
+                  For IITs
+                </p>
+              </div>                                   
+            </div>
+
+            <div className="flex flex-col items-center space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start pr-6 md:pr-12">
               <img
-                src={artboard1}
-                alt="artboard"
-                className="h-44 relative bottom-6 md:mb-12"
-              />
+                    src={artboard1}
+                    alt="artboard"
+                    className="w-1/2 h-36 md:ml-8"
+                  />
+              <div className="text-sm min-w-xl">
+                <p className="mb-4">One to one mentorship</p>
+                <p className="mb-4">
+                  <b>120+</b> practice tests
+                </p>
+                <p className="mb-4">
+                  <b>20+ </b> Company specific tests
+                </p>
+                <p className="mb-4">
+                  Off campus job oppurtunities
+                </p>
+                <p className="text-[15px] font-semibold text-blue-600">
+                  ₹ 3000 + ISA
+                </p>
+              </div>
+            </div>
+            <div className="text-right pr-12" >
               <Link
-                to="/mas101"
-                className="text-sm explore font-medium px-4 py-3 relative left-32 rounded-xl mt-12 text-white bg-blue-600"
-              >
-                Explore Now
+                  to="/mas101"
+                  className="mb-4 text-sm px-4 py-3 rounded-xl text-white bg-blue-800 hover:bg-blue-900 hover:shadow-xl"
+                >
+                  Explore Now
               </Link>
             </div>
+            
           </div>
-          <div className="flex flex-col-reverse md:flex-row bg-card md:m-12 relative left-6 lg:m-0 md:p-12 m-4 p-7 pb-0 rounded-2xl shadow-2xl">
-            <div className="mr-20">
-              <p className="text-2xl hidden md:block font-semibold mb-8">
+
+          <div className="flex flex-col space-y-4 bg-white rounded-2xl pl-6 py-6 md:pl-12 md:py-12 shadow-2xl">
+            <div className="flex justify-between items-center w-full pb-4 space-x-12">
+              <h3 className="text-2xl font-bold">
                 MAS 102
-              </p>
-              <p className="text-sm font-normal mb-5">One to one mentorship</p>
-              <p className="text-sm font-normal mb-5">
-                <b>120+</b> practice tests
-              </p>
-              <p className="text-sm font-normal mb-5">
-                <b>20+ </b> Company specific tests
-              </p>
-              <p className="text-sm font-normal mb-5">
-                Off campus job oppurtunities
-              </p>
-              <p className="text-[15px] font-semibold text-blue-600 mb-5">
-                ₹ 3000 + ISA
-              </p>
-
-              <Link
-                to="/mas102"
-                className="text-sm lg:hidden md:left-96 md:bottom-1  font-medium px-4 py-3 relative left-40 bottom-14 rounded-xl text-white bg-blue-600"
-              >
-                Explore Now
-              </Link>
-            </div>
-            <div className="">
-              <div className="">
-                <p className="text-2xl md:hidden font-semibold relative top-3">
-                  MAS 102
-                </p>
-
-                <p className="lg:text-lg text-[16px] md:left-[250px] font-semibold relative lg:left-40 left-44 text-white lg:bottom-[8px] bottom-5 z-10">
-                  For NIT,Bits,etc
-                </p>
+              </h3>
+              <div className="relative">                            
                 <img
-                  src={exclusive}
-                  alt="exclusive"
-                  className="relative left-[142px] md:left-[216px] lg:left-[136px] lg:bottom-10 bottom-12"
+                    src={exclusive}
+                    alt="exclusive"
+                    className="h-full z-0"
                 />
-              </div>
+                <p className="absolute text-white z-10 top-1.5 right-8 font-bold">
+                  For NITs, BITS
+                </p>
+              </div>                                   
+            </div>
+
+            <div className="flex flex-col items-center space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start pr-6 md:pr-12">
               <img
-                src={artboard2}
-                alt="artboard"
-                className="h-44 relative bottom-6 md:mb-12"
-              />
+                    src={artboard2}
+                    alt="artboard"
+                    className="w-1/2 h-36 md:ml-8"
+                  />
+              <div className="text-sm min-w-xl">
+                <p className="mb-4">One to one mentorship</p>
+                <p className="mb-4">
+                  <b>120+</b> practice tests
+                </p>
+                <p className="mb-4">
+                  <b>20+ </b> Company specific tests
+                </p>
+                <p className="mb-4">
+                  Off campus job oppurtunities
+                </p>
+                <p className="text-[15px] font-semibold text-blue-600">
+                  ₹ 3000 + ISA
+                </p>
+              </div>
+            </div>
+            <div className="text-right pr-12" >
               <Link
-                to="/mas102"
-                className="text-sm explore font-medium px-4 py-3 relative left-32 rounded-xl mt-12 text-white bg-blue-600"
-              >
-                Explore Now
+                  to="/mas102"
+                  className="mb-4 text-sm px-4 py-3 rounded-xl text-white bg-blue-800 hover:bg-blue-900 hover:shadow-xl"
+                >
+                  Explore Now
               </Link>
             </div>
+            
           </div>
-        </div>
-      </div>
+        </div>        
+      </section>
 
-      <div className="bg-back md:pb-40 pb-20">
-        <div className="text-[40px] text-center mb-16">MAS Prep Drills</div>
-        <div className="lg:flex justify-center">
-          <div className="bg-card md:mx-8 lg:mr-8 lg:ml-0 md:h-[445px] lg:h-[auto] mx-3 md:flex lg:block md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
-            <div className="">
-              <p className="text-2xl font-semibold mb-10">Test Drill</p>
-              <img src={artboard3} alt="artboard" className=""></img>
-              <p className="mb-4 mt-12">DPPs / Combined / Company Tests</p>              
-              <p className="my-4">Quant Sectional Tests</p>
-              <p className="my-4">LRDI Sectional Tests</p>
-              <p className="my-4">Verbal Sectional Tests</p>
-              <p className="my-4">Weekly Test</p>
-              <p className="my-4">Price - <span className="line-through">₹ 9000</span></p>
-              <p className="my-4">Discount - 50%</p>
-              <p className="mt-4 md:mb-[150px] mb-10 text-[15px] text-blue-600 font-semibold">
+      <section className="bg-back pb-16">      
+        <h1 className="text-center text-black text-3xl font-bold font-serif py-8">
+          MAS Prep Drills
+        </h1>
+
+        <div className="flex flex-col space-y-4 justify-center items-center md:flex-row md:space-y-0 md:space-x-4">
+          <div className="bg-card flex flex-col justify-center items-center p-6 md:p-12 rounded-xl shadow-2xl space-y-6">
+            <h3 className="text-2xl font-bold">
+              Test Drill
+            </h3>
+            <img src={artboard3} alt="artboard" className="" />
+            <div className="flex flex-col space-y-4 text-sm mx-8 py-4">
+              <p className="">DPPs / Combined / Company Tests</p>              
+              <p className="">Quant Sectional Tests</p>
+              <p className="">LRDI Sectional Tests</p>
+              <p className="">Verbal Sectional Tests</p>
+              <p className="">Weekly Test</p>
+              <p className="">Price - <span className="line-through">₹ 9000</span></p>
+              <p className="">Discount - 50%</p>
+              <p className="mb-10 text-[15px] text-blue-600 font-semibold">
                 Final Price - ₹ 4500 (Incl. 18 % GST)
               </p>
             </div>
-            <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">            
+            <div className="flex justify-around items-center space-x-6">
               <a
                 href="https://razorpay.com/payment-button/pl_K4pHLfrzbEotPb/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="px-4 py-2 h-12 rounded-xl mr-4 border-blue-600 border-solid border-2">
+                <div className="px-6 py-2 rounded-xl border-blue-800 border-solid border-2 hover:border-blue-900 hover:shadow-xl">
                   Buy now
                 </div>
               </a>
-              <div className="px-4 py-3 h-12 md:mt-14 lg:mt-0 mt-0 lg:right-0 right-0 relative md:right-10 rounded-xl bg-blue-600 text-white ml-7">
-                <Link to="/testDrill">Explore Now</Link>
+
+              <div>
+                <Link to="/testDrill" className="px-4 py-3 rounded-xl bg-blue-800 hover:bg-blue-900 hover:shadow-xl cursor-pointer text-white">Explore Now</Link>
               </div>
             </div>
           </div>
-          <div className="bg-card md:mx-8 lg:ml-8 lg:mr-0 mx-3 md:flex lg:block md:p-12 p-4 my-4 rounded-2xl shadow-2xl">
-            <div className="">
-              <p className="text-2xl font-semibold mb-10">Placement Drill</p>
-              <img src={artboard5} alt="artboard" className=""></img>
-              <p className="my-4">DPPs / Combined / Company Tests</p>
-              <p className="my-4">Case Study Expertise</p>
-              <p className="my-4">Guesstimates Expertise</p>
-              <p className="my-4">Interview Prep & Mocks</p>
-              <p className="my-4">GD / Puzzles / Non-Tech Mocks</p>
-              <p className="my-4">Price - <span className="line-through">₹ 15000</span></p>
-              <p className="my-4">Discount - 50%</p>
-              <p className="mt-4 mb-9 text-[15px] text-blue-600 font-semibold">
+
+          <div className="bg-card flex flex-col justify-center items-center p-6 md:p-12 rounded-xl shadow-2xl space-y-6">
+            <h3 className="text-2xl font-bold">
+              Placement Drill
+            </h3>
+            <img src={artboard3} alt="artboard" className="" />
+            <div className="flex flex-col space-y-4 text-sm mx-8 py-4">
+              <p className="">DPPs / Combined / Company Tests</p>              
+              <p className="">Case Study Expertise</p>
+              <p className="">Guesstimates Expertise</p>
+              <p className="">Interview Prep & Mocks</p>
+              <p className="">GD / Puzzles / Non-Tech Mocks</p>
+              <p className="">Price - <span className="line-through">₹ 15000</span></p>
+              <p className="">Discount - 50%</p>
+              <p className="mb-10 text-[15px] text-blue-600 font-semibold">
                 Final Price - ₹ 7500 (Incl. 18 % GST)
               </p>
             </div>
-            <div className="flex md:block lg:flex md:left-40 md:top-20 lg:left-0 lg:top-0 left-0 top-0 relative">
+            <div className="flex justify-around items-center space-x-6">
               <a
-                href="https://razorpay.com/payment-button/pl_K4pQUWotXrqO4Z/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
+                href="https://razorpay.com/payment-button/pl_K4pHLfrzbEotPb/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
                 type="submit"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="px-4 py-2 h-12 rounded-xl mr-4 border-blue-600 border-solid border-2">
+                <div className="px-6 py-2 rounded-xl border-blue-800 border-solid border-2 hover:border-blue-900 hover:shadow-xl">
                   Buy now
                 </div>
               </a>
-              <div className="px-4 py-3 h-12 md:mt-14 lg:mt-0 mt-0 lg:right-0 right-0 relative md:right-10 rounded-xl bg-blue-600 text-white ml-7">
-                <Link to="/placementDrill">Explore Now</Link>
+
+              <div>
+                <Link to="/testDrill" className="px-4 py-3 rounded-xl bg-blue-800 hover:bg-blue-900 hover:shadow-xl cursor-pointer text-white">Explore Now</Link>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div>        
+      </section>
+
       <Footer />
     </div>
   );
