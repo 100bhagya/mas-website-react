@@ -15,100 +15,103 @@ import Testimonial from "../components/Testimonial";
 
 const Tests = () => {
   return (
-    <div className="bg-back">
+    <div>
       <Navbar />
-      <div className="lg:flex pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-        <div className="md:pt-28 md:pb-32 pb-12 lg:bottom-12">
-          <h1 className="md:font-medium font-semibold mt-16 md:mt-0  text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[48px]  leading-8 font-primary">
-            Tests
-          </h1>
+      <section className="pt-24 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+        <h1 className="text-center text-black text-3xl font-bold font-serif py-8">
+          Tests
+        </h1>
 
-          <p className="relative justify-center lg:top-12 md:text-lg text-[14px] mt-8 md:mt-0 font  text-black leading-8">
-            Our specialised test portal to challenge youself
-          </p>
-        </div>
-      </div>
-      <div className="md:pb-32 pb-10">
-        <div className="md:flex">
-          <div>
-            <div className="bg-card shadow-2xl my-20 lg:ml-28 md:ml-8 lg:mr-12 mx-3  lg:w-3/4 md:w-[87%] relative left-1/5  rounded-xl">
-              <div className="px-12 py-8">
-                <div className="md:text-2xl text-xl md:font-medium font-semibold md:mb-6 mb-9 mt-8">
-                  We Offer
-                </div>
-                <p className="md:text-lg text-[14px] my-4">
+        <p className="px-8 md:px-24 pb-8 lg:top-5 text-sm text-black text-center">
+          Our specialised test portal to challenge youself
+        </p>        
+      </section>
+
+      <section className="bg-back py-16">
+        <div className="flex flex-col items-center space-y-6 lg:flex-row justify-center lg:space-y-0 lg:space-x-6 mx-4">
+          <div className="bg-card shadow-2xl rounded-xl p-12">
+            <h2 className="text-black text-2xl font-bold font-serif pb-4">
+              We offer
+            </h2>
+            <div className="md:text-base text-sm">
+                <p className="my-4">
                   Quant Sectional Tests
                 </p>
-                <p className="md:text-lg text-[14px] my-4">
-                  {" "}
+                <p className="my-4">                  
                   LRDI Sectional Tests
                 </p>
-                <p className="md:text-lg text-[14px] my-4">
-                  {" "}
+                <p className="my-4">                  
                   Verbal Sectional Tests
                 </p>
-                <p className="md:text-lg text-[14px] my-4"> Combined Tests</p>
-                <p className="md:text-lg text-[14px] my-4">
-                  {" "}
+                <p className="my-4"> Combined Tests</p>
+                <p className="my-4">                  
                   Company Wise Tests
                 </p>
-                <p className="md:text-lg text-[14px] my-4"> Weekly Tests</p>
-                <p className="md:text-lg text-[14px] my-4">
-                  {" "}
+                <p className="my-4"> Weekly Tests</p>
+                <p className="my-4">                  
                   Quizzes (Self Evaluation)
                 </p>
-              </div>
             </div>
           </div>
-          <div className="bg-blue-50 my-20 md:ml-6 lg:ml-12 md:mr-[22px] lg:mr-0 md:rounded-3xl md:shadow-2xl">
-            <div className="flex">
-              <div className="md:ml-16 md:mt-16 lg:mr-36 md:mr-4 ml-8 mt-10 mb-6 md:mb-0">
-                <div className="md:text-2xl text-xl md:font-medium font-semibold md:mb-28 mb-6">
-                  Sample test
-                </div>
-                <a 
-                  href="https://ezex.in/4ea7xl"
-                  className="md:text-lg text-[12px] md:my-6 my-3 hover:underline text-blue-600"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Analytics Mock Placement Test
-                </a>
-                <br />
-                <br />
-                <a
-                  href="https://ezex.in/e896c7"
-                  className="md:text-lg text-[12px] md:my-6 my-3 hover:underline text-blue-600"
-                  target="_blank"
-                  rel="noopener noreferrer"              
-                  >
-                  Quant Sectional Test
-                </a>
-                <br />
-                <br />
-                <a
-                  href="https://ezex.in/8fphur" 
-                  className="md:text-lg text-[12px] md:my-6 my-3 hover:underline text-blue-600"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                  Verbal Sectional Test
-                </a>
-              </div>
+          <div className="shadow-2xl rounded-xl p-14 bg-blue-50">
+            <h2 className="text-center text-black text-2xl font-bold font-serif pb-8">
+              Sample Tests
+            </h2>
+            <div className="flex flex-col space-y-6 md:flex-row-reverse md:space-y-0 justify-between items-center">
               <img
                 src={Artboard}
                 alt="artboard"
-                className="relative top-10 md:top-48 lg:top-10  md:right-9 lg:right-0 test_artboard"
+                className="h-48 md:h-64"
               />
+              <div className="flex flex-col space-y-4">
+                <a 
+                  href="https://ezex.in/4ea7xl"
+                  className="block text-sm text-white bg-blue-800 rounded-xl shadow-2xl p-4 hover:bg-blue-900 hover:-translate-y-0.5"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  
+                  <button className="">
+                    Analytics Mock Placement Test
+                  </button>
+                </a>                
+                <a
+                  href="https://ezex.in/e896c7"
+                  className="block text-sm text-white bg-blue-800 rounded-xl shadow-2xl p-4 hover:bg-blue-900 hover:-translate-y-0.5"
+                  target="_blank"
+                  rel="noopener noreferrer"              
+                  >
+                    <button>
+                      Quant Sectional Test
+                    </button>
+                  
+                </a>                
+                <a
+                  href="https://ezex.in/8fphur" 
+                  className="block text-sm text-white bg-blue-800 rounded-xl shadow-2xl p-4 hover:bg-blue-900 hover:-translate-y-0.5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                    <button>
+                      Verbal Sectional Test
+                    </button>
+                </a>
+              </div>
+              
             </div>
+
           </div>
         </div>
-        <div className="bg-blue-50 lg:w-[86%] md:w-[92%] lg:ml-28 md:ml-8 md:rounded-[30px] flex flex-col-reverse md:flex-row md:shadow-2xl">
-          <div className="md:w-[37%] md:my-32 md:mx-20 mb-12 md:mb-16 lg:mb-0">
-            <div className="md:text-2xl text-lg text-center md:text-left font-semibold mb-6 md:mb-16">
-              Overview Of Test Platform
-            </div>
-            <p className="md:text-lg text-[14px] font-normal md:mb-16 lg:mb-32 mb-12 w-[80%] ml-10 md:ml-0">
-              Having trouble registering on our test platform, click{" "}
+
+      </section>
+
+      <section className="bg-back py-16">
+        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-8 justify-center items-center bg-blue-50 rounded-xl shadow-2xl p-12 lg:w-4/5 mx-auto">
+          <div className="flex flex-col space-y-4 md:w-1/2">
+            <h2 className="text-center md:text-left text-black text-2xl font-bold font-serif pb-4">
+              Overview of Test Platform
+            </h2>
+            <p className="md:text-base text-sm">
+              Having trouble registering on our test platform, click {" "}
               <a
                 href="https://myanalyticsschool.com/video/register.pdf"
                 target="_blank"
@@ -117,44 +120,29 @@ const Tests = () => {
               >
                 here
               </a>{" "}
-              to download instructions
+              to download instructions or watch this video 
             </p>
             <a
               href="https://myanalyticsschool.ezexam.in/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[15px] bg-blue-600 py-3 px-6 text-white rounded-xl relative left-[30%] md:left-0"
+              className="block text-lg bg-blue-800 py-4 text-white rounded-xl text-center hover:bg-blue-900 hover:shadow-2xl hover:-translate-y-0.5"
             >
               Visit platform
             </a>
-          </div>
-          <div className="-mb-[130px]">
-            <img
-              src={Grid}
-              alt="grid"
-              className="md:w-96 w-72 relative top-5 right-2  md:top-24 lg:top-5 md:right-14 lg:right-2"
-            />
-            <div className=" lg:ml-12 md:-ml-4 ml-8 relative bottom-16 md:bottom-0 lg:bottom-16 z-10">
-              <iframe
-                width="590"
-                height="340"
-                src="https://www.youtube.com/embed/pKyiLrMLQ80"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                className="rounded-2xl border-solid border-white border-[12px]"
-              ></iframe>
-            </div>
-            <img
-              src={Grid}
-              alt="grid"
-              className="md:w-96 w-72 relative md:bottom-20 lg:bottom-32 bottom-[140px] left-[57%] lg:left-[450px] md:left-[138px]"
-
-            />
-          </div>
-        </div>
-      </div>
+          </div>                                            
+          <iframe
+            width="590"
+            height="340"
+            src="https://www.youtube.com/embed/pKyiLrMLQ80"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            className="rounded-2xl border-solid border-blue-900 border-8"
+          ></iframe>            
+        </div>         
+      </section>    
 
       {/* <div className="bg-back lg:block hidden">
 

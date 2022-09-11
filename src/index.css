@@ -55,10 +55,6 @@ html {
   .explore {
     display: none;
   }
-  .test_artboard {
-    height: 130px;
-    width: 130px;
-  }
   .top_bg {
     background-image: linear-gradient(180deg, #bdcdfc, #ffffff);
   }
