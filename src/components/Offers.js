@@ -13,9 +13,9 @@ import Vector from "../images/Vector 15.png";
 const Card = ({ img, title, content, flex_direction }) => {
   return (
     <div
-    class={`py-4 px-8 flex ${flex_direction} md:flex-col md:items-center h-[125px] md:h-auto bg-gradient-to-b from-blue-100 to-blue-50 md:rounded-3xl w-full shadow-gray-300 shadow-xl`}
+    class={`py-4 px-8 flex ${flex_direction} md:flex-col items-center h-[125px] md:h-auto bg-gradient-to-b from-blue-100 to-blue-50 md:rounded-3xl w-full shadow-gray-300 shadow-xl`}
   >
-    <div class="rounded-lg h-48 w-1/3 md:w-full relative">      
+    <div class="rounded-lg w-1/3 md:w-full relative">      
       <img
         src={Vector}
         alt="design"
@@ -31,7 +31,7 @@ const Card = ({ img, title, content, flex_direction }) => {
       <h2 class="lg:text-2xl md:text-lg text-sm font-semibold lg:ml-7 mr-2 text-gray-900 mt-5">
         {title}
       </h2>
-      <p class="md:text-sm text-[10px] lg:ml-7 mr-2 leading-relaxed mt-2 text-gray-600">
+      <p class="hidden md:block md:text-sm text-[10px] lg:ml-7 mr-2 leading-relaxed mt-2 text-gray-600">
         {content}
       </p>
     </div>

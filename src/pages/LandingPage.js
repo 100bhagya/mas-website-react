@@ -37,7 +37,7 @@ const Card1 = ({ img, title, content }) => {
         <img
           src={img}
           alt="design"
-          className="relative lg:h-64 lg:w-96 border-8 border-solid rounded-2xl border-blue-300"
+          className="relative h-64 w-96 border-8 border-solid rounded-2xl border-blue-300"
         />
       </div>      
 
