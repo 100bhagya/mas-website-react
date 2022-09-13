@@ -13,48 +13,45 @@ import Vector from "../images/Vector 15.png";
 const Card = ({ img, title, content, flex_direction }) => {
   return (
     <div
-      class={`p-4 lg:ml-24 md:ml-4 flex ${flex_direction} md:block h-[125px] md:h-auto lg:from-transparent lg:to-transparent bg-gradient-to-b from-blue-100 to-blue-50 md:rounded-3xl w-full md:w-[30%] lg:w-1/4 lg:h-[432px] shadow-gray-300 lg:bg-card shadow-lg`}
-    >
-      <div class="rounded-lg h-48 overflow-hidden w-[30%] md:w-full">
-        <img
-          alt="content"
-          class="lg:object-cover object-center z-10 relative lg:left-8 lg:top-8 lg:h-36 lg:w-36 md:h-auto md:w-auto md:my-3 md:mx-6 lg:mx-0 lg:my-0 h-20 w-20"
-          src={img}
-        ></img>
-        <img
-          src={Vector}
-          alt="design"
-          className="lg:h-24 lg:w-36 md:bottom-14  h-14 w-20 relative lg:left-11 left-2 bottom-12"
-        ></img>
-      </div>
-      <div className="w-[80%] md:w-full">
-        <h2 class="lg:text-2xl md:text-lg text-[12px] font-semibold lg:ml-7 mr-2 md:font-medium title-font text-gray-900 mt-5">
-          {title}
-        </h2>
-        <p class="md:text-sm text-[9px] lg:ml-7 mr-2 font leading-relaxed mt-2">
-          {content}
-        </p>
-      </div>
+    class={`py-4 px-8 flex ${flex_direction} md:flex-col md:items-center h-[125px] md:h-auto bg-gradient-to-b from-blue-100 to-blue-50 md:rounded-3xl w-full shadow-gray-300 shadow-xl`}
+  >
+    <div class="rounded-lg h-48 w-1/3 md:w-full relative">      
+      <img
+        src={Vector}
+        alt="design"
+        className="lg:h-24 lg:w-36 h-14 w-20 absolute top-8 left-4"
+      ></img>
+      <img
+        alt="content"
+        class="relative lg:h-36 lg:w-36 md:h-auto md:w-auto h-20 w-20"
+        src={img}
+      ></img>
     </div>
+    <div className="w-2/3 md:w-full">
+      <h2 class="lg:text-2xl md:text-lg text-sm font-semibold lg:ml-7 mr-2 text-gray-900 mt-5">
+        {title}
+      </h2>
+      <p class="md:text-sm text-[10px] lg:ml-7 mr-2 leading-relaxed mt-2 text-gray-600">
+        {content}
+      </p>
+    </div>
+  </div>    
   );
 };
 
 const Offers = () => {
   return (
-    <section class="text-gray-600 body-font bg-back">
-      <div class="container px-5 md:py-24 py-16 mx-auto">
-        <div class=" lg:py-6 py-2 mb-12 ">
-          <div class="text-center text-gray-900 font-medium lg:text-5xl text-2xl mb-2 sm:mb-0">
-            Our Unique Offerings
-          </div>
-        </div>
-
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+    <section class="bg-back py-12">
+      <div class="container mx-auto max-w-7xl">        
+        <h1 className="font-serif text-gray-900 text-center py-12 text-3xl lg:text-4xl font-bold">
+          Our Unique Offerings
+        </h1>
+        <div className="flex flex-col md:grid md:grid-cols-2 md:gap-8 md:mx-8 lg:grid-cols-3">
           <Card
             flex_direction="flex-row-reverse"
             img={Card1}
             title="Internship Opportunities"
-            content="An internship is a professional learning experience that offers meaningful, practical work related to a student’s field of Interest and MAS helps you to get ONE."
+            content="An internship is a professional learning experience that offers meaningful, practical work related to a student's field of Interest and MAS helps you to get ONE."
           />
           <Card
             flex_direction="flex-row"
@@ -67,9 +64,7 @@ const Offers = () => {
             img={Card3}
             title="Mock Tests & Performance Tracking"
             content="Self-evaluation, sectional, combined, and company-specific tests are provided to prepare you for the worst, and performance tracking helps you to achieve the goal. "
-          />
-        </div>
-        <div class="flex flex-wrap -mx-4 -mb-10 md:mt-20 mt-10">
+          />                
           <Card
             flex_direction="flex-row"
             img={Card4}
@@ -87,9 +82,7 @@ const Offers = () => {
             img={Card6}
             title="Case Study & Guesstimate Sessions"
             content="Interviews test problem-solving, analytical, reasoning and communication skills. With comprehensive practice and learning sessions we help you develop these skills."
-          />
-        </div>
-        <div class="flex flex-wrap -mx-4 -mb-10 md:mt-28 mt-10">
+          />                
           <Card
             flex_direction="flex-row-reverse"
             img={Card7}

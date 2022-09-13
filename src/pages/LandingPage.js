@@ -21,51 +21,53 @@ import Pdf from "../components/MAS Placement Report'21.pdf";
 import Banner from "../images/placement banner.png";
 
 const Card1 = ({ img, title, content }) => {
-  return (
-    <div className="md:px-24 md:mt-40 lg:mt-12">
-      <div className="flex flex-col-reverse lg:flex-row md:rounded-3xl h-[425px] md:h-auto bg-works p-16">
-        <div className="md:w-6/12 w-full mt-4 relative top-10 md:top-0">
-          <div className=" items-center mb-3">
-            <h2 className="text-gray-900 lg:text-2xl md:text-lg text-center md:text-left text-[12px] title-font font-semibold">
-              {title}
-            </h2>
-          </div>
-
-          <p className="leading-relaxed w-full lg:text-base  text-[12px] lg:mt-12 mt-5">
-            {content}
-          </p>
-        </div>
-
+  return (    
+    <div className="flex flex-col space-y-8 items-center lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto bg-works p-16 my-4">
+      <div className="relative">
+        <img
+          src={Grid}
+          alt="grid"
+          className="h-36 w-48 absolute -top-10 -left-8"
+        ></img>
+        <img
+          src={Grid}
+          alt="grid"
+          className="h-36 w-48 absolute -bottom-14 -right-28"
+        ></img>
         <img
           src={img}
           alt="design"
-          className="lg:h-64 lg:w-96 -bottom-6 md:-bottom-0  relative z-10 lg:left-96 border-8 border-solid rounded-2xl border-white"
+          className="relative lg:h-64 lg:w-96 border-8 border-solid rounded-2xl border-blue-300"
         />
-        <img
-          src={Grid}
-          alt="grid"
-          className="h-24 w-48 relative top-56 -left-6 md:hidden lg:block  md:top-52 md:left-72"
-        ></img>
-        <img
-          src={Grid}
-          alt="grid"
-          className="h-24 w-48 relative -bottom-[175px] -right-[162px] md:hidden lg:block  md:bottom-10 md:right-56"
-        ></img>
-      </div>
+      </div>      
+
+      <div className="max-w-md">        
+        <h2 className="text-gray-900 lg:text-2xl text-lg lg:text-left text-center font-semibold mb-6">
+          {title}
+        </h2>        
+
+        <p className="leading-relaxed w-full lg:text-base text-sm text-center lg:text-left text-gray-600">
+          {content}
+        </p>
+      </div>      
+      
     </div>
   );
 };
 
 const Card = ({ img, title, content }) => {
   return (    
-      <div className="flex flex-col items-center justify-center space-y-4 shadow-xl bg-card rounded-xl p-8">
-        <img
-          className="h-36 rounded-full mt-6 bg-white p-2"
-          src={img}
-          alt="blog"
-        />        
-        <div className="text-md lg:text-xl font-semibold text-gray-900 mb-3">{title}</div>
-        <p className="text-center max-w-sm text-sm">
+      <div className="flex flex-col justify-center space-y-4 shadow-xl bg-card rounded-xl p-8">
+        <div className="flex items-start justify-center">
+          <img
+            className="h-36 rounded-full m-6 bg-gray-200 p-4 hover:scale-105 hover:opacity-70"
+            src={img}
+            alt="blog"
+          /> 
+        </div>
+       
+        <h3 className="text-base lg:text-xl font-semibold text-gray-900 mb-3 text-center lg:text-left">{title}</h3>
+        <p className="text-center max-w-sm text-sm lg:text-left text-gray-600">
           {content}
         </p>      
       </div>    
@@ -133,15 +135,16 @@ const LandingPage = () => {
           />
         </div>
       </div>
-      <section className="bg-back py-8">      
-          <h1 className="font-serif text-gray-900 text-center py-12 lg:pt-24 text-3xl lg:text-4xl font-bold">
+
+      <section className="bg-back p-12">      
+          <h1 className="font-serif text-gray-900 text-center py-12 text-3xl lg:text-4xl font-bold">
             What We Do?
           </h1>
-          <div className="flex flex-col md:flex-row items-center justify-center m-4 space-y-6 md:space-y-0 md:space-x-6">
+          <div className="flex flex-col lg:flex-row items-center max-w-6xl mx-auto space-y-12 lg:space-y-0 lg:space-x-12">
             <Card
               img={Copy}
               title="Preparation Program"
-              content="Channelise your efforts via strategic preparation program."
+              content="Channelise your efforts via strategic preparation program."              
             />
             <Card
               img={Books}
@@ -155,11 +158,12 @@ const LandingPage = () => {
             />
           </div>        
       </section>
-      <section className="text-gray-600 bg-back py-8">                  
-            <h1 className="font-serif text-gray-900 text-center py-12 lg:pt-24 text-3xl md:text-3xl lg:text-4xl font-bold">
-              How It Works?
-            </h1>          
-          <div className="flex flex-col m-4">
+
+      <section className="bg-back p-12">                  
+          <h1 className="font-serif text-gray-900 text-center py-12 text-3xl lg:text-4xl font-bold">
+            How It Works?
+          </h1>          
+          <div className="flex flex-col space-y-8">
             <Card1
               img={Design3}
               title="Test Preparation & Upskilling"
@@ -177,6 +181,7 @@ const LandingPage = () => {
             />
           </div>        
       </section>
+           
       <Offers />
       <Testimonial />
       <Contact />

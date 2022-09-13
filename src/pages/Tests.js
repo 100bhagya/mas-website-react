@@ -17,12 +17,12 @@ const Tests = () => {
   return (
     <div>
       <Navbar />
-      <section className="pt-24 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+      <section className="pt-24 pb-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <h1 className="text-center text-black text-3xl font-bold font-serif py-8">
           Tests
         </h1>
 
-        <p className="px-8 md:px-24 pb-8 lg:top-5 text-sm text-black text-center">
+        <p className="px-8 md:px-24 pb-8 lg:top-5 text-base text-black text-center lg:text-lg">
           Our specialised test portal to challenge youself
         </p>        
       </section>
@@ -139,7 +139,7 @@ const Tests = () => {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-            className="rounded-2xl border-solid border-blue-900 border-8"
+            className="rounded-2xl border-solid border-blue-300 border-8"
           ></iframe>            
         </div>         
       </section>    

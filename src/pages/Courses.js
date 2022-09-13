@@ -15,12 +15,12 @@ const Courses = () => {
     <div>
       <Navbar />
 
-      <section className="pt-24 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+      <section className="pt-24 pb-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <h1 className="text-center text-black text-3xl font-bold font-serif py-8">
           Courses
         </h1>
 
-        <p className="px-8 md:px-24 pb-8 lg:top-5 text-sm text-black">
+        <p className="px-8 md:px-24 pb-8 lg:top-5 text-base text-black lg:text-lg text-center">
           We provide an arsenal of a wide range of offerings from internships
           to placements which are strategically curated and drafted by
           Analytics professionals as per industry standards.
