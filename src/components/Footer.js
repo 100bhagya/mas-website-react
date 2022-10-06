@@ -17,8 +17,9 @@ const Footer = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
-    <footer class="bg-blue-900">
+    <footer class="bg-blue-900 p-12">
       {isShowPrivacy ? (
         <Privacy
           setIsShowPrivacy={setIsShowPrivacy}
@@ -27,16 +28,17 @@ const Footer = () => {
       ) : null}
       {isShowTerms ? (
         <Terms setIsShowTerms={setIsShowTerms} isShowPrivacy={isShowPrivacy} />
-      ) : null}
-      <div class="container lg:px-24 px-10 md:px-0  mx-auto md:flex lg:items-start ">
-        <div class="w-[380px] relative md:top-20 top-10 left-[11%] lg:left-0">
+      ) : null}      
+
+      <div className="flex flex-col space-y-12 items-center justify-around md:flex-row md:space-x-12 md:space-y-0 md:items-start text-white lg:justify-center">
+        <div className="">
           <img
             src={Logo}
-            className="relative md:bottom-6"
+            className="w-48"
             alt="rectangle"
           ></img>
 
-          <p class="mt-5 leading-6 text-sm text-white hidden md:block">
+          <p class="hidden mt-5 leading-5 text-sm text-white md:block max-w-sm">
             My Analytics School is an Ed-Tech start-up founded by IIT alumni,
             providing an end-to-end solution for analytics, data science
             placements and related job preparation. We aim to bridge the gap
@@ -45,121 +47,100 @@ const Footer = () => {
             industry-centric approach in the students.
           </p>
         </div>
-        <div className="md:hidden mt-24">
-          <div className="text-xl font-semibold text-white">Contact Us</div>
-          <div className="flex mt-5">
-            <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
-              <PhoneIcon className="w-6 h-8 relative top-1 left-[6px] text-white" />
-            </div>
-            <a
-              href="tel:9604077455"
-              class="text-white hover:text-red-500 relative top-4"
-            >
-              +919604077455
-            </a>
-          </div>
-          <div className="flex mt-4">
-            <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
-              <MailIcon className="w-6 h-8 relative top-[2px] left-[6px] text-white" />
-            </div>
 
-            <a
-              href="mailto:admin@myanalyticsschool.com"
-              class="text-white hover:text-red-500 relative top-4 text-[14px]"
-            >
-              admin@myanalyticsschool.com
-            </a>
-          </div>
-        </div>
-        <div className="md:block lg:flex">
-          <div class=" md:px-4 md:mt-[80px]">
-            <div class=" font-normal text-white tracking-widest text-lg mb-3 md:mt-24 md:ml-28 mt-12">
-              <div className="relative lg:bottom-[70px] md:-bottom-2 text-xl font-semibold">
-                Explore
-              </div>
-              <div className="flex relative md:bottom-12 top-4 md:top-6 lg:top-0">
+        <div className="flex flex-col space-y-8 items-center justify-around lg:flex-row lg:space-y-0 lg:space-x-12 lg:items-center">
+          <div className="flex flex-col space-y-6 justify-start">
+            {/* explore and helpful links */}
+            <div className="">
+              <h3 className="pb-3 font-bold text-lg tracking-wider">Explore</h3>
+              <div className="flex space-x-6 text-sm">
                 <Link
                   to="/"
-                  className="mr-6 md:text-[16px] text-[14px] font-normal "
+                  className="hover:scale-105 hover:text-slate-300"              
                 >
                   Home
                 </Link>
-                <img src={Bar} alt="circle" className="md:mx-1" />
+                <img src={Bar} alt="circle" className="" />
                 <Link
                   to="/courses"
-                  className="mx-6 md:text-[16px] text-[14px] font-normal"
+                  className="hover:scale-105 hover:text-slate-300"
                 >
                   Courses
                 </Link>
-                <img src={Bar} alt="circle" className="md:mx-1" />
+                <img src={Bar} alt="circle" className="" />
                 <Link
                   to="/mentors"
-                  className="mx-6 md:text-[16px] text-[14px] font-normal"
+                  className="hover:scale-105 hover:text-slate-300"
                 >
                   Mentors
                 </Link>
               </div>
-              <div className="relative md:bottom-1 mt-14 text-[16px] font-semibold">
+            </div>
+
+            <div>
+              <h3 className="pb-3 font-bold text-lg tracking-wider">
                 Helpful Links
-              </div>
-              <div className="flex md:flex-col mt-3">
+              </h3>
+              <div className="flex space-x-6 text-sm md:flex-col md:space-x-0 md:space-y-2">
                 <Link
                   to="/faq"
-                  className="mr-5 md:text-[16px] text-[14px] font-normal"
+                  className="hover:text-slate-300"
                 >
                   FAQs
                 </Link>
-                <img src={Bar} alt="circle" className="md:mx-1 md:hidden" />
+                <img src={Bar} alt="circle" className="md:hidden" />  
                 <a
                   href="https://myanalyticsschool.com/blog/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mx-5 md:mx-0 md:text-[16px] text-[14px] font-normal"
+                  className="hover:text-slate-300"
                 >
                   Blogs
                 </a>
-                <img src={Bar} alt="circle" className="md:mx-1 md:hidden" />
+                <img src={Bar} alt="circle" className="md:hidden" />
                 <Link
                   to="/about"
-                  className="mx-5 md:mx-0 md:text-[16px] text-[14px] font-normal"
+                  className="hover:text-slate-300"
                 >
                   About Us
                 </Link>
               </div>
             </div>
+            
           </div>
 
-          <div class=" md:px-4 lg:mt-[104px] md:mt-[54px] md:ml-28">
-            <div className="hidden md:block">
+          <div className="flex flex-col space-y-8 items-start justify-center">
+            {/* contact us and follow us  */}
+            <div>
               <div className="text-xl font-semibold text-white">Contact Us</div>
-              <div className="flex mt-5">
-                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
-                  <PhoneIcon className="w-6 h-8 relative top-1 left-[6px] text-white" />
-                </div>
-                <a
-                  href="tel:9604077455"
-                  class="text-white hover:text-red-500 relative top-4"
-                >
-                  +919604077455
-                </a>
+                <div className="flex items-center mt-5">
+                  <div className="w-10 h-10 rounded-full border-solid border-2 border-white mr-5">
+                    <PhoneIcon className="w-6 h-8 relative top-1 left-[6px] text-white" />
+                  </div>
+                  <a
+                    href="tel:9604077455"
+                    class="text-white hover:text-slate-300"
+                  >
+                    +919604077455
+                  </a>
               </div>
-              <div className="flex mt-4">
-                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
-                  <MailIcon className="w-6 h-8 relative top-1 left-[6px] text-white" />
+              <div className="flex items-center mt-4">
+                <div className="w-10 h-10 rounded-full border-solid border-2 border-white mr-5">
+                  <MailIcon className="w-6 h-8 relative top-[2px] left-[6px] text-white" />
                 </div>
-
                 <a
                   href="mailto:admin@myanalyticsschool.com"
-                  class="text-white hover:text-red-500 relative top-4"
+                  class="text-white hover:text-slate-300 text-[14px]"
                 >
                   admin@myanalyticsschool.com
                 </a>
               </div>
             </div>
-            <div className="mt-10">
+
+            <div>
               <div className="text-xl font-semibold text-white">Follow Us</div>
-              <div className="flex mt-3">
-                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
+              <div className="flex items-center mt-3">
+                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 cursor-pointer hover:scale-105 duration-200">
                   <a
                     href="https://www.linkedin.com/company/my-analytics-school"
                     target="_blank"
@@ -172,7 +153,7 @@ const Footer = () => {
                     />
                   </a>
                 </div>
-                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
+                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 cursor-pointer hover:scale-105 duration-200">
                   <a
                     href="https://instagram.com/myanalyticsschool?utm_medium=copy_link"
                     target="_blank"
@@ -185,7 +166,7 @@ const Footer = () => {
                     />
                   </a>
                 </div>
-                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 relative top-2">
+                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 cursor-pointer hover:scale-105 duration-200">
                   <a
                     href="https://www.facebook.com/myanalyticsschool/"
                     target="_blank"
@@ -200,39 +181,39 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
-      </div>
+      </div>      
 
-      <div className="h-[2px] md:mt-10 mt-20 w-[85%] justify-center text-center relative left-[6.3%] bg-white"></div>
-      <div className="lg:text-center md:text-left ml-6 lg:ml-0 md:ml-14 mt-3 md:mt-3 lg:mt-7 text-white md:text-lg text-[9px] font-normal">
-        myanalyticsschool © 2021
-      </div>
-      <div className="relative lg:left-[73%] md:left-[58%] left-[54%] bottom-8 flex">
-        <div
-          className="text-white md:text-lg text-[9px] mt-5 md:mt-0 cursor-pointer"
-          onClick={(e) => {
-            setIsShowPrivacy(!isShowPrivacy);
-          }}
-        >
-          Privacy{" "}
+
+      <div className="h-0.5 md:mt-10 mt-20 w-9/10 mx-auto bg-white"></div>
+      <div className="flex justify-between items-center w-9/10 mt-4">
+        <div className="text-white text-[9px]">
+          myanalyticsschool © 2022
+        </div>
+        <div className="flex justify-end items-center space-x-4">
+          <div
+            className="text-white text-[9px] cursor-pointer"
+            onClick={(e) => {
+              setIsShowPrivacy(!isShowPrivacy);
+            }}
+          >
+            Privacy{" "}
+          </div>
+
+
+          <div
+            className="text-white text-[9px] cursor-pointer"
+            onClick={(e) => {
+              setIsShowTerms(!isShowTerms);
+            }}
+          >
+            Terms & Conditions
+          </div>
         </div>
 
-        <img
-          src={Circle}
-          alt=""
-          className="rounded-full h-[2px] w-[2px] md:mx-3 mx-2 relative md:top-3 top-6"
-        />
-
-        <div
-          className="text-white md:text-lg text-[9px] mt-5 md:mt-0 cursor-pointer"
-          onClick={(e) => {
-            setIsShowTerms(!isShowTerms);
-          }}
-        >
-          Terms & Conditions
-        </div>
-      </div>
+      </div>      
     </footer>
   );
 };

@@ -16,9 +16,6 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-.image {
-  text-align: -webkit-center;
-}
 .gradient {
   background-image: linear-gradient(135deg, #bdcdfc, #eaedf7);
 }
@@ -26,13 +23,13 @@ html {
   width: 83%;
 }
 
-.active {
-  border-bottom: 4px solid #2563eb;
+.active {  
+  font-weight: 500;  
+  transform: scale(1.1);
+  color: #1e3a8a;
 }
 @media screen and (orientation: portrait) {
-  .active {
-    width: 33%;
-  }
+
   .mob_pos {
     position: relative;
     left: 10%;
@@ -57,10 +54,6 @@ html {
   }
   .explore {
     display: none;
-  }
-  .test_artboard {
-    height: 130px;
-    width: 130px;
   }
   .top_bg {
     background-image: linear-gradient(180deg, #bdcdfc, #ffffff);
@@ -182,12 +175,6 @@ html {
   height: 600px;
 }
 
-@media only screen and (max-width: 780px) {
-  .navbar {
-    display: none;
-  }
-}
-
 .show {
   display: block;
   transition: 800ms;
@@ -208,4 +195,51 @@ html {
   content: "*";
   color: red;
   margin-right: 3px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+  focus: outline-none;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open-side-menu {
+  transform: rotate(90deg);
+}
+
+.open-side-menu .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open-side-menu .hamburger-middle {
+  display: none;
+}
+
+.open-side-menu .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }

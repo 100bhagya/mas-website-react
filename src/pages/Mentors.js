@@ -9,29 +9,17 @@ const Mentors = () => {
   return (
     <div>
       <Navbar />
-      <div className="lg:flex pt-16 md:pt-40 lg:pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 justify-center">
-        <div className="lg:flex lg:items-center lg:max-w-[950px]">
+      
+      <section className="pt-24 pb-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+        <h1 className="text-center text-black text-3xl font-bold font-serif py-8">
+          Meet the Mentors
+        </h1>
 
-          <div className="lg:pt-28 md:pb-44 pb-16 lg:bottom-12">
-            <h1 className="font-medium hidden md:block text-center justify-center relative bottom-6  text-black md:text-3xl lg:text-[48px]  leading-8 font-primary">
-              Meet the Mentors
-            </h1>
-            <h1 className="font-semibold md:hidden  text-center justify-center mt-16 text-black text-2xl  leading-8 font-primary">
-
-              Mentors
-            </h1>
-
-            <p className="relative lg:top-12 md:text-[16px] font  text-black md:leading-8 mt-10 md:mt-0 text-[13px] px-6 justify-center text-center">
-              Experienced mentors to steer you through the journey from being a
-              student to an industry-driven professional.
-              <br /> With a constant interactive support from our mentors with a
-              personalized touch, get a chance of a lifetime to engage with
-              accomplished and competent mentors who will be adept at tackling
-              your doubts and queries.
-            </p>
-          </div>
-        </div>
-      </div>
+        <p className="px-8 md:px-24 pb-8 lg:top-5 text-base text-black lg:text-lg text-center">
+        Experienced mentors to steer you through the journey from being a student to an industry-driven professional.
+        With a constant interactive support from our mentors with a personalized touch, get a chance of a lifetime to engage with accomplished and competent mentors who will be adept at tackling your doubts and queries.
+        </p>        
+      </section>      
       <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 pt-12 pb-20 bg-back md:justify-left justify-center">
         {Data.map((post) => {
           return (
