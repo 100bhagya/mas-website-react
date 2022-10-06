@@ -32,7 +32,7 @@ export const ModalForm = ({showModal, setShowModal}) => {
       [keyPress]
     );
 
-    const initialValues = { username: "", email: "", phone: "" };
+    const initialValues = { name: "", email: "", phone: "" };
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
@@ -41,30 +41,30 @@ export const ModalForm = ({showModal, setShowModal}) => {
       const { name, value } = event.target;
       setFormValues({ ...formValues, [name]: value });
       switch (name) {
-        case "username":
-          formErrors.username = "";
         case "email":
-          formErrors.email = "";
+          delete formErrors.email;
         case "phone":
-          formErrors.phone = "";
+          delete formErrors.phone;
         case "graduation":
-          formErrors.graduation = "";
+          delete formErrors.graduation;
       }
+
     };
     const handleSubmit = (event) => {
       event.preventDefault();			
-      setFormErrors(validate(formValues));
-			console.log(formErrors)
-			if (Object.keys(formErrors).length === 0) {
-				emailjs.sendForm('service_9op7uj3', 'template_b7i1qy9', event.target, '1P3LXCmw9LVoYCXwA')
+      let errors = validate(formValues);			
+			setFormErrors(errors);
+			if (Object.keys(errors).length === 0) {
+				emailjs.sendForm('service_9op7uj3', 'template_b7i1qy9', event.target, '3vmuR0ErzxVHYZeNw')
 				.then(res => {
 					console.log(res)
 				}).catch(err => console.log(err));
 				setShowModal(false);
-				setIsSubmit(true);			
+				setIsSubmit(true);
 				setFormValues(initialValues);
-			} 			
+			}				
     };
+
     const validate = (values) => {
       const errors = {};
       const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -80,7 +80,8 @@ export const ModalForm = ({showModal, setShowModal}) => {
       if (!year.test(values.graduation)) {
         errors.graduation = "This is not a valid year";
       }
-      return errors;
+	  setFormErrors(errors);
+	  return errors;
     };
 
     return <>
@@ -104,21 +105,21 @@ export const ModalForm = ({showModal, setShowModal}) => {
 							<div className="overflow-y-scroll h-[58vh] pr-10 pl-1">
 								<div>
 									<label htmlFor="" className="text-sm font-medium required">
-										Username
+										Name
 									</label>
 
 									<input
 										type="text"
-										placeholder="Enter your username"
+										placeholder="Enter your name"
 										required
-										name="username"
-										value={formValues.username}
+										name="name"
+										value={formValues.name}
 										onChange={handleChange}
 										class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 text-[12px] outline-none focus:ring-2 focus:ring-blue-600"
 									/>
 								</div>
 								<p className=" text-[12px] text-red-500 relative bottom-4 ">
-									{formErrors.username}
+									{formErrors.name}
 								</p>
 
 								<div className="mt-6">
@@ -261,15 +262,7 @@ export const ModalForm = ({showModal, setShowModal}) => {
 							<div className="my-4 marked">Marked fields are mandatory</div>
 							<button className="w-[83%] bg-blue-700 text-white font-bold rounded-lg py-3 uppercase text-sm ">
 								Submit
-							</button>
-
-							{Object.keys(formErrors).length === 0 && isSubmit ? (
-								<div className="text-green-500 lg:w-[83%] justify-center text-center text-[12px] md:text-[16px]">
-									Submitted successfully!!
-								</div>
-							) : (
-								<div></div>
-							)}
+							</button>							
 						</form>
 					</div>
       	</div>
