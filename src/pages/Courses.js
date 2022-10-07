@@ -202,7 +202,7 @@ const Courses = () => {
               </a>
 
               <div>
-                <Link to="/testDrill" className="px-4 py-3 rounded-xl bg-blue-800 hover:bg-blue-900 hover:shadow-xl cursor-pointer text-white">Explore Now</Link>
+                <Link to="/placementDrill" className="px-4 py-3 rounded-xl bg-blue-800 hover:bg-blue-900 hover:shadow-xl cursor-pointer text-white">Explore Now</Link>
               </div>
             </div>
           </div>
