@@ -2,3 +2,8 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
+@media screen and (max-widht:600px) {
+  .slick-slider {
+    right: 20px;
+}
+}
