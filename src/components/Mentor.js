@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Data from "../data/MentorsData";
-
+import LinkedIn from "../images/Linkedin.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,6 +14,7 @@ const Mentor = () => {
     autoplay: true,
     speed: 4000,
     autoplaySpeed: 4000,
+    pauseOnHover: true,
     cssEase: "linear",
 
     responsive: [
@@ -70,7 +71,7 @@ const Mentor = () => {
   return (
     <>
       <div className="mt-16 mb-10 text-xl text-center ">Mentors</div>
-      <div className="mx-32 text-center ">
+      <div className="mx-10 text-center md:mx-32 ">
         <h1>
           Experienced mentors to steer you through the journey from being a
           student to an industry-driven professional. With a constant
@@ -90,8 +91,15 @@ const Mentor = () => {
                     src={data.image}
                     alt="img"
                   />
+                   <a href={data.Link_linkedin}>
+                  <img
+                    src={LinkedIn}
+                    alt="icon"
+                    className="md:mx-4 hover:scale-110 relative md:bottom-7 2xl:left-[90px] 2xl:w-12 2xl:h-12 md:left-[65px] bottom-9 left-[110px]"
+                  />
+                </a>
                 </div>
-                <div className="relative mt-5 mb-10 right-5">
+                <div className="relative mt-5 mb-10 right-5 h-[11vh]">
                   <h1 className="text-lg">{data.name}</h1>
                   <h3 className="text-slate-500">{data.position}</h3>
                 </div>
@@ -104,7 +112,7 @@ const Mentor = () => {
         href="/mentors"
         target="_blank"
         rel="noopener noreferrer"
-        className="relative text-blue-800 border-b-2 border-transparent left-72 bottom-5 md:left-3/4 hover:border-blue-800"
+        className="relative text-blue-800 border-b-2 border-transparent left-56 bottom-5 md:left-3/4 hover:border-blue-800"
       >
         Meet The Mentors
       </a>

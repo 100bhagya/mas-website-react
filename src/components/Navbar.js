@@ -260,6 +260,20 @@ const Navbar = () => {
             </div>
           )}
         </div>
+        <NavLink
+            to="/blogs"
+            activeClassName="active"
+           
+          >
+            Colleges
+          </NavLink>
+          <NavLink
+            to="/companies"
+            activeClassName="active"
+           
+          >
+            Companies
+          </NavLink>
 
         <a
           href="https://myanalyticsschool.com/blog/"

@@ -23,6 +23,7 @@ import FQData from "../data/FaqData";
 import Rectangle from "../images/Rectangle 52.png";
 import { useState } from "react";
 import MentorSection from "../components/Mentor.js"
+import TestimonialNew from "../components/TestimonialNew"
 
 const data = [
   {
@@ -266,6 +267,7 @@ const Companies = () => {
             </div>
           </div>
         </section>
+        <TestimonialNew/>
         <section className="py-16 bg-white">
           <div className="flex flex-col items-center justify-center p-12 mx-auto space-y-6 shadow-2xl md:flex-row md:space-y-0 md:space-x-8 bg-works rounded-xl lg:w-4/5">
             <div className="flex flex-col space-y-4 md:w-1/2">
@@ -328,6 +330,7 @@ const Companies = () => {
               Get More Questions?
             </a>
         </section>
+        
        
 
         <Footer/>
