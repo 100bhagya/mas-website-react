@@ -138,69 +138,112 @@ const Companies = () => {
             />
           </div>
         </section>
-        <div className="mt-16 text-xl text-center ">Track Record</div>
-        <div className="flex flex-wrap mt-16 ml-7 md:ml-20 track-record">
-          {Data.map((data) => {
-            return <Card data={data} />;
-          })}
-        </div>
-        <div className="mt-16 text-xl text-center ">Our Journey</div>
-        <div className="mt-16 track-record">
-          <div className="flex flex-wrap py-12 space-y-24 sm:space-y-0 place-content-around container-1 px-7">
-            <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
-              <div className="">
-                <FaUserGraduate className="w-8 h-8 text-blue-900" />
+        <section>
+          <div className="mt-16 text-xl text-center ">Track Record</div>
+          <div className="flex flex-wrap mt-16 ml-7 md:ml-20 track-record">
+            {Data.map((data) => {
+              return <Card data={data} />;
+            })}
+          </div>
+        </section>
+        <section>
+          <div className="mt-16 text-xl text-center ">Our Journey</div>
+          <div className="mt-16 track-record">
+            <div className="flex flex-wrap py-12 space-y-24 sm:space-y-0 place-content-around container-1 px-7">
+              <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
+                <div className="">
+                  <FaUserGraduate className="w-8 h-8 text-blue-900" />
+                </div>
+                <h1>
+                  10000+ Students Upskilled in Analytics from IIT’s, NIT’s and
+                  Tier 1 institutes in past 20 Months
+                </h1>
               </div>
-              <h1>
-                10000+ Students Upskilled in Analytics from IIT’s, NIT’s and
-                Tier 1 institutes in past 20 Months
-              </h1>
+              <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
+                <div className="">
+                  <ImUserPlus className="w-8 h-8 text-blue-900" />
+                </div>
+                <h1>
+                  Students spend 15 Lakhs minutes on Testing themselves on Test
+                  Platform
+                </h1>
+              </div>
+              <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
+                <div className="">
+                  <MdPlayLesson className="w-8 h-8 text-blue-900" />
+                </div>
+                <h1>
+                  Students consumed 9300 Hours of Content on Learn Platform
+                </h1>
+              </div>
+              <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
+                <div className="">
+                  <BsBank2 className="w-8 h-8 text-blue-900" />
+                </div>
+                <h1>
+                  Collaborated with top 100 colleges of India NIRF Rank (
+                  {string})
+                </h1>
+              </div>
             </div>
-            <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
-              <div className="">
-                <ImUserPlus className="w-8 h-8 text-blue-900"/>
+            <div className="flex flex-wrap py-12 space-y-24 md:space-y-0 place-content-around container-2 ">
+              <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
+                <div className="">
+                  <BsBagCheckFill className="w-8 h-8 text-blue-900" />
+                </div>
+                <h1>26 Crore worth Placement Done</h1>
               </div>
-              <h1>
-                Students spend 15 Lakhs minutes on Testing themselves on Test
-                Platform
-              </h1>
-            </div>
-            <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
-              <div className="">
-                <MdPlayLesson className="w-8 h-8 text-blue-900"/>
+              <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
+                <div className="">
+                  <FaChalkboardTeacher className="w-8 h-8 text-blue-900" />
+                </div>
+                <h1>Strong force of 300+ Expert Mentors from IIT’s</h1>
               </div>
-              <h1>Students consumed 9300 Hours of Content on Learn Platform</h1>
-            </div>
-            <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
-              <div className="">
-                <BsBank2 className="w-8 h-8 text-blue-900" />
+              <div className="flex flex-col w-64 space-y-3.5 cursor-pointer ">
+                <div className="">
+                  <ImOffice className="w-8 h-8 text-blue-900" />
+                </div>
+                <h1>MAS alums working in 250+ Companies</h1>
               </div>
-              <h1>
-                Collaborated with top 100 colleges of India NIRF Rank ({string})
-              </h1>
             </div>
           </div>
-          <div className="flex flex-wrap py-12 space-y-24 md:space-y-0 place-content-around container-2 ">
-            <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
-              <div className="">
-                <BsBagCheckFill className="w-8 h-8 text-blue-900"/>
-              </div>
-              <h1>26 Crore worth Placement Done</h1>
+        </section>
+        <section className="py-16 bg-white">
+          <div className="flex flex-col items-center justify-center p-12 mx-auto space-y-6 shadow-2xl md:flex-row md:space-y-0 md:space-x-8 bg-works rounded-xl lg:w-4/5">
+            <div className="flex flex-col space-y-4 md:w-1/2">
+              <h2 className="pb-4 font-serif text-2xl font-bold text-center text-black md:text-left">
+                From The Founder’s Desk
+              </h2>
+              <p className="text-sm md:text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
+                metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
+                interdum tellus elit sed risus. Maecenas eget condimentum velit,
+                sit amet feugiat lectus. Class aptent taciti sociosqu ad litora
+                torquent per Praesent auctor purus luctus enim egestas, ac
+                scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac
+                rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem.
+                Morbi convallis convallis diam sit amet lacinia. Aliquam in
+                elementum tellus. Praesent auctor purus luctus enim egestas, ac
+                scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac
+                rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem.
+                Morbi convallis convallis diam sit amet lacinia. Aliquam in
+                elementum tellus.
+              </p>
+             
             </div>
-            <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
-              <div className="">
-                <FaChalkboardTeacher className="w-8 h-8 text-blue-900"/>
-              </div>
-              <h1>Strong force of 300+ Expert Mentors from IIT’s</h1>
-            </div>
-            <div className="flex flex-col w-64 space-y-3.5 cursor-pointer ">
-              <div className="">
-                <ImOffice className="w-8 h-8 text-blue-900"/>
-              </div>
-              <h1>MAS alums working in 250+ Companies</h1>
-            </div>
+            <iframe
+              width="590"
+              height="340"
+              src="https://www.youtube.com/embed/pKyiLrMLQ80"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              className=" rounded-2xl"
+            ></iframe>
           </div>
-        </div>
+        </section>
 
         <Footer />
       </div>
