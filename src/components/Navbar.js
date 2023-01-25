@@ -215,18 +215,51 @@ const Navbar = () => {
         <NavLink to="/" exact activeClassName="active">
           Home
         </NavLink>
-
-        <NavLink to="/mentors" activeClassName="active">
-          Mentors
-        </NavLink>
-
-        <NavLink to="/courses" activeClassName="active">
-          Courses
-        </NavLink>
-
-        <NavLink to="/tests" activeClassName="active">
-          Tests
-        </NavLink>
+        <div>
+          <button
+            onClick={() => setIsOpen((prev) => !prev)}
+            className="flex items-center justify-between text-lg uppercase duration-300 "
+          >
+            Students
+            {!isOpen ? (
+              <IoMdArrowDropdown className="h-8 ml-1 " />
+            ) : (
+              <IoMdArrowDropup className="h-8 ml-1" />
+            )}
+          </button>
+          {isOpen && (
+            <div className="absolute z-10 flex flex-col items-start w-4/6 space-y-1 text-lg uppercase rounded-lg shadow-lg bg-slate-100 left-7 md:hidden text-slate-900 ">
+              <NavLink
+                to="/courses"
+                activeClassName="active"
+                className="w-full px-4 py-1 mt-2 border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:shadow-lg hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+              >
+                Courses
+              </NavLink>
+              <NavLink
+                to="/tests"
+                activeClassName="active"
+                className="w-full px-4 py-1 border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+              >
+                Tests
+              </NavLink>
+              <NavLink
+                to="/mentors"
+                activeClassName="active"
+                className="w-full px-4 py-1 border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+              >
+                Mentors
+              </NavLink>
+              <NavLink
+                to="/faq"
+                activeClassName="active"
+                className="w-full px-4 py-1 border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+              >
+                FAQs
+              </NavLink>
+            </div>
+          )}
+        </div>
 
         <a
           href="https://myanalyticsschool.com/blog/"
@@ -235,10 +268,6 @@ const Navbar = () => {
         >
           Blogs
         </a>
-
-        <NavLink to="/faq" activeClassName="active">
-          FAQs
-        </NavLink>
 
         <NavLink to="/about" activeClassName="active">
           About Us
