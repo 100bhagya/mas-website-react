@@ -19,6 +19,11 @@ import { BsBagCheckFill } from "react-icons/bs";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { ImOffice } from "react-icons/im";
 import { ImUserPlus } from "react-icons/im";
+import FQData from "../data/FaqData";
+import Rectangle from "../images/Rectangle 52.png";
+import { useState } from "react";
+import MentorSection from "../components/Mentor.js"
+
 const data = [
   {
     id: 1,
@@ -33,53 +38,105 @@ const data = [
     src: "https://wallpapercave.com/wp/zNbNzrh.jpg",
   },
 ];
-const Card1 = ({ img, title, content }) => {
+function FAQ({ faq, index, toggleFAQ, tag }) {
   return (
-    <div className="flex flex-col items-center p-16 my-4 space-y-8 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto bg-works">
-      <div className="relative">
-        <img
-          src={Grid}
-          alt="grid"
-          className="absolute w-48 h-36 -top-10 -left-8"
-        ></img>
-        <img
-          src={Grid}
-          alt="grid"
-          className="absolute w-48 h-36 -bottom-14 -right-28"
-        ></img>
-        <img
-          src={img}
-          alt="design"
-          className="relative h-64 border-8 border-blue-300 border-solid w-96 rounded-2xl"
-        />
-      </div>
-
-      <div className="max-w-md">
-        <h2 className="mb-6 text-lg font-semibold text-center text-gray-900 lg:text-2xl lg:text-left">
-          {title}
-        </h2>
-
-        <p className="w-full text-sm leading-relaxed text-center text-gray-600 lg:text-base lg:text-left">
-          {content}
-        </p>
+    <div className="w-full md:w-2/4 card-container">
+      <div
+        className={"faq " + (faq.open ? "open" : "")}
+        key={index}
+        name={tag}
+        onClick={() => toggleFAQ(index, tag)}
+      >
+        <div className="faq-question md:text-base text-[12px] font font-semibold">
+          {faq.question}
+        </div>
+        <div className="faq-answer md:text-sm text-[11px] font flex font-medium">
+          <img
+            src={Rectangle}
+            alt="rectangle"
+            className="lg:w-4 w-3 lg:h-1 h-[3px] lg:mr-7 mr-4 relative lg:my-5 my-4 lg:left-1 rounded-xl"
+          />
+          {faq.answer}
+        </div>
       </div>
     </div>
   );
-};
-
-const Card = ({ data }) => {
-  return (
-    <div className="py-12 px-7 ">
-      <div className=" flex flex-col w-64 space-y-1.5 cursor-pointer">
-        <h1 className="text-3xl font-black text-blue-800">{data.record}</h1>
-        <h1>{data.heading}</h1>
-      </div>
-    </div>
-  );
-};
-const string = "NIRF Rank< 100";
+}
 
 const Companies = () => {
+  const [faqs, setfaqs] = useState(FQData);
+  const toggleFAQ = (index, tag) => {
+    setfaqs(
+      faqs.map((faq, i) => {
+        
+        if (faq.tag === tag) {
+          faq.questions.map((data, i2) => {
+            if (i2 === index) {
+              data.open = !data.open;
+            } else {
+              data.open = false;
+            }
+
+            return data;
+          });
+        } else {
+          faq.questions.map((data, i2) => {
+            
+            data.open = false;
+
+            return data;
+          });
+        }
+        return faq;
+      })
+    );
+  };
+
+  const Card1 = ({ img, title, content }) => {
+    return (
+      <div className="flex flex-col items-center p-16 my-4 space-y-8 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto bg-works">
+        <div className="relative">
+          <img
+            src={Grid}
+            alt="grid"
+            className="absolute w-48 h-36 -top-10 -left-8"
+          ></img>
+          <img
+            src={Grid}
+            alt="grid"
+            className="absolute w-48 h-36 -bottom-14 -right-28"
+          ></img>
+          <img
+            src={img}
+            alt="design"
+            className="relative h-64 border-8 border-blue-300 border-solid w-96 rounded-2xl"
+          />
+        </div>
+
+        <div className="max-w-md">
+          <h2 className="mb-6 text-lg font-semibold text-center text-gray-900 lg:text-2xl lg:text-left">
+            {title}
+          </h2>
+
+          <p className="w-full text-sm leading-relaxed text-center text-gray-600 lg:text-base lg:text-left">
+            {content}
+          </p>
+        </div>
+      </div>
+    );
+  };
+
+  const Card = ({ data }) => {
+    return (
+      <div className="py-12 px-7 ">
+        <div className=" flex flex-col w-64 space-y-1.5 cursor-pointer">
+          <h1 className="text-3xl font-black text-blue-800">{data.record}</h1>
+          <h1>{data.heading}</h1>
+        </div>
+      </div>
+    );
+  };
+  const string = "NIRF Rank< 100";
   return (
     <Fragment>
       <Navbar />
@@ -138,11 +195,12 @@ const Companies = () => {
             />
           </div>
         </section>
+        <MentorSection/>
         <section>
           <div className="mt-16 text-xl text-center ">Track Record</div>
           <div className="flex flex-wrap mt-16 ml-7 md:ml-20 track-record">
-            {Data.map((data) => {
-              return <Card data={data} />;
+            {Data.map((data,i) => {
+              return <Card key={i} data={data} />;
             })}
           </div>
         </section>
@@ -230,7 +288,6 @@ const Companies = () => {
                 Morbi convallis convallis diam sit amet lacinia. Aliquam in
                 elementum tellus.
               </p>
-             
             </div>
             <iframe
               width="590"
@@ -244,8 +301,36 @@ const Companies = () => {
             ></iframe>
           </div>
         </section>
+        <section>
+          <div className="mt-16 text-xl text-center ">FAQs</div>
+          {FQData.map((post) => {
+            if (post.id == 1) {
+              return (
+                <div key={post.id} className="flex flex-wrap pb-12 mx-14 place-content-around faqs ">
+                  {post.questions.map((faq, i) => (
+                    <FAQ
+                      faq={faq}
+                      tag={post.tag}
+                      index={i}
+                      toggleFAQ={toggleFAQ}
+                    />
+                  ))}
+                </div>
+              );
+            }
+          })}
+          <a
+              href="/mentors"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative mb-20 text-blue-800 border-b-2 border-transparent left-40 bottom-10 md:left-3/4 hover:border-blue-800"
+            >
+              Get More Questions?
+            </a>
+        </section>
+       
 
-        <Footer />
+        <Footer/>
       </div>
     </Fragment>
   );
