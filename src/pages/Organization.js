@@ -45,8 +45,8 @@ const Organization = ({props}) => {
   };
   return (
     <>
-      <div className="mt-16 mb-5 text-center ">{props}</div>
-      <div className="box-border p-4 my-6 space-x-4 text-center bg-slate-200">
+      <div className="mt-16 mb-10 text-xl text-center ">{props}</div>
+      <div className="box-border p-4 my-6 space-x-4 space-y-2 text-center bg-slate-200">
         <Slider {...settings} className="absolute left-4 md:static md:left-0">
           <div className="flex mx-2 place-content-center">
             <img alt ="img"  className="w-1/3 my-6" src="http://recruiters-zone.com/static/media/BRS_Ventures.0722bfe22318cd3f3f5d.jpg" />
