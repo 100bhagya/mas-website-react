@@ -78,6 +78,7 @@ const Mentor = () => {
           className="absolute left-4 md:static md:left-0"
         >
           {Data.map((data) => (
+             <div key={data.id}>
             <div className="mb-32 mt-28">
               <div className="box-border flex flex-col px-8 py-4 mt-5 space-x-12 transition duration-500 transform border-2 shadow-xl cursor-pointer bg-blue-50 place-content-around md:w-auto hover:shadow-slate-500 hover:-translate-y-3 rounded-2xl h-42 mx-7 border-slate-300 card">
                 <div className="relative items-center w-full mt-10 bottom-10">
@@ -94,9 +95,11 @@ const Mentor = () => {
                 </div>
               </div>
             </div>
+            </div>
           ))}
         </Slider>
       </div>
+      
      
     </>
   );
