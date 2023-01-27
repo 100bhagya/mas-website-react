@@ -70,7 +70,7 @@ const Mentor = () => {
   };
   return (
     <>
-      <div className="mt-16 mb-10 text-xl text-center ">Mentors</div>
+      <div className="mt-16 mb-10 text-3xl text-center ">Mentors</div>
       <div className="mx-10 text-center md:mx-32 ">
         <h1>
           Experienced mentors to steer you through the journey from being a

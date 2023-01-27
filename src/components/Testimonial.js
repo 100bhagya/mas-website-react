@@ -107,12 +107,12 @@ const NextBtn = (props) => {
 };
 const Testimonial = () => {
   return (
-    <div className="bg-back pt-1 lg:mb-10">
-      <h1 className="text-center justify-center my-14 text-4xl font-medium">
+    <div className="pt-1 bg-back lg:mb-10">
+      <h1 className="justify-center text-4xl font-medium text-center my-14">
         Testimonials
       </h1>
       <div className="testimonial gradient">
-        <div className=" relative left-36 md:pb-20 md:pt-20  card pt-16">
+        <div className="relative pt-16  left-36 md:pb-20 md:pt-20 card">
           <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />}>
             {Data.map((post) => {
               return (
@@ -126,10 +126,10 @@ const Testimonial = () => {
                           className="relative lg:right-14 md:right-1 lg:bottom-32 md:h-14 md:w-20 h-5 w-8 right-[54px] bottom-16"
                         ></img>
                         <div className="relative bottom-24 left-6 w-[170px] text-center md:w-full md:text-left md:bottom-0 md:left-0">
-                          <p className="lg:text-4xl text-center lg:text-left text-2xl md:text-3xl font-semibold relative md:bottom-28">
+                          <p className="relative text-2xl font-semibold text-center lg:text-4xl lg:text-left md:text-3xl md:bottom-28">
                             {post.name}
                           </p>
-                          <p className="font-normal text-center lg:text-left text-gray-500 text-sm md:text-lg lg:text-2xl relative md:bottom-20">
+                          <p className="relative text-sm font-normal text-center text-gray-500 lg:text-left md:text-lg lg:text-2xl md:bottom-20">
                             {post.position}
                           </p>
                         </div>

@@ -70,7 +70,7 @@ const Mentor = () => {
   };
   return (
     <>
-      <div className="mt-16 text-xl text-center">Testimonials</div>
+      <div className="mt-16 text-3xl text-center">Testimonials</div>
 
       <div className="p-8 my-12 space-y-2 text-center ">
         <Slider

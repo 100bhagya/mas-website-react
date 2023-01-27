@@ -22,8 +22,8 @@ import { ImUserPlus } from "react-icons/im";
 import FQData from "../data/FaqData";
 import Rectangle from "../images/Rectangle 52.png";
 import { useState } from "react";
-import MentorSection from "../components/Mentor.js"
-import TestimonialNew from "../components/TestimonialNew"
+import MentorSection from "../components/Mentor.js";
+import TestimonialNew from "../components/TestimonialNew";
 
 const data = [
   {
@@ -69,7 +69,6 @@ const Companies = () => {
   const toggleFAQ = (index, tag) => {
     setfaqs(
       faqs.map((faq, i) => {
-        
         if (faq.tag === tag) {
           faq.questions.map((data, i2) => {
             if (i2 === index) {
@@ -82,7 +81,6 @@ const Companies = () => {
           });
         } else {
           faq.questions.map((data, i2) => {
-            
             data.open = false;
 
             return data;
@@ -159,17 +157,20 @@ const Companies = () => {
             return (
               <SwiperSlide
                 key={data.id}
-                // className="absolute top-56 md:static md:top-0 lg:h-full md:h-full"
+                className="cursor-pointer"
               >
                 <img className="w-full h-full img" src={data.src} alt="" />
               </SwiperSlide>
             );
           })}
         </Swiper>
+        <a href="" target="" rel="noopener noreferrer" className="relative z-10 p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer md:p-3 bottom-20 left-5 md:left-10">
+          Hire Now
+        </a>
         <Organization props={"Trusted by leading Organizations"} />
         <Organization props={"Partnered with prestigious colleges"} />
         <section className="p-12 bg-white">
-          <h1 className="py-12 font-serif text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+          <h1 className="py-12 text-xl text-center text-gray-900 lg:text-3xl">
             Why Hire Us?
           </h1>
           <div className="flex flex-col space-y-8">
@@ -196,17 +197,17 @@ const Companies = () => {
             />
           </div>
         </section>
-        <MentorSection/>
+        <MentorSection />
         <section>
-          <div className="mt-16 text-xl text-center ">Track Record</div>
+          <div className="mt-16 text-3xl text-center ">Track Record</div>
           <div className="flex flex-wrap mt-16 ml-7 md:ml-20 track-record">
-            {Data.map((data,i) => {
+            {Data.map((data, i) => {
               return <Card key={i} data={data} />;
             })}
           </div>
         </section>
         <section>
-          <div className="mt-16 text-xl text-center ">Our Journey</div>
+          <div className="mt-16 text-3xl text-center ">Our Journey</div>
           <div className="mt-16 track-record">
             <div className="flex flex-wrap py-12 space-y-24 sm:space-y-0 place-content-around container-1 px-7">
               <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
@@ -267,11 +268,11 @@ const Companies = () => {
             </div>
           </div>
         </section>
-        <TestimonialNew/>
+        <TestimonialNew />
         <section className="py-16 bg-white">
           <div className="flex flex-col items-center justify-center p-12 mx-auto space-y-6 shadow-2xl md:flex-row md:space-y-0 md:space-x-8 bg-works rounded-xl lg:w-4/5">
             <div className="flex flex-col space-y-4 md:w-1/2">
-              <h2 className="pb-4 font-serif text-2xl font-bold text-center text-black md:text-left">
+              <h2 className="pb-4 font-serif text-3xl font-bold text-center text-black md:text-left">
                 From The Founder’s Desk
               </h2>
               <p className="text-sm md:text-base">
@@ -304,11 +305,14 @@ const Companies = () => {
           </div>
         </section>
         <section>
-          <div className="mt-16 text-xl text-center ">FAQs</div>
+          <div className="mt-16 text-3xl text-center ">FAQs</div>
           {FQData.map((post) => {
             if (post.id == 1) {
               return (
-                <div key={post.id} className="flex flex-wrap pb-12 mx-14 place-content-around faqs ">
+                <div
+                  key={post.id}
+                  className="flex flex-wrap pb-12 mx-14 place-content-around faqs "
+                >
                   {post.questions.map((faq, i) => (
                     <FAQ
                       faq={faq}
@@ -322,18 +326,16 @@ const Companies = () => {
             }
           })}
           <a
-              href="/mentors"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative mb-20 text-blue-800 border-b-2 border-transparent left-40 bottom-10 md:left-3/4 hover:border-blue-800"
-            >
-              Get More Questions?
-            </a>
+            href="/mentors"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative mb-20 text-blue-800 border-b-2 border-transparent left-40 bottom-10 md:left-3/4 hover:border-blue-800"
+          >
+            Get More Questions?
+          </a>
         </section>
-        
-       
 
-        <Footer/>
+        <Footer />
       </div>
     </Fragment>
   );
