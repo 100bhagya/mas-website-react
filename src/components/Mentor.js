@@ -116,7 +116,7 @@ const Mentor = () => {
         href="/mentors"
         target="_blank"
         rel="noopener noreferrer"
-        className="relative text-blue-800 border-b-2 border-transparent left-56 bottom-5 md:left-3/4 hover:border-blue-800"
+        className="relative text-blue-800 border-b-2 border-transparent left-48 bottom-5 md:left-3/4 hover:border-blue-800"
       >
         Meet The Mentors
       </a>

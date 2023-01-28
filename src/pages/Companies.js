@@ -130,7 +130,7 @@ const Companies = () => {
     <Fragment>
       <Navbar />
 
-      <div className="absolute top-0 w-full h-max">
+     
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}
@@ -343,7 +343,7 @@ const Companies = () => {
         </section>
 
         <Footer />
-      </div>
+      
     </Fragment>
   );
 };

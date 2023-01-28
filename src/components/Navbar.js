@@ -223,7 +223,7 @@ const Navbar = () => {
             )}
           </NavLink>
           {isOpen && (
-            <div className="absolute z-10 flex flex-col items-start w-4/6 space-y-1 text-lg uppercase rounded-lg shadow-lg bg-slate-100 left-7 md:hidden text-slate-900 ">
+            <div className="absolute z-10 flex flex-col items-start w-4/5 space-y-1 text-lg uppercase rounded-lg shadow-lg bg-slate-100 left-7 md:hidden text-slate-900 ">
               <NavLink
                 to="/courses"
                 activeClassName="active"

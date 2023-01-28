@@ -37,6 +37,7 @@ const Organization = ({ props, data }) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          autoplaySpeed: 2000,
           dots: false,
         },
       },
