@@ -16,6 +16,7 @@ import Timeline1 from "./pages/Timeline1";
 import Timeline2 from "./pages/Timeline2";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Companies from "./pages/Companies";
+import Colleges from "./pages/Colleges.js";
 import "./App.css";
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/about" element={<About />} />
+          <Route exact path="/colleges" element={<Colleges />} />
           <Route exact path="/companies" element={<Companies />} />
           <Route exact path="/mentors" element={<Mentors />} />
           <Route exact path="/faq" element={<FaqPage />} />

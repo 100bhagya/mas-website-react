@@ -10,11 +10,12 @@ const Mentor = () => {
     dots: true,
     infinite: true,
     slidesToShow: 6,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     autoplay: true,
     speed: 4000,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 8000,
     pauseOnHover: true,
+    pauseOnMouseEnter: true,
     cssEase: "linear",
 
     responsive: [
@@ -22,9 +23,9 @@ const Mentor = () => {
         breakpoint: 1824,
         settings: {
           slidesToShow: 6,
-          slidesToScroll: 5,
+          slidesToScroll: 4,
           infinite: true,
-          speed: 15000,
+          speed: 18000,
           dots: true,
         },
       },
@@ -34,16 +35,16 @@ const Mentor = () => {
           slidesToShow: 4,
           slidesToScroll: 2,
           infinite: true,
-          speed: 3000,
-          dots: true,
+          speed: 8000,
+          dots: false,
         },
       },
       {
         breakpoint: 1200,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1,
-          speed: 3000,
+          slidesToScroll: 2,
+          speed: 6000,
           dots: false,
         },
       },
@@ -52,8 +53,9 @@ const Mentor = () => {
         breakpoint: 800,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
-          speed: 4000,
+          slidesToScroll: 2,
+          speed: 6000,
+          autoplaySpeed: 6000,
           dots: false,
         },
       },
@@ -62,7 +64,9 @@ const Mentor = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
+          speed: 8000,
+          autoplaySpeed: 8000,
           dots: false,
         },
       },
@@ -80,7 +84,7 @@ const Mentor = () => {
           who will be adept at tackling your doubts and queries.
         </h1>
       </div>
-      <div className="p-8 my-12 space-y-2 text-center ">
+      <div className="py-8 my-12 space-y-2 text-center ">
         <Slider {...settings} className="absolute left-4 md:static md:left-0">
           {Data.map((data) => (
             <div className="space-x-3 ">

@@ -151,7 +151,7 @@ const Navbar = () => {
             )}
           </div>
           <NavLink
-            to="/"
+            to="/colleges"
             activeClassName="active"
             className="text-blue-800 border-b-2 border-transparent hover:border-blue-800"
           >
@@ -205,7 +205,7 @@ const Navbar = () => {
 
       <div
         id="menu"
-        class="md:hidden fixed top-0 bottom-0 left-0 hidden flex-col self-end h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-slate-900 uppercase bg-slate-100 z-40 w-2/3"
+        class="md:hidden fixed top-0 bottom-0 left-0 hidden flex-col self-end h-screen py-1 pt-40 pl-12 space-y-3 text-xl text-slate-900 uppercase bg-slate-100 z-40 w-2/3"
       >
         <div>
           <NavLink
@@ -213,7 +213,7 @@ const Navbar = () => {
             exact
             activeClassName="active"
             onClick={() => setIsOpen((prev) => !prev)}
-            className="flex items-center text-base uppercase duration-300 "
+            className="flex items-center text-lg uppercase duration-300 "
           >
             For Students
             {!isOpen ? (
@@ -227,38 +227,38 @@ const Navbar = () => {
               <NavLink
                 to="/courses"
                 activeClassName="active"
-                className="w-full px-4 py-1 mt-2 text-base border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:shadow-lg hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+                className="w-full px-4 py-1 mt-2 text-lg border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:shadow-lg hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
               >
                 Courses
               </NavLink>
               <NavLink
                 to="/tests"
                 activeClassName="active"
-                className="w-full px-4 py-1 text-base border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+                className="w-full px-4 py-1 text-lg border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
               >
                 Tests
               </NavLink>
               <NavLink
                 to="/mentors"
                 activeClassName="active"
-                className="w-full px-4 py-1 text-base border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+                className="w-full px-4 py-1 text-lg border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
               >
                 Mentors
               </NavLink>
               <NavLink
                 to="/faq"
                 activeClassName="active"
-                className="w-full px-4 py-1 text-base border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+                className="w-full px-4 py-1 text-lg border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
               >
                 FAQs
               </NavLink>
             </div>
           )}
         </div>
-        <NavLink to="/" activeClassName="active" className="text-base">
+        <NavLink to="/colleges" activeClassName="active" className="text-lg">
           For Colleges
         </NavLink>
-        <NavLink to="/companies" activeClassName="active" className="text-base">
+        <NavLink to="/companies" activeClassName="active" className="text-lg">
          For Companies
         </NavLink>
 
@@ -266,12 +266,12 @@ const Navbar = () => {
           href="https://myanalyticsschool.com/blog/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-base"
+          className="text-lg"
         >
           Blogs
         </a>
 
-        <NavLink to="/about" activeClassName="active" className="text-base">
+        <NavLink to="/about" activeClassName="active" className="text-lg">
           About Us
         </NavLink>
       </div>

@@ -6,7 +6,7 @@ const Data =[
     },
     {
         record:250,
-        heading:"Hours of Hours Quantitative Aptitude Training"
+        heading:"Hours of Quantitative Aptitude Training"
     },
     {
         record:"200+",

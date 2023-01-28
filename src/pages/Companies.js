@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Organization from "./Organization";
 import "../../src/index.css";
-import Design5 from "../images/design3.png";
 import Grid from "../images/grid.png";
 import Data from "../data/TrackRecord";
 import Footer from "../components/Footer";
@@ -19,26 +18,17 @@ import { BsBagCheckFill } from "react-icons/bs";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { ImOffice } from "react-icons/im";
 import { ImUserPlus } from "react-icons/im";
-import FQData from "../data/FaqData";
+import Vision from "../images/Vision Mission.png";
+import Mission from "../images/mission.png";
+import HRData from "../data/HRCardData.js";
 import Rectangle from "../images/Rectangle 52.png";
 import { useState } from "react";
 import MentorSection from "../components/Mentor.js";
 import TestimonialNew from "../components/TestimonialNew";
+import CollegeData from "../data/College";
+import CFQData from "../data/CompaniesFaqData";
+import CompanyData from "../data/Company";
 
-const data = [
-  {
-    id: 1,
-    src: "https://wallpapercave.com/wp/jgbFbWR.jpg",
-  },
-  {
-    id: 2,
-    src: "https://wallpapercave.com/wp/j1O8bCz.jpg",
-  },
-  {
-    id: 3,
-    src: "https://wallpapercave.com/wp/zNbNzrh.jpg",
-  },
-];
 function FAQ({ faq, index, toggleFAQ, tag }) {
   return (
     <div className="w-full md:w-2/4 card-container">
@@ -65,7 +55,7 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
 }
 
 const Companies = () => {
-  const [faqs, setfaqs] = useState(FQData);
+  const [faqs, setfaqs] = useState(CFQData);
   const toggleFAQ = (index, tag) => {
     setfaqs(
       faqs.map((faq, i) => {
@@ -146,55 +136,81 @@ const Companies = () => {
           slidesPerView={1}
           navigation
           autoplay={{
-            delay: 1000,
+            delay: 2000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
           pagination={{ clickable: true }}
           // className="absolute bottom-40 md:static md:bottom-0"
         >
-          {data.map((data) => {
-            return (
-              <SwiperSlide
-                key={data.id}
-                className="cursor-pointer"
-              >
-                <img className="w-full h-full img" src={data.src} alt="" />
-              </SwiperSlide>
-            );
-          })}
+          <SwiperSlide className="cursor-pointer">
+            <div className="w-full h-full bg-gradient-to-b from-blue-300 to-white"></div>
+            <div>
+              <img
+                className="absolute top-0  md:top-[7vh] md:left-[22vw] invisible md:visible lg:visible lg:w-[80vw]  lg:left-[35vw]"
+                src={Mission}
+                alt="mission"
+              />
+              <p className="absolute text-6xl font-black text-black left-5 md:text-9xl top-16 md:left-10 md:top-28">
+                MISSION
+              </p>
+              <p className="absolute w-2/3 text-black left-5 md:w-1/3 top-48 md:left-10 md:top-1/2 ">
+                MAS aims to turn potential into success for students seeking to
+                become world-class professionals. Our program is designed to
+                provide efficient, affordable and industry-centric guidance to
+                bridge the gap between student potential and professional
+                acclaim.
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="cursor-pointer">
+            <div className="w-full h-full bg-gradient-to-b from-blue-300 to-white"></div>
+            <img
+              className="absolute top-0 md:left-[38vw] md:w-7/12  lg:w-auto  md:top-[5vh] invisible md:visible lg:visible  lg:top-20 lg:left-[60vw]"
+              src={Vision}
+              alt="mission"
+            />
+            <p className="absolute text-6xl font-black text-black left-5 md:text-9xl top-16 md:left-10 md:top-28">
+              VISION
+            </p>
+            <p className="absolute w-2/3 text-black left-5 md:w-1/3 top-48 md:left-10 md:top-1/2 ">
+              We are optimistic about the future of analytics in India and are
+              working to develop a next-generation workforce that meets the
+              needs of the industry, both within India and globally.
+            </p>
+          </SwiperSlide>
         </Swiper>
-        <a href="" target="" rel="noopener noreferrer" className="relative z-10 p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer md:p-3 bottom-20 left-5 md:left-10">
+        <a
+          href=""
+          target=""
+          rel="noopener noreferrer"
+          className="relative z-10 p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer md:bottom-12 lg:bottom-20 md:p-3 bottom-20 left-5 md:left-10"
+        >
           Hire Now
         </a>
-        <Organization props={"Trusted by leading Organizations"} />
-        <Organization props={"Partnered with prestigious colleges"} />
+        <Organization
+          props={"Trusted by leading Organizations"}
+          data={CompanyData}
+        />
+        <Organization
+          props={"Partnered with prestigious colleges"}
+          data={CollegeData}
+        />
         <section className="p-12 bg-white">
           <h1 className="py-12 text-xl text-center text-gray-900 lg:text-3xl">
             Why Hire Us?
           </h1>
           <div className="flex flex-col space-y-8">
-            <Card1
-              img={Design5}
-              title="80/20 Hiring Principle"
-              content="We provide you with a pool of highly skilled candidates, saving time on the hiring process.
-              While hiring from campus, recruiters spends major time on getting those 20% candidates who have the relevant skills. We at MAS brings you those 20% upfront through our screening processes from all top colleges after upskilling them from our industry experts and mentors"
-            />
-            <Card1
-              img={Design5}
-              title="Customizable courses"
-              content="Now, pick up the top candidates ensuring they are techincally sound as per your requirements by customizing our cohort courses ensuring they are skilled enough for your company (Image idea if needed : images of courses in jigsaw puzzle)"
-            />
-            <Card1
-              img={Design5}
-              title="Our Own Assessment Platform"
-              content="No need to tie up with 3rd party assessment company. We have our own virtual talent assessment platform for all your needs."
-            />
-            <Card1
-              img={Design5}
-              title="Verification"
-              content="No need to tie up with 3rd party assessment company. We have our own virtual talent assessment platform for all your needs."
-            />
+            {HRData.map((data, i) => {
+              return (
+                <Card1
+                  img={data.image}
+                  title={data.heading}
+                  content={data.text}
+                  key={i}
+                />
+              );
+            })}
           </div>
         </section>
         <MentorSection />
@@ -276,20 +292,13 @@ const Companies = () => {
                 From The Founder’s Desk
               </h2>
               <p className="text-sm md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
-                metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
-                interdum tellus elit sed risus. Maecenas eget condimentum velit,
-                sit amet feugiat lectus. Class aptent taciti sociosqu ad litora
-                torquent per Praesent auctor purus luctus enim egestas, ac
-                scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac
-                rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem.
-                Morbi convallis convallis diam sit amet lacinia. Aliquam in
-                elementum tellus. Praesent auctor purus luctus enim egestas, ac
-                scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac
-                rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem.
-                Morbi convallis convallis diam sit amet lacinia. Aliquam in
-                elementum tellus.
+                My Analytics School is an Ed-Tech start-up founded by IIT
+                alumni, providing an end-to-end solution for Analytics, DS
+                Placements and related job preparation. "MAS screens top college
+                candidates and upskills them with industry experts to provide
+                recruiters with a pool of highly skilled candidates, saving time
+                on the hiring process and making the freshers hiring process
+                efficient"
               </p>
             </div>
             <iframe
@@ -306,24 +315,22 @@ const Companies = () => {
         </section>
         <section>
           <div className="mt-16 text-3xl text-center ">FAQs</div>
-          {FQData.map((post) => {
-            if (post.id == 1) {
-              return (
-                <div
-                  key={post.id}
-                  className="flex flex-wrap pb-12 mx-14 place-content-around faqs "
-                >
-                  {post.questions.map((faq, i) => (
-                    <FAQ
-                      faq={faq}
-                      tag={post.tag}
-                      index={i}
-                      toggleFAQ={toggleFAQ}
-                    />
-                  ))}
-                </div>
-              );
-            }
+          {CFQData.map((post) => {
+            return (
+              <div
+                key={post.id}
+                className="flex flex-wrap pb-12 mx-14 place-content-around faqs "
+              >
+                {post.questions.map((faq, i) => (
+                  <FAQ
+                    faq={faq}
+                    tag={post.tag}
+                    index={i}
+                    toggleFAQ={toggleFAQ}
+                  />
+                ))}
+              </div>
+            );
           })}
           <a
             href="/mentors"
@@ -342,3 +349,4 @@ const Companies = () => {
 };
 
 export default Companies;
+

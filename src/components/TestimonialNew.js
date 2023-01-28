@@ -10,30 +10,23 @@ const Mentor = () => {
     dots: true,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     autoplay: true,
     speed: 4000,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     pauseOnHover: true,
+    pauseOnMouseEnter: true,
     cssEase: "linear",
 
     responsive: [
-      {
-        breakpoint: 1824,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
-          infinite: true,
-          speed: 15000,
-          dots: true,
-        },
-      },
+      
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           infinite: true,
+          autoplaySpeed: 7000,
           speed: 3000,
           dots: true,
         },
@@ -42,8 +35,9 @@ const Mentor = () => {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           speed: 3000,
+          autoplaySpeed: 6000,
           dots: false,
         },
       },
@@ -53,6 +47,7 @@ const Mentor = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          autoplaySpeed: 6000,
           speed: 4000,
           dots: false,
         },
@@ -63,6 +58,7 @@ const Mentor = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          autoplaySpeed: 6000,
           dots: false,
         },
       },
@@ -72,10 +68,10 @@ const Mentor = () => {
     <>
       <div className="mt-16 text-3xl text-center">Testimonials</div>
 
-      <div className="p-8 my-12 space-y-2 text-center ">
+      <div className="w-full py-8 my-12 space-y-2 text-center">
         <Slider
           {...settings}
-          className="absolute left-4 md:static md:left-0"
+          className="absolute left-3 md:static md:left-0"
         >
           {Data.map((data) => (
              <div key={data.id}>
@@ -106,28 +102,4 @@ const Mentor = () => {
 };
 
 export default Mentor;
-{
-  /* <div className="">
-        <Slider {...settings} className="absolute p-10 top-10 bg-slate-400 left-4 md:static md:left-0">
-          {Data.map((data) => (
-            <div className="mt-20 mb-32 bg-red-300">
-              <div className="box-border flex flex-col items-center justify-center px-8 py-5 mt-5 space-x-12 transition duration-500 transform border-2 shadow-xl cursor-pointer bg-slate-700 hover:shadow-slate-500 hover:-translate-y-3 rounded-2xl h-42 mx-7 border-slate-300 place-content-around card">
-                <div>
-                <img
-                  className="relative z-10 w-2/6 bottom-20 left-6 "
-                  src={data.image}
-                  alt="img"
-                />
 
-                </div>
-
-                <div className="relative mt-5 mb-10 right-5 h-[11vh]">
-                  <h1 className="text-lg">{data.name}</h1>
-                  <h3 className="text-slate-500">{data.position}</h3>
-                </div>
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </div> */
-}
