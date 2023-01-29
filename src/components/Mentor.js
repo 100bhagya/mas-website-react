@@ -64,8 +64,8 @@ const Mentor = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 2,
-          speed: 8000,
+          slidesToScroll: 1,
+          speed: 1500,
           autoplaySpeed: 8000,
           dots: false,
         },
@@ -88,7 +88,7 @@ const Mentor = () => {
         <Slider {...settings} className="absolute left-4 md:static md:left-0">
           {Data.map((data) => (
             <div className="space-x-3 ">
-              <div className="box-border flex flex-col items-center justify-center px-8 py-4 mt-5 space-x-12 transition duration-500 transform border-2 shadow-xl cursor-pointer hover:shadow-slate-500 hover:-translate-y-3 rounded-2xl h-42 mx-7 border-slate-300 place-content-around card">
+              <div className="box-border flex flex-col items-center justify-center px-8 py-4 mt-5 space-x-12 border-2 shadow-xl cursor-pointer lg:duration-500 md:transition lg:transform lg:hover:shadow-slate-500 lg:hover:-translate-y-3 rounded-2xl h-42 mx-7 border-slate-300 place-content-around card">
                 <div className="items-center mt-10">
                   <img
                     className="relative w-2/3 left-6 "

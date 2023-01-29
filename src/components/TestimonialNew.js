@@ -12,7 +12,7 @@ const Mentor = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 4000,
+    speed: 2000,
     autoplaySpeed: 5000,
     pauseOnHover: true,
     pauseOnMouseEnter: true,
@@ -24,10 +24,10 @@ const Mentor = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           infinite: true,
           autoplaySpeed: 7000,
-          speed: 3000,
+          speed: 2000,
           dots: true,
         },
       },
@@ -35,8 +35,8 @@ const Mentor = () => {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          speed: 3000,
+          slidesToScroll: 1,
+          speed: 2000,
           autoplaySpeed: 6000,
           dots: false,
         },
@@ -48,7 +48,7 @@ const Mentor = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           autoplaySpeed: 6000,
-          speed: 4000,
+          speed: 2000,
           dots: false,
         },
       },
@@ -59,6 +59,7 @@ const Mentor = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplaySpeed: 6000,
+          speed:1000,
           dots: false,
         },
       },
@@ -76,7 +77,7 @@ const Mentor = () => {
           {Data.map((data) => (
              <div key={data.id}>
             <div className="mb-32 mt-28">
-              <div className="box-border flex flex-col px-8 py-4 mt-5 space-x-12 transition duration-500 transform border-2 shadow-xl cursor-pointer bg-blue-50 place-content-around md:w-auto hover:shadow-slate-500 hover:-translate-y-3 rounded-2xl h-42 mx-7 border-slate-300 card">
+              <div className="box-border flex flex-col px-8 py-4 mt-5 space-x-12 border-2 shadow-xl cursor-pointer lg:transition lg:duration-500 lg:transform bg-blue-50 place-content-around md:w-auto lg:hover:shadow-slate-500 lg:hover:-translate-y-3 rounded-2xl h-42 mx-7 border-slate-300 card">
                 <div className="relative items-center w-full mt-10 bottom-10">
                   <div className="relative  flex flex-col bottom-16 lg:bottom-20 mt-5w-full h-[11vh]">
                     <img className="relative w-4/12 left-16 md:left-20 lg:left-28 " src={data.image} alt="img" />
