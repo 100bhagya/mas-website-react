@@ -8,6 +8,7 @@ import LoginForm from "./LoginForm";
 import "../index.css";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdArrowDropup } from "react-icons/io";
+import { Button } from "@material-ui/core";
 
 // function SideMenu() {
 //   return (
@@ -102,13 +103,19 @@ const Navbar = () => {
           id="navigation"
           className="items-center justify-center hidden text-sm space-x-7 md:flex lg:text-base"
         >
+           <NavLink
+            to="/"
+            exact
+            activeClassName="active"
+            className="text-blue-800 border-b-2 border-transparent hover:border-blue-800"
+          >
+            Home
+          </NavLink>
           <div>
-            <NavLink
-              to="/"
-              exact
-              activeClassName="active"
+            <button
+              
               onClick={() => setIsOpen((prev) => !prev)}
-              className="flex items-center justify-between text-blue-800 duration-300 border-b-2 border-transparent cursor-pointer hover:border-blue-800 "
+              className="flex items-center justify-between text-blue-800 duration-300 border-b-2 border-transparent cursor-pointer hover:border-blue-800"
             >
               For Students
               {!isOpen ? (
@@ -116,7 +123,7 @@ const Navbar = () => {
               ) : (
                 <IoMdArrowDropup className="h-8 ml-1" />
               )}
-            </NavLink>
+            </button>
             {isOpen && (
               <div className="absolute flex flex-col items-start w-1/6 p-2 bg-white rounded-lg shadow-lg ">
                 <NavLink
@@ -207,21 +214,27 @@ const Navbar = () => {
         id="menu"
         class="md:hidden fixed top-0 bottom-0 left-0 hidden flex-col self-end h-screen py-1 pt-40 pl-12 space-y-3 text-xl text-slate-900 uppercase bg-slate-100 z-40 w-2/3"
       >
-        <div>
-          <NavLink
+         <NavLink
             to="/"
             exact
             activeClassName="active"
-            onClick={() => setIsOpen((prev) => !prev)}
-            className="flex items-center text-lg uppercase duration-300 "
+            className="border-b-2 border-transparent hover:border-blue-800"
           >
-            For Students
-            {!isOpen ? (
-              <IoMdArrowDropdown className="h-8 ml-1 " />
-            ) : (
-              <IoMdArrowDropup className="h-8 ml-1" />
-            )}
+            Home
           </NavLink>
+        <div>
+        <button
+             
+              onClick={() => setIsOpen((prev) => !prev)}
+              className="flex items-center justify-between uppercase duration-300 "
+            >
+             For Students
+              {!isOpen ? (
+                <IoMdArrowDropdown className="h-8 ml-1 " />
+              ) : (
+                <IoMdArrowDropup className="h-8 ml-1" />
+              )}
+            </button>
           {isOpen && (
             <div className="absolute z-10 flex flex-col items-start w-4/5 space-y-1 text-lg uppercase rounded-lg shadow-lg bg-slate-100 left-7 md:hidden text-slate-900 ">
               <NavLink
