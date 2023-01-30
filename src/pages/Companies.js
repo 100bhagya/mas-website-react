@@ -30,7 +30,6 @@ import CFQData from "../data/CompaniesFaqData";
 import CompanyData from "../data/Company";
 import design2 from "../images/Vector 3.png";
 
-
 function FAQ({ faq, index, toggleFAQ, tag }) {
   return (
     <div className="w-full md:w-2/4 card-container">
@@ -146,9 +145,9 @@ const Companies = () => {
       >
         <SwiperSlide className="cursor-pointer">
           <div className="flex flex-col-reverse w-full h-full pt-16 lg:flex-row bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
-            <div className="max-w-lg relative bottom-[12vh] md:static px-4 mx-auto lg:flex lg:items-center pt-9 md:max-w-xl lg:max-w-4xl">
-              <div className="lg:pt-16 bottom-3 md:top-8 lg:pb-32 pb-10 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
-                <h1 className="relative text-2xl  leading-relaxed text-black md:bottom-[13vh] lg:font-normal font-black md:text-3xl lg:text-9xl font-primary">
+            <div className="max-w-lg relative  bottom-[12vh] md:static px-4 mx-auto lg:flex lg:items-center pt-9 md:max-w-xl lg:max-w-4xl">
+              <div className="lg:pt-16 bottom-3 md:top-[5vh] top-[2vh] lg:top-[8vh] lg:pb-32 pb-10 relative lg:left-[7%]  text-center lg:text-left">
+                <h1 className="relative text-3xl  leading-relaxed text-black md:bottom-[15vh]  font-black md:text-3xl lg:text-9xl ">
                   MISSION
                 </h1>
                 <p className="lg:pt-6 md:font-medium text-sm  text-[#787B7D]  lg:text-lg relative md:bottom-[10vh]  leading-loose lg:w-[68%]  ">
@@ -158,6 +157,14 @@ const Companies = () => {
                   to bridge the gap between student potential and professional
                   acclaim.
                 </p>
+                <a
+                  href=""
+                  target=""
+                  rel="noopener noreferrer"
+                  className="relative p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
+                >
+                  Hire Now
+                </a>
               </div>
             </div>
             <div className="flex justify-center">
@@ -175,24 +182,32 @@ const Companies = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="cursor-pointer">
-          <div className="flex flex-col-reverse w-full h-full pt-16 lg:flex-row bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
-            <div className="max-w-lg px-4 mx-auto relative bottom-[15vh]   lg:flex lg:items-center pt-9 md:max-w-xl lg:max-w-4xl">
-              <div className="lg:pt-16 bottom-3 md:top-[17vh]  lg:pb-32 pb-10 relative lg:left-[7%] lg:top-[15vh] text-center lg:text-left">
-                <h1 className="relative text-3xl  leading-relaxed text-black md:bottom-[15vh] lg:font-normal font-black md:text-3xl lg:text-9xl font-primary">
+          <div className="flex flex-col-reverse justify-between w-full h-full pt-16 lg:flex-row bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+            <div className="max-w-lg px-4  mx-auto relative bottom-[15vh]   lg:flex lg:items-center pt-9 md:max-w-xl lg:max-w-4xl">
+              <div className="lg:pt-16 bottom-3 md:top-[17vh]  top-[2vh]  lg:pb-32 pb-10 relative lg:left-[7%] lg:top-[20vh] text-center lg:text-left">
+                <div className="relative text-3xl  leading-relaxed text-black md:bottom-[15vh]  font-black md:text-3xl lg:text-9xl ">
                   VISION
-                </h1>
+                </div>
                 <p className="lg:pt-6 md:font-medium text-sm  text-[#787B7D]  lg:text-lg relative md:bottom-[10vh]  leading-loose lg:w-[68%]">
                   We are optimistic about the future of analytics in India and
                   are working to develop a next-generation workforce that meets
                   the needs of the industry, both within India and globally.
                 </p>
+                <a
+                  href=""
+                  target=""
+                  rel="noopener noreferrer"
+                  className="relative p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
+                >
+                  Hire Now
+                </a>
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center ">
               <img
                 src={Vision}
                 alt=""
-                className="lg:absolute  absolute design1  z-10 md:top-[4vh] lg:right-16 lg:top-[100px] lg:h-[70%] h-[250px] top-10"
+                className="lg:absolute  absolute design1  z-10 md:top-[7vh] lg:right-16 lg:top-[100px] lg:h-[70%] h-[250px] top-10"
               />
               <img
                 src={design2}
@@ -203,14 +218,14 @@ const Companies = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <a
+      {/* <a
         href=""
         target=""
         rel="noopener noreferrer"
-        className="relative z-10 p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer       lg:bottom-40 md:p-3 md:bottom-[7vh] md:left-[30vh] bottom-[15vh] left-[37vw] lg:left-20"
+        className="relative z-10 p-2  text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer       lg:bottom-40 md:p-3 md:bottom-[7vh] md:left-[45vw] bottom-[15vh] left-[40vw]   lg:left-[6vw] "
       >
         Hire Now
-      </a>
+      </a> */}
       <Organization
         props={"Trusted by leading Organizations"}
         data={CompanyData}

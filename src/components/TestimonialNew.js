@@ -74,7 +74,7 @@ const Testimonials = () => {
                   <div className="relative items-center w-full mt-10 bottom-10">
                     <div className="relative  flex flex-col bottom-16 lg:bottom-20 mt-5w-full h-[11vh]">
                       <img
-                        className="relative w-4/12 left-16 md:left-20 lg:left-28 "
+                        className="relative w-4/12 left-[33%] "
                         src={data.image}
                         alt="img"
                       />
@@ -87,7 +87,7 @@ const Testimonials = () => {
                         </h3>
                       </div>
                     </div>
-                    <div className="overflow-y-auto  md:text-lg lg:text-sm  rounded-2xl bg-gradient-to-b from-blue-50 to-blue-100 p-6  mt-5 text-sm  w-full  h-[40vh]">
+                    <div className="overflow-y-auto  md:text-lg lg:text-sm  rounded-2xl bg-gradient-to-b from-blue-50 to-blue-100 p-6 2xl:mt-16  mt-5 xl:mt-6  text-sm  w-full   2xl:h-[50vh]  h-[40vh]">
                       {data.about}
                     </div>
                   </div>
