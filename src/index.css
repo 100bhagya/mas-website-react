@@ -28,9 +28,6 @@ html {
   transform: scale(1.1);
   color: #1e3a8a;
 }
-
-
-
 @media screen and (orientation: portrait) {
 
   .mob_pos {
@@ -60,19 +57,6 @@ html {
   }
   .top_bg {
     background-image: linear-gradient(180deg, #bdcdfc, #ffffff);
-  }
-  .swiper-button-prev{
-    position: absolute;
-    top: 70%;
-
-  }
-  .swiper-button-next{
-    position: absolute;
-    top: 70%;
-
-  }
-  .swiper{
-    height: fit-content;
   }
 }
 .testimonial .slick-arrow.slick-prev,

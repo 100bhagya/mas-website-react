@@ -13,7 +13,7 @@ import Design4 from "../images/design2.png";
 import Design5 from "../images/design3.png";
 import Offers from "../components/Offers";
 import Footer from "../components/Footer";
-import TestimonialNew from "../components/TestimonialNew";
+import Testimonial from "../components/Testimonial";
 import LoginForm from "../components/LoginForm";
 import JoinToday from "../components/JoinToday";
 import { Link } from "react-router-dom";
@@ -23,31 +23,31 @@ import { ModalForm } from "../components/ModalForm";
 
 const Card1 = ({ img, title, content }) => {
   return (    
-    <div className="flex flex-col items-center p-16 my-4 space-y-8 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto bg-works">
+    <div className="flex flex-col space-y-8 items-center lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto bg-works p-16 my-4">
       <div className="relative">
         <img
           src={Grid}
           alt="grid"
-          className="absolute w-48 h-36 -top-10 -left-8"
+          className="h-36 w-48 absolute -top-10 -left-8"
         ></img>
         <img
           src={Grid}
           alt="grid"
-          className="absolute w-48 h-36 -bottom-14 -right-28"
+          className="h-36 w-48 absolute -bottom-14 -right-28"
         ></img>
         <img
           src={img}
           alt="design"
-          className="relative h-64 border-8 border-blue-300 border-solid w-96 rounded-2xl"
+          className="relative h-64 w-96 border-8 border-solid rounded-2xl border-blue-300"
         />
       </div>      
 
       <div className="max-w-md">        
-        <h2 className="mb-6 text-lg font-semibold text-center text-gray-900 lg:text-2xl lg:text-left">
+        <h2 className="text-gray-900 lg:text-2xl text-lg lg:text-left text-center font-semibold mb-6">
           {title}
         </h2>        
 
-        <p className="w-full text-sm leading-relaxed text-center text-gray-600 lg:text-base lg:text-left">
+        <p className="leading-relaxed w-full lg:text-base text-sm text-center lg:text-left text-gray-600">
           {content}
         </p>
       </div>      
@@ -58,17 +58,17 @@ const Card1 = ({ img, title, content }) => {
 
 const Card = ({ img, title, content }) => {
   return (    
-      <div className="flex flex-col justify-center p-8 space-y-4 shadow-xl bg-card rounded-xl">
+      <div className="flex flex-col justify-center space-y-4 shadow-xl bg-card rounded-xl p-8">
         <div className="flex items-start justify-center">
           <img
-            className="p-4 m-6 bg-gray-200 rounded-full h-36 hover:scale-105 hover:opacity-70"
+            className="h-36 rounded-full m-6 bg-gray-200 p-4 hover:scale-105 hover:opacity-70"
             src={img}
             alt="blog"
           /> 
         </div>
        
-        <h3 className="mb-3 text-base font-semibold text-center text-gray-900 lg:text-xl lg:text-left">{title}</h3>
-        <p className="max-w-sm text-sm text-center text-gray-600 lg:text-left">
+        <h3 className="text-base lg:text-xl font-semibold text-gray-900 mb-3 text-center lg:text-left">{title}</h3>
+        <p className="text-center max-w-sm text-sm lg:text-left text-gray-600">
           {content}
         </p>      
       </div>    
@@ -96,12 +96,12 @@ const LandingPage = () => {
       {/* <LoginForm isShowLogin={isShowLogin} closeLogin={closeLogin} /> */}
       {/* <JoinToday isShowLogin={isShowLogin} closeLogin={closeLogin} /> */}
       <ModalForm showModal={showModal} setShowModal={setShowModal} />
-      <div className="flex flex-col-reverse pt-16 lg:flex-row bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
-        <div className="max-w-lg px-4 mx-auto lg:flex lg:items-center pt-9 md:max-w-xl lg:max-w-4xl">
+      <div className="flex flex-col-reverse lg:flex-row pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+        <div className="lg:flex lg:items-center px-4 pt-9 max-w-lg md:max-w-xl lg:max-w-4xl mx-auto">
           <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
-            <h1 className="text-2xl font-semibold leading-relaxed text-black lg:font-normal md:text-3xl lg:text-5xl font-primary">
+            <h1 className="lg:font-normal font-semibold  text-black text-2xl md:text-3xl lg:text-5xl leading-relaxed font-primary">
               Get Placed In
-              <p className="relative mt-4 bottom-5 lg:mt-10">
+              <p className="relative bottom-5 lg:mt-10 mt-4">
                 Your Dream Company
               </p>
             </h1>
@@ -134,16 +134,16 @@ const LandingPage = () => {
           <img
             src={design2}
             alt=""
-            className="relative hidden design2 lg:bottom-16 lg:block"
+            className="relative design2 lg:bottom-16 hidden lg:block"
           />
         </div>
       </div>
 
-      <section className="p-12 bg-back">      
-          <h1 className="py-12 font-serif text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+      <section className="bg-back p-12">      
+          <h1 className="font-serif text-gray-900 text-center py-12 text-3xl lg:text-4xl font-bold">
             What We Do?
           </h1>
-          <div className="flex flex-col items-center max-w-6xl mx-auto space-y-12 lg:flex-row lg:space-y-0 lg:space-x-12">
+          <div className="flex flex-col lg:flex-row items-center max-w-6xl mx-auto space-y-12 lg:space-y-0 lg:space-x-12">
             <Card
               img={Copy}
               title="Preparation Program"
@@ -162,8 +162,8 @@ const LandingPage = () => {
           </div>        
       </section>
 
-      <section className="p-12 bg-back">                  
-          <h1 className="py-12 font-serif text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+      <section className="bg-back p-12">                  
+          <h1 className="font-serif text-gray-900 text-center py-12 text-3xl lg:text-4xl font-bold">
             How It Works?
           </h1>          
           <div className="flex flex-col space-y-8">
@@ -186,7 +186,7 @@ const LandingPage = () => {
       </section>
            
       <Offers />
-      <TestimonialNew />
+      <Testimonial />
       <Contact />
       <Footer />
     </div>
