@@ -39,12 +39,12 @@ const Testimonials = () => {
       },
 
       {
-        breakpoint: 800,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-
-          speed: 2000,
+          autoplay: false,
+          speed: 200,
           dots: false,
         },
       },
@@ -54,8 +54,8 @@ const Testimonials = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-
-          speed: 2000,
+          autoplay: false,
+          speed: 100,
           dots: false,
         },
       },
@@ -87,7 +87,7 @@ const Testimonials = () => {
                         </h3>
                       </div>
                     </div>
-                    <div className="overflow-y-auto  md:text-lg lg:text-sm  rounded-2xl bg-gradient-to-b from-blue-50 to-blue-100 p-6 2xl:mt-16  mt-5 xl:mt-6  text-sm  w-full   2xl:h-[50vh]  h-[40vh]">
+                    <div className="overflow-y-auto  md:text-lg lg:text-sm  rounded-2xl bg-gradient-to-b from-blue-50 to-blue-100 p-6 2xl:mt-16  mt-5 xl:mt-6  text-sm  w-full   2xl:h-[42vh]  h-[40vh]">
                       {data.about}
                     </div>
                   </div>
