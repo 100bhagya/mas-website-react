@@ -23,22 +23,22 @@ import { ModalForm } from "../components/ModalForm";
 
 const Card1 = ({ img, title, content }) => {
   return (    
-    <div className="flex flex-col items-center p-16 my-4 space-y-8 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto bg-works">
+    <div className="flex flex-col items-center p-8 my-4 space-y-8 md:p-16 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto bg-works">
       <div className="relative">
         <img
           src={Grid}
           alt="grid"
-          className="absolute w-48 h-36 -top-10 -left-8"
+          className="absolute h-32 w-44 md:w-48 md:h-36 md:-top-10 md:-left-8 -top-8 -left-6"
         ></img>
         <img
           src={Grid}
           alt="grid"
-          className="absolute w-48 h-36 -bottom-14 -right-28"
+          className="absolute h-32 w-44 md:w-48 md:h-36 md:-bottom-14 md:-right-28 -bottom-14 -right-24"
         ></img>
         <img
           src={img}
           alt="design"
-          className="relative h-64 border-8 border-blue-300 border-solid w-96 rounded-2xl"
+          className="relative border-8 border-blue-300 border-solid h-[30vh] w-96 md:h-64 md:w-96 rounded-2xl"
         />
       </div>      
 
