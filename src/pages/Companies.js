@@ -118,10 +118,10 @@ const Companies = () => {
 
   const Card = ({ data }) => {
     return (
-      <div className="py-12 px-7 ">
-        <div className=" flex flex-col w-64 space-y-1.5 cursor-pointer">
+      <div className="px-8 py-12 ">
+        <div className=" flex flex-col md:w-64 w-[28vw] space-y-1.5 cursor-pointer">
           <h1 className="text-3xl font-black text-blue-800">{data.record}</h1>
-          <h1>{data.heading}</h1>
+          <h1 className="text-base">{data.heading}</h1>
         </div>
       </div>
     );
@@ -254,7 +254,7 @@ const Companies = () => {
       <MentorSection />
       <section>
         <div className="mt-16 text-3xl text-center ">Track Record</div>
-        <div className="flex flex-wrap mt-16 ml-7 md:ml-20 track-record">
+        <div className="flex flex-wrap mt-16 md:ml-20 track-record">
           {Data.map((data, i) => {
             return <Card key={i} data={data} />;
           })}
