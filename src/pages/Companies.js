@@ -84,22 +84,22 @@ const Companies = () => {
 
   const Card1 = ({ img, title, content }) => {
     return (
-      <div className="flex flex-col items-center p-16 my-4 space-y-8 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto bg-works">
+      <div className="flex flex-col items-center my-4 space-y-8 p-7 md:p-16 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto bg-works">
         <div className="relative">
           <img
             src={Grid}
             alt="grid"
-            className="absolute w-48 h-36 -top-10 -left-8"
+            className="absolute h-32 w-44 md:w-48 md:h-36 md:-top-10 md:-left-8 -top-8 -left-6"
           ></img>
           <img
             src={Grid}
             alt="grid"
-            className="absolute w-48 h-36 -bottom-14 -right-28"
+            className="absolute h-32 w-44 md:w-48 md:h-36 md:-bottom-14 md:-right-28 -bottom-14 -right-24"
           ></img>
           <img
             src={img}
             alt="design"
-            className="relative h-64 border-8 border-blue-300 border-solid w-96 rounded-2xl"
+            className="relative border-8 border-blue-300 border-solid h-[30vh] w-96 md:h-64 md:w-96 rounded-2xl"
           />
         </div>
 
@@ -118,10 +118,10 @@ const Companies = () => {
 
   const Card = ({ data }) => {
     return (
-      <div className="py-12 px-7 ">
-        <div className=" flex flex-col w-64 space-y-1.5 cursor-pointer">
+      <div className="px-8 py-12 ">
+        <div className=" flex flex-col md:w-64 w-[28vw] space-y-1.5 cursor-pointer">
           <h1 className="text-3xl font-black text-blue-800">{data.record}</h1>
-          <h1>{data.heading}</h1>
+          <h1 className="text-base">{data.heading}</h1>
         </div>
       </div>
     );
@@ -158,7 +158,7 @@ const Companies = () => {
                   acclaim.
                 </p>
                 <a
-                  href=""
+                  href="https://forms.gle/R6XBCdA9nvUVYjZk6"
                   target=""
                   rel="noopener noreferrer"
                   className="relative p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
@@ -194,7 +194,7 @@ const Companies = () => {
                   the needs of the industry, both within India and globally.
                 </p>
                 <a
-                  href=""
+                  href="https://forms.gle/R6XBCdA9nvUVYjZk6"
                   target=""
                   rel="noopener noreferrer"
                   className="relative p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
@@ -254,7 +254,7 @@ const Companies = () => {
       <MentorSection />
       <section>
         <div className="mt-16 text-3xl text-center ">Track Record</div>
-        <div className="flex flex-wrap mt-16 ml-7 md:ml-20 track-record">
+        <div className="flex flex-wrap mt-16 md:ml-20 track-record">
           {Data.map((data, i) => {
             return <Card key={i} data={data} />;
           })}

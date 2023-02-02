@@ -28,15 +28,11 @@ const Footer = () => {
       ) : null}
       {isShowTerms ? (
         <Terms setIsShowTerms={setIsShowTerms} isShowPrivacy={isShowPrivacy} />
-      ) : null}      
+      ) : null}
 
-      <div className="flex flex-col space-y-12 items-center justify-around md:flex-row md:space-x-12 md:space-y-0 md:items-start text-white lg:justify-center">
+      <div className="flex flex-col items-center justify-around space-y-12 text-white md:flex-row md:space-x-12 md:space-y-0 md:items-start lg:justify-center">
         <div className="">
-          <img
-            src={Logo}
-            className="w-48"
-            alt="rectangle"
-          ></img>
+          <img src={Logo} className="w-48" alt="rectangle"></img>
 
           <p class="hidden mt-5 leading-5 text-sm text-white md:block max-w-sm">
             My Analytics School is an Ed-Tech start-up founded by IIT alumni,
@@ -48,47 +44,71 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex flex-col space-y-8 items-center justify-around lg:flex-row lg:space-y-0 lg:space-x-12 lg:items-center">
-          <div className="flex flex-col space-y-6 justify-start">
+        <div className="flex flex-col items-center justify-around space-y-8 lg:flex-row lg:space-y-0 lg:space-x-12 lg:items-center">
+          <div className="flex flex-col justify-start space-y-6">
             {/* explore and helpful links */}
             <div className="">
-              <h3 className="pb-3 font-bold text-lg tracking-wider">Explore</h3>
-              <div className="flex space-x-6 text-sm">
-                <Link
-                  to="/"
-                  className="hover:scale-105 hover:text-slate-300"              
-                >
+              <h3 className="pb-3 text-lg ml-[8%] md:ml-0 font-bold tracking-wider">Explore</h3>
+              <div className="flex flex-row p-8 space-x-2 text-sm md:p-0 md:space-x-6">
+                <Link to="/" className="hover:scale-105 hover:text-slate-300">
                   Home
                 </Link>
                 <img src={Bar} alt="circle" className="" />
                 <Link
                   to="/courses"
-                  className="hover:scale-105 hover:text-slate-300"
+                  className=""
                 >
-                  Courses
+                  For Students
+                  <div className="flex flex-col space-y-1 ">
+                    <Link
+                      to="/courses"
+                      className="mt-1 hover:scale-105 hover:text-slate-300"
+                    >
+                      {" "}
+                      Courses
+                    </Link>
+                    <Link
+                      to="/tests"
+                      className="hover:scale-105 hover:text-slate-300"
+                    >
+                      {" "}
+                      Tests
+                    </Link>
+                    <Link
+                      to="/mentors"
+                      className="hover:scale-105 hover:text-slate-300"
+                    >
+                      {" "}
+                      Mentors
+                    </Link>
+                  </div>
                 </Link>
                 <img src={Bar} alt="circle" className="" />
                 <Link
-                  to="/mentors"
+                  to="/colleges"
                   className="hover:scale-105 hover:text-slate-300"
                 >
-                  Mentors
+                  For Colleges
+                </Link>
+                <img src={Bar} alt="circle" className="" />
+                <Link
+                  to="/companies"
+                  className="hover:scale-105 hover:text-slate-300"
+                >
+                  For Companies
                 </Link>
               </div>
             </div>
 
             <div>
-              <h3 className="pb-3 font-bold text-lg tracking-wider">
+              <h3 className="pb-3 ml-[8%] md:ml-0 text-lg font-bold tracking-wider">
                 Helpful Links
-              </h3>
-              <div className="flex space-x-6 text-sm md:flex-col md:space-x-0 md:space-y-2">
-                <Link
-                  to="/faq"
-                  className="hover:text-slate-300"
-                >
+              </h3> 
+              <div className="flex p-8 space-x-2 text-sm md:p-0 md:flex-col md:space-x-0 md:space-y-2">
+                <Link to="/faq" className="hover:text-slate-300">
                   FAQs
                 </Link>
-                <img src={Bar} alt="circle" className="md:hidden" />  
+                <img src={Bar} alt="circle" className="md:hidden" />
                 <a
                   href="https://myanalyticsschool.com/blog/"
                   target="_blank"
@@ -98,34 +118,30 @@ const Footer = () => {
                   Blogs
                 </a>
                 <img src={Bar} alt="circle" className="md:hidden" />
-                <Link
-                  to="/about"
-                  className="hover:text-slate-300"
-                >
+                <Link to="/about" className="hover:text-slate-300">
                   About Us
                 </Link>
               </div>
             </div>
-            
           </div>
 
-          <div className="flex flex-col space-y-8 items-start justify-center">
+          <div className="flex flex-col items-start justify-center space-y-8">
             {/* contact us and follow us  */}
             <div>
               <div className="text-xl font-semibold text-white">Contact Us</div>
-                <div className="flex items-center mt-5">
-                  <div className="w-10 h-10 rounded-full border-solid border-2 border-white mr-5">
-                    <PhoneIcon className="w-6 h-8 relative top-1 left-[6px] text-white" />
-                  </div>
-                  <a
-                    href="tel:9604077455"
-                    class="text-white hover:text-slate-300"
-                  >
-                    +919604077455
-                  </a>
+              <div className="flex items-center mt-5">
+                <div className="w-10 h-10 mr-5 border-2 border-white border-solid rounded-full">
+                  <PhoneIcon className="w-6 h-8 relative top-1 left-[6px] text-white" />
+                </div>
+                <a
+                  href="tel:9604077455"
+                  class="text-white hover:text-slate-300"
+                >
+                  +919604077455
+                </a>
               </div>
               <div className="flex items-center mt-4">
-                <div className="w-10 h-10 rounded-full border-solid border-2 border-white mr-5">
+                <div className="w-10 h-10 mr-5 border-2 border-white border-solid rounded-full">
                   <MailIcon className="w-6 h-8 relative top-[2px] left-[6px] text-white" />
                 </div>
                 <a
@@ -140,7 +156,7 @@ const Footer = () => {
             <div>
               <div className="text-xl font-semibold text-white">Follow Us</div>
               <div className="flex items-center mt-3">
-                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 cursor-pointer hover:scale-105 duration-200">
+                <div className="w-10 h-10 mr-5 duration-200 border-2 border-white border-solid rounded-full cursor-pointer hover:scale-105">
                   <a
                     href="https://www.linkedin.com/company/my-analytics-school"
                     target="_blank"
@@ -149,11 +165,11 @@ const Footer = () => {
                     <img
                       src={LinkedIn}
                       alt="icon"
-                      className="w-5 h-5 relative top-2 left-2 text-white"
+                      className="relative w-5 h-5 text-white top-2 left-2"
                     />
                   </a>
                 </div>
-                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 cursor-pointer hover:scale-105 duration-200">
+                <div className="w-10 h-10 mr-5 duration-200 border-2 border-white border-solid rounded-full cursor-pointer hover:scale-105">
                   <a
                     href="https://instagram.com/myanalyticsschool?utm_medium=copy_link"
                     target="_blank"
@@ -162,11 +178,11 @@ const Footer = () => {
                     <img
                       src={Instagram}
                       alt="icon"
-                      className="w-5 h-5 relative top-2 left-2 text-white"
+                      className="relative w-5 h-5 text-white top-2 left-2"
                     />
                   </a>
                 </div>
-                <div className=" w-10 h-10 rounded-full border-solid border-2 border-white mr-5 cursor-pointer hover:scale-105 duration-200">
+                <div className="w-10 h-10 mr-5 duration-200 border-2 border-white border-solid rounded-full cursor-pointer hover:scale-105">
                   <a
                     href="https://www.facebook.com/myanalyticsschool/"
                     target="_blank"
@@ -181,18 +197,14 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-      </div>      
-
+      </div>
 
       <div className="h-0.5 md:mt-10 mt-20 w-9/10 mx-auto bg-white"></div>
-      <div className="flex justify-between items-center w-9/10 mt-4">
-        <div className="text-white text-[9px]">
-          myanalyticsschool © 2022
-        </div>
-        <div className="flex justify-end items-center space-x-4">
+      <div className="flex items-center justify-between mt-4 w-9/10">
+        <div className="text-white text-[9px]">myanalyticsschool © 2023</div>
+        <div className="flex items-center justify-end space-x-4">
           <div
             className="text-white text-[9px] cursor-pointer"
             onClick={(e) => {
@@ -201,7 +213,6 @@ const Footer = () => {
           >
             Privacy{" "}
           </div>
-
 
           <div
             className="text-white text-[9px] cursor-pointer"
@@ -212,8 +223,7 @@ const Footer = () => {
             Terms & Conditions
           </div>
         </div>
-
-      </div>      
+      </div>
     </footer>
   );
 };

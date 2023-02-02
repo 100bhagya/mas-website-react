@@ -26,7 +26,7 @@ const Data =[
     },
     {
         record:1,
-        heading:"Analytics/Visualization Capstone Project"
+        heading:"Analytics / Visualization Capstone Project"
     },
     {
         record:1,

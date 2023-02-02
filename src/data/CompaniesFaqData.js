@@ -20,7 +20,7 @@ const data = [
     },
     {
       question: "What process do you follow for recruitment? / How long does a typical recruitment take?",
-      answer: "",
+      answer: "A student undergoes a 5-month skill development program and at its conclusion, a 15-day placement event is held. During this time, 250 companies participate and conduct interviews with two slots per day for the purpose of placement.",
       open: false,
     },
     {

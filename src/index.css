@@ -61,18 +61,28 @@ html {
   .top_bg {
     background-image: linear-gradient(180deg, #bdcdfc, #ffffff);
   }
-  .swiper-button-prev{
-    position: absolute;
-    top: 70%;
+  
 
-  }
-  .swiper-button-next{
-    position: absolute;
-    top: 70%;
-
-  }
+  
   .swiper{
     height: fit-content;
+  }
+  .swiper-button-prev , .swiper-button-next{
+    position: absolute;
+    top: 70%;
+    height: 300px;
+    width: 300px;
+   
+   
+
+  }
+ 
+  .swiper-button-prev::after, .swiper-button-next::after{
+   font-size:22px !important;
+   
+   
+   
+
   }
 }
 .testimonial .slick-arrow.slick-prev,
