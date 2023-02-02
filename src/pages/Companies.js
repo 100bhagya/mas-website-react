@@ -158,7 +158,7 @@ const Companies = () => {
                   acclaim.
                 </p>
                 <a
-                  href=""
+                  href="https://forms.gle/R6XBCdA9nvUVYjZk6"
                   target=""
                   rel="noopener noreferrer"
                   className="relative p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
@@ -194,7 +194,7 @@ const Companies = () => {
                   the needs of the industry, both within India and globally.
                 </p>
                 <a
-                  href=""
+                  href="https://forms.gle/R6XBCdA9nvUVYjZk6"
                   target=""
                   rel="noopener noreferrer"
                   className="relative p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
