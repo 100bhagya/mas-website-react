@@ -91,7 +91,7 @@ const Mentor = () => {
               <div className="box-border flex flex-col items-center justify-center px-8 py-4 mt-5 space-x-12 border-2 shadow-xl cursor-pointer lg:duration-500 md:transition lg:transform lg:hover:shadow-slate-500 lg:hover:-translate-y-3 rounded-2xl h-42 mx-7 border-slate-300 place-content-around card">
                 <div className="items-center mt-10">
                   <img
-                    className="relative w-2/3 left-6 "
+                    className="relative w-2/3 left-[20%]"
                     src={data.image}
                     alt="img"
                   />
@@ -99,7 +99,7 @@ const Mentor = () => {
                   <img
                     src={LinkedIn}
                     alt="icon"
-                    className="md:mx-4 hover:scale-110 relative md:bottom-7 2xl:left-[90px] 2xl:w-12 2xl:h-12 md:left-[65px] bottom-9 left-[110px]"
+                    className="md:mx-4 hover:scale-110 relative md:bottom-7 lg:left-[47%] 2xl:w-12 2xl:h-12 md:left-[36%] bottom-9 left-[65%]"
                   />
                 </a>
                 </div>
