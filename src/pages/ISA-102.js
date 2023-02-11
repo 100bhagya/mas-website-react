@@ -90,9 +90,9 @@ const ISA102 = () => {
           <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[9px] md:pt-[2px] pt-[4px]">
             1
           </p>
-          Just 3000/- will be charged as registration fee for joining My
+          Just 3000/- (inclusive of all taxes) will be charged as registration fee for joining My
           Analytics School which is fully refundable only if you join My
-          Analytics School and remain unplaced till 30th June 2023.
+          Analytics School and remain unplaced till 30th June 2024.
         </p>
 
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
@@ -113,7 +113,7 @@ const ISA102 = () => {
           <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[7px] md:pt-[2px] pt-[3px]">
             4
           </p>
-          After registration, the student will have an option to pay ₹ 27,000
+          After registration, the student will have an option to pay ₹ 30,000
           upfront. No need to pay anything after getting placed, if you have
           chosen upfront payment mode.
         </p>
