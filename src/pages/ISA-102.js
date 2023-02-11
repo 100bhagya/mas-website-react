@@ -69,6 +69,7 @@ const ISA102 = () => {
             negligible amount and contributing a very small part of their income
             once they are placed.
           </p>
+
         </div>
       </div>
       <div className="flex flex-col-reverse lg:flex-row relative md:left-[9%] md:w-[84%] lg:w-auto mt-24">
@@ -78,11 +79,13 @@ const ISA102 = () => {
           dream company. Our Income Share Agreement (ISA) helps us to provide a
           training that is usually very expensive for no upfront cost.
         </div>
-        <img
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WEyj2X3F6fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        {/* <img
           src={Artboard1}
           alt="artboard"
           className="md:bg-card lg:pr-12 md:py-12 px-8 md:px-12 lg:px-0 md:rounded-r-2xl"
-        />
+        /> */}
       </div>
 
       <div className="md:bg-card lg:w-[59%] md:w-[85%] relative lg:left-[11%] md:left-[8%] mt-20 lg:ml-36 md:ml-0 md:pt-8 md:px-20 px-5 pb-16 rounded-2xl">

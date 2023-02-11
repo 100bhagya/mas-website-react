@@ -127,11 +127,12 @@ const MAS102 = () => {
             Apply now
           </a>
         </div>
-        <img
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UJzSkkQUzcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        {/* <img
           src={Artboard}
           alt="artboard"
           className="relative lg:left-[10%] md:left-[4%] bottom-12 px-16 md:px-0 md:mt-0 mt-8"
-        ></img>
+        ></img> */}
       </div>
       <Offers />
       <section class="text-gray-600 body-font bg-back">
