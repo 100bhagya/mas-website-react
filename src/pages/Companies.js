@@ -335,16 +335,7 @@ const Companies = () => {
               process and making the freshers hiring process efficient"
             </p>
           </div>
-          <iframe
-            width="590"
-            height="340"
-            src="https://www.youtube.com/embed/pKyiLrMLQ80"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            className=" rounded-2xl"
-          ></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_qUgS1jCDfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </section>
       <section>

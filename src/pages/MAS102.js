@@ -120,7 +120,7 @@ const MAS102 = () => {
             </p>
           </div>
           <a 
-            href="https://forms.gle/cXWbbK3aJMSdXDkW7"
+            href="https://forms.gle/3vRSnaxiVob1YGz46"
             className="py-3 px-8 bg-blue-700 rounded-2xl text-white"
             target="_blank"
             rel="noopener noreferrer">
