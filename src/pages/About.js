@@ -15,33 +15,28 @@ const About = () => {
     <div>
       <Navbar />
       <section className="pt-24 pb-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
-        <h1 className="text-center text-black text-3xl font-bold font-serif py-8">
+        <h1 className="py-8 font-serif text-3xl font-bold text-center text-black">
           About Us
         </h1>
 
-        <p className="px-8 md:px-24 pb-8 lg:top-5 text-base text-black lg:text-lg text-center">
+        <p className="px-8 pb-8 text-base text-center text-black md:px-24 lg:top-5 lg:text-lg">
           My Analytics School aims to bridge the gap between the tremendous
           potential of the students and the acclaim they get. Through our
           strategic program, we aim to instil an industry-centric approach
           in the students. Our goal is to provide the quintessential
           guidance to the students keen on becoming world-class
-          professionals.My Analytics School aims to bridge the gap between
-          the tremendous potential of the students and the acclaim they get.
-          Through our strategic program, we aim to instil an
-          industry-centric approach in the students. Our goal is to provide
-          the quintessential guidance to the students keen on becoming
-          world-class professionals.
+          professionals.
         </p>        
       </section>  
-      {/* <div className="lg:flex pt-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
-        <div className="lg:flex lg:items-center px-4 pt-9 max-w-lg md:max-w-xl lg:max-w-7xl mx-auto">
-          <div className="lg:pt-28 md:pb-32 pb-16 relative lg:right-24 lg:bottom-12">
+      {/* <div className="pt-16 lg:flex bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+        <div className="max-w-lg px-4 mx-auto lg:flex lg:items-center pt-9 md:max-w-xl lg:max-w-7xl">
+          <div className="relative pb-16 lg:pt-28 md:pb-32 lg:right-24 lg:bottom-12">
             <h1 className="md:font-normal font-semibold text-center md:text-left mt-10 relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[40px]  leading-8 font-primary">
               About Us
             </h1>
             <img
               src={Rectangle}
-              className="relative lg:bottom-3 w-8 hidden md:block"
+              className="relative hidden w-8 lg:bottom-3 md:block"
               alt="Rectangle"
             ></img>
             <p className="relative lg:top-12 font mt-10 md:text-lg text-[14px]  text-black md:leading-8">
@@ -72,7 +67,7 @@ const About = () => {
                     src={post.image}
                   ></img>
                 </div>
-                <div className="md:pt-8 pt-5">
+                <div className="pt-5 md:pt-8">
                   <h2 class="md:text-4xl text-xl ml-7 md:pr-16 font-semibold text-gray-900 mt-5">
                     {post.name}
                   </h2>
@@ -91,7 +86,7 @@ const About = () => {
                   className="w-[120%] mt-6"
                 />
               </div>
-              <div className="flex text-center justify-center md:mt-6 lg:mt-10 mt-3 md:mb-2">
+              <div className="flex justify-center mt-3 text-center md:mt-6 lg:mt-10 md:mb-2">
                 <a
                   href={post.Link_linkedin}
                   target="_blank"
@@ -100,7 +95,7 @@ const About = () => {
                   <img
                     src={LinkedIn}
                     alt="icon"
-                    className="mx-4 hover:scale-110 relative top-2"
+                    className="relative mx-4 hover:scale-110 top-2"
                   />
                 </a>
                 <a
