@@ -11,7 +11,7 @@ const Data = [
         role: "Webinar On How To Get Job Ready",
       },
     ],
-    open: false,
+    open: true,
   },
   {
     id: 2,
