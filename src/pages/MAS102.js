@@ -48,7 +48,7 @@ const Testimonial = ({ image, linkedin, name, position }) => {
         </a>
       </div>
 
-      <div className="text-center justify-center pb-7">
+      <div className="justify-center text-center pb-7">
         <h2 class="text-lg font font-semibold text-gray-900">{name}</h2>
         <h2 class="text-sm font font-normal text-gray-400">{position}</h2>
       </div>
@@ -63,11 +63,11 @@ function FAQ({ faq, index, toggleFAQ }) {
       key={index}
       onClick={() => toggleFAQ(index)}
     >
-      <div className="faq-question text-lg font font-semibold">
+      <div className="text-lg font-semibold faq-question font">
         {faq.question}
       </div>
-      <div className="faq-answer text-sm font">
-        <div className="text-lg font-normal mt-2">{faq.Status}</div>
+      <div className="text-sm faq-answer font">
+        <div className="mt-2 text-lg font-normal">{faq.Status}</div>
         <div className="mt-10 mb-3">
           {faq.answer.map((post) => {
             return (
@@ -75,7 +75,7 @@ function FAQ({ faq, index, toggleFAQ }) {
                 <img
                   src={Rectangle}
                   alt="rectangle"
-                  className="w-4 h-1 mr-7 relative my-5 left-3 bottom-3 rounded-xl"
+                  className="relative w-4 h-1 my-5 mr-7 left-3 bottom-3 rounded-xl"
                 />
                 <div className="">{post.role}</div>
               </div>
@@ -106,28 +106,38 @@ const MAS102 = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col-reverse md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-        <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2">
-          <div className="lg:pt-20 md:pb-28 pb-10 lg:bottom-12">
+      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+        <div className="md:mb-24 mb-16 relative lg:right-[5%] md:w-1/2">
+          <div className="pb-10 lg:pt-20 md:pb-28 lg:bottom-12">
             <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
               MAS 102
             </h1>
 
-            <p className="relative px-8 md:px-0 justify-center md:top-5 mt-5 md:mt-0 md:text-lg text-sm font  text-black leading-8">
+            <p className="relative justify-center px-8 mt-5 text-sm leading-8 text-black md:px-0 md:top-5 md:mt-0 md:text-lg font">
               This will act as your Tank and Bazooka to smash your placements
               and get placed in your dream company specifically designed for
               NITs, IIITs, BITS, and similar colleges.
             </p>
           </div>
-          <a 
+          <a
             href="https://forms.gle/3vRSnaxiVob1YGz46"
-            className="py-3 px-8 bg-blue-700 rounded-2xl text-white"
+            className="px-8 py-3 text-white bg-blue-700 rounded-2xl"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             Apply now
           </a>
         </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/UJzSkkQUzcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/UJzSkkQUzcQ"
+          title="YouTube video player"
+          className="ml-[8%] md:ml-0 mb-5"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
         {/* <img
           src={Artboard}
           alt="artboard"
@@ -135,19 +145,19 @@ const MAS102 = () => {
         ></img> */}
       </div>
       <Offers />
-      <section class="text-gray-600 body-font bg-back">
-        <div class="container px-5 py-6 mx-auto">
-          <div class="block flex-wrap -m-4">
-            <div class="lg:px-24 md:mt-28 mt-12">
-              <div class="flex flex-col-reverse md:flex-row md:rounded-3xl h-full bg-works md:px-16 py-12 md:py-8">
-                <div className="md:w-[43%] w-full mt-4">
+      <section class="text-gray-600 body-font py-16  flex justify-center bg-back">
+        <div class="container   ">
+          <div class="  ">
+            <div class=" ">
+              <div class="flex flex-col-reverse md:flex-row md:rounded-3xl h-full bg-works py-12 md:py-8">
+                <div className="md:w-[43%] w-full  md:px-16 ">
                   <div class="md:flex items-center mb-3 mt-28 md:mt-16 lg:mt-28 hidden">
                     <h2 class="text-gray-900 text-2xl title-font font-semibold">
                       Mentors
                     </h2>
                   </div>
                   <div class="flex-grow">
-                    <p class="leading-relaxed w-full md:text-lg text-sm px-8 md:px-0 md:mt-12 mt-7 mb-10 md:mb-40">
+                    <p class="leading-relaxed w-full md:text-lg text-sm px-8 md:px-0 md:mt-12 mt-7 mb-10 md:mb-16">
                       Experienced mentors to steer you through the journey from
                       being a student to an industry-driven professional. With a
                       constant interactive support from our mentors with a
@@ -157,7 +167,7 @@ const MAS102 = () => {
                     </p>
                   </div>
                   <Link to="/mentors">
-                    <div className="lg:w-[31%] md:w-[60%] w-[43%]  py-3 px-8 bg-blue-700 rounded-2xl text-white relative left-[28%] md:left-0">
+                    <div className="w-[60%] md:w-[100%] lg:w-[50%] py-3 px-8   text-center  bg-blue-700 rounded-2xl text-white  ml-[20%] md:ml-0">
                       Learn more
                     </div>
                   </Link>
@@ -169,7 +179,7 @@ const MAS102 = () => {
                       Mentors
                     </h2>
                   </div>
-                  <div className="flex md:block lg:flex w-[355%] relative md:left-[21%]">
+                  <div className="flex md:block lg:flex w-[355%] relative md:left-[15%]">
                     <Testimonial
                       name="Kumari Aditi"
                       image={Aditi}
@@ -183,7 +193,7 @@ const MAS102 = () => {
                       Link_linkedin="https://www.linkedin.com/in/shruti-pandey-86567b164/"
                     />
                   </div>
-                  <div className="lg:flex w-[355%] relative left-[21%] hidden">
+                  <div className="lg:flex w-[355%] relative left-[15%] hidden">
                     <Testimonial
                       name="Nallani Venkata Harsha"
                       image={Nallani}
@@ -203,97 +213,88 @@ const MAS102 = () => {
           </div>
         </div>
       </section>
-      <section class="text-gray-600 body-font bg-back">
-        <div class="container px-5 py-6 mx-auto">
-          <div class="block flex-wrap -m-4">
-            <div class="lg:px-24 md:mt-28 mt-20 mb-12">
-              <div class="flex md:rounded-3xl flex-col-reverse md:flex-row h-full bg-works md:p-16">
-                <div className="md:w-[47%] mt-4 mb-12 md:mb-0">
-                  <div class="flex items-center mb-3 mt-20 text-center justify-center md:justify-start">
-                    <h2 class="text-gray-900 text-2xl title-font font-semibold">
-                      Fees & ISA
-                    </h2>
-                  </div>
-                  <div class="flex-grow">
-                    <p class="leading-relaxed w-full md:text-lg md:mt-12 mt-8 mb-16 px-10 md:px-0 text-sm">
-                      Our Income Share Agreement (ISA) is an investment in
-                      students' career. Students can benefit from our services
-                      just by paying a negligible amount and contributing a very
-                      small part of their income once they are placed.
-                    </p>
-                  </div>
-                  <Link to="/isa-102">
-                    <div className="lg:w-[29%] md:w-[57%] w-[43%] py-3 px-8 bg-blue-700 rounded-2xl text-white relative left-[28%] md:left-0">
-                      Learn more
-                    </div>
-                  </Link>
-                </div>
-                <div className="lg:h-[450px] h-[230px]">
-                  <img
-                    src={Grid}
-                    alt="grid"
-                    className="lg:h-[200px] h-32 w-64 lg:w-[400px] relative lg:left-14 md:top-28 lg:top-0"
-                  ></img>
-                  <img
-                    src={Design2}
-                    alt="design"
-                    className=" relative z-10 lg:left-28 lg:bottom-32 bottom-20 md:-bottom-8 ml-8 lg:ml-0 md:ml-12 rounded-2xl lg:w-[530px] w-[300px] "
-                  />
-                  <img
-                    src={Grid}
-                    alt="grid"
-                    className="lg:h-[200px] h-32 w-64 lg:w-[400px] relative lg:bottom-56 bottom-36 md:bottom-8 left-[220px] lg:left-[450px] md:left-[240px]"
-                  ></img>
-                </div>
+      <section className="p-5 text-gray-600 bg-back body-font">
+        <div className="flex flex-col items-center p-8 space-y-8 bg-works md:p-16 lg:flex-row-reverse lg:justify-between lg:space-y-2 lg:space-x-8 rounded-3xl md:h-auto ">
+          <div className="relative">
+            <img
+              src={Grid}
+              alt="grid"
+              className="absolute h-32 w-44 md:w-48 md:h-36 md:-top-10 md:-left-8 -top-8 -left-6"
+            ></img>
+            <img
+              src={Grid}
+              alt="grid"
+              className="absolute h-32 w-44 md:w-48 md:h-36 md:-bottom-14 md:-right-28 -bottom-14 -right-24"
+            ></img>
+            <img
+              src={Design2}
+              alt="design"
+              className="relative border-8 border-blue-300 border-solid h-[30vh] w-96 md:h-64 md:w-96 rounded-2xl"
+            />
+          </div>
+
+          <div className="max-w-md">
+            <h2 className="mb-6 text-lg font-semibold text-center text-gray-900 lg:text-2xl lg:text-left">
+              Fees & ISA
+            </h2>
+
+            <p className="w-full mb-6 text-sm leading-relaxed text-center text-gray-600 lg:text-base lg:text-left">
+              Our Income Share Agreement (ISA) is an investment in students'
+              career. Students can benefit from our services just by paying a
+              negligible amount and contributing a very small part of their
+              income once they are placed.
+            </p>
+
+            <Link to="/isa-101">
+              <div className="w-[60%] md:w-[50%] py-3 px-8   text-center  bg-blue-700 rounded-2xl text-white  ml-[20%] md:ml-[30%] lg:ml-0">
+                Learn more
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
-      <div className="pt-1 lg:pb-36 pb-16 bg-back">
+      <div className="pt-1 pb-16 lg:pb-36 bg-back">
         <div className="text-[40px] text-center lg:my-12 mt-12">Timeline</div>
         <div className="faqs lg:w-[58%] md:w-[90%] w-full relative lg:left-[21%] md:left-[5%] bg-back lg:bg-white lg:py-10 lg:px-20 rounded-3xl">
           {faqs.map((faq, i) => (
             <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
           ))}
-          <div className="text-center mt-12 mb-6">
-          <Link to="/timeline2">
-              <div
-                className="px-3 py-4 bg-blue-600 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]"
-              >
+          <div className="mt-12 mb-6 text-center">
+            <Link to="/timeline2">
+              <div className="px-3 py-4 bg-blue-600 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]">
                 Complete Timeline
-            </div>
+              </div>
             </Link>
           </div>
         </div>
       </div>
       <div className="pb-28 bg-back">
-        <div className="text-center text-4xl">Placements</div>
+        <div className="text-4xl text-center">Placements</div>
         <div className="bg-gradient-to-b from-blue-50 to-white">
-          <div className="flex justify-center mt-8 pt-8">
+          <div className="flex justify-center pt-8 mt-8">
             <img
               src={Fractal}
               alt="logo"
-              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+              className="h-5 mx-2 lg:mx-8 md:mx-3 md:h-auto"
             />
             <img
               src={Ola}
               alt="logo"
-              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+              className="h-5 mx-2 lg:mx-8 md:mx-3 md:h-auto"
             />
             <img
               src={MasterCard}
               alt="logo"
-              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+              className="h-5 mx-2 lg:mx-8 md:mx-3 md:h-auto"
             />
             <img
               src={ICICI}
               alt="logo"
-              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+              className="h-5 mx-2 lg:mx-8 md:mx-3 md:h-auto"
             />
           </div>
           <div className="flex justify-center mt-14">
-            <div className="lg:mx-8 md:mx-3 mx-2">
+            <div className="mx-2 lg:mx-8 md:mx-3">
               <img
                 src={AmericaLogo}
                 alt=""
@@ -304,40 +305,40 @@ const MAS102 = () => {
             <img
               src={Morgan}
               alt="logo"
-              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+              className="h-5 mx-2 lg:mx-8 md:mx-3 md:h-auto"
             />
             <img
               src={Express}
               alt="logo"
-              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+              className="h-5 mx-2 lg:mx-8 md:mx-3 md:h-auto"
             />
             <img
               src={Accenture}
               alt="logo"
-              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+              className="h-5 mx-2 lg:mx-8 md:mx-3 md:h-auto"
             />
           </div>
-          <div className="flex justify-center mt-14 pb-10">
+          <div className="flex justify-center pb-10 mt-14">
             <img
               src={AB}
               alt=""
-              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+              className="h-5 mx-2 lg:mx-8 md:mx-3 md:h-auto"
             />
             <img
               src={PhonePe}
               alt=""
-              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+              className="h-5 mx-2 lg:mx-8 md:mx-3 md:h-auto"
             />
             <img
               src={Mynthra}
               alt=""
-              className="lg:mx-8 md:mx-3 h-5 md:h-auto mx-2"
+              className="h-5 mx-2 lg:mx-8 md:mx-3 md:h-auto"
             />
           </div>
         </div>
       </div>
       {/* <TestimonialOtherPages />
-      <div className="text-center pt-12 pb-24 bg-back">
+      <div className="pt-12 pb-24 text-center bg-back">
         <a
           href="apply"
           className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
