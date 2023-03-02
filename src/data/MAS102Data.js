@@ -20,7 +20,7 @@ const Data = [
         role: "Query Writing",
       },
     ],
-    open: false,
+    open: true,
   },
   {
     id: 2,
