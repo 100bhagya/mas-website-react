@@ -47,14 +47,14 @@ const PlacementDrill = () => {
   return (
     <div className="bg-back">
       <Navbar />
-      <div className="flex flex-col-reverse md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
+      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2">
-          <div className="lg:pt-20 md:pb-28 pb-10 lg:bottom-12">
+          <div className="pb-10 lg:pt-20 md:pb-28 lg:bottom-12">
             <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
               MAS Placement Drill
             </h1>
 
-            <p className="relative justify-center lg:top-5 md:text-lg text-sm font  text-black leading-8">
+            <p className="relative justify-center text-sm leading-8 text-black lg:top-5 md:text-lg font">
               This will act as your AK47 to smash and ace placement tests and
               get interview-ready with mock cases and interviews
               to convert your dream company.
@@ -62,7 +62,7 @@ const PlacementDrill = () => {
           </div>
           <a
             href="https://razorpay.com/payment-button/pl_K4pQUWotXrqO4Z/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
-            className=" py-3 px-8 bg-blue-700 rounded-2xl text-white"
+            className="px-8 py-3 text-white bg-blue-700 rounded-2xl"
             target="_blank"
           >
             Buy now
@@ -130,9 +130,9 @@ const PlacementDrill = () => {
         </div>       
       </div>
 
-      <div className=" justify-center">
+      <div className="justify-center ">
         <div className="flex justify-center mt-16">
-          <div className="lg:w-10/12 flex bg-blue-50 md:rounded-3xl">
+          <div className="flex lg:w-10/12 bg-blue-50 md:rounded-3xl">
             <div className="lg:ml-16 lg:mt-44 md:mt-20 lg:mr-72 md:ml-20">
               <p className="md:text-lg text-[12px] font-normal flex ml-3 md:ml-0 mt-12 md:mt-0">
                 Get hold of the perfect timeline for placement preparation
@@ -146,10 +146,10 @@ const PlacementDrill = () => {
                 />
               </p>
               <div className="flex md:block md:w-[161%] md:right-[37%] relative lg:w-auto lg:right-0 flex-row-reverse justify-center mt-8">
-                <div className="md:mt-20 lg:ml-16 md:ml-20 pb-10 md:pb-0">
+                <div className="pb-10 md:mt-20 lg:ml-16 md:ml-20 md:pb-0">
                   <a
                     href="https://docs.google.com/spreadsheets/d/1LQ1TkGqHWN9Nk9L04bjZtG6u183BLIqBdZ9yeZW-vzY/edit?usp=sharing"
-                    className="md:text-[15px] text-[12px] font-medium ml-2 md:ml-0 md:px-6 lg:px-10 px-3 py-2 md:py-3 bg-blue-600 md:rounded-xl rounded-md text-white"
+                    className="lg:text-[11px]  text-[12px] font-medium ml-2 md:ml-0 md:px-6 lg:px-10 px-3 py-2 md:py-3 bg-blue-600 md:rounded-xl rounded-md text-white"
                     target="_blank"
                   >
                     Download Placement Drill Timeline
@@ -158,7 +158,7 @@ const PlacementDrill = () => {
                 <div className="md:mt-12 md:ml-16">
                   <a
                     href="tests"
-                    className="md:text-[15px] text-[12px] font-medium mr-2 md:mr-0 lg:px-[103.5px] md:px-[90px] md:left-4 relative lg:left-0 px-5 py-2 md:py-3 bg-blue-600 md:rounded-xl rounded-md text-white"
+                    className="lg:text-[11px] text-[12px] font-medium mr-2 md:mr-0 lg:px-[103.5px] md:px-[90px] md:left-4 relative lg:left-0 px-5 py-2 md:py-3 bg-blue-600 md:rounded-xl rounded-md text-white"
                   >
                     Sample Tests
                   </a>
@@ -168,7 +168,7 @@ const PlacementDrill = () => {
             <img
               src={Artboard6}
               alt=""
-              className="my-28 mr-10 md:mr-2 lg:mr-10 hidden md:block"
+              className="hidden mr-10 my-28 md:mr-2 lg:mr-10 md:block"
             />
           </div>
         </div>
@@ -179,7 +179,7 @@ const PlacementDrill = () => {
           <div className="text-center lg:w-10/12 w-11/12 md:text-[40px] text-2xl font-medium md:mb-8">
             Drill Comparison
           </div>
-          <div className="md:shadow-2xl lg:w-10/12 w-11/12">
+          <div className="w-11/12 md:shadow-2xl lg:w-10/12">
             <div className="flex border-b-2 mt-10 md:mt-0  border-solid md:bg-card bg-back border-blue-600 w-full md:h-[95px] h-[44px] rounded-t-2xl">
               <div className="md:text-2xl text-xl font-semibold w-[48%] text-blue-600 md:text-center md:pt-8 pt-2">
                 Features
@@ -237,7 +237,7 @@ const PlacementDrill = () => {
               <div className="text-sm font-normal w-[18%] text-center pt-8 mb-5">
                 <a
                   href="/testDrill"
-                  className="px-8 rounded-xl text-white py-3 bg-blue-600"
+                  className="px-8 py-3 text-white bg-blue-600 rounded-xl"
                 >
                   <Link to="/testDrill">Explore</Link>
                 </a>
@@ -245,7 +245,7 @@ const PlacementDrill = () => {
               <div className="text-sm font-normal w-[18%] text-center pt-8">
                 <a
                   href="/placementDrill"
-                  className="px-8 rounded-xl text-white py-3 bg-blue-600"
+                  className="px-8 py-3 text-white bg-blue-600 rounded-xl"
                 >
                   <Link to="/placementDrill">Explore</Link>
                 </a>
@@ -256,7 +256,7 @@ const PlacementDrill = () => {
       </div>
       {/* <TestimonialOtherPages />
 
-      <div className="text-center mb-28 mt-10">
+      <div className="mt-10 text-center mb-28">
         <a
           href="apply"
           className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
