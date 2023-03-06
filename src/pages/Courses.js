@@ -46,7 +46,7 @@ const Courses = () => {
               </div>                                   
             </div>
 
-            <div className="flex flex-col  lg:h-[40vh] h-auto items-center pr-6 space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start md:pr-12">
+            <div className="flex flex-col  lg:h-[35vh] h-auto items-center pr-6 space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start md:pr-12">
               <img
                     src={artboard1}
                     alt="artboard"
