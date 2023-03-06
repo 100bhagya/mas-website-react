@@ -245,7 +245,7 @@ const MAS102 = () => {
               income once they are placed.
             </p>
 
-            <Link to="/isa-101">
+            <Link to="/isa-102">
               <div className="w-[60%] md:w-[50%] py-3 px-8   text-center  bg-blue-700 rounded-2xl text-white  ml-[20%] md:ml-[30%] lg:ml-0">
                 Learn more
               </div>
