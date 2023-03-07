@@ -118,7 +118,7 @@ const MAS101 = () => {
             <p className="relative justify-center px-8 mt-5 text-sm leading-8 text-black md:px-0 md:top-5 md:mt-0 md:text-lg font">
               This will act as your Tank and Bazooka to smash your placements
               and get placed in your dream company specifically designed for
-              IITs
+              IITs and BITS.
             </p>
           </div>
           <a
