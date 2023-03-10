@@ -35,7 +35,7 @@ const ISA101 = () => {
   const calculateMonthlyPay = (ctc) => {
     if (ctc >20) {
       return 8800;
-    } else if (ctc <=8) {
+    } else if (ctc < 8) {
       return 0;
     } else 
      return Math.ceil((ctc * 100000 * 0.052786) / 12 / 100) * 100;
@@ -71,17 +71,15 @@ const ISA101 = () => {
         </div>
       </div>
       <div className="flex flex-col-reverse lg:flex-row relative md:left-[9%] md:w-[84%] lg:w-auto mt-24">
-        <div className="lg:w-[45%] md:w-full md:pb-12 lg:pb-0 w-[83%] md:bg-card mt-12 md:mt-0 text-center lg:text-left md:pr-28 md:text-lg mx-8 md:mx-0 text-[12px] lg:pt-36 md:pt-0 md:pl-28 lg:pl-12 rounded-l-2xl">
+        <div className="lg:w-[45%] md:w-full md:pb-12 lg:pb-0 w-[83%] md:bg-card mt-12 lg:mt-[0] md:mt-[5vh] text-center lg:text-left  md:pr-28 md:text-lg mx-8 md:mx-0 text-[12px]  md:pt-[3vh] md:pl-28 lg:pl-12 rounded-l-2xl">
           Our ISA model helps students to utilise our well researched strategic
           plan for placement at zero advance payment and get placed at their
           dream company. Our Income Share Agreement (ISA) helps us to provide a
           training that is usually very expensive for no upfront cost.
         </div>
-        <img
-          src={Artboard1}
-          alt="artboard"
-          className="px-8 md:bg-card lg:pr-12 md:py-12 md:px-12 lg:px-0 md:rounded-r-2xl"
-        />
+        <iframe   className="m-auto lg:m-0  lg:h-[40vh] h-[30vh] w-[85vw] lg:w-[40vw]"  src="https://www.youtube.com/embed/IcxKwDWbtWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+       
       </div>
 
       <div className="md:bg-card lg:w-[59%] md:w-[85%] relative lg:left-[11%] md:left-[8%] mt-20 lg:ml-36 md:ml-0 md:pt-8 md:px-20 px-5 pb-16 rounded-2xl">
