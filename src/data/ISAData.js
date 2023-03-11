@@ -8,7 +8,7 @@ const Data = [
   {
     question: "When do my ISA repayments start?",
     answer:
-      "YISA repayments start as soon as you start getting your first salary.",
+      "Your ISA repayments start as soon as you start getting your first salary.",
     open: false,
   },
   {

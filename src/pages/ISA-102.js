@@ -58,8 +58,8 @@ const ISA102 = () => {
   return (
     <div className="bg-back">
       <Navbar />
-      <div className="lg:flex pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-        <div className="lg:pt-16 pb-20 lg:bottom-12">
+      <div className="justify-center text-center lg:flex pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+        <div className="pb-20 lg:pt-16 lg:bottom-12">
           <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
             ISA
           </h1>
@@ -73,18 +73,18 @@ const ISA102 = () => {
         </div>
       </div>
       <div className="flex flex-col-reverse lg:flex-row relative md:left-[9%] md:w-[84%] lg:w-auto mt-24">
-        <div className="lg:w-[45%] md:w-full md:pb-12 lg:pb-0 w-[83%] md:bg-card mt-12 md:mt-0 text-center lg:text-left md:pr-28 md:text-lg mx-8 md:mx-0 text-[12px] lg:pt-36 md:pt-0 md:pl-28 lg:pl-12 rounded-l-2xl">
+        <div className="lg:w-[45%] md:w-full md:pb-12 lg:pb-0 w-[83%] md:bg-card mt-12 lg:mt-[0] md:mt-[5vh] text-center lg:text-left  md:pr-28 md:text-lg mx-8 md:mx-0 text-[12px]  md:pt-[3vh] md:pl-28 lg:pl-12 rounded-l-2xl">
           Our ISA model helps students to utilise our well researched strategic
           plan for placement at zero advance payment and get placed at their
           dream company. Our Income Share Agreement (ISA) helps us to provide a
           training that is usually very expensive for no upfront cost.
         </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WEyj2X3F6fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe   className="m-auto lg:m-0  lg:h-[40vh] h-[30vh] w-[85vw] lg:w-[40vw]"  src="https://www.youtube.com/embed/WEyj2X3F6fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         {/* <img
           src={Artboard1}
           alt="artboard"
-          className="md:bg-card lg:pr-12 md:py-12 px-8 md:px-12 lg:px-0 md:rounded-r-2xl"
+          className="px-8 md:bg-card lg:pr-12 md:py-12 md:px-12 lg:px-0 md:rounded-r-2xl"
         /> */}
       </div>
 
@@ -140,7 +140,7 @@ const ISA102 = () => {
         </p>
       </div>
       <div className="md:mt-32">
-        <div className="text-center md:text-3xl text-2xl mb-16">
+        <div className="mb-16 text-2xl text-center md:text-3xl">
           Calculate Your ISA Charge
         </div>
         <div className="flex justify-center">
@@ -166,12 +166,12 @@ const ISA102 = () => {
             {calculateMonthlyPay(ctc)}            
           </div>
         </div>
-        <div className="flex flex-col-reverse md:flex-row justify-center">
-          <div className="md:mt-14 mt-8 ml-5 lg:ml-0">
+        <div className="flex flex-col-reverse justify-center md:flex-row">
+          <div className="mt-8 ml-5 md:mt-14 lg:ml-0">
             <div className="">*Registration Fees: 3000/-</div>
             <div className="mt-4">*Payments will be made for 12 months</div>
           </div>
-          <div className="mt-10 lg:ml-44 md:ml-24 ml-3">
+          <div className="mt-10 ml-3 lg:ml-44 md:ml-24">
             <div className="py-2 md:px-20 text-center md:text-left w-[96%] md:w-full border-[2px] border-solid border-black">
               Your Salary Per Month
             </div>
@@ -190,7 +190,7 @@ const ISA102 = () => {
           </div>
         </div>
       </div>
-      <div className="md:mt-28 mt-16 md:mb-40 mb-10">
+      <div className="mt-16 mb-10 md:mt-28 md:mb-40">
         <div className="text-[40px] text-center md:my-12">FAQ</div>
         <div className="faqs lg:w-[58%] md:w-[85%] relative lg:left-[21%] md:left-[7%] md:bg-white md:py-10 py-5 lg:px-20 md:px-8 rounded-3xl">
           {faqs.map((faq, i) => (

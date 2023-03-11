@@ -41,31 +41,35 @@ const Courses = () => {
                     className="z-0 h-full"
                 />
                 <p className="absolute text-white z-10 top-1.5 right-8 font-bold">
-                  For IITs
+                  For IITs, BITS
                 </p>
               </div>                                   
             </div>
 
-            <div className="flex flex-col items-center pr-6 space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start md:pr-12">
+            <div className="flex flex-col  lg:h-[35vh] h-auto items-center pr-6 space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start md:pr-12">
               <img
                     src={artboard1}
                     alt="artboard"
                     className="w-1/2 h-36 md:ml-8"
                   />
               <div className="text-sm min-w-xl">
-                <p className="mb-4">One to one mentorship</p>
+              <p className="mb-4">One to one mentorship</p>
                 <p className="mb-4">
-                  <b>120+</b> practice tests
+                  <b>100%</b> doubts solving 
                 </p>
                 <p className="mb-4">
-                  <b>20+ </b> Company specific tests
+                  No prior knowledge required
                 </p>
                 <p className="mb-4">
-                  Off campus job oppurtunities
+                  <b>200+</b> tests
                 </p>
+                <p className="mb-4">30+ industry certified courses</p>
+                <p className="mb-4">96% placement success</p>
+                <p className="mb-4">250+ company tieups</p>
                 <p className="text-[15px] font-semibold text-blue-600">
                   ₹ 3000 + ISA
                 </p>
+
               </div>
             </div>
             <div className="pr-12 text-right" >
@@ -96,26 +100,30 @@ const Courses = () => {
               </div>                                   
             </div>
 
-            <div className="flex flex-col items-center pr-6 space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start md:pr-12">
+            <div className="flex flex-col lg:h-[35vh] h-auto  items-center pr-6 space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start md:pr-12">
               <img
                     src={artboard2}
                     alt="artboard"
                     className="w-1/2 h-36 md:ml-8"
                   />
               <div className="text-sm min-w-xl">
-                <p className="mb-4">One to one mentorship</p>
+              <p className="mb-4">One to one mentorship</p>
                 <p className="mb-4">
-                  <b>120+</b> practice tests
+                  <b>100%</b> doubts solving 
                 </p>
                 <p className="mb-4">
-                  <b>20+ </b> Company specific tests
+                  No prior knowledge required
                 </p>
                 <p className="mb-4">
-                  Off campus job oppurtunities
+                  <b>200+</b> tests
                 </p>
+                <p className="mb-4">30+ industry certified courses</p>
+                <p className="mb-4">96% placement success</p>
+                <p className="mb-4">250+ company tieups</p>
                 <p className="text-[15px] font-semibold text-blue-600">
                   ₹ 3000 + ISA
                 </p>
+
               </div>
             </div>
             <div className="pr-12 text-right" >

@@ -50,9 +50,18 @@ const Footer = () => {
             <div className="">
               <h3 className="pb-3 text-lg ml-[8%] md:ml-0 font-bold tracking-wider">Explore</h3>
               <div className="flex flex-row p-8 space-x-2 text-sm md:p-0 md:space-x-6">
+                <div className="flex flex-col space-y-1">
                 <Link to="/" className="hover:scale-105 hover:text-slate-300">
                   Home
                 </Link>
+                <Link to="/mas101" className="hover:scale-105 hover:text-slate-300">
+                  MAS 101
+                </Link>
+                <Link to="/mas102" className="hover:scale-105 hover:text-slate-300">
+                  MAS 102
+                </Link>
+                </div>
+                
                 <img src={Bar} alt="circle" className="" />
                 <Link
                   to="/courses"

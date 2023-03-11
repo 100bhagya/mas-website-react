@@ -109,16 +109,16 @@ const MAS101 = () => {
     <div>
       <Navbar />
       <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
-        <div className="md:mb-24 mb-16 relative lg:right-[9%] md:w-1/2">
+        <div className="md:mb-24 mb-16 relative lg:right-[5%] md:w-1/2">
           <div className="pb-10 lg:pt-20 md:pb-28 lg:bottom-12">
             <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
               MAS 101
             </h1>
 
             <p className="relative justify-center px-8 mt-5 text-sm leading-8 text-black md:px-0 md:top-5 md:mt-0 md:text-lg font">
-              This will act as your Tank and Bazooka to smash your placements
+            This will act as your Tank and Bazooka to smash your placements
               and get placed in your dream company specifically designed for
-              IITs
+              IITs and BITS.
             </p>
           </div>
           <a
@@ -129,19 +129,22 @@ const MAS101 = () => {
           >
             Apply now
           </a>
-          <a href={Pdf} target="_blank" rel="noopener noreferrer">
-            <img
-              src={Banner}
-              alt=""
-              className="absolute lg:top-[200px] md:top-[150px] top-[150px] lg:left-[65%] md:left-[75%] left-[75%] h-32 md:h-48"
-            />
-          </a>
         </div>
-        <img
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/zny3v4e0qLs"
+          title="YouTube video player"
+          className="ml-[8%] md:ml-0 mb-5"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        {/* <img
           src={Artboard}
           alt="artboard"
-          className="relative lg:left-[6%] md:left-[4%] bottom-12 px-16 md:px-0 md:mt-0 mt-8"
-        ></img>
+          className="relative lg:left-[10%] md:left-[4%] bottom-12 px-16 md:px-0 md:mt-0 mt-8"
+        ></img> */}
       </div>
       <Offers />
       <section class="text-gray-600 body-font py-16  flex justify-center bg-back">
