@@ -1,10 +1,26 @@
 import React, { useState } from "react";
+import "../index.css";
 
 import LinkedIn from "../images/Linkedin.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Data from "../data/Data";
+
+function AboutSection({ text, highlight }) {
+  const words = text.split(" ");
+
+  return (
+    <p>
+      {words.map((word, index) => (
+        <span key={index} className={word === highlight ? "highlighted" : ""}>
+          {word}{" "}
+        </span>
+      ))}
+    </p>
+  );
+}
+
 const Testimonials = () => {
   const settings = {
     dots: true,
@@ -78,17 +94,29 @@ const Testimonials = () => {
                         src={data.image}
                         alt="img"
                       />
-                      <div>
+                      <div className="mb-3">
                         <h1 className="text-xl lg:text-xl md:text-2xl lg:mt-0 md:mt-5">
                           {data.name}
                         </h1>
+                        <h1 className="text-xl lg:text-xl md:text-2xl lg:mt-0 md:mt-5">
+                          {data.college}
+                        </h1>
+                        <div className="flex items-center justify-center space-x-3">
                         <h3 className="text-base lg:text-base md:text-lg text-slate-500">
                           {data.position}
                         </h3>
+                        <h3 className="text-base lg:text-base md:text-lg text-slate-500">
+                          {data.ctc}
+                        </h3>
+
+                        </div>
+
+                       
                       </div>
+                      
                     </div>
-                    <div className="overflow-y-auto  md:text-lg lg:text-sm  rounded-2xl bg-gradient-to-b from-blue-50 to-blue-100 p-6 2xl:mt-16  mt-5 xl:mt-6  text-sm  w-full   2xl:h-[44vh]  h-[40vh]">
-                      {data.about}
+                    <div className="overflow-y-auto   md:text-lg lg:text-sm s rounded-2xl bg-gradient-to-b from-blue-50 to-blue-100 p-6 2xl:mt-16  mt-5 xl:mt-10  text-sm  w-full   2xl:h-[44vh]  h-[40vh]">
+                      <AboutSection text={data.about} highlight={"MAS"} />
                     </div>
                   </div>
                 </div>
