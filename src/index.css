@@ -232,6 +232,12 @@ html {
   position: relative;
   focus: outline-none;
 }
+.highlighted{
+  font-weight: 900;
+  color: #f18a0d;
+  
+
+}
 
 .hamburger-top,
 .hamburger-middle,
