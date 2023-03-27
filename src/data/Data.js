@@ -1,135 +1,153 @@
-import Aashish from "../images/Aashish.jpg";
 import Ajeya from "../images/Ajeya.jpg";
-// import Dinesh from "../images/Dinesh.jpg";
-import Divyansh from "../images/Divyansh.jpg";
-import Harsh from "../images/Harsh.jpg";
-import Himanshu from "../images/Himanshu.jpg";
-// import Kishan from "../images/Kishan.jpg";
-import Narashiv from "../images/Narashiv.jpg";
+
+import gary from "../images/gary hgaobam.jpg";
+import jay from "../images/jay bhashkar.jpg";
+import ragini from "../images/ragini.jpg";
+import mayank from "../images/mayank.png";
+import sumanth from "../images/sumanth.jpg";
+import subhadee from "../images/subhadee mondal.png";
+import Kartikaya from "../images/kartikya kashyap.jpg";
+
 import Nandini from "../images/Nandini.jpg";
-import Prakhar from "../images/Prakhar.jpg";
-import Priyansh from "../images/Priyansh.jpg";
-import Puneet from "../images/Puneet.jpg";
-import Pushpak from "../images/Pushpak.jpg";
+
+
 import Shruti from "../images/Shruti.jpg";
 import Dhvani from "../images/Dhvani.jpg";
-import Snehitha from "../images/Snehitha.jpg";
+
 import Bharat from "../images/Bharat.jpg";
+import sahil from "../images/sahil.jpeg";
 
 const Data = [
-  // {
-  //   id: 1,
-  //   name: "Aashish Raika",
-  //   image: Aashish,
-  //   position: "Chargebee Technologies",
-  //   about:
-  //     "From not having intern , to have multiple offers, all credit goes to MAS, thanks MAS. MAS is a place where i learned how to explain and express myself. It also helped me a lot in developing my thinking capability and how to approach different kinds of problems. Also , all mentors were super great, they all were very humble and kind and you can ask them doubts whenever you want.",
-  // },
   {
     id: 1,
     name: "Shruti Pandey",
     image: Shruti,
-    position: "JPMC",
-    college:"IIT BHU",
-    ctc:"19 LPA",
-    about:"From the text on Day 1 somewhat on the lines of ‘I am so scared and clueless, I really need some guidance’ The whole team of MAS helped me get to the point where on 30th November I remember saying ‘Don’t worry sir, by the end of the day I will have an offer letter’. With a exhaustive, and well curated timeline, covering every topic with ease and never for once making us feel overburdened, and most importantly, creating an environment of healthy competition where all of us kept each other motivated to keep going, MAS helped us in every way possible. Joining MAS was one of the best decisions that I made."
+    company: "JPMC",
+    college: "IIT BHU",
+    ctc: "19 LPA",
+    about:
+      "From the text on Day 1 somewhat on the lines of ‘I am so scared and clueless, I really need some guidance’ The whole team of MAS helped me get to the point where on 30th November I remember saying ‘Don’t worry sir, by the end of the day I will have an offer letter’. With a exhaustive, and well curated timeline, covering every topic with ease and never for once making us feel overburdened, and most importantly, creating an environment of healthy competition where all of us kept each other motivated to keep going, MAS helped us in every way possible. Joining MAS was one of the best decisions that I made.",
   },
-  // {
-  //   id: 3,
-  //   name: "Divyansh Goyal",
-  //   image: Divyansh,
-  //   position: "Flipkart",
-  //   about:
-  //     "Being at home during lockdown There was no proper pathway for my placement prepration.Moreover there was lack of motivation and connection with my peers.Then I got to know about MyAnalyticsSchool from one of my friend. After that placement season was like piece of cake for me. Being from circuital branch everyone tends to go towards software side but I had realised that it wasn't my cup of tea.MyAnalyticsSchool took care of everything From providing me with projects and sorting my internship.They provided with all the resources related to analytics, product,ML field and also bit of software fieldThe main perk of MAS was that they moulded their structure of course according to the students need.There were regular meetups, project discussion , Case studies & Guesstimates,JAM sessions and one to one mentorship program too.Also the community which was build with other students of MAS provided an edge in my placement prepration.I got placed in Flipkart as an assistant manager in business development role.The Flipkart interview was like the first professional interview I ever gave.And thanks to MAS that I was well prepared and confident in giving the interview.Feel free to contact me anytime regarding placement or anything else u think I could be of help.",
-  // },
-  // {
-  //   id: 4,
-  //   name: "N Narashiv Shenoy",
-  //   image: Narashiv,
-  //   position: "Citi Bank",
-  //   about:
-  //     "Like any other final yearite, I was sceptical and restless about my placements. And then I came across MAS which changed this all for good.I just wanted to share a quick note and let them know that they did a really phenomenal job and I can't thank them enough for everything. I’m glad I decided to join the MAS family. Their help has made a significant impact on my interview preparation. They made it so simple.  MAS curated the best possible roadmap, showered us with best resources, created a healthy competitive atmosphere with the best-of peers and had been the emotional pillar in the times of self doubt. And I won't shy away from saying that My Analytics School played a huge role in my success.",
-  // },
-  // {
-  //   id: 5,
-  //   name: "Nandini Gupta",
-  //   image: Nandini,
-  //   position: "ABInBev",
-  //   about:
-  //     "I remember exactly one year ago, amongst all the bewilderment of the upcoming placement season, I came across the solution to all my dilemmas, and joining it was the key turning point in my placement journey.From making us practice numerous problems for clearing tests to raising our confidence levels before the final interviews, MAS has assisted me with the best frameworks, systemised my preparation process, supported me with full zeal and enthusiasm, and provided me with a healthy and competitive environment to stay calm and motivated throughout the placement journey. Thanks, MAS for providing the best mentors anybody could ever ask for. It was your guidance and resources that allowed me to crack the placements in a stress-free manner.",
-  // },
-  // {
-  //   id: 6,
-  //   name: "Ajeya Krishna",
-  //   image: Ajeya,
-  //   position: "Saas Labs",
-  //   about:
-  //     "I was determined from the first day of placements, but there were two things that concerned me much throughout the early stages. They are proper preparation and guidance. The MAS team had my back at this point. They devised the ideal timeframe, as well as challenging sectional tests, company tests, and combined tests. They also had seminars on GD, Mock Interviews, Resume Preparation, Case Study Preparation, and Communication Skills Improvement, all of which were quite beneficial to me. With time, I gained confidence in my quantitative and presentation skills. The MAS team's greatest asset is the community they have built. The placement session is obviously one of the most stressful, but the MAS team made it a fun journey. The MAS team had always gone out of their way to assist me in every way they could, and picking them was one of my greatest decisions.",
-  // },
-  // {
-  //   id: 7,
-  //   name: "Prakhar Kamal",
-  //   image: Prakhar,
-  //   position: "ICICI",
-  //   about:
-  //     "I was absolutely clueless about campus placements, and I didn’t know how to go about it. Also, my extremely low GPA also shrinked up my chances at many firms. So, I had less opportunities, which needed targeted preparation. MAS provided us with amazing company wise content, due to which I was able to secure a good job.",
-  // },
-  // {
-  //   id: 8,
-  //   name: "Harsh Singhal",
-  //   image: Harsh,
-  //   position: "PhonePe",
-  //   about:
-  //     "There was a time last year when everyone around me was preparing for their placements, whether be in core, software, or analytics, but I was still struggling to figure out what I really wanted to do. Then there came the MAS team, which not only cleared all my confusion, but also helped me in figuring out what I really wanted and was good at, and helped me get the best out of myself.On the last day before placements, instead of being nervous, I was happy that I had given my best, and learned a lot during these times, which transformed me into a more worthy person. I would like to thank the whole MAS team for their immense efforts, and recommend MAS to everyone who would like to explore analytics and consulting at its best.",
-  // },
-  // {
-  //   id: 9,
-  //   name: "Priyansh Patidar",
-  //   image: Priyansh,
-  //   position: "FPL Technologies",
-  //   about:
-  //     "At first, I wasn't sure whether I should enroll in placements or not. Because back then, as per my preassumption, to grab an offer, you needed to code. But then MAS came into the picture, and I got to know about the analytics field, and after their orientation, I decided to prepare for that. After 8-9 months of intense preparation, when placements began, I was not nervous but confident enough because I knew I did my best that was in my hand.Enrolling with MAS was the best decision I took in my preparation because it made this process easier and much more effective. The best thing I like about MAS is the availability of experts from various fields and their commitment to their prepared schedule. So, I would highly recommend MAS to anyone who wants to pursue a career in analytics.",
-  // },
-  // {
-  //   id: 10,
-  //   name: "Puneet Mandil",
-  //   image: Puneet,
-  //   position: "MasterCard",
-  //   about:
-  //     "Being the second batch who will be going through online placement procedure, i was highly concerned about keeping the preparation upto the mark and finding the right peers to evaluate myself. MAS helped immensely in both the aspects of my worries; from being able to compete and learn in a fabulous peer group to providing wonderful learning materials.Mentors at MAS provided personalized guidance to maximize an individual output, as well as organised several sessions such as berif about companies and work culture to help us prepare better and make the right decision. Joining MAS was one of the best decision I made during placements.",
-  // },
-  // {
-  //   id: 11,
-  //   name: "Pushpak Musram",
-  //   image: Pushpak,
-  //   position: "Mynthra",
-  //   about:
-  //     "Like every final yearite, I was also anxious, doubtful,and scared for the placement season, and I searched for every help that I could get. Surprisingly very next day, I had an opportunity to attend the MAS workshop, and it was so impressive that I made my decision to join MAS at the exact moment.Being a skeptical person, I had many silly questions, but the core team members were just a call away and always encouraged us to talk to them.The journey was about 8-9 months, which included a lot of daily quizzes, tech tasks, project works, mock group discussions, a lot of motivation, and strategies. All were superb.With a very exhaustive and well-curated timeline, covering every topic withease and never for once making us feel overburdened or overworked, and most importantly,creating an environment of healthy competition where all of us kept each other motivated to keep going,My Analytics School helped us in every way possible. Joining this institute was one of the best decisions that I made.",
-  // },
-  // {
-  //   id: 12,
-  //   name: "Dhvani Shah",
-  //   image: Dhvani,
-  //   position: "Accenture",
-  //   about:
-  //     "Being with MAS, my placement prep has been a cake walk. From being skeptical about myself to gaining confidence in myself, the journey has been nothing but exhilarating. The step-by-step curated preparation timeline covering A to Z of skills requirement starting from test preparation to interview preparation made the entire 4 months of my placement prep a very worthy one. Needless to say, joining MAS was one of the best decisions I ever made. The entire team of MAS helpful and supportive and I could not have asked for better mentors.Thank you MAS!",
-  // },
-  // {
-  //   id: 13,
-  //   name: "Snehitha Chinthoju",
-  //   image: Snehitha,
-  //   position: "Applied Materials",
-  //   about:
-  //     "My Analytics School is the best for placement preparation with guidance from our own seniors. From the starting day of preparation to the day of interviews, the mentors were always there from saying you have to do this, study that to you can do it, ace your interview. Everything is well planned and scheduled from the preparation of tests, group discussions and interviews with neatly sorted out courses, materials, practice tests,case studys, projects etc. I felt good when someone is already out there making my schedule what to do on that day while also providing with the content for the entire placement season. Hence deciding to join MAS was one of the best decisions I made at the right time.",
-  // },
-  // {
-  //   id: 14,
-  //   name: "Bharat Bhusan Rath",
-  //   image: Bharat,
-  //   position: "PwC",
-  //   about:
-  //     "Back in August, I was so underconfident to sit in the placements that I was contemplating a dual-degree program. I had some experience in the field of Data Analytics, but all I needed was a little push. That was when I joined MAS101. The entire team of MAS guided me through the placement season, who created a well-crafted timeline and provided necessary study materials. They also made sure that I followed the timeline and constantly kept a check on me. In a matter of three months, I went from being completely clueless and underconfident to being able to realize my value. MAS created an atmosphere where each and every one of us enjoyed the challenge of the placement season. Joining MAS truly opened my eyes. Thanks MAS in every possible way.",
-  // },
+  {
+    id: 2,
+    name: "Ajeya Krishna",
+    image: Ajeya,
+    company: "SaaS Labs",
+    college: "IIT BHU",
+    ctc: "30 LPA",
+    about:
+      "I was determined from the day1 of prep, but there were two things that concerned me, i.e proper preparation and guidance. MAS had my back at this point. MAS devised the ideal timeframe, as well as challenging sectional tests, company tests, and combined tests. They also had seminars on GD, Mock Interviews, Resume Preparation, Case Study Preparation, and Communication Skills Improvement, all of which were quite beneficial to me. With time, I gained confidence in my skills. MAS's greatest asset is the community they have built. The placement session is obviously very stressful, but MAS made it fun.",
+  },
+  {
+    id: 3,
+    name: "Subhadeep Mondal",
+    image: subhadee,
+    company: "Navi",
+    college: "IIT KGP",
+    ctc: "26 LPA",
+    about:
+      "It was in November when I decided I would like to pursue my career in analytics. I found MAS and I approached them. When the batch started, I got a detailed plan of the next months. It was incredible how MAS helped me improve my quantitative abilities simultaneously diving deeper into tools like SQL,Python and understanding ML and stats. The projects were the best in the industry and were suited for the analytics role creating a huge impact in my resume. Finally the case sessions were wonderful and super interactive and the mock interviews by MAS at the end proved to be gamechanger which helped me spot my weakness related to my candidature.",
+  },
+  {
+    id: 4,
+    name: "Nandini Gupta",
+    image: Nandini,
+    company: "ABInBev",
+    college: "IIT BHU",
+    ctc: "21 LPA",
+    about:
+      "I remember exactly, amongst all the bewilderment of the upcoming placements, I came across the solution to all my dilemmas, MAS, and joining it was the key turning point in my placement journey. From making us practice numerous problems for clearing tests to raising our confidence levels before the final interviews, MAS has assisted me with the best frameworks, systemised my preparation, supported me with full zeal, and provided me with a healthy and competitive environment to stay calm and motivated throughout the placement journey. Thanks, MAS for providing the best mentors anybody could ever ask for. It was your guidance and resources that allowed me to crack the placements in a stress-free manner.",
+  },
+  {
+    id: 5,
+    name: "Bharat Bhusan Rath",
+    image: Bharat,
+    company: "PwC",
+    college: "IIT K",
+    ctc: "19 LPA",
+    about:
+      "Back in August, I was so underconfident for placements that I was contemplating a dual-degree. I had some experience in the field of Analytics, but all I needed was a little push. That was when I joined MAS101. The entire team of MAS guided me through the placement season, created a well-crafted timeline and provided necessary materials. They also made sure that I followed the timeline and constantly kept a check on me. In a matter of three months, I went from being completely clueless and underconfident to being able to realize my value. MAS created an atmosphere where every one of us enjoyed the challenge of placement. Joining MAS truly opened my eyes.",
+  },
+  {
+    id: 6,
+    name: "Mayank Monani",
+    image: mayank,
+    company: "ZS Associates",
+    college: "NIT Trichy",
+    ctc: "19 LPA",
+    about:
+      "I still remember how naive I was before enrolling into MAS. Thanks to the MAS and the environment that you guys have created, it boosted not only my tech skills but also it helped me in improving my communication skills. All the test series and practice sessions were very structured. The mock interviews resembled actual interview, which helped me reduce my anxiety and increase confidence. All these points where enough for me to crack my dream company.",
+  },
+  {
+    id: 7,
+    name: "Ragini",
+    image: ragini,
+    company: "Moody's Analytics",
+    college: "Delhi University",
+    ctc: "12 LPA",
+    about:
+      "Like other students I was also in dilemma to join MAS or not. By joining MAS it have been a great choice. Their mentorship calls, motivations and giving the way to tackle problems is quite effective. They had timely tests, discussions, courses all of which were beneficial for me. The MAS super mentors and the type of environment/community they built is the best.",
+  },
+  {
+    id: 8,
+    name: "Sahil Kumar Naik",
+    image: sahil,
+    company: "Oracle",
+    college: "NSUT",
+    ctc: "22 LPA",
+    about:
+      "I gained knowledge about how to describe and express myself at MAS. It also greatly aided in the development of my capacity to think critically and how to approach various types of situations. I eventually became more assured in both my mathematical and presenting abilities. The community that the MAS team has established is its greatest strength. Undoubtedly one of the most stressful sessions is the placement session, however the MAS team made the process enjoyable. Picking the MAS team was the finest move I had made since they had always gone above and beyond to help me.",
+  },
+  {
+    id: 9,
+    name: "Jay Bhaskar",
+    image: jay,
+    company: "HiLabs",
+    college: "IIT BHU",
+    ctc: "29 LPA",
+    about:
+      "I can rightly say that joining MAS was a great decision. There was a time I was worried to get even 1 interview shortlist, then came the time when I had 20+ in the bag. Course was well curated, structured  and comprehensive. All the study material, regular tests , regular meetups, tech and non tech grilling sessions , resume building , project discussions, coding tests was worth each second of the time devoted and penny spent. The mentors are great and were there at all the times. I can confidently say that you do not have to look for any other resources outside MAS, the resources provided are perfect to crack any company test and interview. ",
+  },
+  {
+    id: 10,
+    name: "Gary Haobam",
+    image: gary,
+    company: "ICICI",
+    college: "IIT Roorkee",
+    ctc: "12 LPA",
+    about:
+      "MAS really helped me through my placement journey. Coming from a non- tech background, stepping into data science was challenging yet fascinating and MAS provided the best materials and a step by step guide for this process. I learnt a lot, got deeply interested in machine learning. MAS team is real helpful and motivated me so much. I really owe my success to MAS. Team MAS is amazing",
+  },
+  {
+    id: 11,
+    name: "Kartikaya Kashyap",
+    image: Kartikaya,
+    company: "Sprinklr",
+    college: "IIT ISM",
+    ctc: "15 LPA",
+    about:
+      "I remember being completely clueless about the path I should take to pursue Analytics as my career option. MAS came to my rescue with a perfect roadmap towards my goal. They helped me gain confidence and made me believe in my preparation. All the mentors of MAS were so friendly and always ready to help, just a call away. The material provided by MAS was top-notch and having their unified learing platform for preparations, I didn't need to seek any outside help, it was an exhaustive course covering all needs. I am grateful to MAS not just for the placements but for the great professional network of mentors and fellow students that I was able to come in contact with, due to MAS.  ",
+  },
+  {
+    id: 12,
+    name: "Dhvani Shah",
+    image: Dhvani,
+    company: "Accenture",
+    college: "IIT BHU",
+    ctc: "12 LPA",
+    about:
+      "Being with MAS, my placement prep has been a cake walk. From being skeptical about myself to gaining confidence in myself, the journey has been nothing but exhilarating. The step-by-step curated preparation timeline covering A to Z of skills requirement starting from test preparation to interview preparation made the entire 4 months of my placement prep a very worthy one.  Needless to say, joining MAS was one of the best decisions I ever made. The entire team of MAS helpful and supportive and I could not have asked for better mentors. Thank you MAS!",
+  },
+  {
+    id: 13,
+    name: "Sumanth K",
+    image: sumanth,
+    company: "Gale Partners LLC",
+    college: "BITS",
+    ctc: "14 LPA",
+    about:
+      "MAS helped me build a solid preparation to pursue a career in Data Analytics. Their preparation modules helped me understand the lengths and breadths of the field and gave me a solid understanding. Their mock GDs, Case Interviews, resume building sessions etc. helped me prepare for the real deal with peak confidence. They helped my in all ways to crack the interviews during the placement cycle. From having zero knowledge about placements to cracking a job in the First week of placements, all thanks to MAS team.",
+  },
 ];
 
 export default Data;
