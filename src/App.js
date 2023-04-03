@@ -18,12 +18,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Companies from "./pages/Companies";
 import Colleges from "./pages/Colleges.js";
 import "./App.css";
+import  Bot from "./components/Bot.js";
 
 const App = () => {
   return (
     <div>
+       <Bot/>
       <Router>
         <Routes>
+         
           <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/colleges" element={<Colleges />} />
