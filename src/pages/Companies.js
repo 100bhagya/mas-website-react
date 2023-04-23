@@ -29,6 +29,7 @@ import CollegeData from "../data/College";
 import CFQData from "../data/CompaniesFaqData";
 import CompanyData from "../data/Company";
 import design2 from "../images/Vector 3.png";
+import LazyImage from "./LazyImage";
 
 function FAQ({ faq, index, toggleFAQ, tag }) {
   return (
@@ -43,11 +44,10 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
           {faq.question}
         </div>
         <div className="faq-answer md:text-sm text-[11px] font flex font-medium">
-          <img
-            src={Rectangle}
-            alt="rectangle"
-            className="lg:w-4 w-3 lg:h-1 h-[3px] lg:mr-7 mr-4 relative lg:my-5 my-4 lg:left-1 rounded-xl"
-          />
+         
+           <div className="lg:w-4 w-3 lg:h-1 h-[3px] lg:mr-7 mr-4 relative lg:my-5 my-4 lg:left-1 rounded-xl">
+          <LazyImage src={Rectangle} alt="grid" />
+        </div>
           {faq.answer}
         </div>
       </div>

@@ -9,41 +9,43 @@ import Card7 from "../images/online-resume 1.png";
 import Card8 from "../images/coworking 1.png";
 import Card9 from "../images/job-search 1.png";
 import Vector from "../images/Vector 15.png";
+import LazyImage from "../pages/LazyImage";
 
 const Card = ({ img, title, content, flex_direction }) => {
   return (
     <div
-    class={`py-4 px-8 flex ${flex_direction} md:flex-col items-center h-[125px] md:h-auto bg-gradient-to-b from-blue-100 to-blue-50 md:rounded-3xl w-full shadow-gray-300 shadow-xl`}
-  >
-    <div class="rounded-lg w-1/3 md:w-full relative">      
-      <img
+      class={`py-4 px-8 flex ${flex_direction} md:flex-col items-center h-[125px] md:h-auto bg-gradient-to-b from-blue-100 to-blue-50 md:rounded-3xl w-full shadow-gray-300 shadow-xl`}
+    >
+      <div class="rounded-lg w-1/3 md:w-full relative">
+        {/* <img
         src={Vector}
         alt="design"
-        className="lg:h-24 lg:w-36 h-14 w-20 absolute top-8 left-4"
-      ></img>
-      <img
-        alt="content"
-        class="relative lg:h-36 lg:w-36 md:h-auto md:w-auto h-20 w-20"
-        src={img}
-      ></img>
+        className="absolute w-20 lg:h-24 lg:w-36 h-14 top-8 left-4"
+      ></img> */}
+        <div className="absolute w-20 lg:h-24 lg:w-36 h-14 top-8 left-4">
+          <LazyImage src={Vector} alt="Image" />
+        </div>
+        <div className="relative w-20 h-20 lg:h-36 lg:w-36 md:h-auto md:w-auto">
+          <LazyImage src={img} alt="Image" />
+        </div>
+      </div>
+      <div className="w-2/3 md:w-full">
+        <h2 class="lg:text-2xl md:text-lg text-sm font-semibold lg:ml-7 mr-2 text-gray-900 mt-5">
+          {title}
+        </h2>
+        <p class="hidden md:block md:text-sm text-[10px] lg:ml-7 mr-2 leading-relaxed mt-2 text-gray-600">
+          {content}
+        </p>
+      </div>
     </div>
-    <div className="w-2/3 md:w-full">
-      <h2 class="lg:text-2xl md:text-lg text-sm font-semibold lg:ml-7 mr-2 text-gray-900 mt-5">
-        {title}
-      </h2>
-      <p class="hidden md:block md:text-sm text-[10px] lg:ml-7 mr-2 leading-relaxed mt-2 text-gray-600">
-        {content}
-      </p>
-    </div>
-  </div>    
   );
 };
 
 const Offers = () => {
   return (
     <section class="bg-back py-12">
-      <div class="container mx-auto max-w-7xl">        
-        <h1 className="font-serif text-gray-900 text-center py-12 text-3xl lg:text-4xl font-bold">
+      <div class="container mx-auto max-w-7xl">
+        <h1 className="py-12 font-serif text-3xl font-bold text-center text-gray-900 lg:text-4xl">
           Our Unique Offerings
         </h1>
         <div className="flex flex-col md:grid md:grid-cols-2 md:gap-8 md:mx-8 lg:grid-cols-3">
@@ -64,7 +66,7 @@ const Offers = () => {
             img={Card3}
             title="Mock Tests & Performance Tracking"
             content="Self-evaluation, sectional, combined, and company-specific tests are provided to prepare you for the worst, and performance tracking helps you to achieve the goal. "
-          />                
+          />
           <Card
             flex_direction="flex-row"
             img={Card4}
@@ -82,7 +84,7 @@ const Offers = () => {
             img={Card6}
             title="Case Study & Guesstimate Sessions"
             content="Interviews test problem-solving, analytical, reasoning and communication skills. With comprehensive practice and learning sessions we help you develop these skills."
-          />                
+          />
           <Card
             flex_direction="flex-row-reverse"
             img={Card7}
