@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Bot from './components/Bot';
 import Loader from "./pages/LoadingSpinner"
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const LandingPage = lazy(() => import('./pages/LandingPage'));
 const About = lazy(() => import('./pages/About'));
@@ -27,8 +29,10 @@ const App = () => {
   return (
     <div>
       <Bot />
+     
 
       <Router>
+      <Navbar />
         <Suspense fallback={<Loader/>}>
           <Routes>
             <Route exact path="/" element={<LandingPage />} />
@@ -50,6 +54,7 @@ const App = () => {
             <Route exact path="/timeline2" element={<Timeline2 />} />
           </Routes>
         </Suspense>
+        <Footer />
       </Router>
     </div>
   );

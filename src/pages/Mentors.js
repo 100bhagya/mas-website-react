@@ -1,21 +1,21 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+
 import "../index.css";
 import Data from "../data/MentorsData";
 import LinkedIn from "../images/Linkedin.png";
-import Footer from "../components/Footer";
+
 
 const Mentors = () => {
   return (
     <div>
-      <Navbar />
+      
       
       <section className="pt-24 pb-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
-        <h1 className="text-center text-black text-3xl font-bold font-serif py-8">
+        <h1 className="py-8 font-serif text-3xl font-bold text-center text-black">
           Meet the Mentors
         </h1>
 
-        <p className="px-8 md:px-24 pb-8 lg:top-5 text-base text-black lg:text-lg text-center">
+        <p className="px-8 pb-8 text-base text-center text-black md:px-24 lg:top-5 lg:text-lg">
         Experienced mentors to steer you through the journey from being a student to an industry-driven professional.
         With a constant interactive support from our mentors with a personalized touch, get a chance of a lifetime to engage with accomplished and competent mentors who will be adept at tackling your doubts and queries.
         </p>        
@@ -42,7 +42,7 @@ const Mentors = () => {
                 </a>
               </div>
 
-              <div className="text-center justify-center pb-7">
+              <div className="justify-center text-center pb-7">
                 <h2 class="text-lg font font-semibold text-gray-900">
                   {post.name}
                 </h2>
@@ -55,7 +55,7 @@ const Mentors = () => {
         })}
         ;
       </div>
-      <Footer />
+     
     </div>
   );
 };

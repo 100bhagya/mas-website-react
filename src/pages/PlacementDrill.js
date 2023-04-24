@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+
 import Artboard from "../images/Artboard.png";
-import Footer from "../components/Footer";
+
 import "../index.css";
 import Artboard1 from "../images/ts3_1.png";
 import Artboard2 from "../images/ts3_2.png";
@@ -46,7 +46,7 @@ const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
 const PlacementDrill = () => {
   return (
     <div className="bg-back">
-      <Navbar />
+    
       <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2">
           <div className="pb-10 lg:pt-20 md:pb-28 lg:bottom-12">
@@ -264,7 +264,7 @@ const PlacementDrill = () => {
           Apply Now
         </a>
       </div> */}
-      <Footer />
+     
     </div>
   );
 };

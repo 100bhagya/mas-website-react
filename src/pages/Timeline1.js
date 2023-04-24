@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
+
 import Data from "../data/Timeline1Data";
 import Rectangle from "../images/Rectangle 52.png";
-import Footer from "../components/Footer";
+
 
 function FAQ({ faq, index, toggleFAQ, tag }) {
   return (
@@ -12,11 +12,11 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
       name={tag}
       onClick={() => toggleFAQ(index, tag)}
     >
-      <div className="faq-question text-lg font font-semibold">
+      <div className="text-lg font-semibold faq-question font">
         {faq.question}
       </div>
-      <div className="faq-answer text-sm font">
-        <div className="text-lg font-normal mt-2">{faq.Status}</div>
+      <div className="text-sm faq-answer font">
+        <div className="mt-2 text-lg font-normal">{faq.Status}</div>
         <div className="mt-10 mb-3">
           {faq.answer.map((post) => {
             return (
@@ -24,7 +24,7 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
                 <img
                   src={Rectangle}
                   alt="rectangle"
-                  className="w-4 h-1 mr-7 relative my-5 left-3 bottom-3 rounded-xl"
+                  className="relative w-4 h-1 my-5 mr-7 left-3 bottom-3 rounded-xl"
                 />
                 <div className="">{post.role}</div>
               </div>
@@ -32,7 +32,7 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
           })}
         </div>
       </div>
-      <div className="faq-answer text-sm font">
+      <div className="text-sm faq-answer font">
         <div className="text-lg font-normal">{faq?.Status1}</div>
         <div className="mt-10 mb-3">
           {faq?.answer1?.map((post) => {
@@ -41,7 +41,7 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
                 <img
                   src={Rectangle}
                   alt="rectangle"
-                  className="w-4 h-1 mr-7 relative my-5 left-3 bottom-3 rounded-xl"
+                  className="relative w-4 h-1 my-5 mr-7 left-3 bottom-3 rounded-xl"
                 />
 
                 <div className="">{post.role}</div>
@@ -83,14 +83,14 @@ const Timeline1 = () => {
 
   return (
     <div className="bg-back">
-      <Navbar />
-      <div className="lg:flex pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
-        <div className="lg:pt-16 mt-4 md:mt-0 pb-20 lg:bottom-12">
+    
+      <div className="justify-center text-center lg:flex pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+        <div className="pb-20 mt-4 lg:pt-16 md:mt-0 lg:bottom-12">
           <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
             Timeline
           </h1>
 
-          <p className="relative mt-8 md:mt-0 justify-center lg:top-5 md:text-lg text-sm font  text-black leading-8">
+          <p className="relative justify-center mt-8 text-sm leading-8 text-black md:mt-0 lg:top-5 md:text-lg font">
             The complete timeline of the course
           </p>
         </div>
@@ -102,7 +102,7 @@ const Timeline1 = () => {
               <div className={`rounded-l-3xl w-10 ${post.sidecolor}`}></div>
               <div>
                 <div className="flex md:p-12 md:bg-white bg-back rounded-2xl">
-                  <div className="lg:ml-24 md:ml-8 md:mt-2 px-4 md:px-0">
+                  <div className="px-4 lg:ml-24 md:ml-8 md:mt-2 md:px-0">
                     <p
                       className="lg:text-[24px] md:text-xl text-lg font-medium md:font-semibold"
 
@@ -132,7 +132,7 @@ const Timeline1 = () => {
           );
         })}
       </div>
-      <Footer />
+      
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Contact from "../components/Contact";
-import Navbar from "../components/Navbar";
+
 import "../index.css";
 import design1 from "../images/business.png";
 import design2 from "../images/Vector 3.png";
@@ -12,7 +12,7 @@ import Grid from "../images/grid.png";
 import Design4 from "../images/design2.png";
 import Design5 from "../images/design3.png";
 import Offers from "../components/Offers";
-import Footer from "../components/Footer";
+
 import TestimonialNew from "../components/TestimonialNew";
 import LoginForm from "../components/LoginForm";
 import JoinToday from "../components/JoinToday";
@@ -20,17 +20,17 @@ import { Link } from "react-router-dom";
 import Pdf from "../components/MAS Placement Report'21.pdf";
 import Banner from "../images/placement banner.png";
 import { ModalForm } from "../components/ModalForm";
-import LazyImage from "./LazyImage";
+
 
 const Card1 = ({ img, title, content }) => {
   return (
     <div className="flex flex-col items-center p-8 my-4 space-y-8 md:p-16 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto bg-works">
       <div className="relative">
         <div className="absolute h-32 w-44 md:w-48 md:h-36 md:-top-10 md:-left-8 -top-8 -left-6">
-          <LazyImage src={Grid} alt="grid" />
+          <img src={Grid} alt="grid" />
         </div>
         <div className="relative border-8 border-blue-300 border-solid h-[30vh] w-96 md:h-64 md:w-96 rounded-2xl">
-          <LazyImage src={img} alt="grid" />
+          <img src={img} alt="grid" />
         </div>
       </div>
 
@@ -52,7 +52,7 @@ const Card = ({ img, title, content }) => {
     <div className="flex flex-col justify-center p-8 space-y-4 shadow-xl bg-card rounded-xl">
       <div className="flex items-start justify-center">
         <div className="p-4 m-6 bg-gray-200 rounded-full h-36 hover:scale-105 hover:opacity-70">
-          <LazyImage src={img} alt="Image" />
+          <img src={img} alt="Image" />
         </div>
       </div>
 
@@ -77,7 +77,7 @@ const LandingPage = () => {
   };
   return (
     <div>
-      <Navbar />
+      
       {/* <a href={Pdf} target="_blank" rel="noopener noreferrer">
         <div className="w-[35%] left-[33%] bg-black text-2xl text-white px-10 py-5 absolute top-[60px] text-center">
           Checkout MAS Placement Report
@@ -121,11 +121,11 @@ const LandingPage = () => {
         <div className="flex justify-center">
          
           <div className="lg:absolute relative design1  z-10 lg:right-16 lg:top-[120px] lg:h-[70%] h-[250px] top-5">
-            <LazyImage src={design1} alt="Image" />
+            <img src={design1} alt="Image" />
           </div>
 
           <div className="relative hidden design2 lg:bottom-16 lg:block">
-            <LazyImage src={design2} alt="Image" />
+            <img src={design2} alt="Image" />
           </div>
         </div>
       </div>
@@ -179,7 +179,7 @@ const LandingPage = () => {
       <Offers />
       <TestimonialNew />
       <Contact />
-      <Footer />
+      
     </div>
   );
 };

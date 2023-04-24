@@ -9,7 +9,7 @@ import Card7 from "../images/online-resume 1.png";
 import Card8 from "../images/coworking 1.png";
 import Card9 from "../images/job-search 1.png";
 import Vector from "../images/Vector 15.png";
-import LazyImage from "../pages/LazyImage";
+
 
 const Card = ({ img, title, content, flex_direction }) => {
   return (
@@ -23,10 +23,10 @@ const Card = ({ img, title, content, flex_direction }) => {
         className="absolute w-20 lg:h-24 lg:w-36 h-14 top-8 left-4"
       ></img> */}
         <div className="absolute w-20 lg:h-24 lg:w-36 h-14 top-8 left-4">
-          <LazyImage src={Vector} alt="Image" />
+          <img src={Vector} alt="Image" />
         </div>
         <div className="relative w-20 h-20 lg:h-36 lg:w-36 md:h-auto md:w-auto">
-          <LazyImage src={img} alt="Image" />
+          <img src={img} alt="Image" />
         </div>
       </div>
       <div className="w-2/3 md:w-full">

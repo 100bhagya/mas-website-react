@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+
+
 
 const Colleges = () => {
   return (
     <Fragment>
-      <Navbar />
+     
       <div class="flex flex-col  h-screen bg-center bg-cover bg-no-repeat bg-gray-100">
         <div class="grid place-items-center w-4/5 mx-auto p-10 my-20 sm:my-auto bg-white-600 border-4 border-indigo-600 bg-opacity-70 rounded-xl shadow-2xl space-y-5 text-center cursor-pointer">
           <svg
@@ -26,7 +26,7 @@ const Colleges = () => {
         </div>
       </div>
 
-      <Footer />
+     
     </Fragment>
   );
 };

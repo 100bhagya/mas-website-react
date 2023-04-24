@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Navbar from "../components/Navbar";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css";
@@ -10,7 +10,7 @@ import Organization from "./Organization";
 import "../../src/index.css";
 import Grid from "../images/grid.png";
 import Data from "../data/TrackRecord";
-import Footer from "../components/Footer";
+
 import { BsBank2 } from "react-icons/bs";
 import { FaUserGraduate } from "react-icons/fa";
 import { MdPlayLesson } from "react-icons/md";
@@ -29,7 +29,7 @@ import CollegeData from "../data/College";
 import CFQData from "../data/CompaniesFaqData";
 import CompanyData from "../data/Company";
 import design2 from "../images/Vector 3.png";
-import LazyImage from "./LazyImage";
+
 
 function FAQ({ faq, index, toggleFAQ, tag }) {
   return (
@@ -46,7 +46,7 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
         <div className="faq-answer md:text-sm text-[11px] font flex font-medium">
          
            <div className="lg:w-4 w-3 lg:h-1 h-[3px] lg:mr-7 mr-4 relative lg:my-5 my-4 lg:left-1 rounded-xl">
-          <LazyImage src={Rectangle} alt="grid" />
+          <img src={Rectangle} alt="grid" />
         </div>
           {faq.answer}
         </div>
@@ -129,7 +129,7 @@ const Companies = () => {
   const string = "NIRF Rank< 100";
   return (
     <Fragment>
-      <Navbar />
+    
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
@@ -362,7 +362,7 @@ const Companies = () => {
         </a>
       </section>
 
-      <Footer />
+     
     </Fragment>
   );
 };

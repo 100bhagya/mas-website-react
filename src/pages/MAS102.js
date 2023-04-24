@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
+
 import Artboard from "../images/Artboard2.png";
 import LinkedIn from "../images/Linkedin.png";
 import Aditi from "../images/Aditi.jpg";
@@ -11,7 +11,7 @@ import Design2 from "../images/design2.png";
 import "../index.css";
 import Data from "../data/MAS102Data";
 import Rectangle from "../images/Rectangle 52.png";
-import Footer from "../components/Footer";
+
 import { Link } from "react-router-dom";
 import Offers from "../components/Offers";
 import Fractal from "../images/fractal.png";
@@ -105,7 +105,7 @@ const MAS102 = () => {
   };
   return (
     <div>
-      <Navbar />
+     
       <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="md:mb-24 mb-16 relative lg:right-[5%] md:w-1/2">
           <div className="pb-10 lg:pt-20 md:pb-28 lg:bottom-12">
@@ -346,7 +346,7 @@ const MAS102 = () => {
           Apply Now
         </a>
       </div> */}
-      <Footer />
+     
     </div>
   );
 };
