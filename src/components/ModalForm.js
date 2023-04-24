@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import CloseIcon from "../images/cross_head.png";
+import CloseIcon from "../images/cross_head.webp";
 import { PhoneIcon, MailIcon, ChatAltIcon } from "@heroicons/react/solid";
 import emailjs from 'emailjs-com'
 
@@ -88,13 +88,13 @@ export const ModalForm = ({showModal, setShowModal}) => {
 		{showModal ? ( 
 			<div>
         <div className="fixed h-[100%] w-[100%] z-[10000] backdrop-blur-sm bg-white/30 flex items-center justify-center" onClick={closeModal} ref={modalRef}>
-					<div className="bg-white rounded-2xl shadow-2xl relative top-12 mx-4">
+					<div className="relative mx-4 bg-white shadow-2xl rounded-2xl top-12">
 						<form							
 							onSubmit={handleSubmit}
-							className="flex flex-col space-y-4 px-8 max-w-md mb-2"
+							className="flex flex-col max-w-md px-8 mb-2 space-y-4"
 						>
-							<div className="flex justify-between items-center">
-								<h1 className="font-bold text-lg mt-5">Register</h1>
+							<div className="flex items-center justify-between">
+								<h1 className="mt-5 text-lg font-bold">Register</h1>
 								<img
 									src={CloseIcon}
 									onClick={() => setShowModal(prev => !prev)}
@@ -127,7 +127,7 @@ export const ModalForm = ({showModal, setShowModal}) => {
 										Email
 									</label>
 
-									<MailIcon className="h-5 relative top-4 left-2 z-10 text-gray-300" />
+									<MailIcon className="relative z-10 h-5 text-gray-300 top-4 left-2" />
 									<input
 										type="text"
 										placeholder="name@example.com"
@@ -146,7 +146,7 @@ export const ModalForm = ({showModal, setShowModal}) => {
 										Phone Number
 									</label>
 
-									<PhoneIcon className="h-5 relative top-4 left-2 z-10 text-gray-300" />
+									<PhoneIcon className="relative z-10 h-5 text-gray-300 top-4 left-2" />
 									<input
 										type="text"
 										placeholder="Enter your number here"
@@ -250,7 +250,7 @@ export const ModalForm = ({showModal, setShowModal}) => {
 									<label htmlFor="" className="text-sm font-medium">
 										Write to Us
 									</label>
-									<ChatAltIcon className="h-5 relative top-5 left-2 z-10 text-gray-300" />
+									<ChatAltIcon className="relative z-10 h-5 text-gray-300 top-5 left-2" />
 									<textarea
 										name="message"
 										placeholder="Type your message here"
@@ -270,18 +270,18 @@ export const ModalForm = ({showModal, setShowModal}) => {
     : null}
 		{Object.keys(formErrors).length === 0 && isSubmit ? 
 			<div className="fixed h-[100%] w-[100%] z-[10000] backdrop-blur-sm bg-white/30 flex items-center justify-center">				
-				<div className="bg-card rounded-2xl shadow-2xl max-w-md flex flex-col space-y-8 items-center px-12 py-8 relative">
+				<div className="relative flex flex-col items-center max-w-md px-12 py-8 space-y-8 shadow-2xl bg-card rounded-2xl">
 					<img
 						src={CloseIcon}
 						onClick={() => setIsSubmit(false)}
 						alt="close"									
-						className="w-4 h-4 cursor-pointer absolute right-5 top-5"
+						className="absolute w-4 h-4 cursor-pointer right-5 top-5"
 					/>
 					<div className="">
-						<p className="text-center text-xl text-green-400 mb-2 font-serif">Your response has been submitted successfully.</p>
-						<p className="text-slate-800 text-base text-center">We will get back to you shortly.</p>
+						<p className="mb-2 font-serif text-xl text-center text-green-400">Your response has been submitted successfully.</p>
+						<p className="text-base text-center text-slate-800">We will get back to you shortly.</p>
 					</div>
-					<button className="bg-blue-600 text-white px-8 py-2 text-lg rounded-xl shadow-xl" onClick={() => setIsSubmit(false)}>Okay, Got it</button>
+					<button className="px-8 py-2 text-lg text-white bg-blue-600 shadow-xl rounded-xl" onClick={() => setIsSubmit(false)}>Okay, Got it</button>
 				</div>
 			</div>			
 			: null

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 import "../index.css";
-import QandA from "../images/question-and-answer.png";
+import QandA from "../images/question-and-answer.webp";
 import Data from "../data/FaqData";
-import Rectangle from "../images/Rectangle 52.png";
+import Rectangle from "../images/Rectangle 52.webp";
 
 
 function FAQ({ faq, index, toggleFAQ, tag }) {

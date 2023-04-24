@@ -1,21 +1,21 @@
-import Ajeya from "../images/Ajeya.jpg";
+import Ajeya from "../images/Ajeya.webp";
 
-import gary from "../images/gary hgaobam.jpg";
-import jay from "../images/jay bhashkar.jpg";
-import ragini from "../images/ragini.jpg";
-import mayank from "../images/mayank.png";
-import sumanth from "../images/sumanth.jpg";
-import subhadee from "../images/subhadee mondal.png";
-import Kartikaya from "../images/kartikya kashyap.jpg";
+import gary from "../images/gary hgaobam.webp";
+import jay from "../images/jay bhashkar.webp";
+import ragini from "../images/ragini.webp";
+import mayank from "../images/mayank.webp";
+import sumanth from "../images/sumanth.webp";
+import subhadee from "../images/subhadee mondal.webp";
+import Kartikaya from "../images/kartikya kashyap.webp";
 
-import Nandini from "../images/Nandini.jpg";
+import Nandini from "../images/Nandini.webp";
 
 
-import Shruti from "../images/Shruti.jpg";
-import Dhvani from "../images/Dhvani.jpg";
+import Shruti from "../images/Shruti.webp";
+import Dhvani from "../images/Dhvani.webp";
 
-import Bharat from "../images/Bharat.jpg";
-import sahil from "../images/sahil.jpeg";
+import Bharat from "../images/Bharat.webp";
+import sahil from "../images/sahil.webp";
 
 const Data = [
   {

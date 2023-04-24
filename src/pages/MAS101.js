@@ -1,34 +1,34 @@
 import React, { useState } from "react";
 
-import Artboard from "../images/Artboard2.png";
-import LinkedIn from "../images/Linkedin.png";
-import Aditi from "../images/Aditi.jpg";
-import Shruti from "../images/Shruti.jpg";
-import Nallani from "../images/Nallani.jpg";
-import Yash from "../images/Yash.jpg";
-import Grid from "../images/grid.png";
-import Design2 from "../images/design2.png";
+import Artboard from "../images/Artboard2.webp";
+import LinkedIn from "../images/Linkedin.webp";
+import Aditi from "../images/Aditi.webp";
+import Shruti from "../images/Shruti.webp";
+import Nallani from "../images/Nallani.webp";
+import Yash from "../images/Yash.webp";
+import Grid from "../images/grid.webp";
+import Design2 from "../images/design2.webp";
 import "../index.css";
 import Data from "../data/MAS101Data";
-import Rectangle from "../images/Rectangle 52.png";
+import Rectangle from "../images/Rectangle 52.webp";
 
 import { Link } from "react-router-dom";
 import Offers from "../components/Offers";
-import Fractal from "../images/fractal.png";
-import Ola from "../images/ola.png";
-import MasterCard from "../images/mastercard.png";
-import ICICI from "../images/icici.png";
-import AmericaLogo from "../images/america logo.png";
-import BankOfAmerica from "../images/bank of america.png";
-import Morgan from "../images/morgan.png";
-import Express from "../images/american express.png";
-import Accenture from "../images/Accenture.png";
-import AB from "../images/AB.png";
-import PhonePe from "../images/phonepe.png";
-import Mynthra from "../images/mynthra.png";
+import Fractal from "../images/fractal.webp";
+import Ola from "../images/ola.webp";
+import MasterCard from "../images/mastercard.webp";
+import ICICI from "../images/icici.webp";
+import AmericaLogo from "../images/america logo.webp";
+import BankOfAmerica from "../images/bank of america.webp";
+import Morgan from "../images/morgan.webp";
+import Express from "../images/american express.webp";
+import Accenture from "../images/Accenture.webp";
+import AB from "../images/AB.webp";
+import PhonePe from "../images/phonepe.webp";
+import Mynthra from "../images/mynthra.webp";
 import TestimonialOtherPages from "../components/TestimonialOtherPages";
 import Pdf from "../components/MAS Placement Report'21.pdf";
-import Banner from "../images/placement banner.png";
+import Banner from "../images/placement banner.webp";
 
 const Testimonial = ({ image, linkedin, name, position }) => {
   return (

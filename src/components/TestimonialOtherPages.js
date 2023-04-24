@@ -6,13 +6,13 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import Data from "../data/SwiperData";
 import "../index.css";
-import Colon from "../images/upper colon.png";
+import Colon from "../images/upper colon.webp";
 import Testimonial from "../components/Testimonial";
 
 const TestimonialOtherPages = () => {
   return (
     <div>
-      <div className="bg-back lg:block hidden">
+      <div className="hidden bg-back lg:block">
         <div className="text-[40px] font-medium text-center mb-20">
           Testimonial
         </div>

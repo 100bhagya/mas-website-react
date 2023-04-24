@@ -1,14 +1,14 @@
 import React from "react";
-import Card1 from "../images/id-card 1.png";
-import Card2 from "../images/consultation 1.png";
-import Card3 from "../images/growth 1.png";
-import Card4 from "../images/award 1.png";
-import Card5 from "../images/conversation 1.png";
-import Card6 from "../images/meeting 1.png";
-import Card7 from "../images/online-resume 1.png";
-import Card8 from "../images/coworking 1.png";
-import Card9 from "../images/job-search 1.png";
-import Vector from "../images/Vector 15.png";
+import Card1 from "../images/id-card 1.webp";
+import Card2 from "../images/consultation 1.webp";
+import Card3 from "../images/growth 1.webp";
+import Card4 from "../images/award 1.webp";
+import Card5 from "../images/conversation 1.webp";
+import Card6 from "../images/meeting 1.webp";
+import Card7 from "../images/online-resume 1.webp";
+import Card8 from "../images/coworking 1.webp";
+import Card9 from "../images/job-search 1.webp";
+import Vector from "../images/Vector 15.webp";
 
 
 const Card = ({ img, title, content, flex_direction }) => {

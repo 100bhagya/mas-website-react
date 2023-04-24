@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Data from "../data/MentorsData";
-import LinkedIn from "../images/Linkedin.png";
+import LinkedIn from "../images/Linkedin.webp";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

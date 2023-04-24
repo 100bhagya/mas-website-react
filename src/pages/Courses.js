@@ -1,12 +1,12 @@
 import React from "react";
 import "../index.css";
 
-import artboard1 from "../images/courses_artboard1.png";
-import artboard2 from "../images/courses_artboard2.png";
-import artboard3 from "../images/courses_artboard3.png";
-import artboard4 from "../images/courses_artboard4.png";
-import artboard5 from "../images/courses_artboard5.png";
-import exclusive from "../images/exclusive.png";
+import artboard1 from "../images/courses_artboard1.webp";
+import artboard2 from "../images/courses_artboard2.webp";
+import artboard3 from "../images/courses_artboard3.webp";
+import artboard4 from "../images/courses_artboard4.webp";
+import artboard5 from "../images/courses_artboard5.webp";
+import exclusive from "../images/exclusive.webp";
 
 import { Link } from "react-router-dom";
 

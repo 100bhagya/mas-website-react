@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Bar from "../images/bar.png";
-import Circle from "../images/Ellipse 75.png";
+import Bar from "../images/bar.webp";
+import Circle from "../images/Ellipse 75.webp";
 import { PhoneIcon, MailIcon } from "@heroicons/react/solid";
-import Instagram from "../images/instagram_icon.png";
-import Facebook from "../images/facebook_white.png";
-import LinkedIn from "../images/linked_in.png";
-import Logo from "../images/logo_white.png";
+import Instagram from "../images/instagram_icon.webp";
+import Facebook from "../images/facebook_white.webp";
+import LinkedIn from "../images/linked_in.webp";
+import Logo from "../images/logo_white.webp";
 import { Link } from "react-router-dom";
 import Privacy from "./Privacy";
 import Terms from "./Terms";

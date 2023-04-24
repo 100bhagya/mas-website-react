@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Organization from "./Organization";
 import "../../src/index.css";
-import Grid from "../images/grid.png";
+import Grid from "../images/grid.webp";
 import Data from "../data/TrackRecord";
 
 import { BsBank2 } from "react-icons/bs";
@@ -18,17 +18,17 @@ import { BsBagCheckFill } from "react-icons/bs";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { ImOffice } from "react-icons/im";
 import { ImUserPlus } from "react-icons/im";
-import Vision from "../images/Vision Mission.png";
-import Mission from "../images/mission.png";
+import Vision from "../images/Vision Mission.webp";
+import Mission from "../images/mission.webp";
 import HRData from "../data/HRCardData.js";
-import Rectangle from "../images/Rectangle 52.png";
+import Rectangle from "../images/Rectangle 52.webp";
 import { useState } from "react";
 import MentorSection from "../components/Mentor.js";
 import TestimonialNew from "../components/TestimonialNew";
 import CollegeData from "../data/College";
 import CFQData from "../data/CompaniesFaqData";
 import CompanyData from "../data/Company";
-import design2 from "../images/Vector 3.png";
+import design2 from "../images/Vector 3.webp";
 
 
 function FAQ({ faq, index, toggleFAQ, tag }) {

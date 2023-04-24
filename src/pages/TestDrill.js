@@ -1,12 +1,12 @@
 import React from "react";
 
-import Artboard from "../images/Artboard.png";
+import Artboard from "../images/Artboard.webp";
 
 import "../index.css";
-import Artboard1 from "../images/ts3_1.png";
-import Artboard2 from "../images/ts3_2.png";
-import Artboard6 from "../images/image 21.png";
-import tick from "../images/tick.png";
+import Artboard1 from "../images/ts3_1.webp";
+import Artboard2 from "../images/ts3_2.webp";
+import Artboard6 from "../images/image 21.webp";
+import tick from "../images/tick.webp";
 import { Link } from "react-router-dom";
 import TestimonialOtherPages from "../components/TestimonialOtherPages";
 

@@ -1,7 +1,7 @@
 import React from "react";
 
-import Artboard from "../images/Artboard.png";
-import Grid from "../images/grid.png";
+import Artboard from "../images/Artboard.webp";
+import Grid from "../images/grid.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
@@ -10,7 +10,7 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import Data from "../data/SwiperData";
 import "../index.css";
-import Colon from "../images/upper colon.png";
+import Colon from "../images/upper colon.webp";
 import Testimonial from "../components/Testimonial";
 
 const Tests = () => {

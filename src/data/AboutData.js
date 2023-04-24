@@ -1,7 +1,7 @@
-import Sajan from "../images/tonge.png";
-import Saubhagya from "../images/saubhagya.png";
-import Saransh from "../images/gofu.png";
-import Aryan from "../images/aryan.png";
+import Sajan from "../images/tonge.webp";
+import Saubhagya from "../images/saubhagya.webp";
+import Saransh from "../images/gofu.webp";
+import Aryan from "../images/aryan.webp";
 
 const Data = [
   {

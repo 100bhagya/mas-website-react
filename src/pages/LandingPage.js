@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import Contact from "../components/Contact";
 
 import "../index.css";
-import design1 from "../images/business.png";
-import design2 from "../images/Vector 3.png";
-import Copy from "../images/copy.png";
-import Books from "../images/e-books.png";
-import Portfolio from "../images/portfolio.png";
-import Design3 from "../images/design1.png";
-import Grid from "../images/grid.png";
-import Design4 from "../images/design2.png";
-import Design5 from "../images/design3.png";
+import design1 from "../images/business.webp";
+import design2 from "../images/Vector 3.webp";
+import Copy from "../images/copy.webp";
+import Books from "../images/e-books.webp";
+import Portfolio from "../images/portfolio.webp";
+import Design3 from "../images/design1.webp";
+import Grid from "../images/grid.webp";
+import Design4 from "../images/design2.webp";
+import Design5 from "../images/design3.webp";
 import Offers from "../components/Offers";
 
 import TestimonialNew from "../components/TestimonialNew";
@@ -18,7 +18,7 @@ import LoginForm from "../components/LoginForm";
 import JoinToday from "../components/JoinToday";
 import { Link } from "react-router-dom";
 import Pdf from "../components/MAS Placement Report'21.pdf";
-import Banner from "../images/placement banner.png";
+import Banner from "../images/placement banner.webp";
 import { ModalForm } from "../components/ModalForm";
 
 

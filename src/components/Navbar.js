@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Logo from "../images/logo.png";
+import Logo from "../images/logo.webp";
 import { NavLink, Link } from "react-router-dom";
-import CloseIcon from "../images/cross_head.png";
-import MenuIcon from "../images/menu_head.png";
-import Logo_mobile from "../images/logo_head.png";
+import CloseIcon from "../images/cross_head.webp";
+import MenuIcon from "../images/menu_head.webp";
+import Logo_mobile from "../images/logo_head.webp";
 import LoginForm from "./LoginForm";
 import "../index.css";
 import { IoMdArrowDropdown } from "react-icons/io";

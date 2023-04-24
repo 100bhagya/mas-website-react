@@ -1,4 +1,4 @@
-import Tanay from "../images/Nallani.jpg";
+import Tanay from "../images/Nallani.webp";
 
 const Data = [
   {

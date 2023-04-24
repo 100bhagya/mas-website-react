@@ -3,8 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../index.css";
 import Data from "../data/Data";
-import Rectangle from "../images/Rectangle 27.png";
-import Comma from "../images/Vector.png";
+import Rectangle from "../images/Rectangle 27.webp";
+import Comma from "../images/Vector.webp";
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core";
 
@@ -112,7 +112,7 @@ const Testimonial = () => {
         Testimonials
       </h1>
       <div className="testimonial gradient">
-        <div className="relative pt-16  left-36 md:pb-20 md:pt-20 card">
+        <div className="relative pt-16 left-36 md:pb-20 md:pt-20 card">
           <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />}>
             {Data.map((post) => {
               return (

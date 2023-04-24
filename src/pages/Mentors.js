@@ -2,7 +2,7 @@ import React from "react";
 
 import "../index.css";
 import Data from "../data/MentorsData";
-import LinkedIn from "../images/Linkedin.png";
+import LinkedIn from "../images/Linkedin.webp";
 
 
 const Mentors = () => {

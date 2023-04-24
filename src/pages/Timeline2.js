@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Data from "../data/Timeline2Data";
-import Rectangle from "../images/Rectangle 52.png";
+import Rectangle from "../images/Rectangle 52.webp";
 
 
 function FAQ({ faq, index, toggleFAQ, tag }) {

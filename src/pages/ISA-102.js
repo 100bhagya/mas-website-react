@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import "../index.css";
 import Data from "../data/ISAData";
 
-import Rectangle from "../images/Rectangle 52.png";
-import Artboard1 from "../images/isa_image.png";
+import Rectangle from "../images/Rectangle 52.webp";
+import Artboard1 from "../images/isa_image.webp";
 
 function FAQ({ faq, index, toggleFAQ }) {
   return (
