@@ -5,6 +5,7 @@ const LoadingSpinner = () => {
     <div className='h-[100vh] w-[100vw]'>
     <div className="spinner"></div>
     </div>
+   
     
   )
 }

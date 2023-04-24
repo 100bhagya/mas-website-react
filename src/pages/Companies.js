@@ -170,12 +170,12 @@ const Companies = () => {
             <div className="flex justify-center">
               <img
                 src={Mission}
-                alt=""
+                alt="mission"
                 className="lg:absolute absolute md:top-[3vh] bottom-[5vh] design1  z-10 lg:left-[50vw] lg:top-[5vw] lg:h-[80%] h-[250px] top-7"
               />
               <img
                 src={design2}
-                alt=""
+                alt="image"
                 className="relative hidden design2 lg:bottom-16 lg:block"
               />
             </div>
@@ -206,26 +206,19 @@ const Companies = () => {
             <div className="flex justify-center ">
               <img
                 src={Vision}
-                alt=""
+                alt="vision"
                 className="lg:absolute  absolute design1  z-10 md:top-[7vh] lg:right-16 lg:top-[100px] lg:h-[70%] h-[250px] top-10"
               />
               <img
                 src={design2}
-                alt=""
+                alt="image"
                 className="relative hidden design2 lg:bottom-16 lg:block"
               />
             </div>
           </div>
         </SwiperSlide>
       </Swiper>
-      {/* <a
-        href=""
-        target=""
-        rel="noopener noreferrer"
-        className="relative z-10 p-2  text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer       lg:bottom-40 md:p-3 md:bottom-[7vh] md:left-[45vw] bottom-[15vh] left-[40vw]   lg:left-[6vw] "
-      >
-        Hire Now
-      </a> */}
+    
       <Organization
         props={"Trusted by leading Organizations"}
         data={CompanyData}
