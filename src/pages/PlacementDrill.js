@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Artboard from "../images/Artboard.png";
-import Footer from "../components/Footer";
+
+import Artboard from "../images/Artboard.webp";
+
 import "../index.css";
-import Artboard1 from "../images/ts3_1.png";
-import Artboard2 from "../images/ts3_2.png";
-import Artboard3 from "../images/ts3_3.png";
-import Artboard4 from "../images/ts3_4.png";
-import Artboard5 from "../images/ts3_5.png";
-import Artboard6 from "../images/image 21.png";
-import tick from "../images/tick.png";
+import Artboard1 from "../images/ts3_1.webp";
+import Artboard2 from "../images/ts3_2.webp";
+import Artboard3 from "../images/ts3_3.webp";
+import Artboard4 from "../images/ts3_4.webp";
+import Artboard5 from "../images/ts3_5.webp";
+import Artboard6 from "../images/image 21.webp";
+import tick from "../images/tick.webp";
 import { Link } from "react-router-dom";
 import TestimonialOtherPages from "../components/TestimonialOtherPages";
 
@@ -46,7 +46,7 @@ const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
 const PlacementDrill = () => {
   return (
     <div className="bg-back">
-      <Navbar />
+    
       <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2">
           <div className="pb-10 lg:pt-20 md:pb-28 lg:bottom-12">
@@ -264,7 +264,7 @@ const PlacementDrill = () => {
           Apply Now
         </a>
       </div> */}
-      <Footer />
+     
     </div>
   );
 };

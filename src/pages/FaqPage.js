@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
+
 import "../index.css";
-import QandA from "../images/question-and-answer.png";
+import QandA from "../images/question-and-answer.webp";
 import Data from "../data/FaqData";
-import Rectangle from "../images/Rectangle 52.png";
-import Footer from "../components/Footer";
+import Rectangle from "../images/Rectangle 52.webp";
+
 
 function FAQ({ faq, index, toggleFAQ, tag }) {
   return (
@@ -58,9 +58,9 @@ const FaqPage = () => {
 
   return (
     <div>
-      <Navbar />
-      <div className="lg:bg-gradient-to-b lg:from-blue-300 lg:to-blue-100 pb-20">
-        <div className="flex lg:ml-28 pl-8 lg:pl-0 pt-24 top_bg">
+    
+      <div className="pb-20 lg:bg-gradient-to-b lg:from-blue-300 lg:to-blue-100">
+        <div className="flex pt-24 pl-8 lg:ml-28 lg:pl-0 top_bg">
           <img
             src={QandA}
             alt="Question"
@@ -77,14 +77,14 @@ const FaqPage = () => {
               {Data.map((post) => {
                 return (
                   <a href={`#${post.tag}`}>
-                    <div className="flex p-6 bg-white rounded-2xl mt-6">
+                    <div className="flex p-6 mt-6 bg-white rounded-2xl">
                       <img
                         src={post.icon}
                         alt="icon"
                         className={`px-5 py-5 rounded-lg bg-${post.id}`}
                       />
                       <div className="ml-6 w-72">
-                        <p className="lg:text-lg font-medium">{post.tag}</p>
+                        <p className="font-medium lg:text-lg">{post.tag}</p>
                         <p className="text-gray-400 lg:text-sm">
                           {post.description}
                         </p>
@@ -109,7 +109,7 @@ const FaqPage = () => {
                       alt="icon"
                       className={`px-4 lg:px-5 py-4 rounded-lg bg-${post.id}`}
                     />
-                    <div className="lg:ml-6 ml-3 mt-2">
+                    <div className="mt-2 ml-3 lg:ml-6">
                       <p className="md:text-[22px] text-xl font-medium">
                         {post.tag}
                       </p>
@@ -134,7 +134,7 @@ const FaqPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
+     
     </div>
   );
 };

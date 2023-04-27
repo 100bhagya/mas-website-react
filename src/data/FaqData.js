@@ -1,7 +1,7 @@
-import Gear from "../images/gear.png";
-import Book from "../images/book.png";
-import Mail from "../images/mail.png";
-import User from "../images/user.png";
+import Gear from "../images/gear.webp";
+import Book from "../images/book.webp";
+import Mail from "../images/mail.webp";
+import User from "../images/user.webp";
 
 const Data = [
   {

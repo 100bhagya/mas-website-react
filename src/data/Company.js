@@ -1,23 +1,23 @@
-import Accenture from "../images/CompanyImg/Accenture.png";
-import abinbev from "../images/CompanyImg/abinbev.png";
-import AmericanExpress from "../images/CompanyImg/American-Express.png";
-import AppliedMaterial from "../images/CompanyImg/Applied_Materials_Inc._.png";
-import auronova from "../images/CompanyImg/auronova jpg.jpeg";
-import Axis_Bank from "../images/CompanyImg/Axis_Bank-Logo.png";
-import Axtria_Logo from "../images/CompanyImg/Axtria_Logo.png";
-import americanbank from "../images/CompanyImg/Bank-of-America-Logo.png";
-import flipkart from "../images/CompanyImg/flipkart-logo-.png";
-import fractal from "../images/CompanyImg/fractal.png";
-import ICICI_Bank_Logo from "../images/CompanyImg/ICICI_Bank_Logo.png";
-import jp from "../images/CompanyImg/jp morgon.png";
-import JPMorgan from "../images/CompanyImg/JP-Morgan-Chase-Logo.png";
-import MasterCard from "../images/CompanyImg/MasterCard_Logo.svg.png";
-import myntra from "../images/CompanyImg/myntra-logo-.png";
-import NoBroker from "../images/CompanyImg/NoBroker.com-New-Logo.png";
-import ola from "../images/CompanyImg/ola logo.png";
-import phonepe from "../images/CompanyImg/PhonePe_Logo.png";
-import PricewaterhouseCoopers from "../images/CompanyImg/PricewaterhouseCoopers_Logo.png";
-import saas from "../images/CompanyImg/saas labs.png";
+import Accenture from "../images/CompanyImg/Accenture.webp";
+import abinbev from "../images/CompanyImg/abinbev.webp";
+import AmericanExpress from "../images/CompanyImg/American-Express.webp";
+import AppliedMaterial from "../images/CompanyImg/Applied_Materials_Inc._.webp";
+import auronova from "../images/CompanyImg/auronova jpg.webp";
+import Axis_Bank from "../images/CompanyImg/Axis_Bank-Logo.webp";
+import Axtria_Logo from "../images/CompanyImg/Axtria_Logo.webp";
+import americanbank from "../images/CompanyImg/Bank-of-America-Logo.webp";
+import flipkart from "../images/CompanyImg/flipkart-logo-.webp";
+import fractal from "../images/CompanyImg/fractal.webp";
+import ICICI_Bank_Logo from "../images/CompanyImg/ICICI_Bank_Logo.webp";
+import jp from "../images/CompanyImg/jp morgon.webp";
+import JPMorgan from "../images/CompanyImg/JP-Morgan-Chase-Logo.webp";
+import MasterCard from "../images/CompanyImg/MasterCard_Logo.svg.webp";
+import myntra from "../images/CompanyImg/myntra-logo-.webp";
+import NoBroker from "../images/CompanyImg/NoBroker.com-New-Logo.webp";
+import ola from "../images/CompanyImg/ola logo.webp";
+import phonepe from "../images/CompanyImg/PhonePe_Logo.webp";
+import PricewaterhouseCoopers from "../images/CompanyImg/PricewaterhouseCoopers_Logo.webp";
+import saas from "../images/CompanyImg/saas labs.webp";
 
 
 const Data =[

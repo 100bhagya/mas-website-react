@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import Logo from "../images/logo.png";
+import React, { useRef, useState } from "react";
+import Logo from "../images/logo.webp";
 import { NavLink, Link } from "react-router-dom";
-import CloseIcon from "../images/cross_head.png";
-import MenuIcon from "../images/menu_head.png";
-import Logo_mobile from "../images/logo_head.png";
+import CloseIcon from "../images/cross_head.webp";
+import MenuIcon from "../images/menu_head.webp";
+import Logo_mobile from "../images/logo_head.webp";
 import LoginForm from "./LoginForm";
 import "../index.css";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -89,6 +89,14 @@ const Navbar = () => {
   //   isSideMenuOpen ? setisSideMenuOpen(false) : setisSideMenuOpen(true);
   // };
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+  const handleMouseEnter = () => {
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsOpen(false);
+  };
 
   return (
     <section>
@@ -103,7 +111,7 @@ const Navbar = () => {
           id="navigation"
           className="items-center justify-center hidden text-sm space-x-7 md:flex lg:text-base"
         >
-           <NavLink
+          <NavLink
             to="/"
             exact
             activeClassName="active"
@@ -111,12 +119,8 @@ const Navbar = () => {
           >
             Home
           </NavLink>
-          <div>
-            <button
-              
-              onClick={() => setIsOpen((prev) => !prev)}
-              className="flex items-center justify-between text-blue-800 duration-300 border-b-2 border-transparent cursor-pointer hover:border-blue-800"
-            >
+          <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <button className="flex items-center justify-between text-blue-800 duration-300 border-b-2 border-transparent cursor-pointer hover:border-blue-800">
               For Students
               {!isOpen ? (
                 <IoMdArrowDropdown className="h-8 ml-1 " />
@@ -169,7 +173,7 @@ const Navbar = () => {
             activeClassName="active"
             className="text-blue-800 border-b-2 border-transparent hover:border-blue-800"
           >
-           For Companies
+            For Companies
           </NavLink>
 
           <a
@@ -214,27 +218,26 @@ const Navbar = () => {
         id="menu"
         class="md:hidden fixed top-0 bottom-0 left-0 hidden flex-col self-end h-screen py-1 pt-40 pl-12 space-y-3 text-xl text-slate-900 uppercase bg-slate-100 z-40 w-2/3"
       >
-         <NavLink
-            to="/"
-            exact
-            activeClassName="active"
-            className="border-b-2 border-transparent hover:border-blue-800"
-          >
-            Home
-          </NavLink>
+        <NavLink
+          to="/"
+          exact
+          activeClassName="active"
+          className="border-b-2 border-transparent hover:border-blue-800"
+        >
+          Home
+        </NavLink>
         <div>
-        <button
-             
-              onClick={() => setIsOpen((prev) => !prev)}
-              className="flex items-center justify-between uppercase duration-300 "
-            >
-             For Students
-              {!isOpen ? (
-                <IoMdArrowDropdown className="h-8 ml-1 " />
-              ) : (
-                <IoMdArrowDropup className="h-8 ml-1" />
-              )}
-            </button>
+          <button
+            onClick={() => setIsOpen((prev) => !prev)}
+            className="flex items-center justify-between uppercase duration-300 "
+          >
+            For Students
+            {!isOpen ? (
+              <IoMdArrowDropdown className="h-8 ml-1 " />
+            ) : (
+              <IoMdArrowDropup className="h-8 ml-1" />
+            )}
+          </button>
           {isOpen && (
             <div className="absolute z-10 flex flex-col items-start w-4/5 space-y-1 text-lg uppercase rounded-lg shadow-lg bg-slate-100 left-7 md:hidden text-slate-900 ">
               <NavLink
@@ -272,7 +275,7 @@ const Navbar = () => {
           For Colleges
         </NavLink>
         <NavLink to="/companies" activeClassName="active" className="text-lg">
-         For Companies
+          For Companies
         </NavLink>
 
         <a

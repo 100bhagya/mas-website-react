@@ -1,19 +1,19 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from "react";
-import Navbar from "../components/Navbar";
+
 import "../index.css";
-import Rectangle from "../images/Rectangle 528.png";
+import Rectangle from "../images/Rectangle 528.webp";
 import Data from "../data/AboutData";
-import Rectangle1 from "../images/Rectangle 31.png";
-import LinkedIn from "../images/Linkedin.png";
-import Facebook from "../images/facebook.png";
-import Instagram from "../images/instagram.png";
-import Footer from "../components/Footer";
+import Rectangle1 from "../images/Rectangle 31.webp";
+import LinkedIn from "../images/Linkedin.webp";
+import Facebook from "../images/facebook.webp";
+import Instagram from "../images/instagram.webp";
+
 
 const About = () => {
   return (
     <div>
-      <Navbar />
+     
       <section className="pt-24 pb-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <h1 className="py-8 font-serif text-3xl font-bold text-center text-black">
           About Us
@@ -126,7 +126,7 @@ const About = () => {
         })}
         ;
       </div>
-      <Footer />
+     
     </div>
   );
 };

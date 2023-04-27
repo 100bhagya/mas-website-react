@@ -1,9 +1,9 @@
-import Hiring from "../images/8020 hiring principle.png";
+import Hiring from "../images/8020 hiring principle.webp";
 
-import PieChart from "../images/Pie chart.png";
-import customCourses from "../images/customCourses.svg";
-import ownAssessment from "../images/ownAssessment.png";
-import background from "../images/background.png";
+import PieChart from "../images/Pie chart.webp";
+import customCourses from "../images/customCourses.webp";
+import ownAssessment from "../images/ownAssessment.webp";
+import background from "../images/background.webp";
 
 const data = [
   {

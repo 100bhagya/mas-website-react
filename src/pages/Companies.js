@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Navbar from "../components/Navbar";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css";
@@ -8,9 +8,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Organization from "./Organization";
 import "../../src/index.css";
-import Grid from "../images/grid.png";
+import Grid from "../images/grid.webp";
 import Data from "../data/TrackRecord";
-import Footer from "../components/Footer";
+
 import { BsBank2 } from "react-icons/bs";
 import { FaUserGraduate } from "react-icons/fa";
 import { MdPlayLesson } from "react-icons/md";
@@ -18,17 +18,18 @@ import { BsBagCheckFill } from "react-icons/bs";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { ImOffice } from "react-icons/im";
 import { ImUserPlus } from "react-icons/im";
-import Vision from "../images/Vision Mission.png";
-import Mission from "../images/mission.png";
+import Vision from "../images/Vision Mission.webp";
+import Mission from "../images/mission.webp";
 import HRData from "../data/HRCardData.js";
-import Rectangle from "../images/Rectangle 52.png";
+import Rectangle from "../images/Rectangle 52.webp";
 import { useState } from "react";
 import MentorSection from "../components/Mentor.js";
 import TestimonialNew from "../components/TestimonialNew";
 import CollegeData from "../data/College";
 import CFQData from "../data/CompaniesFaqData";
 import CompanyData from "../data/Company";
-import design2 from "../images/Vector 3.png";
+import design2 from "../images/Vector 3.webp";
+
 
 function FAQ({ faq, index, toggleFAQ, tag }) {
   return (
@@ -43,11 +44,10 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
           {faq.question}
         </div>
         <div className="faq-answer md:text-sm text-[11px] font flex font-medium">
-          <img
-            src={Rectangle}
-            alt="rectangle"
-            className="lg:w-4 w-3 lg:h-1 h-[3px] lg:mr-7 mr-4 relative lg:my-5 my-4 lg:left-1 rounded-xl"
-          />
+         
+           <div className="lg:w-4 w-3 lg:h-1 h-[3px] lg:mr-7 mr-4 relative lg:my-5 my-4 lg:left-1 rounded-xl">
+          <img src={Rectangle} alt="grid" />
+        </div>
           {faq.answer}
         </div>
       </div>
@@ -129,7 +129,7 @@ const Companies = () => {
   const string = "NIRF Rank< 100";
   return (
     <Fragment>
-      <Navbar />
+    
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
@@ -170,12 +170,12 @@ const Companies = () => {
             <div className="flex justify-center">
               <img
                 src={Mission}
-                alt=""
+                alt="mission"
                 className="lg:absolute absolute md:top-[3vh] bottom-[5vh] design1  z-10 lg:left-[50vw] lg:top-[5vw] lg:h-[80%] h-[250px] top-7"
               />
               <img
                 src={design2}
-                alt=""
+                alt="image"
                 className="relative hidden design2 lg:bottom-16 lg:block"
               />
             </div>
@@ -206,26 +206,19 @@ const Companies = () => {
             <div className="flex justify-center ">
               <img
                 src={Vision}
-                alt=""
+                alt="vision"
                 className="lg:absolute  absolute design1  z-10 md:top-[7vh] lg:right-16 lg:top-[100px] lg:h-[70%] h-[250px] top-10"
               />
               <img
                 src={design2}
-                alt=""
+                alt="image"
                 className="relative hidden design2 lg:bottom-16 lg:block"
               />
             </div>
           </div>
         </SwiperSlide>
       </Swiper>
-      {/* <a
-        href=""
-        target=""
-        rel="noopener noreferrer"
-        className="relative z-10 p-2  text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer       lg:bottom-40 md:p-3 md:bottom-[7vh] md:left-[45vw] bottom-[15vh] left-[40vw]   lg:left-[6vw] "
-      >
-        Hire Now
-      </a> */}
+    
       <Organization
         props={"Trusted by leading Organizations"}
         data={CompanyData}
@@ -362,7 +355,7 @@ const Companies = () => {
         </a>
       </section>
 
-      <Footer />
+     
     </Fragment>
   );
 };

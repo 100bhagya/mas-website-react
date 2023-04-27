@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Artboard from "../images/Artboard.png";
-import Grid from "../images/grid.png";
-import Footer from "../components/Footer";
+
+import Artboard from "../images/Artboard.webp";
+import Grid from "../images/grid.webp";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/scss";
@@ -10,30 +10,30 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import Data from "../data/SwiperData";
 import "../index.css";
-import Colon from "../images/upper colon.png";
+import Colon from "../images/upper colon.webp";
 import Testimonial from "../components/Testimonial";
 
 const Tests = () => {
   return (
     <div>
-      <Navbar />
+     
       <section className="pt-24 pb-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
-        <h1 className="text-center text-black text-3xl font-bold font-serif py-8">
+        <h1 className="py-8 font-serif text-3xl font-bold text-center text-black">
           Tests
         </h1>
 
-        <p className="px-8 md:px-24 pb-8 lg:top-5 text-base text-black text-center lg:text-lg">
+        <p className="px-8 pb-8 text-base text-center text-black md:px-24 lg:top-5 lg:text-lg">
           Our specialised test portal to challenge youself
         </p>        
       </section>
 
-      <section className="bg-back py-16">
-        <div className="flex flex-col items-center space-y-6 lg:flex-row justify-center lg:space-y-0 lg:space-x-6 mx-4">
-          <div className="bg-card shadow-2xl rounded-xl p-12">
-            <h2 className="text-black text-2xl font-bold font-serif pb-4">
+      <section className="py-16 bg-back">
+        <div className="flex flex-col items-center justify-center mx-4 space-y-6 lg:flex-row lg:space-y-0 lg:space-x-6">
+          <div className="p-12 shadow-2xl bg-card rounded-xl">
+            <h2 className="pb-4 font-serif text-2xl font-bold text-black">
               We offer
             </h2>
-            <div className="md:text-base text-sm">
+            <div className="text-sm md:text-base">
                 <p className="my-4">
                   Quant Sectional Tests
                 </p>
@@ -54,10 +54,10 @@ const Tests = () => {
             </div>
           </div>
           <div className="shadow-2xl rounded-xl p-14 bg-blue-50">
-            <h2 className="text-center text-black text-2xl font-bold font-serif pb-8">
+            <h2 className="pb-8 font-serif text-2xl font-bold text-center text-black">
               Sample Tests
             </h2>
-            <div className="flex flex-col space-y-6 md:flex-row-reverse md:space-y-0 justify-between items-center">
+            <div className="flex flex-col items-center justify-between space-y-6 md:flex-row-reverse md:space-y-0">
               <img
                 src={Artboard}
                 alt="artboard"
@@ -104,13 +104,13 @@ const Tests = () => {
 
       </section>
 
-      <section className="bg-back py-16">
-        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-8 justify-center items-center bg-blue-50 rounded-xl shadow-2xl p-12 lg:w-4/5 mx-auto">
+      <section className="py-16 bg-back">
+        <div className="flex flex-col items-center justify-center p-12 mx-auto space-y-6 shadow-2xl md:flex-row md:space-y-0 md:space-x-8 bg-blue-50 rounded-xl lg:w-4/5">
           <div className="flex flex-col space-y-4 md:w-1/2">
-            <h2 className="text-center md:text-left text-black text-2xl font-bold font-serif pb-4">
+            <h2 className="pb-4 font-serif text-2xl font-bold text-center text-black md:text-left">
               Overview of Test Platform
             </h2>
-            <p className="md:text-base text-sm">
+            <p className="text-sm md:text-base">
               Having trouble registering on our test platform, click {" "}
               <a
                 href="https://myanalyticsschool.com/video/register.pdf"
@@ -139,12 +139,12 @@ const Tests = () => {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-            className="rounded-2xl border-solid border-blue-300 border-8"
+            className="border-8 border-blue-300 border-solid rounded-2xl"
           ></iframe>            
         </div>         
       </section>    
 
-      {/* <div className="bg-back lg:block hidden">
+      {/* <div className="hidden bg-back lg:block">
 
         <div className="text-[40px] font-medium text-center mb-20">
           Testimonials
@@ -193,7 +193,7 @@ const Tests = () => {
 
         <Testimonial />
       </div>
-      <div className="text-center mb-28 mt-10">
+      <div className="mt-10 text-center mb-28">
         <a
           href="apply"
           className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
@@ -202,7 +202,7 @@ const Tests = () => {
         </a>
       </div> */}
 
-      <Footer />
+     
     </div>
   );
 };

@@ -1,19 +1,18 @@
 import React from "react";
 import "../index.css";
-import Navbar from "../components/Navbar";
-import artboard1 from "../images/courses_artboard1.png";
-import artboard2 from "../images/courses_artboard2.png";
-import artboard3 from "../images/courses_artboard3.png";
-import artboard4 from "../images/courses_artboard4.png";
-import artboard5 from "../images/courses_artboard5.png";
-import exclusive from "../images/exclusive.png";
-import Footer from "../components/Footer";
+
+import artboard1 from "../images/courses_artboard1.webp";
+import artboard2 from "../images/courses_artboard2.webp";
+import artboard3 from "../images/courses_artboard3.webp";
+import artboard4 from "../images/courses_artboard4.webp";
+import artboard5 from "../images/courses_artboard5.webp";
+import exclusive from "../images/exclusive.webp";
+
 import { Link } from "react-router-dom";
 
 const Courses = () => {
   return (
     <div>
-      <Navbar />
 
       <section className="pt-24 pb-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <h1 className="py-8 font-serif text-3xl font-bold text-center text-black">
@@ -217,7 +216,7 @@ const Courses = () => {
         </div>        
       </section>
 
-      <Footer />
+     
     </div>
   );
 };

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
+
 import "../index.css";
 import Data from "../data/ISAData";
-import Footer from "../components/Footer";
-import Rectangle from "../images/Rectangle 52.png";
-import Artboard1 from "../images/isa_image.png";
+
+import Rectangle from "../images/Rectangle 52.webp";
+import Artboard1 from "../images/isa_image.webp";
 
 function FAQ({ faq, index, toggleFAQ }) {
   return (
@@ -57,7 +57,7 @@ const ISA102 = () => {
   };
   return (
     <div className="bg-back">
-      <Navbar />
+    
       <div className="justify-center text-center lg:flex pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="pb-20 lg:pt-16 lg:bottom-12">
           <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
@@ -198,7 +198,7 @@ const ISA102 = () => {
           ))}
         </div>
       </div>
-      <Footer />
+     
     </div>
   );
 };

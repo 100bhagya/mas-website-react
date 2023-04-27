@@ -8,7 +8,7 @@ import {
   LocationMarkerIcon,
   ChatAltIcon,
 } from "@heroicons/react/solid";
-import CloseIcon from "../images/cross_head.png";
+import CloseIcon from "../images/cross_head.webp";
 import emailjs from "emailjs-com";
 
 const Contact = () => {

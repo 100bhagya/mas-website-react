@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import CloseIcon from "../images/cross_head.png";
+import CloseIcon from "../images/cross_head.webp";
 
 const Privacy = ({ setIsShowPrivacy, isShowTerms }) => {
   const updateIsShowPrivacy = (event) => {
@@ -15,7 +15,7 @@ const Privacy = ({ setIsShowPrivacy, isShowTerms }) => {
     <div>
       <div className="bg-back lg:w-[55%] md:w-[80%] fixed text-[10px] md:text-sm top-[100px] md:top-[200px] md:left-[100px] lg:top-[100px] lg:left-[500px] p-2 md:p-10 z-50 rounded-2xl shadow-2xl">
         <div className="flex">
-          <h1 className="font-bold text-lg mb-5">Privacy Policy</h1>
+          <h1 className="mb-5 text-lg font-bold">Privacy Policy</h1>
           <img
             src={CloseIcon}
             onClick={updateIsShowPrivacy}

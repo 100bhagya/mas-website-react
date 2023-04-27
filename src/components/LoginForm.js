@@ -3,7 +3,7 @@
 /* eslint-disable default-case */
 import React, { useState } from "react";
 import "../index.css";
-import CloseIcon from "../images/cross_head.png";
+import CloseIcon from "../images/cross_head.webp";
 import { PhoneIcon, MailIcon, ChatAltIcon } from "@heroicons/react/solid";
 import emailjs from 'emailjs-com'
 
@@ -56,14 +56,14 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
   };
   return (
     <div className={`${isShowLogin ? "active" : ""} show`}>
-      <div className="w-full flex">
+      <div className="flex w-full">
         <div className="md:mt-24 mt-14 absolute right-[-10%] md:right-0 z-[10000] mx-5 bg-white rounded-2xl shadow-2xl">
           <form
             onSubmit={handleSubmit}
             className="flex flex-col space-y-4 px-8 w-[400px] mb-2"
           >
             <div className="flex">
-              <h1 className="font-bold text-lg mt-5">Register.</h1>
+              <h1 className="mt-5 text-lg font-bold">Register.</h1>
               <img
                 src={CloseIcon}
                 onClick={closeLogin}
@@ -96,7 +96,7 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
                   Email
                 </label>
 
-                <MailIcon className="h-5 relative top-4 left-2 z-10 text-gray-300" />
+                <MailIcon className="relative z-10 h-5 text-gray-300 top-4 left-2" />
                 <input
                   type="text"
                   placeholder="name@example.com"
@@ -115,7 +115,7 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
                   Phone Number
                 </label>
 
-                <PhoneIcon className="h-5 relative top-4 left-2 z-10 text-gray-300" />
+                <PhoneIcon className="relative z-10 h-5 text-gray-300 top-4 left-2" />
                 <input
                   type="text"
                   placeholder="Enter your number here"
@@ -216,7 +216,7 @@ const LoginForm = ({ isShowLogin, closeLogin }) => {
                 <label htmlFor="" className="text-sm font-medium">
                   Write to Us
                 </label>
-                <ChatAltIcon className="h-5 relative top-5 left-2 z-10 text-gray-300" />
+                <ChatAltIcon className="relative z-10 h-5 text-gray-300 top-5 left-2" />
                 <textarea
                   name="message"
                   placeholder="Type your message here"
