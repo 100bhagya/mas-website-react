@@ -139,7 +139,7 @@ const Courses = () => {
         </div>        
       </section>
 
-      <section className="pb-16 bg-back">      
+      {/* <section className="pb-16 bg-back">      
         <h1 className="py-8 font-serif text-3xl font-bold text-center text-black">
           MAS Prep Drills
         </h1>
@@ -215,7 +215,7 @@ const Courses = () => {
             </div>
           </div>
         </div>        
-      </section>
+      </section> */}
 
       <Footer />
     </div>
