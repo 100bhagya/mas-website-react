@@ -60,6 +60,9 @@ const Footer = () => {
                 <Link to="/mas102" className="hover:scale-105 hover:text-white">
                   MAS 102
                 </Link>
+                <a href="https://aceinterview.myanalyticsschool.com/" target="_blank" className="hover:scale-105 hover:text-white">
+                  Interviews
+                </a>
                 </div>
                 
                 <img src={Bar} alt="circle" className="" />
@@ -134,11 +137,11 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-start justify-center space-y-8">
+          <div className="flex flex-col items-start justify-start  space-y-8">
             {/* contact us and follow us  */}
             <div>
               <div className="text-xl font-semibold text-white">Contact Us</div>
-              <div className="flex items-center mt-2">
+              <div className="flex mt-2">
                 <div className="w-10 h-10 mr-1">
                   <PhoneIcon className="w-6 h-8 relative top-1 left-[6px] text-slate-200" />
                 </div>
@@ -149,7 +152,7 @@ const Footer = () => {
                   +919604077455
                 </a>
               </div>
-              <div className="flex items-center mt-2">
+              <div className="flex mt-2">
                 <div className="w-10 h-10 mr-1">
                   <MailIcon className="w-6 h-8 relative top-[2px] left-[6px] text-slate-200" />
                 </div>

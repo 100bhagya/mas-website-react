@@ -10,6 +10,7 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import Data from "../data/SwiperData";
 import "../index.css";
+import { CheckIcon } from "@heroicons/react/solid";
 import Colon from "../images/upper colon.png";
 import Testimonial from "../components/Testimonial";
 
@@ -17,44 +18,51 @@ const Tests = () => {
   return (
     <div>
       <Navbar />
-      <section className="pt-24 pb-16 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
-        <h1 className="text-center text-black text-3xl font-bold font-serif py-8">
-          Tests
+      <section className="pt-24 pb-16 bg-blue-50">
+        <h1 className="py-8 text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl text-center  font-primary">
+          <span className="text-sky-800">Test</span> Yourself
         </h1>
 
-        <p className="px-8 md:px-24 pb-8 lg:top-5 text-base text-black text-center lg:text-lg">
-          Our specialised test portal to challenge youself
-        </p>        
+        <p className="px-8 pb-8 text-base text-center text-slate-600 md:px-24 lg:top-5 lg:text-lg max-w-6xl mx-auto">
+        Our specialised test portal to challenge youself
+        </p>       
       </section>
 
-      <section className="bg-back py-16">
-        <div className="flex flex-col items-center space-y-6 lg:flex-row justify-center lg:space-y-0 lg:space-x-6 mx-4">
-          <div className="bg-card shadow-2xl rounded-xl p-12">
-            <h2 className="text-black text-2xl font-bold font-serif pb-4">
+      <section className="py-16">
+        <div className="flex flex-col items-center space-y-6 lg:flex-row justify-center lg:space-y-0 lg:space-x-8 mx-4">
+          <div className="border shadow-lg rounded-xl p-16">
+            <h2 className="text-black text-2xl font-bold pb-4">
               We offer
             </h2>
             <div className="md:text-base text-sm">
-                <p className="my-4">
+                <p className="mb-3 text-slate-600">
+                  <CheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
                   Quant Sectional Tests
                 </p>
-                <p className="my-4">                  
+                <p className="mb-3 text-slate-600">
+                  <CheckIcon className="inline w-5 h-5 mr-1 text-green-600" />                  
                   LRDI Sectional Tests
                 </p>
-                <p className="my-4">                  
+                <p className="mb-3 text-slate-600">
+                  <CheckIcon className="inline w-5 h-5 mr-1 text-green-600" />                  
                   Verbal Sectional Tests
                 </p>
-                <p className="my-4"> Combined Tests</p>
-                <p className="my-4">                  
+                <p className="mb-3 text-slate-600">
+                  <CheckIcon className="inline w-5 h-5 mr-1 text-green-600" /> Combined Tests</p>
+                <p className="mb-3 text-slate-600">
+                  <CheckIcon className="inline w-5 h-5 mr-1 text-green-600" />                  
                   Company Wise Tests
                 </p>
-                <p className="my-4"> Weekly Tests</p>
-                <p className="my-4">                  
+                <p className="mb-3 text-slate-600">
+                  <CheckIcon className="inline w-5 h-5 mr-1 text-green-600" /> Weekly Tests</p>
+                <p className="mb-3 text-slate-600">
+                  <CheckIcon className="inline w-5 h-5 mr-1 text-green-600" />                  
                   Quizzes (Self Evaluation)
                 </p>
             </div>
           </div>
-          <div className="shadow-2xl rounded-xl p-14 bg-blue-50">
-            <h2 className="text-center text-black text-2xl font-bold font-serif pb-8">
+          <div className="shadow-lg border rounded-xl p-14">
+            <h2 className="text-center text-black text-2xl font-bold pb-8">
               Sample Tests
             </h2>
             <div className="flex flex-col space-y-6 md:flex-row-reverse md:space-y-0 justify-between items-center">
@@ -66,7 +74,7 @@ const Tests = () => {
               <div className="flex flex-col space-y-4">
                 <a 
                   href="https://ezex.in/4ea7xl"
-                  className="block text-sm text-white bg-blue-800 rounded-xl shadow-2xl p-4 hover:bg-blue-900 hover:-translate-y-0.5"
+                  className="block text-sm text-white bg-blue-600 rounded-xl shadow-lg p-4 hover:bg-blue-700 hover:-translate-y-0.5"
                   target="_blank"
                   rel="noopener noreferrer">
                   
@@ -76,7 +84,7 @@ const Tests = () => {
                 </a>                
                 <a
                   href="https://ezex.in/e896c7"
-                  className="block text-sm text-white bg-blue-800 rounded-xl shadow-2xl p-4 hover:bg-blue-900 hover:-translate-y-0.5"
+                  className="block text-sm text-white bg-blue-600 rounded-xl shadow-lg p-4 hover:bg-blue-700 hover:-translate-y-0.5"
                   target="_blank"
                   rel="noopener noreferrer"              
                   >
@@ -87,7 +95,7 @@ const Tests = () => {
                 </a>                
                 <a
                   href="https://ezex.in/8fphur" 
-                  className="block text-sm text-white bg-blue-800 rounded-xl shadow-2xl p-4 hover:bg-blue-900 hover:-translate-y-0.5"
+                  className="block text-sm text-white bg-blue-600 rounded-xl shadow-lg p-4 hover:bg-blue-700 hover:-translate-y-0.5"
                   target="_blank"
                   rel="noopener noreferrer"
                   >
@@ -104,13 +112,13 @@ const Tests = () => {
 
       </section>
 
-      <section className="bg-back py-16">
-        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-8 justify-center items-center bg-blue-50 rounded-xl shadow-2xl p-12 lg:w-4/5 mx-auto">
+      <section className="mb-16 py-16">
+        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-8 justify-center items-center bg-blue-50 rounded-xl shadow-md p-12 lg:w-4/5 mx-auto">
           <div className="flex flex-col space-y-4 md:w-1/2">
-            <h2 className="text-center md:text-left text-black text-2xl font-bold font-serif pb-4">
+            <h2 className="text-center md:text-left text-black text-2xl font-bold pb-4">
               Overview of Test Platform
             </h2>
-            <p className="md:text-base text-sm">
+            <p className="md:text-base text-sm text-slate-700">
               Having trouble registering on our test platform, click {" "}
               <a
                 href="https://myanalyticsschool.com/video/register.pdf"
@@ -126,7 +134,7 @@ const Tests = () => {
               href="https://myanalyticsschool.ezexam.in/"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-lg bg-blue-800 py-4 text-white rounded-xl text-center hover:bg-blue-900 hover:shadow-2xl hover:-translate-y-0.5"
+              className="block text-lg bg-blue-600 py-4 text-white rounded-xl text-center hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5"
             >
               Visit platform
             </a>
@@ -139,7 +147,7 @@ const Tests = () => {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-            className="rounded-2xl border-solid border-blue-300 border-8"
+            className="rounded-2xl border-solid border-slate-300 border-2"
           ></iframe>            
         </div>         
       </section>    
