@@ -173,8 +173,7 @@ const Navbar = () => {
           </NavLink>
 
           <a
-            href="https://myanalyticsschool.com/blog/"
-            target="_blank"
+            href="blog"
             rel="noopener noreferrer"
             className="text-blue-800 border-b-2 border-transparent hover:border-blue-800"
           >
@@ -276,8 +275,7 @@ const Navbar = () => {
         </NavLink>
 
         <a
-          href="https://myanalyticsschool.com/blog/"
-          target="_blank"
+          href="/blog"
           rel="noopener noreferrer"
           className="text-lg"
         >

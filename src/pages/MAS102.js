@@ -211,7 +211,7 @@ const MAS102 = () => {
           </div>
         </div>
       </section>
-      <section className="p-12 bg-white pb-24">     
+      <section className="p-12 bg-white py-24">      
       <div className="flex flex-col items-center p-6 border shadow-md bg-white space-y-8 md:p-10 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto">
           <div className="relative">
             <img

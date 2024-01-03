@@ -60,8 +60,9 @@ const ISA102 = () => {
       <Navbar />
       <div className="justify-center text-center lg:flex pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="pb-20 lg:pt-16 lg:bottom-12">
+          
           <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
-            ISA
+          PAP
           </h1>
           <p className="relative lg:top-12 md:text-[16px] font  text-black md:leading-8 mt-10 md:mt-8 lg:mt-0 text-[13px] px-6 lg:px-64 md:px-28 justify-center text-center">
             Our Income Share Agreement (ISA) is an investment in students'
@@ -74,10 +75,7 @@ const ISA102 = () => {
       </div>
       <div className="flex flex-col-reverse lg:flex-row relative md:left-[9%] md:w-[84%] lg:w-auto mt-24">
         <div className="lg:w-[45%] md:w-full md:pb-12 lg:pb-0 w-[83%] md:bg-card mt-12 lg:mt-[0] md:mt-[5vh] text-center lg:text-left  md:pr-28 md:text-lg mx-8 md:mx-0 text-[12px]  md:pt-[3vh] md:pl-28 lg:pl-12 rounded-l-2xl">
-          Our ISA model helps students to utilise our well researched strategic
-          plan for placement at zero advance payment and get placed at their
-          dream company. Our Income Share Agreement (ISA) helps us to provide a
-          training that is usually very expensive for no upfront cost.
+        At MAS, our Pay After Placement (PAP) Model offers affordable, outcome-driven learning. No interest, no collateral. If placement isn't secured within a year, education is free. Your success, your terms. Join us for a brighter future.
         </div>
         <iframe   className="m-auto lg:m-0  lg:h-[40vh] h-[30vh] w-[85vw] lg:w-[40vw]"  src="https://www.youtube.com/embed/WEyj2X3F6fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -93,59 +91,47 @@ const ISA102 = () => {
           <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[9px] md:pt-[2px] pt-[4px]">
             1
           </p>
-          Just 3000/- (inclusive of all taxes) will be charged as registration fee for joining My
-          Analytics School which is fully refundable only if you join My
-          Analytics School and remain unplaced till 30th June 2024.
+          Just 6000/- Per month for 5 months will be charged as registration fees for joining My Analytics School (Inc all taxes)
         </p>
 
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
           <p className="bg-blue-600 md:w-7 w-6 md:h-7 h-6 mr-7 text-white rounded-full md:pl-[8px] pl-[7px] md:pt-[2px] pt-[3px]">
             2
           </p>
-          No need to pay ISA charges if placed below 6 lakhs.
+          No need to pay PAP charges if placed below 4.5 LPA
+
         </p>
 
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
           <p className="bg-blue-600 md:w-7 w-6 md:h-7 h-6 mr-7 text-white rounded-full md:pl-[8px] pl-[7px] md:pt-[2px] pt-[3px]">
             3
           </p>
-          You will be signing our ISA once you are registered with us.
+          You will be signing our PAP Agreement once you are registered with us
         </p>
 
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
           <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[7px] md:pt-[2px] pt-[3px]">
             4
           </p>
-          After registration, the student will have an option to pay ₹ 30,000
-          upfront. No need to pay anything after getting placed, if you have
-          chosen upfront payment mode.
+          You are entitled to share offer letter received from the company and other documents for assuring proper PAP transactions
         </p>
 
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
           <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-2 rounded-full pl-[8px] pr-[10px] pt-[3px] md:pt-[2px]">
             5
           </p>
-          You are entitled to share offer letter received from the company and
-          other documents for assuring proper ISA transactions.
+          In case you are fired/you leave the job/you switch the job before completion of PAP, your PAP will be paused and will resume with your next job till completion. (Not applicable in case you don’t wish to do a job further).
+
         </p>
 
-        <p className="md:text-[16px] text-[12px] flex md:py-6 py-4">
-          <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[9px] md:pt-[2px] pt-[4px]">
-            6
-          </p>
-          In case you are fired/you leave the job/you switch the job before
-          completion of ISA, your ISA will be paused and will resume with your
-          next job till completion. (Not applicable in case you don’t wish to do
-          a job further).
-        </p>
       </div>
       <div className="md:mt-32">
         <div className="mb-16 text-2xl text-center md:text-3xl">
-          Calculate Your ISA Charge
+          Calculate Your PAP Charge
         </div>
         <div className="flex justify-center">
           <div className="border-[2px] border-solid border-black lg:w-[28%] w-[48%]  text-center py-4 text-lg lg:text-2xl">
-            Enter CTC (LPA) to find ISA
+            Enter CTC (LPA) to find PAP
           </div>
           <div className="border-[2px] border-solid border-black lg:w-[28%] w-[48%]  text-center py-4 text-lg lg:text-2xl">
             Monthly Pay

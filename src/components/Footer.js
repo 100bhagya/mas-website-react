@@ -122,8 +122,7 @@ const Footer = () => {
                 </Link>
                 <img src={Bar} alt="circle" className="md:hidden" />
                 <a
-                  href="https://myanalyticsschool.com/blog/"
-                  target="_blank"
+                  href="blog"
                   rel="noopener noreferrer"
                   className="hover:text-white"
                 >
