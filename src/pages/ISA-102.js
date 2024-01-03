@@ -35,10 +35,10 @@ const ISA102 = () => {
   const calculateMonthlyPay = (ctc) => {
     if (ctc > 18) {
       return 7400;
-    } else if (ctc < 6) {
+    } else if (ctc < 4) {
       return 0;
     } else {
-      return Math.ceil((ctc * 100000 * 0.048786) / 12 / 100) * 100;
+      return Math.ceil((ctc * 100000 * 0.1) / 12 / 100) * 100;
     }
   }
 
@@ -156,7 +156,7 @@ const ISA102 = () => {
         </div>
         <div className="flex flex-col-reverse justify-center md:flex-row">
           <div className="mt-8 ml-5 md:mt-14 lg:ml-0">
-            <div className="">*Registration Fees: 6000/-</div>
+            <div className="">*Registration Fees: 30000/-</div>
             <div className="mt-4">*PAP Payments will be paid for the first 12 months from you join the Job</div>
           </div>
           <div className="mt-10 ml-3 lg:ml-44 md:ml-24">

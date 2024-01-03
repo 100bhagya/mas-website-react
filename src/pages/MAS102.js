@@ -27,6 +27,7 @@ import AB from "../images/AB.png";
 import PhonePe from "../images/phonepe.png";
 import Mynthra from "../images/mynthra.png";
 import TestimonialOtherPages from "../components/TestimonialOtherPages";
+import FaqMAS102  from "../components/FaqMAS102";
 
 const Testimonial = ({ image, linkedin, name, position }) => {
   return (
@@ -265,7 +266,7 @@ const MAS102 = () => {
           </div>
         </div>
       </div>
-      <div className="pb-28">
+      <div className="pb-16">
       <h1 className="py-12 text-3xl font-bold text-center text-gray-900 lg:text-4xl">
         Placement Partners
       </h1>
@@ -345,6 +346,7 @@ const MAS102 = () => {
           Apply Now
         </a>
       </div> */}
+      <FaqMAS102 />
       <Footer />
     </div>
   );
