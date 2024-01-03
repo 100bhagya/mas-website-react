@@ -322,9 +322,9 @@ const Companies = () => {
       </section>
       <TestimonialNew />
       <section className="py-16 bg-white">
-        <div className="flex flex-col items-center justify-center p-12 mx-auto space-y-6 shadow-2xl md:flex-row md:space-y-0 md:space-x-8 bg-works rounded-xl lg:w-4/5">
+        <div className="flex flex-col items-center justify-center p-12 mx-auto space-y-6 shadow-xl border md:flex-row md:space-y-0 md:space-x-8 bg-works rounded-xl lg:w-4/5">
           <div className="flex flex-col space-y-4 md:w-1/2">
-            <h2 className="pb-4 font-serif text-3xl font-bold text-center text-black md:text-left">
+            <h2 className="pb-4 text-3xl font-bold text-center text-black md:text-left">
               From The Founder's Desk
             </h2>
             <p className="text-sm md:text-base">

@@ -45,7 +45,7 @@ const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
 
 const PlacementDrill = () => {
   return (
-    <div className="bg-back">
+    <div className="">
       <Navbar />
       <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
         <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2">
@@ -77,7 +77,7 @@ const PlacementDrill = () => {
 
       <div className="flex justify-center mt-5">
 
-        <div className={`bg-white lg:w-[18%] md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl`}>
+        <div className={`bg-white lg:w-[18%] border shadow md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl`}>
           <div className="">
             <img src={Artboard1} alt="" className="h-32 ml-5 md:ml-0" />
           </div>
@@ -95,7 +95,7 @@ const PlacementDrill = () => {
           </div>
         </div>
  
-        <div className={`bg-white lg:w-[18%] md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl`}>
+        <div className={`bg-white lg:w-[18%] border shadow md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl`}>
           <div className="">
             <img src={Artboard2} alt="" className="h-32 ml-5 md:ml-0" />
           </div>
@@ -112,7 +112,7 @@ const PlacementDrill = () => {
           </div>
         </div>
 
-        <div className={`bg-white lg:w-[18%] md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl`}>
+        <div className={`bg-white lg:w-[18%] border shadow md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl`}>
           <div className="">
             <img src={Artboard3} alt="" className="h-32 ml-5 md:ml-0" />
           </div>

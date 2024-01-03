@@ -65,10 +65,9 @@ const ISA102 = () => {
           </h1>
 
           <p className="px-8 pb-8 text-base text-center text-slate-600 md:px-24 lg:top-5 lg:text-lg max-w-6xl mx-auto">
-            Our Income Share Agreement (ISA) is an investment in students'
-            career. Students can benefit from our services just by paying a
-            negligible amount and contributing a very small part of their income
-            once they are placed.
+          Our Pay After Placement program (PAP) is designed to support students in building their careers. 
+          Students can avail themselves of our services by paying a registration fee and contributing a 
+          small percentage of their income after securing a job
           </p>  
 
         </div>

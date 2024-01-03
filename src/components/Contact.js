@@ -85,7 +85,7 @@ const Contact = () => {
                 className="absolute w-4 h-4 cursor-pointer right-5 top-5"
               />
               <div className="">
-                <p className="mb-2 font-serif text-xl text-center text-green-400">
+                <p className="mb-2 text-xl text-center text-green-400">
                   Your response has been submitted successfully.
                 </p>
                 <p className="text-base text-center text-slate-800">

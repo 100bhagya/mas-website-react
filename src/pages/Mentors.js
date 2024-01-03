@@ -12,7 +12,7 @@ const Mentors = () => {
       
       <section className="pt-24 pb-16 bg-blue-50">
         <h1 className="py-8 text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl text-center  font-primary">
-           Meet our <span className="text-sky-800">Mentor</span>
+           Meet our <span className="text-sky-800">Mentors</span>
         </h1>
 
         <p className="px-8 pb-8 text-base text-center text-slate-600 md:px-24 lg:top-5 lg:text-lg max-w-6xl mx-auto">
