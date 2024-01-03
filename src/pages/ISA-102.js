@@ -56,25 +56,25 @@ const ISA102 = () => {
     );
   };
   return (
-    <div className="bg-back">
+    <div>
       <Navbar />
-      <div className="justify-center text-center lg:flex pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
-        <div className="pb-20 lg:pt-16 lg:bottom-12">
-          
-          <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
-          PAP
+      <div className="justify-center text-center lg:flex pt-28 bg-blue-50">
+        <div className="pb-16 bg-blue-50">
+          <h1 className="py-8 text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl text-center  font-primary">
+            About <span className="text-sky-800">PAP Model</span>
           </h1>
-          <p className="relative lg:top-12 md:text-[16px] font  text-black md:leading-8 mt-10 md:mt-8 lg:mt-0 text-[13px] px-6 lg:px-64 md:px-28 justify-center text-center">
+
+          <p className="px-8 pb-8 text-base text-center text-slate-600 md:px-24 lg:top-5 lg:text-lg max-w-6xl mx-auto">
             Our Income Share Agreement (ISA) is an investment in students'
             career. Students can benefit from our services just by paying a
             negligible amount and contributing a very small part of their income
             once they are placed.
-          </p>
+          </p>  
 
         </div>
       </div>
       <div className="flex flex-col-reverse lg:flex-row relative md:left-[9%] md:w-[84%] lg:w-auto mt-24">
-        <div className="lg:w-[45%] md:w-full md:pb-12 lg:pb-0 w-[83%] md:bg-card mt-12 lg:mt-[0] md:mt-[5vh] text-center lg:text-left  md:pr-28 md:text-lg mx-8 md:mx-0 text-[12px]  md:pt-[3vh] md:pl-28 lg:pl-12 rounded-l-2xl">
+        <div className="lg:w-[45%] md:w-full md:pb-12 lg:pb-0 w-[83%] md:bg-card mt-12 lg:mt-[0] md:mt-[5vh] text-center lg:text-left  md:pr-28 md:text-lg mx-8 md:mx-0 text-[12px] text-slate-600  md:pt-[3vh] md:pl-28 lg:pl-12 rounded-l-2xl">
         At MAS, our Pay After Placement (PAP) Model offers affordable, outcome-driven learning. No interest, no collateral. If placement isn't secured within a year, education is free. Your success, your terms. Join us for a brighter future.
         </div>
         <iframe   className="m-auto lg:m-0  lg:h-[40vh] h-[30vh] w-[85vw] lg:w-[40vw]"  src="https://www.youtube.com/embed/WEyj2X3F6fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -86,7 +86,10 @@ const ISA102 = () => {
         /> */}
       </div>
 
-      <div className="md:bg-card lg:w-[59%] md:w-[85%] relative lg:left-[11%] md:left-[8%] mt-20 lg:ml-36 md:ml-0 md:pt-8 md:px-20 px-5 pb-16 rounded-2xl">
+      <div className="md:bg-card lg:w-[59%] text-slate-600 md:w-[85%] relative lg:left-[11%] md:left-[8%] mt-20 lg:ml-36 md:ml-0 md:pt-8 md:px-20 px-5 pb-16 rounded-2xl">
+        <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300 font-bold">
+          Terms and Conditions:
+        </p>
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
           <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[9px] md:pt-[2px] pt-[4px]">
             1
@@ -125,7 +128,7 @@ const ISA102 = () => {
         </p>
 
       </div>
-      <div className="md:mt-32">
+      <div className=" md:mt-32  py-16">
         <div className="mb-16 text-2xl text-center md:text-3xl">
           Calculate Your PAP Charge
         </div>
@@ -154,8 +157,8 @@ const ISA102 = () => {
         </div>
         <div className="flex flex-col-reverse justify-center md:flex-row">
           <div className="mt-8 ml-5 md:mt-14 lg:ml-0">
-            <div className="">*Registration Fees: 3000/-</div>
-            <div className="mt-4">*Payments will be made for 12 months</div>
+            <div className="">*Registration Fees: 6000/-</div>
+            <div className="mt-4">*PAP Payments will be paid for the first 12 months from you join the Job</div>
           </div>
           <div className="mt-10 ml-3 lg:ml-44 md:ml-24">
             <div className="py-2 md:px-20 text-center md:text-left w-[96%] md:w-full border-[2px] border-solid border-black">
@@ -176,9 +179,9 @@ const ISA102 = () => {
           </div>
         </div>
       </div>
-      <div className="mt-16 mb-10 md:mt-28 md:mb-40">
-        <div className="text-[40px] text-center md:my-12">FAQ</div>
-        <div className="faqs lg:w-[58%] md:w-[85%] relative lg:left-[21%] md:left-[7%] md:bg-white md:py-10 py-5 lg:px-20 md:px-8 rounded-3xl">
+      <div className="mt-16 md:py-16 bg-blue-50">
+        <div className="text-[40px] text-center md:my-16">FAQ</div>
+        <div className="faqs lg:w-[58%] md:w-[85%]  relative lg:left-[21%] md:left-[7%] md:bg-white md:py-10 py-5 lg:px-20 md:px-8 rounded-3xl">
           {faqs.map((faq, i) => (
             <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
           ))}

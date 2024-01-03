@@ -83,8 +83,8 @@ const Companies = () => {
   };
 
   const Card1 = ({ img, title, content }) => {
-    return (
-      <div className="flex flex-col items-center my-4 space-y-8 p-7 md:p-16 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto bg-works">
+    return (    
+      <div className="flex flex-col shadow border items-center p-6 bg-white space-y-8 md:p-10 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto">
         <div className="relative">
           <img
             src={Grid}
@@ -99,19 +99,20 @@ const Companies = () => {
           <img
             src={img}
             alt="design"
-            className="relative border-8 border-blue-300 border-solid h-[30vh] w-96 md:h-64 md:w-96 rounded-2xl"
+            className="relative border-4 bg-white border-grey-200 border-solid h-[30vh] w-96 md:h-64 md:w-96 rounded-2xl"
           />
-        </div>
-
-        <div className="max-w-md">
+        </div>      
+  
+        <div className="max-w-md">        
           <h2 className="mb-6 text-lg font-semibold text-center text-gray-900 lg:text-2xl lg:text-left">
             {title}
-          </h2>
-
+          </h2>        
+  
           <p className="w-full text-sm leading-relaxed text-center text-gray-600 lg:text-base lg:text-left">
             {content}
           </p>
-        </div>
+        </div>      
+        
       </div>
     );
   };
@@ -144,7 +145,7 @@ const Companies = () => {
         // className="absolute bottom-40 md:static md:bottom-0"
       >
         <SwiperSlide className="cursor-pointer">
-          <div className="flex flex-col-reverse w-full h-full pt-16 lg:flex-row bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+          <div className="flex flex-col-reverse w-full h-full pt-16 lg:flex-row bg-blue-50">
             <div className="max-w-lg relative  bottom-[12vh] md:static px-4 mx-auto lg:flex lg:items-center pt-9 md:max-w-xl lg:max-w-4xl">
               <div className="lg:pt-16 bottom-3 md:top-[5vh] top-[2vh] lg:top-[8vh] lg:pb-32 pb-10 relative lg:left-[7%]  text-center lg:text-left">
                 <h1 className="relative text-3xl  leading-relaxed text-black md:bottom-[15vh]  font-black md:text-3xl lg:text-9xl ">
@@ -234,8 +235,8 @@ const Companies = () => {
         props={"Partnered with prestigious colleges"}
         data={CollegeData}
       />
-      <section className="p-12 bg-white">
-        <h1 className="py-12 text-xl text-center text-gray-900 lg:text-3xl">
+      <section className="p-12 bg-blue-50">
+      <h1 className="py-12 text-3xl font-bold text-center text-gray-900 lg:text-4xl">
           Why Hire Us?
         </h1>
         <div className="flex flex-col space-y-8">
@@ -324,7 +325,7 @@ const Companies = () => {
         <div className="flex flex-col items-center justify-center p-12 mx-auto space-y-6 shadow-2xl md:flex-row md:space-y-0 md:space-x-8 bg-works rounded-xl lg:w-4/5">
           <div className="flex flex-col space-y-4 md:w-1/2">
             <h2 className="pb-4 font-serif text-3xl font-bold text-center text-black md:text-left">
-              From The Founder’s Desk
+              From The Founder's Desk
             </h2>
             <p className="text-sm md:text-base">
               My Analytics School is an Ed-Tech start-up founded by IIT alumni,

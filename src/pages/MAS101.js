@@ -135,7 +135,7 @@ const MAS101 = () => {
           height="315"
           src="https://www.youtube.com/embed/zny3v4e0qLs"
           title="YouTube video player"
-          className="ml-[8%] md:ml-0 mb-5"
+          className="ml-[8%] md:ml-0 mb-5 mt-6"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
