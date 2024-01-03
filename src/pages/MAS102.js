@@ -13,7 +13,7 @@ import Data from "../data/MAS102Data";
 import Rectangle from "../images/Rectangle 52.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import Offers from "../components/Offers";
+import {Offers1} from "../components/Offers";
 import Fractal from "../images/fractal.png";
 import Ola from "../images/ola.png";
 import MasterCard from "../images/mastercard.png";
@@ -106,16 +106,16 @@ const MAS102 = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-blue-50">
         <div className="md:mb-24 mb-16 relative lg:right-[5%] md:w-1/2">
-          <div className="pb-10 lg:pt-20 md:pb-28 lg:bottom-12">
-            <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
-              MAS 102 - Mahadev Batch
-            </h1>
+          <div className="pb-8 lg:pt-20 ">
+          <h1 className="py-8 text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl text-center  font-primary">
+           <span className="text-sky-800">MAS 102 - Mahadev Batch</span>
+          </h1>
 
-            <p className="relative justify-center px-8 mt-5 text-sm leading-8 text-black md:px-0 md:top-5 md:mt-0 md:text-lg font">
-              2 Lakh Data Jobs Monthly! Upskill and Get Hired in 5 Months. Don't Wait, Master It with MAS
-            </p>
+          <p className="px-8 pb-8 text-base text-center text-slate-600 md:px-24 lg:top-5 lg:text-lg max-w-3xl mx-auto">
+          2 Lakh Data Jobs Monthly! Upskill and Get Hired in 5 Months. Don't Wait, Master It with MAS
+          </p>  
           </div>
           <a
             href="https://forms.gle/3vRSnaxiVob1YGz46"
@@ -131,7 +131,7 @@ const MAS102 = () => {
           height="315"
           src="https://www.youtube.com/embed/UJzSkkQUzcQ"
           title="YouTube video player"
-          className="ml-[8%] md:ml-0 mb-5"
+          className="ml-[8%] md:ml-0 mb-5 mt-6"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
@@ -142,15 +142,15 @@ const MAS102 = () => {
           className="relative lg:left-[10%] md:left-[4%] bottom-12 px-16 md:px-0 md:mt-0 mt-8"
         ></img> */}
       </div>
-      <Offers />
-      <section class="text-gray-600 body-font py-16  flex justify-center bg-back">
+      <Offers1 />
+      <section class="text-gray-600 body-font py-16  flex justify-center bg-blue-50">
         <div class="container   ">
           <div class="  ">
             <div class=" ">
               <div class="flex flex-col-reverse md:flex-row md:rounded-3xl h-full bg-works py-12 md:py-8">
-                <div className="md:w-[43%] w-full  md:px-16 ">
-                  <div class="md:flex items-center mb-3 mt-28 md:mt-16 lg:mt-28 hidden">
-                    <h2 class="text-gray-900 text-2xl title-font font-semibold">
+                <div className="md:w-[43%] w-full ml-5  md:px-16 ">
+                  <div class="md:flex items-center  mb-3 mt-28 md:mt-16 lg:mt-28 hidden">
+                    <h2 class="text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl  font-primary">
                       Mentors
                     </h2>
                   </div>
@@ -177,7 +177,7 @@ const MAS102 = () => {
                       Mentors
                     </h2>
                   </div>
-                  <div className="flex md:block lg:flex w-[355%] relative md:left-[15%]">
+                  <div className="flex md:block lg:flex w-[355%] relative px-6 py-3  md:left-[15%]">
                     <Testimonial
                       name="Kumari Aditi"
                       image={Aditi}
@@ -191,7 +191,7 @@ const MAS102 = () => {
                       Link_linkedin="https://www.linkedin.com/in/shruti-pandey-86567b164/"
                     />
                   </div>
-                  <div className="lg:flex w-[355%] relative left-[15%] hidden">
+                  <div className="flex md:block lg:flex w-[355%] relative px-6 py-3  md:left-[15%]">
                     <Testimonial
                       name="Nallani Venkata Harsha"
                       image={Nallani}
@@ -211,8 +211,8 @@ const MAS102 = () => {
           </div>
         </div>
       </section>
-      <section className="p-5 text-gray-600 bg-back body-font">
-        <div className="flex flex-col items-center p-8 space-y-8 bg-works md:p-16 lg:flex-row-reverse lg:justify-between lg:space-y-2 lg:space-x-8 rounded-3xl md:h-auto ">
+      <section className="p-12 bg-white pb-24">     
+      <div className="flex flex-col items-center p-6 border shadow-md bg-white space-y-8 md:p-10 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto">
           <div className="relative">
             <img
               src={Grid}
@@ -227,20 +227,17 @@ const MAS102 = () => {
             <img
               src={Design2}
               alt="design"
-              className="relative border-8 border-blue-300 border-solid h-[30vh] w-96 md:h-64 md:w-96 rounded-2xl"
+              className="relative border-4 border-grey-200 border-solid h-[30vh] w-96 md:h-64 md:w-96 rounded-2xl"
             />
           </div>
 
           <div className="max-w-md">
             <h2 className="mb-6 text-lg font-semibold text-center text-gray-900 lg:text-2xl lg:text-left">
-              Fees & ISA
+            Fees & PAP
             </h2>
 
             <p className="w-full mb-6 text-sm leading-relaxed text-center text-gray-600 lg:text-base lg:text-left">
-              Our Income Share Agreement (ISA) is an investment in students'
-              career. Students can benefit from our services just by paying a
-              negligible amount and contributing a very small part of their
-              income once they are placed.
+            Our Pay After Placement program (PAP) is designed to support students in building their careers. Students can avail themselves of our services by paying a registration fee and contributing a small percentage of their income after securing a job.
             </p>
 
             <Link to="/isa-102">
@@ -251,9 +248,11 @@ const MAS102 = () => {
           </div>
         </div>
       </section>
-      <div className="pt-1 pb-16 lg:pb-36 bg-back">
-        <div className="text-[40px] text-center lg:my-12 mt-12">Timeline</div>
-        <div className="faqs lg:w-[58%] md:w-[90%] w-full relative lg:left-[21%] md:left-[5%] bg-back lg:bg-white lg:py-10 lg:px-20 rounded-3xl">
+      <div className="pt-1 pb-16 lg:pb-16 bg-blue-50">
+      <h1 className="py-12 text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+        Timeline
+      </h1>
+        <div className="faqs lg:w-[58%] md:w-[90%] w-full relative lg:left-[21%] md:left-[5%] bg-blue-50 lg:bg-white lg:py-10 lg:px-20 rounded-3xl">
           {faqs.map((faq, i) => (
             <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
           ))}
@@ -266,9 +265,11 @@ const MAS102 = () => {
           </div>
         </div>
       </div>
-      <div className="pb-28 bg-back">
-        <div className="text-4xl text-center">Placements</div>
-        <div className="bg-gradient-to-b from-blue-50 to-white">
+      <div className="pb-28">
+      <h1 className="py-12 text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+        Placement Partners
+      </h1>
+        <div className="">
           <div className="flex justify-center pt-8 mt-8">
             <img
               src={Fractal}
@@ -336,7 +337,7 @@ const MAS102 = () => {
         </div>
       </div>
       {/* <TestimonialOtherPages />
-      <div className="pt-12 pb-24 text-center bg-back">
+      <div className="pt-12 pb-24 text-center bg-blue-50">
         <a
           href="apply"
           className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"

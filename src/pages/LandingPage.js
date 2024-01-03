@@ -11,7 +11,7 @@ import Design3 from "../images/design1.png";
 import Grid from "../images/grid.png";
 import Design4 from "../images/design2.png";
 import Design5 from "../images/design3.png";
-import Offers from "../components/Offers";
+import {Offers} from "../components/Offers";
 import Footer from "../components/Footer";
 import TestimonialNew from "../components/TestimonialNew";
 import LoginForm from "../components/LoginForm";
