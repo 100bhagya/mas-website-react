@@ -14,10 +14,10 @@ function FAQ({ faq, index, toggleFAQ, tag }) {
       name={tag}
       onClick={() => toggleFAQ(index, tag)}
     >
-      <div className="faq-question md:text-lg text-[12px] font font-semibold">
+      <div className="faq-question md:text-lg text-[12px] font font-semibold text-gray-700">
         {faq.question}
       </div>
-      <div className="faq-answer md:text-sm text-[11px] font flex font-medium">
+      <div className="faq-answer md:text-sm text-[11px] font flex font-medium text-gray-500">
         <img
           src={Rectangle}
           alt="rectangle"
@@ -59,29 +59,29 @@ const FaqPage = () => {
   return (
     <div>
       <Navbar />
-      <div className="lg:bg-gradient-to-b lg:from-blue-300 lg:to-blue-100 pb-20">
-        <div className="flex lg:ml-28 pl-8 lg:pl-0 pt-24 top_bg">
+      <div className="mb-16">
+        <div className="flex lg:pl-28 pl-8 py-6 pt-24 top_bg bg-blue-50">
           <img
             src={QandA}
             alt="Question"
             className="h-20 w-20 mr-5 lg:h-[123px] lg:w-[123px]"
           />
-          <p className="lg:pt-9 pt-4 lg:ml-20 lg:text-[40px] md:text-3xl text-2xl font-semibold  lg:font-medium">
+          <p className="lg:pt-9 pt-4 lg:ml-10 lg:text-[40px] md:text-3xl text-2xl font-semibold  lg:font-medium">
             Frequently Asked Questions
           </p>
         </div>
         <div className="flex justify-center lg:justify-start">
           <div className="">
             {/* <div className={`ml-28 lg:w-4/5 my-20 ${position}`}> */}
-            <div className={`ml-28 lg:4/5 my-20 hidden lg:block`}>
+            <div className={`ml-28 my-20 hidden lg:block lg:w-3/5 xl:w-4/5 `}>
               {Data.map((post) => {
                 return (
-                  <a href={`#${post.tag}`}>
-                    <div className="flex p-6 bg-white rounded-2xl mt-6">
+                  <a href={`#${post.tag}`} className="cursor-pointer" key={post.id}>
+                    <div className="flex p-6 bg-white border shadow rounded-2xl mt-6">
                       <img
                         src={post.icon}
                         alt="icon"
-                        className={`px-5 py-5 rounded-lg bg-${post.id}`}
+                        className={`px-5 py-5 w-16 h-16 rounded-lg bg-${post.id}`}
                       />
                       <div className="ml-6 w-72">
                         <p className="lg:text-lg font-medium">{post.tag}</p>
@@ -95,15 +95,15 @@ const FaqPage = () => {
               })}
             </div>
           </div>
-          <div className="relative lg:left-20 lg:h-[88vh] lg:overflow-y-scroll faq_ques top-20 lg:w-[59%] lg:overflow-x-hidden">
+          <div className="relative xl:left-20 lg:h-[88vh] lg:overflow-y-scroll shadow faq_ques top-20 lg:overflow-x-hidden p-8 lg:border rounded-3xl">
             {Data.map((post) => {
               console.log(post);
               return (
                 <div
-                  className="lg:bg-white  lg:w-[95%] lg:mb-20  lg:rounded-3xl"
+                  className="lg:bg-white  lg:w-[95%] lg:rounded-3xl"
                   id={post.tag}
                 >
-                  <div className="flex ml-5 lg:p-12 lg:bg-white rounded-2xl">
+                  <div className="flex ml-5 lg:p-6 p-3 lg:bg-white rounded-2xl border-2">
                     <img
                       src={post.icon}
                       alt="icon"
