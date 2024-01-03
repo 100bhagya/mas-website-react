@@ -138,7 +138,7 @@ const Footer = () => {
             {/* contact us and follow us  */}
             <div>
               <div className="text-xl font-semibold text-white">Contact Us</div>
-              <div className="flex items-center mt-5">
+              <div className="flex items-center mt-2">
                 <div className="w-10 h-10 mr-1">
                   <PhoneIcon className="w-6 h-8 relative top-1 left-[6px] text-slate-200" />
                 </div>
@@ -149,7 +149,7 @@ const Footer = () => {
                   +919604077455
                 </a>
               </div>
-              <div className="flex items-center mt-4">
+              <div className="flex items-center mt-2">
                 <div className="w-10 h-10 mr-1">
                   <MailIcon className="w-6 h-8 relative top-[2px] left-[6px] text-slate-200" />
                 </div>

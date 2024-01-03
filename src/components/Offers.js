@@ -13,9 +13,9 @@ import Vector from "../images/Vector 15.png";
 const Card = ({ img, title, content, flex_direction }) => {
   return (
     <div
-    class={`py-4 px-8 flex ${flex_direction} md:flex-col items-center h-[125px] md:h-auto bg-gradient-to-b from-blue-100 to-blue-50 md:rounded-3xl w-full shadow-gray-300 shadow-xl`}
+    class={`p-8 flex ${flex_direction} md:flex-col items-center h-[125px] md:h-auto md:rounded-3xl w-full shadow-gray-300 shadow-md border hover:shadow-xl transition-all`}
   >
-    <div class="rounded-lg w-1/3 md:w-full relative">      
+    <div class="rounded-lg w-1/3 md:w-full relative ">      
       <img
         src={Vector}
         alt="design"
@@ -28,10 +28,10 @@ const Card = ({ img, title, content, flex_direction }) => {
       ></img>
     </div>
     <div className="w-2/3 md:w-full">
-      <h2 class="lg:text-2xl md:text-lg text-sm font-semibold lg:ml-7 mr-2 text-gray-900 mt-5">
+      <h2 class="lg:text-xl md:text-lg text-md font-bold mr-2 text-gray-900 mt-5">
         {title}
       </h2>
-      <p class="hidden md:block md:text-sm text-[10px] lg:ml-7 mr-2 leading-relaxed mt-2 text-gray-600">
+      <p class="hidden md:block md:text-sm text-[10px] mr-2 leading-relaxed mt-2 text-gray-500">
         {content}
       </p>
     </div>
@@ -41,12 +41,12 @@ const Card = ({ img, title, content, flex_direction }) => {
 
 const Offers = () => {
   return (
-    <section class="bg-back py-12">
+    <section class="py-12 mb-12">
       <div class="container mx-auto max-w-7xl">        
-        <h1 className="font-serif text-gray-900 text-center py-12 text-3xl lg:text-4xl font-bold">
+        <h1 className="text-gray-900 text-center py-12 text-3xl lg:text-4xl font-bold">
           Our Unique Offerings
         </h1>
-        <div className="flex flex-col md:grid md:grid-cols-2 md:gap-8 md:mx-8 lg:grid-cols-3">
+        <div className="flex flex-col md:grid md:grid-cols-2 p-4 gap-8 md:gap-16 md:mx-16 lg:grid-cols-3">
           <Card
             flex_direction="flex-row-reverse"
             img={Card1}
@@ -87,7 +87,7 @@ const Offers = () => {
             flex_direction="flex-row-reverse"
             img={Card7}
             title="Resume Building"
-            content="The job market is competitive – you’ll need an edge to stand out. We at MAS, will help you build a winning resume that will surely turn the tables in your favor. "
+            content="The job market is competitive - you'll need an edge to stand out. We at MAS, will help you build a winning resume that will surely turn the tables in your favor. "
           />
           <Card
             flex_direction="flex-row"

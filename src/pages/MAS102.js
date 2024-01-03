@@ -110,13 +110,11 @@ const MAS102 = () => {
         <div className="md:mb-24 mb-16 relative lg:right-[5%] md:w-1/2">
           <div className="pb-10 lg:pt-20 md:pb-28 lg:bottom-12">
             <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
-              MAS 102
+              MAS 102 - Mahadev Batch
             </h1>
 
             <p className="relative justify-center px-8 mt-5 text-sm leading-8 text-black md:px-0 md:top-5 md:mt-0 md:text-lg font">
-              This will act as your Tank and Bazooka to smash your placements
-              and get placed in your dream company specifically designed for
-              NITs, IIITs, BITS, and similar colleges.
+              2 Lakh Data Jobs Monthly! Upskill and Get Hired in 5 Months. Don't Wait, Master It with MAS
             </p>
           </div>
           <a

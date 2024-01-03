@@ -98,7 +98,7 @@ const LandingPage = () => {
       <ModalForm showModal={showModal} setShowModal={setShowModal} />
       <div className="flex flex-col-reverse pt-16 lg:flex-row bg-blue-50">
         <div className="max-w-lg px-4 mx-auto lg:flex lg:items-center pt-9 md:max-w-xl lg:max-w-4xl">
-          <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
+          <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 lg:pl-12 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
             <h1 className="text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl font-primary">
               Get Placed In
               <p className="relative mt-4 bottom-5 lg:mt-10">
