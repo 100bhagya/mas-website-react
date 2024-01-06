@@ -1,38 +1,41 @@
 
-const Data =[
+const TrackRecordData =[
     {
-        record:250,
-        heading:"Hours of Tech Training"
+        record:"250 Hours",
+        heading:"Tech Training"
     },
     {
-        record:250,
-        heading:"Hours of Quantitative Aptitude Training"
+        record:"100+ Hours",
+        heading:"Aptitude & Logic Enhancement"
     },
     {
         record:"200+",
-        heading:"Tech and Aptitude test"
+        heading:"Mock Tests"
     },
     {
-        record:"72+",
-        heading:"Hours of Non Tech Training (Case Study, Guesstimate and Puzzles)"
+        record:"70+ Hours",
+        heading:"Case Study, Guesstimate and Puzzles"
     },
     {
-        record:150,
-        heading:"Hours of Soft Skills and Leadership Training"
+        record:"150+ Hours",
+        heading:"Soft Skills & Leadership Training"
     },
     {
-        record:1,
+        record: 1,
         heading:"Industry Centric Internship"
     },
     {
-        record:1,
-        heading:"Analytics / Visualization Capstone Project"
+        record: 3,
+        heading:"Capstone Project"
     },
     {
-        record:1,
-        heading:"SQL/ML/Tech Capstone Project"
+        record:'10+',
+        heading:"Mock Interviews"
     },
-
+    {
+        record:"100+ Hours",
+        heading:"Live Sessions"
+    }
 ]
 
-export default Data;
+export default TrackRecordData;
