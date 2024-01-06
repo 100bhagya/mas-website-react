@@ -22,6 +22,7 @@ import Colleges from "./pages/Colleges.js";
 import Blogs from "./pages/Blog.js";
 import "./App.css";
 import  Bot from "./components/Bot.js";
+import Page404 from "./pages/404.js";
 
 const App = () => {
   return (
@@ -50,6 +51,7 @@ const App = () => {
           <Route exact path="/courses" element={<Courses />} />
           <Route exact path="/timeline1" element={<Timeline1 />} />
           <Route exact path="/timeline2" element={<Timeline2 />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </Router>
     </div>
