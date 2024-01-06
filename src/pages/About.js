@@ -28,7 +28,7 @@ const About = () => {
           professionals.
             </p>      
       </section>  
-      {/* <div className="pt-16 lg:flex bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+      {/* <div className="pt-16 lg:flex bg-blue-100 to-blue-50">
         <div className="max-w-lg px-4 mx-auto lg:flex lg:items-center pt-9 md:max-w-xl lg:max-w-7xl">
           <div className="relative pb-16 lg:pt-28 md:pb-32 lg:right-24 lg:bottom-12">
             <h1 className="md:font-normal font-semibold text-center md:text-left mt-10 relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[40px]  leading-8 font-primary">

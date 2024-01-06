@@ -112,7 +112,7 @@ const MAS101 = () => {
         <div className="md:mb-24 mb-16 relative lg:right-[5%] md:w-1/2">
           <div className="pb-8 lg:pt-20 ">
           <h1 className="py-8 text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl text-center  font-primary">
-            Join our <span className="text-sky-800">MAS 101</span>
+            Join <span className="text-sky-800">MAS 101 Batch</span>
           </h1>
 
           <p className="px-8 pb-8 text-base text-center text-slate-600 md:px-24 lg:top-5 lg:text-lg max-w-3xl mx-auto">

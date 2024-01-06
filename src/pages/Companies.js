@@ -9,15 +9,9 @@ import "swiper/css/scrollbar";
 import Organization from "./Organization";
 import "../../src/index.css";
 import Grid from "../images/grid.png";
-import Data from "../data/TrackRecord";
+import TrackRecordData from "../data/TrackRecord";
 import Footer from "../components/Footer";
-import { BsBank2 } from "react-icons/bs";
-import { FaUserGraduate } from "react-icons/fa";
-import { MdPlayLesson } from "react-icons/md";
-import { BsBagCheckFill } from "react-icons/bs";
-import { FaChalkboardTeacher } from "react-icons/fa";
-import { ImOffice } from "react-icons/im";
-import { ImUserPlus } from "react-icons/im";
+import Traction from "../images/Traction.png";
 import Vision from "../images/Vision Mission.png";
 import Mission from "../images/mission.png";
 import HRData from "../data/HRCardData.js";
@@ -183,7 +177,7 @@ const Companies = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="cursor-pointer">
-          <div className="flex flex-col-reverse justify-between w-full h-full pt-16 lg:flex-row bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+          <div className="flex flex-col-reverse justify-between w-full h-full pt-16 lg:flex-row bg-blue-50">
             <div className="max-w-lg px-4  mx-auto relative bottom-[15vh]   lg:flex lg:items-center pt-9 md:max-w-xl lg:max-w-4xl">
               <div className="lg:pt-16 bottom-3 md:top-[17vh]  top-[2vh]  lg:pb-32 pb-10 relative lg:left-[7%] lg:top-[20vh] text-center lg:text-left">
                 <div className="relative text-3xl  leading-relaxed text-black md:bottom-[15vh]  font-black md:text-3xl lg:text-9xl ">
@@ -253,73 +247,31 @@ const Companies = () => {
         </div>
       </section>
       <MentorSection />
-      <section>
-        <div className="mt-16 text-3xl text-center ">Track Record</div>
-        <div className="flex flex-wrap mt-16 md:ml-20 track-record">
-          {Data.map((data, i) => {
-            return <Card key={i} data={data} />;
+      <section className="py-12 px-4 bg-blue-50">
+        <h1 className="py-12 text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+          Customized & Efficient training
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 p-4 lg:px-16">
+          {TrackRecordData.map((data, i) => {
+            return (
+              <>
+              <div class="bg-white p-6 text-center rounded-xl border">
+              <h2 className="text-sky-800 text-2xl font-semibold">{data.record}</h2>
+                <p className="text-slate-700 mt-1 text-sm">{data.heading}</p>
+              </div>
+              </>
+            )
           })}
         </div>
+
       </section>
-      <section>
-        <div className="mt-16 text-3xl text-center ">Our Journey</div>
-        <div className="mt-16 track-record">
-          <div className="flex flex-wrap py-12 space-y-24 sm:space-y-0 place-content-around container-1 px-7">
-            <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
-              <div className="">
-                <FaUserGraduate className="w-8 h-8 text-blue-900" />
-              </div>
-              <h1>
-                10000+ Students Upskilled in Analytics from IIT’s, NIT’s and
-                Tier 1 institutes in past 20 Months
-              </h1>
-            </div>
-            <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
-              <div className="">
-                <ImUserPlus className="w-8 h-8 text-blue-900" />
-              </div>
-              <h1>
-                Students spend 15 Lakhs minutes on Testing themselves on Test
-                Platform
-              </h1>
-            </div>
-            <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
-              <div className="">
-                <MdPlayLesson className="w-8 h-8 text-blue-900" />
-              </div>
-              <h1>Students consumed 9300 Hours of Content on Learn Platform</h1>
-            </div>
-            <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
-              <div className="">
-                <BsBank2 className="w-8 h-8 text-blue-900" />
-              </div>
-              <h1>
-                Collaborated with top 100 colleges of India NIRF Rank ({string})
-              </h1>
-            </div>
-          </div>
-          <div className="flex flex-wrap py-12 space-y-24 md:space-y-0 place-content-around container-2 ">
-            <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
-              <div className="">
-                <BsBagCheckFill className="w-8 h-8 text-blue-900" />
-              </div>
-              <h1>26 Crore worth Placement Done</h1>
-            </div>
-            <div className=" flex flex-col w-64 space-y-3.5 cursor-pointer">
-              <div className="">
-                <FaChalkboardTeacher className="w-8 h-8 text-blue-900" />
-              </div>
-              <h1>Strong force of 300+ Expert Mentors from IIT’s</h1>
-            </div>
-            <div className="flex flex-col w-64 space-y-3.5 cursor-pointer ">
-              <div className="">
-                <ImOffice className="w-8 h-8 text-blue-900" />
-              </div>
-              <h1>MAS alums working in 250+ Companies</h1>
-            </div>
-          </div>
+      <div className="py-16 lg:pt-28 lg:pb-28 text-center">
+            <img
+                src={Traction}
+                alt="rectangle"
+                width="100%"
+            />
         </div>
-      </section>
       <TestimonialNew />
       <section className="py-16 bg-white">
         <div className="flex flex-col items-center justify-center p-12 mx-auto space-y-6 shadow-xl border md:flex-row md:space-y-0 md:space-x-8 bg-works rounded-xl lg:w-4/5">
@@ -354,7 +306,7 @@ const Companies = () => {
           );
         })}
         <a
-          href="/mentors"
+          href="/faq"
           target="_blank"
           rel="noopener noreferrer"
           className="relative mb-20 text-blue-800 border-b-2 border-transparent left-40 bottom-10 md:left-3/4 hover:border-blue-800"

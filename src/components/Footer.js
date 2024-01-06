@@ -60,6 +60,9 @@ const Footer = () => {
                 <Link to="/mas102" className="hover:scale-105 hover:text-white">
                   MAS 102
                 </Link>
+                <Link to="/da-ds-bootcamp" className="hover:scale-105 hover:text-white">
+                  DA/DS Bootcamp
+                </Link>
                 <a href="https://aceinterview.myanalyticsschool.com/" target="_blank" className="hover:scale-105 hover:text-white">
                   Interviews
                 </a>

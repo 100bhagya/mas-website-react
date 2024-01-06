@@ -10,6 +10,8 @@ import { BadgeCheckIcon } from "@heroicons/react/solid";
 import exclusive from "../images/exclusive.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import Traction from "../images/Traction.png";
+import TrackRecordData from "../data/TrackRecord";
 
 const Courses = () => {
   return (
@@ -42,7 +44,7 @@ const Courses = () => {
                     className="z-0 h-full"
                 />
                 <p className="absolute text-white z-10 top-1.5 right-8 font-bold">
-                  For IITs, BITS
+                  For IITs
                 </p>
               </div>                                   
             </div>
@@ -75,15 +77,8 @@ const Courses = () => {
                 </p>
                 <p className="mb-3 text-slate-600">
                   <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-                  30+ industry certified courses
+                  <b>30+</b> industry certified courses
                 </p>
-                <p className="mb-3 text-slate-600">
-                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-                  <b>96%</b> placement success
-                </p>
-                <p className="mb-3 text-slate-600">
-                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-                <b>250+</b> company tieups</p>
                 <p className="text-[15px] font-semibold text-blue-600">
                   ₹ 3000 + ISA
                 </p>
@@ -104,7 +99,77 @@ const Courses = () => {
           <div className="flex flex-col py-6 pl-6 space-y-4 bg-white shadow-lg border rounded-2xl md:pl-12 md:py-12">
             <div className="flex items-center justify-between w-full pb-4 space-x-12">
               <h3 className="text-2xl font-bold">
-                MAS 102 <span className="text-lg text-slate-500"> Mahadev Batch </span>
+                MAS 102
+              </h3>
+              <div className="relative">                            
+                <img
+                    src={exclusive}
+                    alt="exclusive"
+                    className="z-0 h-full"
+                />
+                <p className="absolute text-white z-10 top-1.5 right-8 font-bold">
+                  For NITs, BITs
+                </p>
+              </div>                                   
+            </div>
+
+            <div className="flex flex-col lg:h-[35vh] h-auto  items-center pr-6 space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start md:pr-12">
+              <img
+                    src={artboard2}
+                    alt="artboard"
+                    className="w-36 h-36 md:ml-8"
+                  />
+              <div className="text-sm min-w-xl">
+              <p className="mb-4 font-bold">
+                In this course, you get:
+              </p>
+              <p className="mb-3 text-slate-600"> 
+              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+              One to one mentorship</p>
+              <p className="mb-3 text-slate-600"> 
+              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />        
+              <b>100%</b> doubts solving </p>
+              <p className="mb-3 text-slate-600"> 
+              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+              <b>200+</b> tests</p>
+              <p className="mb-3 text-slate-600"> 
+              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+              <b>30+</b> industry certified courses</p>
+                <p className="mb-3 text-slate-600">
+                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+                  <b>96%</b> placement success
+                </p>
+                <p className="mb-3 text-slate-600">
+                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+                <b>250+</b> company tieups
+                </p>
+                <p className="mb-3 text-slate-600">
+                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+                Off campus job oppurtunities
+                </p>
+                <p className="text-[15px] font-semibold text-blue-600">
+                  ₹ 3000 + ISA
+                </p>
+              </div>
+            </div>
+            <div className="pr-12 text-right" >
+              <Link
+                  to="/mas102"
+                  className="px-4 py-3 mb-4 text-sm text-white bg-blue-800 rounded-xl hover:bg-blue-900 hover:shadow-xl"
+                >
+                  Explore Now
+              </Link>
+            </div>
+            
+          </div>
+          
+        </div>     
+
+        <div className="flex flex-col items-center mt-16 justify-center space-y-16 lg:flex-row lg:space-y-4 lg:space-x-20">
+          <div className="flex flex-col py-6 pl-6 space-y-4 bg-white shadow-lg border rounded-2xl md:pl-12 md:py-12">
+            <div className="flex items-center justify-between w-full pb-4 space-x-12">
+              <h3 className="lg:text-2xl text-lg font-bold lg:w-[300px] md:w-[180px] w-[100px]">
+                Data Analytics and Data Science Bootcamp
               </h3>
               <div className="relative">                            
                 <img
@@ -130,7 +195,7 @@ const Courses = () => {
               </p>
               <p className="mb-3 text-slate-600"> 
               <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-              Master Data Skills, <br/> No Experience Needed</p>
+              Master Data Skills, <br/> Become an Analyst in 5 Months</p>
               <p className="mb-3 text-slate-600"> 
               <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
               Land Your Dream Job</p>
@@ -160,7 +225,7 @@ const Courses = () => {
             </div>
             <div className="pr-12 text-right" >
               <Link
-                  to="/mas102"
+                  to="/da-ds-bootcamp"
                   className="px-4 py-3 mb-4 text-sm text-white bg-blue-800 rounded-xl hover:bg-blue-900 hover:shadow-xl"
                 >
                   Explore Now
@@ -168,7 +233,7 @@ const Courses = () => {
             </div>
             
           </div>
-        </div>        
+          </div>   
       </section>
 
       <section className="py-16 mb-16">
@@ -273,6 +338,25 @@ const Courses = () => {
         </div>        
       </section>
 
+      <section className="py-12 px-4 bg-blue-50">
+        <h1 className="py-12 text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+          Providing Efficient training
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 p-4 lg:px-16">
+          {TrackRecordData.map((data, i) => {
+            return (
+              <>
+              <div class="bg-white p-6 text-center rounded-xl border">
+              <h2 className="text-sky-800 text-2xl font-semibold">{data.record}</h2>
+                <p className="text-slate-700 mt-1 text-sm">{data.heading}</p>
+              </div>
+              </>
+            )
+          })}
+        </div>
+
+      </section>
+      
       <Footer />
     </div>
   );
