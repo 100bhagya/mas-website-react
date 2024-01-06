@@ -278,7 +278,7 @@ export const ModalForm = ({showModal, setShowModal}) => {
 						className="w-4 h-4 cursor-pointer absolute right-5 top-5"
 					/>
 					<div className="">
-						<p className="text-center text-xl text-green-400 mb-2 font-serif">Your response has been submitted successfully.</p>
+						<p className="text-center text-xl text-green-400 mb-2">Your response has been submitted successfully.</p>
 						<p className="text-slate-800 text-base text-center">We will get back to you shortly.</p>
 					</div>
 					<button className="bg-blue-600 text-white px-8 py-2 text-lg rounded-xl shadow-xl" onClick={() => setIsSubmit(false)}>Okay, Got it</button>

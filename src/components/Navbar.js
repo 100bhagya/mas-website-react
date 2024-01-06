@@ -92,7 +92,7 @@ const Navbar = () => {
 
   return (
     <section>
-      <nav className="flex items-center justify-between bg-white fixed w-full px-12 py-1 lg:px-24 navbar z-[50]">
+      <nav className="flex items-center justify-between bg-white fixed w-full px-12 py-4 lg:px-24 navbar z-[50] shadow-sm">
         <a href="/">
           <Link to="/">
             <img src={Logo} alt="logo" className="w-24 md:w-28"></img>
@@ -129,28 +129,28 @@ const Navbar = () => {
                 <NavLink
                   to="/courses"
                   activeClassName="active"
-                  className="w-full p-4 text-blue-800 border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:shadow-lg hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+                  className="w-full p-4 text-blue-800 cursor-pointer hover:shadow-lg hover:bg-blue-50 rounded-lg border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
                 >
                   Courses
                 </NavLink>
                 <NavLink
                   to="/tests"
                   activeClassName="active"
-                  className="w-full p-4 text-blue-800 border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+                  className="w-full p-4 text-blue-800 cursor-pointer hover:bg-blue-50 rounded-lg border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
                 >
                   Tests
                 </NavLink>
                 <NavLink
                   to="/mentors"
                   activeClassName="active"
-                  className="w-full p-4 text-blue-800 border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+                  className="w-full p-4 text-blue-800 cursor-pointer hover:bg-blue-50 rounded-lg border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
                 >
                   Mentors
                 </NavLink>
                 <NavLink
                   to="/faq"
                   activeClassName="active"
-                  className="w-full p-4 text-blue-800 border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+                  className="w-full p-4 text-blue-800 cursor-pointer hover:bg-blue-50 rounded-lg border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
                 >
                   FAQs
                 </NavLink>
@@ -173,8 +173,7 @@ const Navbar = () => {
           </NavLink>
 
           <a
-            href="https://myanalyticsschool.com/blog/"
-            target="_blank"
+            href="blog"
             rel="noopener noreferrer"
             className="text-blue-800 border-b-2 border-transparent hover:border-blue-800"
           >
@@ -240,28 +239,28 @@ const Navbar = () => {
               <NavLink
                 to="/courses"
                 activeClassName="active"
-                className="w-full px-4 py-1 mt-2 text-lg border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:shadow-lg hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+                className="w-full px-4 py-1 mt-2 text-lg cursor-pointer hover:shadow-lg hover:bg-blue-50 rounded-lg border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
               >
                 Courses
               </NavLink>
               <NavLink
                 to="/tests"
                 activeClassName="active"
-                className="w-full px-4 py-1 text-lg border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+                className="w-full px-4 py-1 text-lg cursor-pointer hover:bg-blue-50 rounded-lg border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
               >
                 Tests
               </NavLink>
               <NavLink
                 to="/mentors"
                 activeClassName="active"
-                className="w-full px-4 py-1 text-lg border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+                className="w-full px-4 py-1 text-lg border-b-2 border-l-4 border-transparent cursor-pointer hover:bg-blue-50 rounded-lg border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
               >
                 Mentors
               </NavLink>
               <NavLink
                 to="/faq"
                 activeClassName="active"
-                className="w-full px-4 py-1 text-lg border-b-2 border-l-4 border-transparent rounded-r-lg cursor-pointer hover:bg-blue-50 border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
+                className="w-full px-4 py-1 text-lg border-b-2 border-l-4 border-transparent cursor-pointer hover:bg-blue-50 rounded-lg border-l-transparent hover:border-l-blue-800 hover:border-blue-800"
               >
                 FAQs
               </NavLink>
@@ -276,8 +275,7 @@ const Navbar = () => {
         </NavLink>
 
         <a
-          href="https://myanalyticsschool.com/blog/"
-          target="_blank"
+          href="/blog"
           rel="noopener noreferrer"
           className="text-lg"
         >

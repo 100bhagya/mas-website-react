@@ -74,8 +74,11 @@ const Mentor = () => {
   };
   return (
     <>
-      <div className="mt-16 mb-10 text-3xl text-center ">Mentors</div>
-      <div className="mx-10 text-center md:mx-32 ">
+      
+      <h1 className="py-12 text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+        Meet The Mentors
+      </h1>
+      <div className="mx-10 text-center md:mx-32 text-slate-600">
         <h1>
           Experienced mentors to steer you through the journey from being a
           student to an industry-driven professional. With a constant
@@ -87,8 +90,8 @@ const Mentor = () => {
       <div className="py-8 my-12 space-y-2 text-center ">
         <Slider {...settings} className="absolute left-4 md:static md:left-0">
           {Data.map((data) => (
-            <div className="space-x-3 ">
-              <div className="box-border flex flex-col items-center justify-center px-8 py-4 mt-5 space-x-12 border-2 shadow-xl cursor-pointer lg:duration-500 md:transition lg:transform lg:hover:shadow-slate-500 lg:hover:-translate-y-3 rounded-2xl h-42 mx-7 border-slate-300 place-content-around card">
+            <div className="space-x-3 transition-all duration-500 ease-in-out">
+              <div className="box-border flex flex-col items-center justify-center px-8 py-4 mt-5 space-x-12 border-2 shadow-md cursor-pointer lg:duration-500 md:transition lg:transform lg:hover:shadow-slate-200 lg:hover:-translate-y-3 rounded-2xl h-42 mx-7 border-slate-300 place-content-around card">
                 <div className="items-center mt-10">
                   <img
                     className="relative w-2/3 left-[20%]"
@@ -116,9 +119,9 @@ const Mentor = () => {
         href="/mentors"
         target="_blank"
         rel="noopener noreferrer"
-        className="relative text-blue-800 border-b-2 border-transparent left-48 bottom-5 md:left-3/4 hover:border-blue-800"
+        className="flex justify-center py-4 my-12 text-md font-bold text-center text-white bg-blue-600 rounded-full w-1/2 md:w-1/4 mx-auto"
       >
-        Meet The Mentors
+        View All Mentors
       </a>
     </>
   );

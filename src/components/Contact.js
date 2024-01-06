@@ -3,6 +3,7 @@
 /* eslint-disable default-case */
 import React, { useState } from "react";
 import {
+  UserIcon,
   PhoneIcon,
   MailIcon,
   LocationMarkerIcon,
@@ -69,9 +70,11 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <div className="mt-16 text-3xl text-center">Contact Us</div>
-      <section className="p-12">
+    <section className="p-12 mb-12">  
+      <h1 className="py-12 text-3xl font-bold text-center text-gray-900  lg:text-4xl">
+        Contact Us
+      </h1> 
+      <div className="p-12">
         {isSubmit ? (
           <div className="absolute h-[100%] w-[100%] z-[10000] backdrop-blur-sm bg-white/30 flex items-center justify-center">
             <div className="relative flex flex-col items-center max-w-md px-12 py-8 space-y-8 shadow-2xl bg-card rounded-2xl">
@@ -82,7 +85,7 @@ const Contact = () => {
                 className="absolute w-4 h-4 cursor-pointer right-5 top-5"
               />
               <div className="">
-                <p className="mb-2 font-serif text-xl text-center text-green-400">
+                <p className="mb-2 text-xl text-center text-green-400">
                   Your response has been submitted successfully.
                 </p>
                 <p className="text-base text-center text-slate-800">
@@ -98,18 +101,19 @@ const Contact = () => {
             </div>
           </div>
         ) : null}
-        <div className="flex flex-col items-center justify-between max-w-6xl mx-auto space-y-6 text-white lg:flex-row lg:space-y-0 lg:space-x-12 rounded-xl">
+        <div className="flex flex-col items-center justify-center max-w-6xl mx-auto space-y-6 text-white lg:flex-row lg:space-y-0 lg:space-x-12 rounded-xl">
           <div className="w-full px-6 py-8 text-gray-600 bg-white border-2 border-gray-200 border-solid shadow-xl rounded-xl lg:p-12 md:w-2/3 lg:w-1/2">
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col w-full space-y-4 font-pop lg:w-10/12"
+              className="flex flex-col w-full space-y-1 font-pop lg:w-10/12"
             >
-              <h1 className="text-lg font-bold">Get in touch.</h1>
+              <h1 className="text-xl mb-2 font-bold">Get in touch</h1>
               <div>
-                <label htmlFor="" className="text-sm font-medium">
+                <label htmlFor="" className="text-sm font-semibold">
                   Name
                 </label>
 
+                <UserIcon className="relative z-10 h-5 text-gray-400 top-3 left-2" />
                 <input
                   type="text"
                   placeholder="Enter your name"
@@ -117,7 +121,7 @@ const Contact = () => {
                   name="name"
                   value={formValues.name}
                   onChange={handleChange}
-                  class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 text-sm md:text-[16px] outline-none focus:ring-2 focus:ring-blue-600"
+                  class="ring-1 ring-gray-300 w-full text-[14px] md:text-[16px]  rounded-md relative bottom-5 px-10 py-2 mt-1 outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
               <p className=" text-[12px] md:text-[16px]">{formErrors.name}</p>
@@ -127,7 +131,7 @@ const Contact = () => {
                   Email
                 </label>
 
-                <MailIcon className="relative z-10 h-5 text-gray-300 top-5 left-2" />
+                <MailIcon className="relative z-10 h-5 text-gray-400 top-3 left-2" />
                 <input
                   type="text"
                   placeholder="Email Address"
@@ -135,7 +139,7 @@ const Contact = () => {
                   name="email"
                   value={formValues.email}
                   onChange={handleChange}
-                  class="ring-1 ring-gray-300 w-full text-[14px] md:text-[16px]  rounded-md relative bottom-5 px-10 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-600"
+                  class="ring-1 ring-gray-300 w-full text-[14px] md:text-[16px]  rounded-md relative bottom-5 px-10 py-2 mt-1 outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
               <p className="text-red-500 relative bottom-7 text-[12px] md:text-[16px]">
@@ -146,7 +150,7 @@ const Contact = () => {
                   Phone Number
                 </label>
 
-                <PhoneIcon className="relative z-10 h-5 text-gray-300 top-5 left-2" />
+                <PhoneIcon className="relative z-10 h-5 text-gray-400 top-3 left-2" />
                 <input
                   type="text"
                   placeholder="Enter your number here"
@@ -154,7 +158,7 @@ const Contact = () => {
                   name="phone"
                   onChange={handleChange}
                   value={formValues.phone}
-                  class="ring-1 ring-gray-300 w-full text-[14px] md:text-[16px]  rounded-md relative bottom-5 px-10 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-600"
+                  class="ring-1 ring-gray-300 w-full text-[14px] md:text-[16px]  rounded-md relative bottom-5 px-10 py-2 mt-1 outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
               <p className="text-red-500 relative bottom-7 text-[12px] md:text-[16px]">
@@ -164,16 +168,16 @@ const Contact = () => {
                 <label htmlFor="" className="text-sm font-medium">
                   Enter your message
                 </label>
-                <ChatAltIcon className="relative z-10 h-5 text-gray-300 top-5 left-2" />
+                <ChatAltIcon className="relative z-10 h-5 text-gray-400 top-3 left-2" />
                 <textarea
                   placeholder="Type your message here"
                   name="message"
                   rows="4"
                   required
-                  class="ring-1 ring-gray-300 w-full text-[14px] md:text-[16px]  rounded-md relative bottom-5 px-10 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-600"
+                  class="ring-1 ring-gray-300 w-full text-[14px] md:text-[16px]  rounded-md relative bottom-5 px-10 py-2 mt-1 outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
-              <button className="self-end inline-block w-full px-6 py-3 text-sm font-bold text-white uppercase bg-blue-700 rounded-lg ">
+              <button className="self-end inline-block w-full px-6 py-3 text-sm font-bold text-white uppercase bg-blue-600 rounded-lg ">
                 Submit
               </button>
             </form>
@@ -181,11 +185,11 @@ const Contact = () => {
 
           <div className="flex flex-col-reverse items-center justify-between w-full space-y-8 lg:flex-col md:w-1/2">
             <div className="py-6">
-              <h3 className="text-lg font-semibold tracking-wide text-blue-700 lg:text-2xl md:text-xl">
+              <h3 className="text-lg font-semibold tracking-wide text-slate-900 lg:text-2xl md:text-xl">
                 Office Address
               </h3>
               <a href="/#">
-                <p className="pt-4 text-sm text-black md:text-xl ">
+                <p className="pt-4 text-sm text-slate-600 ">
                   HP Keluskar marg Opp Equinox Business <br></br> Center, BKC
                   Crossing, Mumbai,<br></br> Maharashtra 400070
                 </p>
@@ -194,8 +198,8 @@ const Contact = () => {
 
             <div className="">
               <div className="flex items-center w-3/5 px-4 py-2 mb-4 space-x-4 bg-blue-200 rounded-3xl md:w-2/5 flex-start">
-                <LocationMarkerIcon className="w-5 h-5 text-blue-500" />
-                <p className="text-sm text-blue-700 font">View us on map</p>
+                <LocationMarkerIcon className="w-5 h-5 text-blue-900" />
+                <p className="text-sm text-blue-900 font">View us on map</p>
               </div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d60333.716951423754!2d72.8769323!3d19.0700103!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3be7c8931a0a8ae1%3A0xde7d09e4bd547394!2sOmkar%20Meridia%20BKC%20Crossing%20Lal%20Bahadur%20Shastri%20Rd%2C%20BMC%20Colony%2C%20Kurla%20West%2C%20Kurla%20Mumbai%2C%20Maharashtra%20400070!3m2!1d19.0700103!2d72.87693229999999!5e0!3m2!1sen!2sin!4v1645357321858!5m2!1sen!2sin"
@@ -208,8 +212,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

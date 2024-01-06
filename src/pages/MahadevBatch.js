@@ -9,11 +9,12 @@ import Yash from "../images/Yash.jpg";
 import Grid from "../images/grid.png";
 import Design2 from "../images/design2.png";
 import "../index.css";
-import Data from "../data/MAS102Data";
+import Data from "../data/DA_DS_BootcampData";
+import TrackRecordData from "../data/TrackRecord";
 import Rectangle from "../images/Rectangle 52.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import {Offers} from "../components/Offers";
+import {Offers1} from "../components/Offers";
 import Fractal from "../images/fractal.png";
 import Ola from "../images/ola.png";
 import MasterCard from "../images/mastercard.png";
@@ -28,6 +29,7 @@ import PhonePe from "../images/phonepe.png";
 import Mynthra from "../images/mynthra.png";
 import TestimonialOtherPages from "../components/TestimonialOtherPages";
 import FaqMAS102  from "../components/FaqMAS102";
+import Traction from "../images/Traction.png";
 
 const Testimonial = ({ image, linkedin, name, position }) => {
   return (
@@ -88,7 +90,7 @@ function FAQ({ faq, index, toggleFAQ }) {
   );
 }
 
-const MAS102 = () => {
+const MahadevBatch = () => {
   const [faqs, setfaqs] = useState(Data);
 
   const toggleFAQ = (index) => {
@@ -111,15 +113,15 @@ const MAS102 = () => {
         <div className="md:mb-24 mb-16 relative lg:right-[5%] md:w-1/2">
           <div className="pb-8 lg:pt-20 ">
           <h1 className="py-8 text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl text-center  font-primary">
-           Join <span className="text-sky-800">MAS 102 Batch</span>
+          Join <span className="text-sky-800">Data Analytics & Data Science Bootcamp</span>
           </h1>
 
           <p className="px-8 pb-8 text-base text-center text-slate-600 md:px-24 lg:top-5 lg:text-lg max-w-3xl mx-auto">
-          This will act as your Tank and Bazooka to smash your placements and get placed in your dream company specifically designed for NITs, IIITs, BITS, and similar colleges.
+            2 Lakh Data Jobs Monthly! Upskill and Get Hired in 5 Months. Don't Wait, Master It with MAS.
           </p>  
           </div>
           <a
-            href="https://forms.gle/3vRSnaxiVob1YGz46"
+            href="https://forms.gle/8uBJZP7T4tra3wGL8"
             className="px-8 py-3 text-white bg-blue-700 rounded-2xl"
             target="_blank"
             rel="noopener noreferrer"
@@ -143,7 +145,7 @@ const MAS102 = () => {
           className="relative lg:left-[10%] md:left-[4%] bottom-12 px-16 md:px-0 md:mt-0 mt-8"
         ></img> */}
       </div>
-      <Offers />
+      <Offers1 />
       <section class="text-gray-600 body-font py-16  flex justify-center bg-blue-50">
         <div class="container   ">
           <div class="  ">
@@ -234,17 +236,14 @@ const MAS102 = () => {
 
           <div className="max-w-md">
             <h2 className="mb-6 text-lg font-semibold text-center text-gray-900 lg:text-2xl lg:text-left">
-              Fees & ISA
+            Fees & PAP
             </h2>
 
             <p className="w-full mb-6 text-sm leading-relaxed text-center text-gray-600 lg:text-base lg:text-left">
-              Our Income Share Agreement (ISA) is an investment in students'
-              career. Students can benefit from our services just by paying a
-              negligible amount and contributing a very small part of their
-              income once they are placed.
+            Our Pay After Placement program (PAP) is designed to support students in building their careers. Students can avail themselves of our services by paying a registration fee and contributing a small percentage of their income after securing a job.
             </p>
 
-            <Link to="/isa-102">
+            <Link to="/pap">
               <div className="w-[60%] md:w-[50%] py-3 px-8   text-center  bg-blue-700 rounded-2xl text-white  ml-[20%] md:ml-[30%] lg:ml-0">
                 Learn more
               </div>
@@ -261,11 +260,11 @@ const MAS102 = () => {
             <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
           ))}
           <div className="mt-12 mb-6 text-center">
-            <Link to="/timeline2">
+            <a href="https://drive.google.com/file/d/1YEDSoPBT74k7v42hSM4FFQNWiTRpfCxF/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <div className="px-3 py-4 bg-blue-600 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]">
                 Complete Timeline
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -349,9 +348,36 @@ const MAS102 = () => {
           Apply Now
         </a>
       </div> */}
+        <section className="py-12 px-4 bg-blue-50">
+        <h1 className="py-12 text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+          Customized & Efficient training
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 p-4 lg:px-16">
+          {TrackRecordData.map((data, i) => {
+            return (
+              <>
+              <div class="bg-white p-6 text-center rounded-xl border">
+              <h2 className="text-sky-800 text-2xl font-semibold">{data.record}</h2>
+                <p className="text-slate-700 mt-1 text-sm">{data.heading}</p>
+              </div>
+              </>
+            )
+          })}
+        </div>
+
+      </section>
+
+        <div className="pt-16 lg:pt-28 lg:pb-14 text-center">
+            <img
+                src={Traction}
+                alt="rectangle"
+                width="100%"
+            />
+        </div>
+      <FaqMAS102 />
       <Footer />
     </div>
   );
 };
 
-export default MAS102;
+export default MahadevBatch;

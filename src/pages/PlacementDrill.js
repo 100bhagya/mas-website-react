@@ -45,21 +45,22 @@ const IncomeSlab = ({ name, no_1, no_2, no_3, color }) => {
 
 const PlacementDrill = () => {
   return (
-    <div className="bg-back">
+    <div className="">
       <Navbar />
-      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-blue-50">
         <div className="md:mb-24 mb-16 relative lg:right-[12%] md:w-1/2">
-          <div className="pb-10 lg:pt-20 md:pb-28 lg:bottom-12">
-            <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
-              MAS Placement Drill
-            </h1>
+          <div className="pb-16 bg-blue-50">
+          <h1 className="py-8 text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl text-center  font-primary">
+            About <span className="text-sky-800">MAS Placement Drill</span>
+          </h1>
 
-            <p className="relative justify-center text-sm leading-8 text-black lg:top-5 md:text-lg font">
-              This will act as your AK47 to smash and ace placement tests and
+          <p className="px-8 pb-8 text-base text-center text-slate-600 md:px-24 lg:top-5 lg:text-lg max-w-6xl mx-auto">
+          This will act as your AK47 to smash and ace placement tests and
               get interview-ready with mock cases and interviews
               to convert your dream company.
-            </p>
-          </div>
+          </p>  
+
+        </div>
           <a
             href="https://razorpay.com/payment-button/pl_K4pQUWotXrqO4Z/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
             className="px-8 py-3 text-white bg-blue-700 rounded-2xl"
@@ -77,7 +78,7 @@ const PlacementDrill = () => {
 
       <div className="flex justify-center mt-5">
 
-        <div className={`bg-white lg:w-[18%] md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl`}>
+        <div className={`bg-white lg:w-[18%] border shadow md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl`}>
           <div className="">
             <img src={Artboard1} alt="" className="h-32 ml-5 md:ml-0" />
           </div>
@@ -95,7 +96,7 @@ const PlacementDrill = () => {
           </div>
         </div>
  
-        <div className={`bg-white lg:w-[18%] md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl`}>
+        <div className={`bg-white lg:w-[18%] border shadow md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl`}>
           <div className="">
             <img src={Artboard2} alt="" className="h-32 ml-5 md:ml-0" />
           </div>
@@ -112,7 +113,7 @@ const PlacementDrill = () => {
           </div>
         </div>
 
-        <div className={`bg-white lg:w-[18%] md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl`}>
+        <div className={`bg-white lg:w-[18%] border shadow md:w-[34%] w-[50%]  md:m-10 lg:mx-12 md:mx-4 mx-2 mt-10 pt-8 md:pl-6 lg:pr-16 md:pr-8 pb-7 rounded-3xl`}>
           <div className="">
             <img src={Artboard3} alt="" className="h-32 ml-5 md:ml-0" />
           </div>
@@ -145,20 +146,20 @@ const PlacementDrill = () => {
                   className="md:my-28 md:mr-10 md:hidden w-[40%] relative bottom-4"
                 />
               </p>
-              <div className="flex md:block md:w-[161%] md:right-[37%] relative lg:w-auto lg:right-0 flex-row-reverse justify-center mt-8">
-                <div className="pb-10 md:mt-20 lg:ml-16 md:ml-20 md:pb-0">
+              <div className="flex md:block md:w-[161%] md:right-[37%] relative lg:w-auto lg:right-0 flex-row-reverse mt-8">
+                <div className="pb-10 md:mt-20 md:mt-8 md:ml-2 md:pb-0">
                   <a
                     href="https://docs.google.com/spreadsheets/d/1LQ1TkGqHWN9Nk9L04bjZtG6u183BLIqBdZ9yeZW-vzY/edit?usp=sharing"
-                    className="lg:text-[11px]  text-[12px] font-medium ml-2 md:ml-0 md:px-6 lg:px-10 px-3 py-2 md:py-3 bg-blue-600 md:rounded-xl rounded-md text-white"
+                    className="inline-block cursor-pointer mx-2 bg-blue-600 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-medium uppercase font-primary tracking-wide lg:text-sm text-[12px]"
                     target="_blank"
                   >
-                    Download Placement Drill Timeline
+                    Download Timeline
                   </a>
                 </div>
-                <div className="md:mt-12 md:ml-16">
+                <div className="md:mt-8 md:ml-2">
                   <a
                     href="tests"
-                    className="lg:text-[11px] text-[12px] font-medium mr-2 md:mr-0 lg:px-[103.5px] md:px-[90px] md:left-4 relative lg:left-0 px-5 py-2 md:py-3 bg-blue-600 md:rounded-xl rounded-md text-white"
+                    className="inline-block cursor-pointer mx-2 bg-blue-600 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-medium uppercase font-primary tracking-wide lg:text-sm text-[12px]"
                   >
                     Sample Tests
                   </a>

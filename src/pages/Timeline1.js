@@ -84,7 +84,7 @@ const Timeline1 = () => {
   return (
     <div className="bg-back">
       <Navbar />
-      <div className="lg:flex pt-28 bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50 text-center justify-center">
+      <div className="lg:flex pt-28 bg-blue-50 text-center justify-center">
         <div className="lg:pt-16 mt-4 md:mt-0 pb-20 lg:bottom-12">
           <h1 className="md:font-medium font-semibold text-center justify-center relative lg:bottom-6  text-black text-2xl md:text-2xl lg:text-[50px]  leading-8 font-primary">
             Timeline

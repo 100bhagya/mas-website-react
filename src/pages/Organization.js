@@ -44,23 +44,23 @@ const Organization = ({ props, data }) => {
     ],
   };
   return (
-    <>
-      <div className="mx-3 mt-16 mb-10 text-xl text-center md:mx-0 ">
+    <div className="bg-white">
+      <h1 className="py-12 text-xl font-bold text-center text-gray-900 lg:text-2xl">
         {props}
-      </div>
+      </h1>
 
-      <div className="box-border p-4 my-6 space-x-4 space-y-2 text-center bg-gradient-to-b from-blue-100 to-white">
-        <Slider {...settings} className="absolute left-2 md:static md:left-0">
+      <div className="box-border p-4 my-6 space-x-4 space-y-2 text-center">
+        <Slider {...settings} className="absolute left-2 flex md:static md:left-0">
           {data.map((data) => {
             return (
-              <div className="items-center mx-2 place-content-center">
-                <img alt="img" className="w-1/3 my-6" src={data.image} />
+              <div className="flex justify-items-center items-center">
+                <img alt="img" className="lg:h-24 h-16 lg:px-10 px-4 p-2" src={data.image} />
               </div>
             );
           })}
         </Slider>
       </div>
-    </>
+    </div>
   );
 };
 

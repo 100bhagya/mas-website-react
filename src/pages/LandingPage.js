@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
 import "../index.css";
-import design1 from "../images/business.png";
-import design2 from "../images/Vector 3.png";
+import design1 from "../images/Analytics-bro.svg";
+import design2 from "../images/presets_grid.png";
 import Copy from "../images/copy.png";
 import Books from "../images/e-books.png";
 import Portfolio from "../images/portfolio.png";
@@ -11,7 +11,7 @@ import Design3 from "../images/design1.png";
 import Grid from "../images/grid.png";
 import Design4 from "../images/design2.png";
 import Design5 from "../images/design3.png";
-import Offers from "../components/Offers";
+import {Offers} from "../components/Offers";
 import Footer from "../components/Footer";
 import TestimonialNew from "../components/TestimonialNew";
 import LoginForm from "../components/LoginForm";
@@ -23,7 +23,7 @@ import { ModalForm } from "../components/ModalForm";
 
 const Card1 = ({ img, title, content }) => {
   return (    
-    <div className="flex flex-col items-center p-8 my-4 space-y-8 md:p-16 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto bg-works">
+    <div className="flex flex-col items-center p-6 bg-white space-y-8 md:p-10 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:space-x-6 rounded-3xl md:h-auto">
       <div className="relative">
         <img
           src={Grid}
@@ -38,7 +38,7 @@ const Card1 = ({ img, title, content }) => {
         <img
           src={img}
           alt="design"
-          className="relative border-8 border-blue-300 border-solid h-[30vh] w-96 md:h-64 md:w-96 rounded-2xl"
+          className="relative border-4 border-grey-200 border-solid h-[30vh] w-96 md:h-64 md:w-96 rounded-2xl"
         />
       </div>      
 
@@ -58,10 +58,10 @@ const Card1 = ({ img, title, content }) => {
 
 const Card = ({ img, title, content }) => {
   return (    
-      <div className="flex flex-col justify-center p-8 space-y-4 shadow-xl bg-card rounded-xl">
+      <div className="flex flex-col border justify-center p-8 space-y-4 shadow-lg hover:scale-105 rounded-xl transition-all">
         <div className="flex items-start justify-center">
           <img
-            className="p-4 m-6 bg-gray-200 rounded-full h-36 hover:scale-105 hover:opacity-70"
+            className="p-4 m-6 bg-gray-100 rounded-full w-36 h-36 hover:opacity-80 transition-all"
             src={img}
             alt="blog"
           /> 
@@ -96,32 +96,32 @@ const LandingPage = () => {
       {/* <LoginForm isShowLogin={isShowLogin} closeLogin={closeLogin} /> */}
       {/* <JoinToday isShowLogin={isShowLogin} closeLogin={closeLogin} /> */}
       <ModalForm showModal={showModal} setShowModal={setShowModal} />
-      <div className="flex flex-col-reverse pt-16 lg:flex-row bg-gradient-to-b from-blue-200 via-blue-100 to-blue-50">
+      <div className="flex flex-col-reverse pt-16 lg:flex-row bg-blue-50">
         <div className="max-w-lg px-4 mx-auto lg:flex lg:items-center pt-9 md:max-w-xl lg:max-w-4xl">
-          <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
-            <h1 className="text-2xl font-semibold leading-relaxed text-black lg:font-normal md:text-3xl lg:text-5xl font-primary">
+          <div className="lg:pt-16 bottom-3 lg:pb-32 pb-10 lg:pl-12 relative lg:left-[7%] lg:top-3 text-center lg:text-left">
+            <h1 className="text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl font-primary">
               Get Placed In
               <p className="relative mt-4 bottom-5 lg:mt-10">
                 Your Dream Company
               </p>
             </h1>
-            <p className="lg:pt-6 font text-sm lg:text-lg  text-[#787B7D] leading-loose lg:w-[68%] ">
+            <p className="lg:pt-6 text-sm lg:text-lg  text-slate-600 leading-loose lg:w-[68%] ">
               My Analytics School is an Ed-Tech start-up founded by IIT alumni,
               providing an end-to-end solution for analytics, data science
               placements and related job preparation
             </p>
             <div
               onClick={toggleShowModal}
-              className="inline-block cursor-pointer bg-blue-600 lg:mt-20 mt-8 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-normal uppercase font-primary tracking-wide lg:text-sm text-[12px] mr-4"
+              className="inline-block cursor-pointer bg-blue-600 lg:mt-10 mt-6 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-medium uppercase font-primary tracking-wide lg:text-sm text-[12px] mr-4"
             >
-              Join Today
+              Register Now
             </div>
             <a href={Pdf} target="_blank" rel="noopener noreferrer">
-              <img
-                src={Banner}
-                alt=""
-                className="absolute lg:top-[330px] top-[190px] md:top-[140px] left-[70%] lg:left-[25%] h-32 lg:h-48"
-              />
+              <div
+                className="inline-block cursor-pointer bg-white lg:mt-20 mt-8 md:px-10 md:py-3 px-6 py-2 px text-blue-600 border rounded-lg font-medium uppercase font-primary tracking-wide lg:text-sm text-[12px] mr-4"
+              >
+                View Placement Report
+              </div>
             </a>
           </div>
         </div>
@@ -139,8 +139,8 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <section className="p-12 bg-back">      
-          <h1 className="py-12 font-serif text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+      <section className="p-12 mb-12">      
+          <h1 className="py-12 text-3xl font-bold text-center text-gray-900 lg:text-4xl">
             What We Do?
           </h1>
           <div className="flex flex-col items-center max-w-6xl mx-auto space-y-12 lg:flex-row lg:space-y-0 lg:space-x-12">
@@ -162,11 +162,11 @@ const LandingPage = () => {
           </div>        
       </section>
 
-      <section className="p-12 bg-back">                  
-          <h1 className="py-12 font-serif text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+      <section className="p-12 bg-blue-50 pb-24">                     
+          <h1 className="py-12 text-3xl font-bold text-center text-gray-900  lg:text-4xl">
             How It Works?
           </h1>          
-          <div className="flex flex-col space-y-8">
+          <div className="flex flex-col space-y-16 md:px-28">
             <Card1
               img={Design3}
               title="Test Preparation & Upskilling"
