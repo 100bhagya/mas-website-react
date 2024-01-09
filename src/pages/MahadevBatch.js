@@ -11,6 +11,7 @@ import Design2 from "../images/design2.png";
 import "../index.css";
 import Data from "../data/DA_DS_BootcampData";
 import TrackRecordData from "../data/TrackRecord";
+import TrackRecordData1 from "../data/TrackRecord1";
 import Rectangle from "../images/Rectangle 52.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -384,13 +385,24 @@ const MahadevBatch = () => {
 
       </section>
 
-        <div className="pt-16 lg:pt-28 lg:pb-14 text-center">
-            <img
-                src={Traction}
-                alt="rectangle"
-                width="100%"
-            />
+      <section className="py-12 px-4 bg-white">
+        <h1 className="py-12 text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+          Traction
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 p-4 lg:px-16">
+          {TrackRecordData1.map((data, i) => {
+            return (
+              <>
+              <div class="bg-white p-6 text-center rounded-xl border">
+              <h2 className="text-sky-800 text-2xl font-semibold">{data.record}</h2>
+                <p className="text-slate-700 mt-1 text-sm">{data.heading}</p>
+              </div>
+              </>
+            )
+          })}
         </div>
+
+      </section>
         <div className={`fixed bottom-0 left-0 right-0 bg-white border-t text-slate-500 p-2  z-50 ${showFixedDiv ? 'block' : 'hidden'}`}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-2 lg:px-32 md:px-8 gap-4">
           <div className="hidden md:block">
