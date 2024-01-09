@@ -172,17 +172,19 @@ const MahadevBatch = () => {
                 <div className="md:w-[43%] w-full ml-5  md:px-16 ">
                   <div class="md:flex items-center  mb-3 mt-28 md:mt-16 lg:mt-28 hidden">
                     <h2 class="text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl  font-primary">
-                      Mentors
+                      Expert <span className="text-sky-800">Mentors</span>
                     </h2>
                   </div>
                   <div class="flex-grow">
                     <p class="leading-relaxed w-full md:text-lg text-sm px-8 md:px-0 md:mt-12 mt-7 mb-10 md:mb-16">
-                      Experienced mentors to steer you through the journey from
+                    Our experienced IITian mentors from top companies steer you 
+                      through the journey from
                       being a student to an industry-driven professional. With a
                       constant interactive support from our mentors with a
-                      personalized touch, get a chance of a lifetime to engage
+                      personalised touch, get a chance of a lifetime to engage
                       with accomplished and competent mentors who will be adept
                       at tackling your doubts and queries.
+
                     </p>
                   </div>
                   <Link to="/mentors">
