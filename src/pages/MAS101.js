@@ -29,6 +29,7 @@ import Mynthra from "../images/mynthra.png";
 import TestimonialOtherPages from "../components/TestimonialOtherPages";
 import Pdf from "../components/MAS Placement Report'21.pdf";
 import Banner from "../images/placement banner.png";
+import { InformationCircleIcon } from "@heroicons/react/outline";
 
 const Testimonial = ({ image, linkedin, name, position }) => {
   return (
@@ -108,7 +109,13 @@ const MAS101 = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-blue-50">
+      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-24 pb-4 px-2 bg-red-50 border-b border-red-200">
+        <h4 className="text-md font-semibold text-center text-red-700 font-primary">
+          <InformationCircleIcon className="inline-block w-6 h-6 mr-2 -mt-1" />
+          MAS 101 Batch will launch soon. Stay tuned!
+        </h4>
+      </div>
+      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-4  bg-blue-50">
         <div className="md:mb-24 mb-16 relative lg:right-[5%] md:w-1/2">
           <div className="pb-8 lg:pt-20 ">
           <h1 className="py-8 text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl text-center  font-primary">
