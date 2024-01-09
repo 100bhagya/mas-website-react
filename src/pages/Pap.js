@@ -156,7 +156,11 @@ const Pap = () => {
         </div>
         <div className="flex flex-col-reverse justify-center md:flex-row">
           <div className="mt-8 ml-5 md:mt-14 lg:ml-0">
-            <div className="">*Registration Fees: 30000/-</div>
+            <div className="">*Registration Fees: 29999/-
+              <span className="line-through mx-2 ">
+              &#8377;49999 /-
+              </span>
+            </div>
             <div className="mt-4">*PAP Payments will be paid for the first 12 months from you join the Job</div>
           </div>
           <div className="mt-10 ml-3 lg:ml-44 md:ml-24">
