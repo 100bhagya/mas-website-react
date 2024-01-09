@@ -1,8 +1,8 @@
 import React from "react";
 import "../index.css";
 import Navbar from "../components/Navbar";
-import artboard1 from "../images/coach1.jpg";
-import artboard2 from "../images/coach2.png";
+import artboard1 from "../images/launching soon.jpg";
+import artboard2 from "../images/register now.png";
 import artboard3 from "../images/exam.avif";
 import artboard4 from "../images/courses_artboard4.png";
 import artboard5 from "../images/courses_artboard5.png";
@@ -30,142 +30,9 @@ const Courses = () => {
         </p>        
       </section>
 
-      <section className=" pb-32 bg-blue-50">      
-        <div className="flex flex-col items-center justify-center space-y-16 lg:flex-row lg:space-y-4 lg:space-x-20">
-          <div className="flex flex-col py-6 pl-6 space-y-4 bg-white shadow-lg border rounded-2xl md:pl-12 md:py-12">
-            <div className="flex items-center justify-between w-full pb-4 space-x-12">
-              <h3 className="text-2xl font-bold">
-                MAS 101
-              </h3>
-              <div className="relative">                            
-                <img
-                    src={exclusive}
-                    alt="exclusive"
-                    className="z-0 h-full"
-                />
-                <p className="absolute text-white z-10 top-1.5 right-8 font-bold">
-                  For IITs
-                </p>
-              </div>                                   
-            </div>
+      <section className=" pb-32 bg-blue-50">         
 
-            <div className="flex flex-col  lg:h-[35vh] h-auto items-center pr-6 space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start md:pr-12">
-              <img
-                    src={artboard1}
-                    alt="artboard"
-                    className="w-36 md:ml-4"
-                  />
-              <div className="text-sm min-w-xl">
-              <p className="mb-4 font-bold">
-                In this course, you get:
-              </p>
-              <p className="mb-3 text-slate-600">
-              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-                One to one mentorship
-              </p>
-                <p className="mb-3 text-slate-600">
-                  <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-                  <b>100%</b> doubts solving 
-                </p>
-                <p className="mb-3 text-slate-600">
-                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-                  No prior knowledge required
-                </p>
-                <p className="mb-3 text-slate-600">
-                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-                  <b>200+</b> tests
-                </p>
-                <p className="mb-3 text-slate-600">
-                  <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-                  <b>30+</b> industry certified courses
-                </p>
-                <p className="text-[15px] font-semibold text-blue-600">
-                  ₹ 3000 + ISA
-                </p>
-
-              </div>
-            </div>
-            <div className="pr-12 text-right" >
-              <Link
-                  to="/mas101"
-                  className="px-4 py-3 mb-4 text-sm text-white bg-blue-800 rounded-xl hover:bg-blue-900 hover:shadow-xl"
-                >
-                  Explore Now
-              </Link>
-            </div>
-            
-          </div>
-
-          <div className="flex flex-col py-6 pl-6 space-y-4 bg-white shadow-lg border rounded-2xl md:pl-12 md:py-12">
-            <div className="flex items-center justify-between w-full pb-4 space-x-12">
-              <h3 className="text-2xl font-bold">
-                MAS 102
-              </h3>
-              <div className="relative">                            
-                <img
-                    src={exclusive}
-                    alt="exclusive"
-                    className="z-0 h-full"
-                />
-                <p className="absolute text-white z-10 top-1.5 right-8 font-bold">
-                  For NITs, BITs
-                </p>
-              </div>                                   
-            </div>
-
-            <div className="flex flex-col lg:h-[35vh] h-auto  items-center pr-6 space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start md:pr-12">
-              <img
-                    src={artboard2}
-                    alt="artboard"
-                    className="w-36 h-36 md:ml-8"
-                  />
-              <div className="text-sm min-w-xl">
-              <p className="mb-4 font-bold">
-                In this course, you get:
-              </p>
-              <p className="mb-3 text-slate-600"> 
-              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-              One to one mentorship</p>
-              <p className="mb-3 text-slate-600"> 
-              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />        
-              <b>100%</b> doubts solving </p>
-              <p className="mb-3 text-slate-600"> 
-              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-              <b>200+</b> tests</p>
-              <p className="mb-3 text-slate-600"> 
-              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-              <b>30+</b> industry certified courses</p>
-                <p className="mb-3 text-slate-600">
-                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-                  <b>96%</b> placement success
-                </p>
-                <p className="mb-3 text-slate-600">
-                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-                <b>250+</b> company tieups
-                </p>
-                <p className="mb-3 text-slate-600">
-                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-                Off campus job oppurtunities
-                </p>
-                <p className="text-[15px] font-semibold text-blue-600">
-                  ₹ 3000 + ISA
-                </p>
-              </div>
-            </div>
-            <div className="pr-12 text-right" >
-              <Link
-                  to="/mas102"
-                  className="px-4 py-3 mb-4 text-sm text-white bg-blue-800 rounded-xl hover:bg-blue-900 hover:shadow-xl"
-                >
-                  Explore Now
-              </Link>
-            </div>
-            
-          </div>
-          
-        </div>     
-
-        <div className="flex flex-col items-center mt-16 justify-center space-y-16 lg:flex-row lg:space-y-4 lg:space-x-20">
+        <div className="flex flex-col items-center pb-16  justify-center space-y-16 lg:flex-row lg:space-y-4 lg:space-x-20">
           <div className="flex flex-col py-6 pl-6 space-y-4 bg-white shadow-lg border rounded-2xl md:pl-12 md:py-12">
             <div className="flex items-center justify-between w-full pb-4 space-x-12">
               <h3 className="lg:text-2xl text-lg font-bold lg:w-[300px] md:w-[180px] w-[100px]">
@@ -234,6 +101,140 @@ const Courses = () => {
             
           </div>
           </div>   
+        
+          <div className="flex flex-col items-center justify-center space-y-16 lg:flex-row lg:space-y-4 lg:space-x-20">
+          <div className="flex flex-col py-6 pl-6 space-y-4 bg-white shadow-lg border rounded-2xl md:pl-12 md:py-12">
+            <div className="flex items-center justify-between w-full pb-4 space-x-12">
+              <h3 className="text-2xl font-bold">
+                MAS 101
+              </h3>
+              <div className="relative">                            
+                <img
+                    src={exclusive}
+                    alt="exclusive"
+                    className="z-0 h-full"
+                />
+                <p className="absolute text-white z-10 top-1.5 right-8 font-bold">
+                  For IITs
+                </p>
+              </div>                                   
+            </div>
+
+            <div className="flex flex-col  lg:h-[35vh] h-auto items-center pr-6 space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start md:pr-12">
+              <img
+                    src={artboard1}
+                    alt="artboard"
+                    className="w-36 md:ml-4"
+                  />
+              <div className="text-sm min-w-xl">
+              <p className="mb-4 font-bold">
+                In this course, you get:
+              </p>
+              <p className="mb-3 text-slate-600">
+              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+                One to one mentorship
+              </p>
+                <p className="mb-3 text-slate-600">
+                  <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+                  <b>100%</b> doubts solving 
+                </p>
+                <p className="mb-3 text-slate-600">
+                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+                  No prior knowledge required
+                </p>
+                <p className="mb-3 text-slate-600">
+                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+                  <b>200+</b> tests
+                </p>
+                <p className="mb-3 text-slate-600">
+                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+                  <b>96%</b> placement success
+                </p>
+                <p className="mb-3 text-slate-600">
+                  <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+                  <b>30+</b> industry certified courses
+                </p>
+                <p className="text-[15px] font-semibold text-blue-600">
+                  ₹ 3000 + ISA
+                </p>
+
+              </div>
+            </div>
+            <div className="pr-12 text-right" >
+              <Link
+                  to="/mas101"
+                  className="px-4 py-3 mb-4 text-sm text-white bg-blue-800 rounded-xl hover:bg-blue-900 hover:shadow-xl"
+                >
+                  Explore Now
+              </Link>
+            </div>
+            
+          </div>
+          
+          <div className="flex flex-col py-6 pl-6 space-y-4 bg-white shadow-lg border rounded-2xl md:pl-12 md:py-12">
+            <div className="flex items-center justify-between w-full pb-4 space-x-12">
+              <h3 className="text-2xl font-bold">
+                MAS 102
+              </h3>
+              <div className="relative">                            
+                <img
+                    src={exclusive}
+                    alt="exclusive"
+                    className="z-0 h-full"
+                />
+                <p className="absolute text-white z-10 top-1.5 right-8 font-bold">
+                  For NITs, BITs
+                </p>
+              </div>                                   
+            </div>
+
+            <div className="flex flex-col lg:h-[35vh] h-auto  items-center pr-6 space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start md:pr-12">
+              <img
+                    src={artboard1}
+                    alt="artboard"
+                    className="w-36 h-36 md:ml-8"
+                  />
+              <div className="text-sm min-w-xl">
+              <p className="mb-4 font-bold">
+                In this course, you get:
+              </p>
+              <p className="mb-3 text-slate-600"> 
+              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+              One to one mentorship</p>
+              <p className="mb-3 text-slate-600"> 
+              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />        
+              <b>100%</b> doubts solving </p>
+              <p className="mb-3 text-slate-600"> 
+              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+              <b>200+</b> tests</p>
+              <p className="mb-3 text-slate-600"> 
+              <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+              <b>30+</b> industry certified courses</p>
+                <p className="mb-3 text-slate-600">
+                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+                <b>250+</b> company tieups
+                </p>
+                <p className="mb-3 text-slate-600">
+                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
+                Off campus job oppurtunities
+                </p>
+                <p className="text-[15px] font-semibold text-blue-600">
+                  ₹ 3000 + ISA
+                </p>
+              </div>
+            </div>
+            <div className="pr-12 text-right" >
+              <Link
+                  to="/mas102"
+                  className="px-4 py-3 mb-4 text-sm text-white bg-blue-800 rounded-xl hover:bg-blue-900 hover:shadow-xl"
+                >
+                  Explore Now
+              </Link>
+            </div>
+            
+          </div>
+          
+        </div>  
       </section>
 
       <section className="py-16 mb-16">

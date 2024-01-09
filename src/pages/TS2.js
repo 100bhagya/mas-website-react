@@ -85,9 +85,9 @@ const TS2 = () => {
           </div>
           <a
             href="apply"
-            className=" py-3 px-8 bg-blue-700 rounded-2xl text-white"
+            className=" py-3 px-8 bg-sky-700 rounded-2xl text-white"
           >
-            Apply now
+            Register Now
           </a>
         </div>
         <img
@@ -271,7 +271,7 @@ const TS2 = () => {
           href="apply"
           className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
         >
-          Apply Now
+          Register Now
         </a>
       </div> */}
       <Footer />

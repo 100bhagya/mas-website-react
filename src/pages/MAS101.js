@@ -123,11 +123,11 @@ const MAS101 = () => {
           </div>
           <a
             href="https://forms.gle/4tQTMUBoXmMCVdGh7"
-            className="px-8 py-3 text-white bg-blue-700 rounded-2xl"
+            className="px-8 py-3 text-white bg-sky-700 rounded-2xl"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply now
+            Register Now
           </a>
         </div>
         <iframe
@@ -169,7 +169,7 @@ const MAS101 = () => {
                     </p>
                   </div>
                   <Link to="/mentors">
-                    <div className="w-[60%] md:w-[100%] lg:w-[50%] py-3 px-8   text-center  bg-blue-700 rounded-2xl text-white  ml-[20%] md:ml-0">
+                    <div className="w-[60%] md:w-[100%] lg:w-[50%] py-3 px-8   text-center  bg-sky-700 rounded-2xl text-white  ml-[20%] md:ml-0">
                       Learn more
                     </div>
                   </Link>
@@ -250,7 +250,7 @@ const MAS101 = () => {
             </p>
 
             <Link to="/isa-101">
-              <div className="w-[60%] md:w-[50%] py-3 px-8   text-center  bg-blue-700 rounded-2xl text-white  ml-[20%] md:ml-[30%] lg:ml-0">
+              <div className="w-[60%] md:w-[50%] py-3 px-8   text-center  bg-sky-700 rounded-2xl text-white  ml-[20%] md:ml-[30%] lg:ml-0">
                 Learn more
               </div>
             </Link>
@@ -351,7 +351,7 @@ const MAS101 = () => {
           href="apply"
           className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
         >
-          Apply Now
+          Register Now
         </a>
       </div> */}
       <Footer />

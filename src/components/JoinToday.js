@@ -225,7 +225,7 @@ const JoinToday = ({ isShowLogin, closeLogin }) => {
               </div>
             </div>
             <div className="my-4 marked">Marked fields are mandatory</div>
-            <button className="w-[83%] bg-blue-700 text-white font-bold rounded-lg py-3 uppercase text-sm ">
+            <button className="w-[83%] bg-sky-700 text-white font-bold rounded-lg py-3 uppercase text-sm ">
               Submit
             </button>
 

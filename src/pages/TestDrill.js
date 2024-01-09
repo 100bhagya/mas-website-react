@@ -59,7 +59,7 @@ const TestDrill = () => {
         </div>
           <a
             href="https://razorpay.com/payment-button/pl_K4pHLfrzbEotPb/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
-            className=" py-3 px-8 bg-blue-700 rounded-2xl text-white"
+            className=" py-3 px-8 bg-sky-700 rounded-2xl text-white"
             target="_blank"
           >
             Buy now
@@ -238,7 +238,7 @@ const TestDrill = () => {
           href="apply"
           className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
         >
-          Apply Now
+          Register Now
         </a>
       </div> */}
       <Footer />

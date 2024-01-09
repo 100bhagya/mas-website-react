@@ -63,7 +63,7 @@ const PlacementDrill = () => {
         </div>
           <a
             href="https://razorpay.com/payment-button/pl_K4pQUWotXrqO4Z/view/?utm_source=payment_button&amp;utm_medium=button&amp;utm_campaign=payment_button"
-            className="px-8 py-3 text-white bg-blue-700 rounded-2xl"
+            className="px-8 py-3 text-white bg-sky-700 rounded-2xl"
             target="_blank"
           >
             Buy now
@@ -262,7 +262,7 @@ const PlacementDrill = () => {
           href="apply"
           className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
         >
-          Apply Now
+          Register Now
         </a>
       </div> */}
       <Footer />
