@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Artboard from "../images/Artboard2.png";
 import LinkedIn from "../images/Linkedin.png";
@@ -92,6 +92,23 @@ function FAQ({ faq, index, toggleFAQ }) {
 
 const MahadevBatch = () => {
   const [faqs, setfaqs] = useState(Data);
+  const [showFixedDiv, setShowFixedDiv] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowFixedDiv(true);
+      } else {
+        setShowFixedDiv(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleFAQ = (index) => {
     setfaqs(
@@ -122,11 +139,11 @@ const MahadevBatch = () => {
           </div>
           <a
             href="https://forms.gle/8uBJZP7T4tra3wGL8"
-            className="px-8 py-3 text-white bg-blue-700 rounded-2xl"
+            className="px-8 py-3 text-white bg-sky-700 rounded-2xl"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply now
+            Register Now
           </a>
         </div>
         <iframe
@@ -168,7 +185,7 @@ const MahadevBatch = () => {
                     </p>
                   </div>
                   <Link to="/mentors">
-                    <div className="w-[60%] md:w-[100%] lg:w-[50%] py-3 px-8   text-center  bg-blue-700 rounded-2xl text-white  ml-[20%] md:ml-0">
+                    <div className="w-[60%] md:w-[100%] lg:w-[50%] py-3 px-8   text-center  bg-sky-700 rounded-2xl text-white  ml-[20%] md:ml-0">
                       Learn more
                     </div>
                   </Link>
@@ -244,7 +261,7 @@ const MahadevBatch = () => {
             </p>
 
             <Link to="/pap">
-              <div className="w-[60%] md:w-[50%] py-3 px-8   text-center  bg-blue-700 rounded-2xl text-white  ml-[20%] md:ml-[30%] lg:ml-0">
+              <div className="w-[60%] md:w-[50%] py-3 px-8   text-center  bg-sky-700 rounded-2xl text-white  ml-[20%] md:ml-[30%] lg:ml-0">
                 Learn more
               </div>
             </Link>
@@ -345,7 +362,7 @@ const MahadevBatch = () => {
           href="apply"
           className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
         >
-          Apply Now
+          Register Now
         </a>
       </div> */}
         <section className="py-12 px-4 bg-blue-50">
@@ -373,6 +390,52 @@ const MahadevBatch = () => {
                 alt="rectangle"
                 width="100%"
             />
+        </div>
+        <div className={`fixed bottom-0 left-0 right-0 bg-white border-t text-slate-500 p-2  z-50 ${showFixedDiv ? 'block' : 'hidden'}`}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-2 lg:px-32 md:px-8 gap-4">
+          <div className="hidden md:block">
+            <p>Bootcamp started from</p>
+            <h4 className="text-slate-700 text-xl font-semibold">
+               15th Feb
+            </h4>
+          </div>
+          <div className="hidden lg:block">
+            <p>Time Commitment</p>
+            <h4 className="text-slate-700 text-xl font-semibold">
+               12-15 per Week
+            </h4>
+          </div>
+          <div className="hidden lg:block">
+            <p>Live Classes on</p>
+            <h4 className="text-slate-700 text-xl font-semibold">
+              weekends
+            </h4>
+          </div>
+          <div class="flex justify-end">
+            <div className="md:hidden mr-3">
+              <p>Starting from</p>
+              <h4 className="text-slate-700 text-md font-semibold">
+                15th Feb
+              </h4>
+            </div>
+            <div className="mr-4">
+            <p className="text-lg text-slate-700 font-bold">
+              &#8377;29999
+            </p>
+            <p className="text-sm font-normal line-through mx-2 text-slate-500">
+              &#8377;49999
+              </p>
+            </div>
+            <a
+              href="https://forms.gle/8uBJZP7T4tra3wGL8"
+              className="p-3 px-6 text-white bg-sky-700 rounded-2xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register Now
+            </a>
+          </div>
+        </div>
         </div>
       <FaqMAS102 />
       <Footer />
