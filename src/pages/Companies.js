@@ -156,7 +156,7 @@ const Companies = () => {
                   href="https://forms.gle/R6XBCdA9nvUVYjZk6"
                   target=""
                   rel="noopener noreferrer"
-                  className="relative p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
+                  className="relative p-2 text-white bg-sky-700 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
                 >
                   Hire Now
                 </a>
@@ -192,7 +192,7 @@ const Companies = () => {
                   href="https://forms.gle/R6XBCdA9nvUVYjZk6"
                   target=""
                   rel="noopener noreferrer"
-                  className="relative p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
+                  className="relative p-2 text-white bg-sky-700 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
                 >
                   Hire Now
                 </a>
@@ -217,7 +217,7 @@ const Companies = () => {
         href=""
         target=""
         rel="noopener noreferrer"
-        className="relative z-10 p-2  text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer       lg:bottom-40 md:p-3 md:bottom-[7vh] md:left-[45vw] bottom-[15vh] left-[40vw]   lg:left-[6vw] "
+        className="relative z-10 p-2  text-white bg-sky-700 border border-transparent rounded-lg cursor-pointer       lg:bottom-40 md:p-3 md:bottom-[7vh] md:left-[45vw] bottom-[15vh] left-[40vw]   lg:left-[6vw] "
       >
         Hire Now
       </a> */}

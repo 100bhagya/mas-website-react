@@ -74,7 +74,7 @@ const Tests = () => {
               <div className="flex flex-col space-y-4">
                 <a 
                   href="https://ezex.in/4ea7xl"
-                  className="block text-sm text-white bg-blue-600 rounded-xl shadow-lg p-4 hover:bg-sky-700 hover:-translate-y-0.5"
+                  className="block text-sm text-white bg-sky-700 rounded-xl shadow-lg p-4 hover:bg-sky-700 hover:-translate-y-0.5"
                   target="_blank"
                   rel="noopener noreferrer">
                   
@@ -84,7 +84,7 @@ const Tests = () => {
                 </a>                
                 <a
                   href="https://ezex.in/e896c7"
-                  className="block text-sm text-white bg-blue-600 rounded-xl shadow-lg p-4 hover:bg-sky-700 hover:-translate-y-0.5"
+                  className="block text-sm text-white bg-sky-700 rounded-xl shadow-lg p-4 hover:bg-sky-700 hover:-translate-y-0.5"
                   target="_blank"
                   rel="noopener noreferrer"              
                   >
@@ -95,7 +95,7 @@ const Tests = () => {
                 </a>                
                 <a
                   href="https://ezex.in/8fphur" 
-                  className="block text-sm text-white bg-blue-600 rounded-xl shadow-lg p-4 hover:bg-sky-700 hover:-translate-y-0.5"
+                  className="block text-sm text-white bg-sky-700 rounded-xl shadow-lg p-4 hover:bg-sky-700 hover:-translate-y-0.5"
                   target="_blank"
                   rel="noopener noreferrer"
                   >
@@ -134,7 +134,7 @@ const Tests = () => {
               href="https://myanalyticsschool.ezexam.in/"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-lg bg-blue-600 py-4 text-white rounded-xl text-center hover:bg-sky-700 hover:shadow-lg hover:-translate-y-0.5"
+              className="block text-lg bg-sky-700 py-4 text-white rounded-xl text-center hover:bg-sky-700 hover:shadow-lg hover:-translate-y-0.5"
             >
               Visit platform
             </a>
@@ -204,7 +204,7 @@ const Tests = () => {
       <div className="text-center mb-28 mt-10">
         <a
           href="apply"
-          className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
+          className="px-8 py-3 bg-sky-700 text-center rounded-xl text-[15px] font-medium text-white"
         >
           Register Now
         </a>

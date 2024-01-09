@@ -119,7 +119,7 @@ const Mentor = () => {
         href="/mentors"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex justify-center py-4 my-12 text-md font-bold text-center text-white bg-blue-600 rounded-full w-1/2 md:w-1/4 mx-auto"
+        className="flex justify-center py-4 my-12 text-md font-bold text-center text-white bg-sky-700 rounded-full w-1/2 md:w-1/4 mx-auto"
       >
         View All Mentors
       </a>

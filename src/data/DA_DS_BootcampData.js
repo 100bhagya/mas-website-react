@@ -1,8 +1,8 @@
 const Data = [
     {
       id: 1,
-      question: "Week 1 - Week 2 (Mid Feb)",
-      Status: "Introduction to Data Analytics",
+      Status: "Week 1 - Week 2 (from 15 Feb)",
+      question: "Introduction to Data Analytics",
       answer: [
         {
           role: "Course Introduction and Onboarding",
@@ -27,8 +27,8 @@ const Data = [
     },
     {
       id: 2,
-      question: "Week 3 - Week 4 (March)",
-      Status: "SQL fundamentals to advanced",
+      Status: "Week 3 - Week 4 (March)",
+      question: "SQL fundamentals to advanced",
       answer: [
         {
           role: "Introduction to Databases",
@@ -59,8 +59,8 @@ const Data = [
     },
     {   
         id: 3,
-        question: "Week 5 - Week 6 (March)",
-        Status: "Excel and Power BI",
+        Status: "Week 5 - Week 6 (March)",
+        question: "Excel and Power BI",
         answer: [
         {
           role: "Excel Basics",
@@ -97,8 +97,8 @@ const Data = [
     },
     {
       id: 4,
-      question: "Week 7 - Week 8 (April)",
-      Status: "Python and EDA ",
+      Status: "Week 7 - Week 8 (April)",
+      question: "Python and EDA ",
       answer: [
         {
           role: "Introduction to Python",
@@ -129,8 +129,8 @@ const Data = [
     },
     {
         id: 5,
-        question: "Week 9 - Week 10 (April)",
-        Status: "Python Libraries in Machine Learning",
+        Status: "Week 9 - Week 10 (April)",
+        question: "Python Libraries in Machine Learning",
         answer: [
         {
           role: "Libraries in Python (NumPy, Pandas)",
@@ -158,8 +158,8 @@ const Data = [
     },
     {
       id: 6,
-      question: "Week 11 - Week 12 (May)",
-      Status: "Statistical Analysis",
+      Status: "Week 11 - Week 12 (May)",
+      question: "Statistical Analysis",
       answer: [
         {
           role: "Descriptive Statistics",
@@ -178,8 +178,8 @@ const Data = [
     },
     {
         id: 7,
-        question: "Week 13 - Week 14 (May)",
-        Status: "Dive into Machine Learning",
+        Status: "Week 13 - Week 14 (May)",
+        question: "Dive into Machine Learning",
         answer: [
         {
           role: "Introduction to Machine Learning essentials",
@@ -213,8 +213,8 @@ const Data = [
     },
     {
       id: 8,
-      question: "Week 15 - Week 19 (Whole June)",
-      Status: "Step into Real World",
+      Status: "Week 15 - Week 19 (Whole June)",
+      question: "Step into Real World",
       answer: [
         {
           role: "Internship - (With MAS Partners)",
@@ -254,8 +254,8 @@ const Data = [
     },
     {
       id: 9,
-      question: "Week 19 - Week 23 (whole July)",
-      Status: "Dive into Gen AI, Cloud, Big Data & Mocks (July)",
+      Status: "Week 19 - Week 23 (whole July)",
+      question: "Dive into Gen AI, Cloud, Big Data & Mocks (July)",
       answer: [
         {
           role: "Journey into Gen AI Technologies",

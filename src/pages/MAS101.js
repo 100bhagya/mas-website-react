@@ -267,7 +267,7 @@ const MAS101 = () => {
           ))}
           <div className="mt-12 mb-6 text-center">
             <Link to="/timeline1">
-              <div className="px-3 py-4 bg-blue-600 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]">
+              <div className="px-3 py-4 bg-sky-700 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]">
                 Complete Timeline
               </div>
             </Link>
@@ -349,7 +349,7 @@ const MAS101 = () => {
       <div className="pt-12 pb-24 text-center bg-back">
         <a
           href="apply"
-          className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
+          className="px-8 py-3 bg-sky-700 text-center rounded-xl text-[15px] font-medium text-white"
         >
           Register Now
         </a>

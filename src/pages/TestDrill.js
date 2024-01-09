@@ -127,7 +127,7 @@ const TestDrill = () => {
                 <div className="pb-10 md:mt-20 md:mt-8 md:ml-2 md:pb-0">
                   <a
                     href="https://docs.google.com/spreadsheets/d/10EPWbm-fSzFoB62950xRj0Hzt7qPXZERjczXJnUNtf4/edit?usp=sharing"
-                    className="inline-block cursor-pointer mx-2 bg-blue-600 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-medium uppercase font-primary tracking-wide lg:text-sm text-[12px]"
+                    className="inline-block cursor-pointer mx-2 bg-sky-700 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-medium uppercase font-primary tracking-wide lg:text-sm text-[12px]"
                     target="_blank"
                   >
                    Download Timeline
@@ -136,7 +136,7 @@ const TestDrill = () => {
                 <div className="md:mt-8 md:ml-2">
                   <a
                     href="tests"
-                    className="inline-block cursor-pointer mx-2 bg-blue-600 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-medium uppercase font-primary tracking-wide lg:text-sm text-[12px]"
+                    className="inline-block cursor-pointer mx-2 bg-sky-700 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-medium uppercase font-primary tracking-wide lg:text-sm text-[12px]"
                   >
                     Sample tests
                   </a>
@@ -162,7 +162,7 @@ const TestDrill = () => {
               <div className="md:text-2xl text-xl font-semibold w-[48%] text-blue-600 md:text-center md:pt-8 pt-2">
                 Features
               </div>
-              <div className="md:text-2xl text-xl font-semibold w-[18%] text-white  bg-blue-600 text-center md:pt-8 pt-2">
+              <div className="md:text-2xl text-xl font-semibold w-[18%] text-white  bg-sky-700 text-center md:pt-8 pt-2">
                 Test Drill
               </div>
               <div className="md:text-2xl text-xl font-semibold w-[18%] text-blue-600 text-center md:pt-8 pt-2">
@@ -214,7 +214,7 @@ const TestDrill = () => {
               <div className="text-sm font-normal w-[18%] text-center pt-8 mb-5">
                 <a
                   href="/testDrill"
-                  className="px-8 rounded-xl text-white py-3 bg-blue-600"
+                  className="px-8 rounded-xl text-white py-3 bg-sky-700"
                 >
                   <Link to="/testDrill">Explore</Link>
                 </a>
@@ -222,7 +222,7 @@ const TestDrill = () => {
               <div className="text-sm font-normal w-[18%] text-center pt-8">
                 <a
                   href="/placementDrill"
-                  className="px-8 rounded-xl text-white py-3 bg-blue-600"
+                  className="px-8 rounded-xl text-white py-3 bg-sky-700"
                 >
                   <Link to="/placementDrill">Explore</Link>
                 </a>
@@ -236,7 +236,7 @@ const TestDrill = () => {
       <div className="text-center mb-28 mt-10">
         <a
           href="apply"
-          className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
+          className="px-8 py-3 bg-sky-700 text-center rounded-xl text-[15px] font-medium text-white"
         >
           Register Now
         </a>

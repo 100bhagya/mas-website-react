@@ -278,7 +278,7 @@ const MahadevBatch = () => {
           ))}
           <div className="mt-12 mb-6 text-center">
             <a href="https://drive.google.com/file/d/1YEDSoPBT74k7v42hSM4FFQNWiTRpfCxF/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <div className="px-3 py-4 bg-blue-600 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]">
+              <div className="px-3 py-4 bg-sky-700 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]">
                 Complete Timeline
               </div>
             </a>
@@ -360,7 +360,7 @@ const MahadevBatch = () => {
       <div className="pt-12 pb-24 text-center bg-blue-50">
         <a
           href="apply"
-          className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
+          className="px-8 py-3 bg-sky-700 text-center rounded-xl text-[15px] font-medium text-white"
         >
           Register Now
         </a>
