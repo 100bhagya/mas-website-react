@@ -81,11 +81,10 @@ const Courses = () => {
                 </p>
                 <p className="mb-3 text-slate-600">
                 <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
-                Learn from Industry Experts
-                </p>
-                <p className="mb-3 text-slate-600">
-                <BadgeCheckIcon className="inline w-5 h-5 mr-1 text-green-600" />
                 Guaranteed Placement
+                </p>
+                <p className="text-[15px] font-semibold text-blue-600">
+                  ₹ 29999 + PAP
                 </p>
 
               </div>
