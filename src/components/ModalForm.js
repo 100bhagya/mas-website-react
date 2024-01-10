@@ -260,7 +260,7 @@ export const ModalForm = ({showModal, setShowModal}) => {
 								</div>
 							</div>
 							<div className="my-4 marked">Marked fields are mandatory</div>
-							<button className="w-[83%] bg-blue-700 text-white font-bold rounded-lg py-3 uppercase text-sm ">
+							<button className="w-[83%] bg-sky-700 text-white font-bold rounded-lg py-3 uppercase text-sm ">
 								Submit
 							</button>							
 						</form>
@@ -281,7 +281,7 @@ export const ModalForm = ({showModal, setShowModal}) => {
 						<p className="text-center text-xl text-green-400 mb-2">Your response has been submitted successfully.</p>
 						<p className="text-slate-800 text-base text-center">We will get back to you shortly.</p>
 					</div>
-					<button className="bg-blue-600 text-white px-8 py-2 text-lg rounded-xl shadow-xl" onClick={() => setIsSubmit(false)}>Okay, Got it</button>
+					<button className="bg-sky-700 text-white px-8 py-2 text-lg rounded-xl shadow-xl" onClick={() => setIsSubmit(false)}>Okay, Got it</button>
 				</div>
 			</div>			
 			: null

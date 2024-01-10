@@ -10,6 +10,7 @@ import Organization from "./Organization";
 import "../../src/index.css";
 import Grid from "../images/grid.png";
 import TrackRecordData from "../data/TrackRecord";
+import TrackRecordData1 from "../data/TrackRecord1";
 import Footer from "../components/Footer";
 import Traction from "../images/Traction.png";
 import Vision from "../images/Vision Mission.png";
@@ -156,7 +157,7 @@ const Companies = () => {
                   href="https://forms.gle/R6XBCdA9nvUVYjZk6"
                   target=""
                   rel="noopener noreferrer"
-                  className="relative p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
+                  className="relative p-2 text-white bg-sky-700 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
                 >
                   Hire Now
                 </a>
@@ -192,7 +193,7 @@ const Companies = () => {
                   href="https://forms.gle/R6XBCdA9nvUVYjZk6"
                   target=""
                   rel="noopener noreferrer"
-                  className="relative p-2 text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
+                  className="relative p-2 text-white bg-sky-700 border border-transparent rounded-lg cursor-pointer top-10 md:static md:p-3"
                 >
                   Hire Now
                 </a>
@@ -217,7 +218,7 @@ const Companies = () => {
         href=""
         target=""
         rel="noopener noreferrer"
-        className="relative z-10 p-2  text-white bg-blue-600 border border-transparent rounded-lg cursor-pointer       lg:bottom-40 md:p-3 md:bottom-[7vh] md:left-[45vw] bottom-[15vh] left-[40vw]   lg:left-[6vw] "
+        className="relative z-10 p-2  text-white bg-sky-700 border border-transparent rounded-lg cursor-pointer       lg:bottom-40 md:p-3 md:bottom-[7vh] md:left-[45vw] bottom-[15vh] left-[40vw]   lg:left-[6vw] "
       >
         Hire Now
       </a> */}
@@ -265,13 +266,26 @@ const Companies = () => {
         </div>
 
       </section>
-      <div className="py-16 lg:pt-28 lg:pb-28 text-center">
-            <img
-                src={Traction}
-                alt="rectangle"
-                width="100%"
-            />
+
+      <section className="py-12 px-4 bg-white">
+        <h1 className="py-12 text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+          Traction
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 p-4 lg:px-16">
+          {TrackRecordData1.map((data, i) => {
+            return (
+              <>
+              <div class="bg-white p-6 text-center rounded-xl border">
+              <h2 className="text-sky-800 text-2xl font-semibold">{data.record}</h2>
+                <p className="text-slate-700 mt-1 text-sm">{data.heading}</p>
+              </div>
+              </>
+            )
+          })}
         </div>
+
+      </section>
+      
       <TestimonialNew />
       <section className="py-16 bg-white">
         <div className="flex flex-col items-center justify-center p-12 mx-auto space-y-6 shadow-xl border md:flex-row md:space-y-0 md:space-x-8 bg-works rounded-xl lg:w-4/5">

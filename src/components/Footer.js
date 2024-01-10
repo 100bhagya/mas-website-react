@@ -124,13 +124,9 @@ const Footer = () => {
                   FAQs
                 </Link>
                 <img src={Bar} alt="circle" className="md:hidden" />
-                <a
-                  href="blog"
-                  rel="noopener noreferrer"
-                  className="hover:text-white"
-                >
+                <Link to="/blog" className="hover:text-white">
                   Blogs
-                </a>
+                </Link>
                 <img src={Bar} alt="circle" className="md:hidden" />
                 <Link to="/about" className="hover:text-white">
                   About Us

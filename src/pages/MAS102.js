@@ -28,6 +28,7 @@ import PhonePe from "../images/phonepe.png";
 import Mynthra from "../images/mynthra.png";
 import TestimonialOtherPages from "../components/TestimonialOtherPages";
 import FaqMAS102  from "../components/FaqMAS102";
+import { InformationCircleIcon } from "@heroicons/react/outline";
 
 const Testimonial = ({ image, linkedin, name, position }) => {
   return (
@@ -107,7 +108,13 @@ const MAS102 = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-blue-50">
+      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-24 pb-4 px-2 bg-red-50 border-b border-red-200">
+        <h4 className="text-md font-semibold text-center text-red-700 font-primary">
+          <InformationCircleIcon className="inline-block w-6 h-6 mr-2 -mt-1" />
+          MAS 102 Batch will launch soon. Stay tuned!
+        </h4>
+      </div>
+      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-4 bg-blue-50">
         <div className="md:mb-24 mb-16 relative lg:right-[5%] md:w-1/2">
           <div className="pb-8 lg:pt-20 ">
           <h1 className="py-8 text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl text-center  font-primary">
@@ -120,11 +127,11 @@ const MAS102 = () => {
           </div>
           <a
             href="https://forms.gle/3vRSnaxiVob1YGz46"
-            className="px-8 py-3 text-white bg-blue-700 rounded-2xl"
+            className="px-8 py-3 text-white bg-sky-700 rounded-2xl"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply now
+            Register Now
           </a>
         </div>
         <iframe
@@ -166,7 +173,7 @@ const MAS102 = () => {
                     </p>
                   </div>
                   <Link to="/mentors">
-                    <div className="w-[60%] md:w-[100%] lg:w-[50%] py-3 px-8   text-center  bg-blue-700 rounded-2xl text-white  ml-[20%] md:ml-0">
+                    <div className="w-[60%] md:w-[100%] lg:w-[50%] py-3 px-8   text-center  bg-sky-700 rounded-2xl text-white  ml-[20%] md:ml-0">
                       Learn more
                     </div>
                   </Link>
@@ -245,7 +252,7 @@ const MAS102 = () => {
             </p>
 
             <Link to="/isa-102">
-              <div className="w-[60%] md:w-[50%] py-3 px-8   text-center  bg-blue-700 rounded-2xl text-white  ml-[20%] md:ml-[30%] lg:ml-0">
+              <div className="w-[60%] md:w-[50%] py-3 px-8   text-center  bg-sky-700 rounded-2xl text-white  ml-[20%] md:ml-[30%] lg:ml-0">
                 Learn more
               </div>
             </Link>
@@ -262,7 +269,7 @@ const MAS102 = () => {
           ))}
           <div className="mt-12 mb-6 text-center">
             <Link to="/timeline2">
-              <div className="px-3 py-4 bg-blue-600 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]">
+              <div className="px-3 py-4 bg-sky-700 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]">
                 Complete Timeline
               </div>
             </Link>
@@ -344,9 +351,9 @@ const MAS102 = () => {
       <div className="pt-12 pb-24 text-center bg-blue-50">
         <a
           href="apply"
-          className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
+          className="px-8 py-3 bg-sky-700 text-center rounded-xl text-[15px] font-medium text-white"
         >
-          Apply Now
+          Register Now
         </a>
       </div> */}
       <Footer />

@@ -85,9 +85,9 @@ const TS2 = () => {
           </div>
           <a
             href="apply"
-            className=" py-3 px-8 bg-blue-700 rounded-2xl text-white"
+            className=" py-3 px-8 bg-sky-700 rounded-2xl text-white"
           >
-            Apply now
+            Register Now
           </a>
         </div>
         <img
@@ -129,7 +129,7 @@ const TS2 = () => {
                 <div className="md:mt-20 lg:ml-16 md:ml-20 pb-10 md:pb-0">
                   <a
                     href="download"
-                    className="md:text-[15px] text-[12px] font-medium ml-2 md:ml-0 md:px-6 lg:px-10 px-3 py-2 md:py-3 bg-blue-600 md:rounded-xl rounded-md text-white"
+                    className="md:text-[15px] text-[12px] font-medium ml-2 md:ml-0 md:px-6 lg:px-10 px-3 py-2 md:py-3 bg-sky-700 md:rounded-xl rounded-md text-white"
                   >
                     Download test series timeline
                   </a>
@@ -137,7 +137,7 @@ const TS2 = () => {
                 <div className="md:mt-12 md:ml-16">
                   <a
                     href="tests"
-                    className="md:text-[15px] text-[12px] font-medium mr-2 md:mr-0 lg:px-[103.5px] md:px-[90px] md:left-4 relative lg:left-0 px-5 py-2 md:py-3 bg-blue-600 md:rounded-xl rounded-md text-white"
+                    className="md:text-[15px] text-[12px] font-medium mr-2 md:mr-0 lg:px-[103.5px] md:px-[90px] md:left-4 relative lg:left-0 px-5 py-2 md:py-3 bg-sky-700 md:rounded-xl rounded-md text-white"
                   >
                     Sample tests
                   </a>
@@ -166,7 +166,7 @@ const TS2 = () => {
               <div className="md:text-2xl text-xl font-semibold w-[18%] text-blue-600 text-center md:pt-8 pt-2">
                 TS1
               </div>
-              <div className="md:text-2xl text-xl font-semibold w-[18%] bg-blue-600 text-white text-center md:pt-8 pt-2">
+              <div className="md:text-2xl text-xl font-semibold w-[18%] bg-sky-700 text-white text-center md:pt-8 pt-2">
                 TS2
               </div>
               <div className="md:text-2xl text-xl font-semibold w-[18%] text-blue-600 text-center md:pt-8 pt-2">
@@ -239,7 +239,7 @@ const TS2 = () => {
               <div className="text-sm font-normal w-[18%] text-center pt-8 mb-5">
                 <a
                   href="explore"
-                  className="px-8 rounded-xl text-white py-3 bg-blue-600"
+                  className="px-8 rounded-xl text-white py-3 bg-sky-700"
                 >
                   <Link to="/ts1">Explore</Link>
                 </a>
@@ -247,7 +247,7 @@ const TS2 = () => {
               <div className="text-sm font-normal w-[18%] text-center pt-8">
                 <a
                   href="explore"
-                  className="px-8 rounded-xl text-white py-3 bg-blue-600"
+                  className="px-8 rounded-xl text-white py-3 bg-sky-700"
                 >
                   <Link to="/ts2">Explore</Link>
                 </a>
@@ -255,7 +255,7 @@ const TS2 = () => {
               <div className="text-sm font-normal w-[18%] text-center pt-8">
                 <a
                   href="explore"
-                  className="px-8 rounded-xl text-white py-3 bg-blue-600"
+                  className="px-8 rounded-xl text-white py-3 bg-sky-700"
                 >
                   <Link to="/ts3">Explore</Link>
                 </a>
@@ -269,9 +269,9 @@ const TS2 = () => {
       <div className="text-center mb-28 mt-10">
         <a
           href="apply"
-          className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
+          className="px-8 py-3 bg-sky-700 text-center rounded-xl text-[15px] font-medium text-white"
         >
-          Apply Now
+          Register Now
         </a>
       </div> */}
       <Footer />

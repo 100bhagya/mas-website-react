@@ -90,14 +90,14 @@ const Pap = () => {
           Terms and Conditions:
         </p>
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
-          <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[9px] md:pt-[2px] pt-[4px]">
+          <p className="bg-sky-700 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[9px] md:pt-[2px] pt-[4px]">
             1
           </p>
           Just 6000/- Per month for 5 months will be charged as registration fees for joining My Analytics School (Inc all taxes)
         </p>
 
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
-          <p className="bg-blue-600 md:w-7 w-6 md:h-7 h-6 mr-7 text-white rounded-full md:pl-[8px] pl-[7px] md:pt-[2px] pt-[3px]">
+          <p className="bg-sky-700 md:w-7 w-6 md:h-7 h-6 mr-7 text-white rounded-full md:pl-[8px] pl-[7px] md:pt-[2px] pt-[3px]">
             2
           </p>
           No need to pay PAP charges if placed below 4.5 LPA
@@ -105,21 +105,21 @@ const Pap = () => {
         </p>
 
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
-          <p className="bg-blue-600 md:w-7 w-6 md:h-7 h-6 mr-7 text-white rounded-full md:pl-[8px] pl-[7px] md:pt-[2px] pt-[3px]">
+          <p className="bg-sky-700 md:w-7 w-6 md:h-7 h-6 mr-7 text-white rounded-full md:pl-[8px] pl-[7px] md:pt-[2px] pt-[3px]">
             3
           </p>
           You will be signing our PAP Agreement once you are registered with us
         </p>
 
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
-          <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[7px] md:pt-[2px] pt-[3px]">
+          <p className="bg-sky-700 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[7px] md:pt-[2px] pt-[3px]">
             4
           </p>
           You are entitled to share offer letter received from the company and other documents for assuring proper PAP transactions
         </p>
 
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
-          <p className="bg-blue-600 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-2 rounded-full pl-[8px] pr-[10px] pt-[3px] md:pt-[2px]">
+          <p className="bg-sky-700 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-2 rounded-full pl-[8px] pr-[10px] pt-[3px] md:pt-[2px]">
             5
           </p>
           In case you are fired/you leave the job/you switch the job before completion of PAP, your PAP will be paused and will resume with your next job till completion. (Not applicable in case you don’t wish to do a job further).
@@ -156,7 +156,11 @@ const Pap = () => {
         </div>
         <div className="flex flex-col-reverse justify-center md:flex-row">
           <div className="mt-8 ml-5 md:mt-14 lg:ml-0">
-            <div className="">*Registration Fees: 30000/-</div>
+            <div className="">*Registration Fees: 29999/-
+              <span className="line-through mx-2 ">
+              &#8377;49999 /-
+              </span>
+            </div>
             <div className="mt-4">*PAP Payments will be paid for the first 12 months from you join the Job</div>
           </div>
           <div className="mt-10 ml-3 lg:ml-44 md:ml-24">

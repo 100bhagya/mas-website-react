@@ -158,27 +158,27 @@ const Navbar = () => {
             )}
           </div>
           <NavLink
-            to="/colleges"
-            activeClassName="active"
-            className="text-blue-800 border-b-2 border-transparent hover:border-blue-800"
-          >
-            For Colleges
-          </NavLink>
-          <NavLink
             to="/companies"
             activeClassName="active"
             className="text-blue-800 border-b-2 border-transparent hover:border-blue-800"
           >
            For Companies
           </NavLink>
+          <NavLink
+            to="/da-ds-bootcamp"
+            activeClassName="active"
+            className="text-blue-800 border-b-2 border-transparent hover:border-blue-800"
+          >
+            DA/DS Bootcamp
+          </NavLink>
 
-          <a
-            href="blog"
-            rel="noopener noreferrer"
+          <NavLink
+            to="/blog"
+            activeClassName="active"
             className="text-blue-800 border-b-2 border-transparent hover:border-blue-800"
           >
             Blogs
-          </a>
+          </NavLink>
 
           <NavLink
             to="/about"

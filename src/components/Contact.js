@@ -93,7 +93,7 @@ const Contact = () => {
                 </p>
               </div>
               <button
-                className="px-8 py-2 text-lg text-white bg-blue-600 shadow-xl rounded-xl"
+                className="px-8 py-2 text-lg text-white bg-sky-700 shadow-xl rounded-xl"
                 onClick={() => setIsSubmit(false)}
               >
                 Okay, Got it
@@ -177,7 +177,7 @@ const Contact = () => {
                   class="ring-1 ring-gray-300 w-full text-[14px] md:text-[16px]  rounded-md relative bottom-5 px-10 py-2 mt-1 outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
-              <button className="self-end inline-block w-full px-6 py-3 text-sm font-bold text-white uppercase bg-blue-600 rounded-lg ">
+              <button className="self-end inline-block w-full px-6 py-3 text-sm font-bold text-white uppercase bg-sky-700 rounded-lg ">
                 Submit
               </button>
             </form>

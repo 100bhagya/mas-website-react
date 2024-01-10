@@ -14,13 +14,13 @@ function Bot() {
     document.body.removeChild(script);
   }
 
-  useEffect(() => {
-    setTimeout(AddBot, 10000);
+  // useEffect(() => {
+  //   setTimeout(AddBot, 10000);
 
-    return () => {
-      RemoveBot();
-    };
-  }, []);
+  //   return () => {
+  //     RemoveBot();
+  //   };
+  // }, []);
 
   return null;
 }

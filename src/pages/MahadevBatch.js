@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Artboard from "../images/Artboard2.png";
 import LinkedIn from "../images/Linkedin.png";
@@ -11,6 +11,7 @@ import Design2 from "../images/design2.png";
 import "../index.css";
 import Data from "../data/DA_DS_BootcampData";
 import TrackRecordData from "../data/TrackRecord";
+import TrackRecordData1 from "../data/TrackRecord1";
 import Rectangle from "../images/Rectangle 52.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -92,6 +93,23 @@ function FAQ({ faq, index, toggleFAQ }) {
 
 const MahadevBatch = () => {
   const [faqs, setfaqs] = useState(Data);
+  const [showFixedDiv, setShowFixedDiv] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowFixedDiv(true);
+      } else {
+        setShowFixedDiv(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleFAQ = (index) => {
     setfaqs(
@@ -122,11 +140,11 @@ const MahadevBatch = () => {
           </div>
           <a
             href="https://forms.gle/8uBJZP7T4tra3wGL8"
-            className="px-8 py-3 text-white bg-blue-700 rounded-2xl"
+            className="px-8 py-3 text-white bg-sky-700 rounded-2xl"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply now
+            Register Now
           </a>
         </div>
         <iframe
@@ -154,21 +172,23 @@ const MahadevBatch = () => {
                 <div className="md:w-[43%] w-full ml-5  md:px-16 ">
                   <div class="md:flex items-center  mb-3 mt-28 md:mt-16 lg:mt-28 hidden">
                     <h2 class="text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl  font-primary">
-                      Mentors
+                      Expert <span className="text-sky-800">Mentors</span>
                     </h2>
                   </div>
                   <div class="flex-grow">
                     <p class="leading-relaxed w-full md:text-lg text-sm px-8 md:px-0 md:mt-12 mt-7 mb-10 md:mb-16">
-                      Experienced mentors to steer you through the journey from
+                    Our experienced IITian mentors from top companies steer you 
+                      through the journey from
                       being a student to an industry-driven professional. With a
                       constant interactive support from our mentors with a
-                      personalized touch, get a chance of a lifetime to engage
+                      personalised touch, get a chance of a lifetime to engage
                       with accomplished and competent mentors who will be adept
                       at tackling your doubts and queries.
+
                     </p>
                   </div>
                   <Link to="/mentors">
-                    <div className="w-[60%] md:w-[100%] lg:w-[50%] py-3 px-8   text-center  bg-blue-700 rounded-2xl text-white  ml-[20%] md:ml-0">
+                    <div className="w-[60%] md:w-[100%] lg:w-[50%] py-3 px-8   text-center  bg-sky-700 rounded-2xl text-white  ml-[20%] md:ml-0">
                       Learn more
                     </div>
                   </Link>
@@ -244,7 +264,7 @@ const MahadevBatch = () => {
             </p>
 
             <Link to="/pap">
-              <div className="w-[60%] md:w-[50%] py-3 px-8   text-center  bg-blue-700 rounded-2xl text-white  ml-[20%] md:ml-[30%] lg:ml-0">
+              <div className="w-[60%] md:w-[50%] py-3 px-8   text-center  bg-sky-700 rounded-2xl text-white  ml-[20%] md:ml-[30%] lg:ml-0">
                 Learn more
               </div>
             </Link>
@@ -261,7 +281,7 @@ const MahadevBatch = () => {
           ))}
           <div className="mt-12 mb-6 text-center">
             <a href="https://drive.google.com/file/d/1YEDSoPBT74k7v42hSM4FFQNWiTRpfCxF/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <div className="px-3 py-4 bg-blue-600 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]">
+              <div className="px-3 py-4 bg-sky-700 rounded-2xl text-[15px] font-medium text-white w-[40%] relative left-[30%]">
                 Complete Timeline
               </div>
             </a>
@@ -343,9 +363,9 @@ const MahadevBatch = () => {
       <div className="pt-12 pb-24 text-center bg-blue-50">
         <a
           href="apply"
-          className="px-8 py-3 bg-blue-600 text-center rounded-xl text-[15px] font-medium text-white"
+          className="px-8 py-3 bg-sky-700 text-center rounded-xl text-[15px] font-medium text-white"
         >
-          Apply Now
+          Register Now
         </a>
       </div> */}
         <section className="py-12 px-4 bg-blue-50">
@@ -367,12 +387,69 @@ const MahadevBatch = () => {
 
       </section>
 
-        <div className="pt-16 lg:pt-28 lg:pb-14 text-center">
-            <img
-                src={Traction}
-                alt="rectangle"
-                width="100%"
-            />
+      <section className="py-12 px-4 bg-white">
+        <h1 className="py-12 text-3xl font-bold text-center text-gray-900 lg:text-4xl">
+          Traction
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 p-4 lg:px-16">
+          {TrackRecordData1.map((data, i) => {
+            return (
+              <>
+              <div class="bg-white p-6 text-center rounded-xl border">
+              <h2 className="text-sky-800 text-2xl font-semibold">{data.record}</h2>
+                <p className="text-slate-700 mt-1 text-sm">{data.heading}</p>
+              </div>
+              </>
+            )
+          })}
+        </div>
+
+      </section>
+        <div className={`fixed bottom-0 left-0 right-0 bg-white border-t text-slate-500 p-2  z-50 ${showFixedDiv ? 'block' : 'hidden'}`}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-2 lg:px-32 md:px-8 gap-4">
+          <div className="hidden md:block">
+            <p>Bootcamp started from</p>
+            <h4 className="text-slate-700 text-xl font-semibold">
+               15th Feb
+            </h4>
+          </div>
+          <div className="hidden lg:block">
+            <p>Time Commitment</p>
+            <h4 className="text-slate-700 text-xl font-semibold">
+               12-15 per Week
+            </h4>
+          </div>
+          <div className="hidden lg:block">
+            <p>Live Classes on</p>
+            <h4 className="text-slate-700 text-xl font-semibold">
+              weekends
+            </h4>
+          </div>
+          <div class="flex justify-end">
+            <div className="md:hidden mr-3">
+              <p>Starting from</p>
+              <h4 className="text-slate-700 text-md font-semibold">
+                15th Feb
+              </h4>
+            </div>
+            <div className="mr-4">
+            <p className="text-lg text-slate-700 font-bold">
+              &#8377;29999
+            </p>
+            <p className="text-sm font-normal line-through mx-2 text-slate-500">
+              &#8377;49999
+              </p>
+            </div>
+            <a
+              href="https://forms.gle/8uBJZP7T4tra3wGL8"
+              className="p-3 px-6 text-white bg-sky-700 rounded-2xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register Now
+            </a>
+          </div>
+        </div>
         </div>
       <FaqMAS102 />
       <Footer />
