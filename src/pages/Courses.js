@@ -84,7 +84,7 @@ const Courses = () => {
                 Guaranteed Placement
                 </p>
                 <p className="text-[15px] font-semibold text-blue-600">
-                  ₹ 29999 + PAP
+                  ₹ 19999 + PAP
                 </p>
 
               </div>

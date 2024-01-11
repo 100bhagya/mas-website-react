@@ -30,7 +30,8 @@ import PhonePe from "../images/phonepe.png";
 import Mynthra from "../images/mynthra.png";
 import TestimonialOtherPages from "../components/TestimonialOtherPages";
 import FaqMAS102  from "../components/FaqMAS102";
-import Traction from "../images/Traction.png";
+import exclusive from "../images/exclusive.png";
+import { ExclamationCircleIcon } from "@heroicons/react/solid";
 
 const Testimonial = ({ image, linkedin, name, position }) => {
   return (
@@ -97,7 +98,7 @@ const MahadevBatch = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 500) {
         setShowFixedDiv(true);
       } else {
         setShowFixedDiv(false);
@@ -127,27 +128,27 @@ const MahadevBatch = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col-reverse justify-center text-center md:flex-row pt-28 bg-blue-50">
-        <div className="md:mb-24 mb-16 relative lg:right-[5%] md:w-1/2">
-          <div className="pb-8 lg:pt-20 ">
-          <h1 className="py-8 text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl text-center  font-primary">
+      <div className="flex flex-col-reverse justify-center md:flex-row pt-28 bg-blue-50">
+        <div className="md:mb-24 mb-16 relative p-4 lg:right-[5%] md:w-1/2">
+          <div className="pb-8 lg:pt-20 max-w-xl">
+          <h1 className="py-4 text-2xl font-semibold leading-relaxed text-slate-800 md:text-3xl lg:text-5xl  font-primary">
           Join <span className="text-sky-800">Data Analytics & Data Science Bootcamp</span>
           </h1>
 
-          <p className="px-8 pb-8 text-base text-center text-slate-600 md:px-24 lg:top-5 lg:text-lg max-w-3xl mx-auto">
+          <p className="pb-4 text-base text-slate-600 lg:top-5 text-md lg:text-lg">
             2 Lakh Data Jobs Monthly! Upskill and Get Hired in 5 Months. Don't Wait, Master It with MAS.
           </p>  
           </div>
           <a
-            href="https://forms.gle/8uBJZP7T4tra3wGL8"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd4OSD_FW8zFqw15kQj0wLg4b_fBQQFV37f_IeM25y_h-RXfQ/viewform"
             className="px-8 py-3 text-white bg-sky-700 rounded-2xl"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Register Now
+            Register With Us
           </a>
         </div>
-        <iframe
+        {/* <iframe
           width="560"
           height="315"
           src="https://www.youtube.com/embed/zwZTvWsqAxM"
@@ -156,13 +157,85 @@ const MahadevBatch = () => {
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe>
-        {/* <img
-          src={Artboard}
-          alt="artboard"
-          className="relative lg:left-[10%] md:left-[4%] bottom-12 px-16 md:px-0 md:mt-0 mt-8"
-        ></img> */}
+        ></iframe> */}
+        <div className="flex flex-col py-6 pl-6 space-y-4 bg-white m-3 mb-8 border rounded-2xl">
+            <div className="flex items-center justify-between w-full pb-4 space-x-12">
+              <h3 className="text-2xl font-bold">
+                
+              </h3>
+              <div className="relative">                            
+                <img
+                    src={exclusive}
+                    alt="exclusive"
+                    className="z-0 h-full"
+                />
+                <p className="absolute text-white z-10 top-1.5 right-8 font-bold">
+                  Get 60% off
+                </p>
+              </div>                                   
+            </div>
+
+            <div className="flex flex-col  lg:h-[35vh] h-auto pr-6 space-y-4 md:flex-row-reverse md:space-y-0 md:justify-between md:items-start md:pr-12">
+              <div className="text-sm min-w-xl">
+              
+                <div className="mb-4">
+                  <p className="text-slate-500 text-md">Bootcamp starting from</p>
+                  <h4 className="text-sky-900 text-lg font-semibold">
+                    15th Feb
+                  </h4>
+                </div>
+                <div className="mb-4">
+                  <p className="text-slate-500 text-md">Time Commitment</p>
+                  <h4 className="text-sky-900 text-lg font-semibold">
+                    12-15 per Week
+                  </h4>
+                </div>
+                <div className="mb-4">
+                  <p className="text-slate-500 text-md">Live Classes on</p>
+                  <h4 className="text-sky-900 text-lg font-semibold">
+                    Weekends
+                  </h4>
+                </div>
+                <div className="mb-2">
+                  <p className="text-slate-500 text-md">
+                    Get into this Bootcamp at
+                  </p>
+                </div>
+                <div class="flex">
+                  <div className="mr-4">
+                  <p className="text-lg text-slate-700 font-bold">
+                    &#8377;19999
+
+                  <span className="text-sm font-normal line-through mx-2 text-slate-500">
+                    &#8377;49999
+                    </span>
+                  </p>
+                  </div>
+                  <a
+                    href="https://pages.razorpay.com/pl_NNJiKrcwJ2mhPT/view"
+                    className="px-8 py-2 text-white bg-sky-700 rounded-xl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Enroll Now
+                  </a>
+                </div>
+                <p className="text-md text-red-700 mt-4 flex items-center">
+                    <ExclamationCircleIcon className="inline-block h-5 w-5 text-red-700 mr-1" aria-hidden="true" />
+                   This offer is valid till 18th Jan
+                </p>
+              </div>
+            </div>
+          </div>
       </div>
+
+      <div className="flex flex-col-reverse lg:flex-row relative md:left-[9%] md:w-[84%] lg:w-auto mt-24">
+        <div className="lg:w-[45%] md:w-full md:pb-12 lg:pb-0 w-[83%] md:bg-card mt-12 lg:mt-[0] md:mt-[5vh] text-center lg:text-left  md:pr-28 md:text-lg mx-8 md:mx-0 text-[12px] text-slate-600  md:pt-[3vh] md:pl-28 lg:pl-12 rounded-l-2xl">
+        Discover your path to success in data analytics and science at my analytics school. Elevate your profile and secure your dream job in the dynamic field of data. Unleash your potential with us and take the first step towards a rewarding career.
+        </div>
+        <iframe   className="m-auto lg:m-0  lg:h-[40vh] h-[30vh] w-[85vw] lg:w-[40vw]"  src="https://www.youtube.com/embed/zwZTvWsqAxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
       <Offers1 />
       <section class="text-gray-600 body-font py-16  flex justify-center bg-blue-50">
         <div class="container   ">
@@ -422,7 +495,7 @@ const MahadevBatch = () => {
           <div className="hidden lg:block">
             <p>Live Classes on</p>
             <h4 className="text-slate-700 text-xl font-semibold">
-              weekends
+              Weekends
             </h4>
           </div>
           <div class="flex justify-end">
@@ -434,19 +507,19 @@ const MahadevBatch = () => {
             </div>
             <div className="mr-4">
             <p className="text-lg text-slate-700 font-bold">
-              &#8377;29999
+              &#8377;19999
             </p>
             <p className="text-sm font-normal line-through mx-2 text-slate-500">
               &#8377;49999
               </p>
             </div>
             <a
-              href="https://forms.gle/8uBJZP7T4tra3wGL8"
-              className="p-3 px-6 text-white bg-sky-700 rounded-2xl"
+              href="https://pages.razorpay.com/pl_NNJiKrcwJ2mhPT/view"
+              className="p-3 px-6 text-white bg-sky-700 rounded-xl"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Register Now
+              Enroll Now
             </a>
           </div>
         </div>
