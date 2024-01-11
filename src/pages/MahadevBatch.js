@@ -150,7 +150,7 @@ const MahadevBatch = () => {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/UJzSkkQUzcQ"
+          src="https://www.youtube.com/embed/zwZTvWsqAxM"
           title="YouTube video player"
           className="ml-[8%] md:ml-0 mb-5 mt-6"
           frameborder="0"
@@ -408,7 +408,7 @@ const MahadevBatch = () => {
         <div className={`fixed bottom-0 left-0 right-0 bg-white border-t text-slate-500 p-2  z-50 ${showFixedDiv ? 'block' : 'hidden'}`}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-2 lg:px-32 md:px-8 gap-4">
           <div className="hidden md:block">
-            <p>Bootcamp started from</p>
+            <p>Bootcamp starting from</p>
             <h4 className="text-slate-700 text-xl font-semibold">
                15th Feb
             </h4>

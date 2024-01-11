@@ -110,15 +110,18 @@ const LandingPage = () => {
               providing an end-to-end solution for analytics, data science
               placements and related job preparation
             </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4OSD_FW8zFqw15kQj0wLg4b_fBQQFV37f_IeM25y_h-RXfQ/viewform?pli=1"
+            target="_blank" rel="noopener noreferrer">
+              
             <div
-              onClick={toggleShowModal}
-              className="inline-block cursor-pointer bg-sky-700 lg:mt-10 mt-6 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-medium uppercase font-primary tracking-wide lg:text-sm text-[12px] mr-4"
+              className="inline-block cursor-pointer bg-white lg:mt-20 mt-8 md:px-10 md:py-3 px-6 py-2 px text-blue-600 border rounded-lg font-medium uppercase font-primary tracking-wide lg:text-sm text-[12px] mr-4"
             >
               Register Now
             </div>
+            </a>
             <a href={Pdf} target="_blank" rel="noopener noreferrer">
               <div
-                className="inline-block cursor-pointer bg-white lg:mt-20 mt-8 md:px-10 md:py-3 px-6 py-2 px text-blue-600 border rounded-lg font-medium uppercase font-primary tracking-wide lg:text-sm text-[12px] mr-4"
+                className="inline-block cursor-pointer bg-sky-700 lg:mt-10 mt-6 md:px-10 md:py-3 px-6 py-2 px text-white rounded-lg font-medium uppercase font-primary tracking-wide lg:text-sm text-[12px] mr-4"
               >
                 View Placement Report
               </div>

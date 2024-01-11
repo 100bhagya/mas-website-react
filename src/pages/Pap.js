@@ -76,7 +76,7 @@ const Pap = () => {
         <div className="lg:w-[45%] md:w-full md:pb-12 lg:pb-0 w-[83%] md:bg-card mt-12 lg:mt-[0] md:mt-[5vh] text-center lg:text-left  md:pr-28 md:text-lg mx-8 md:mx-0 text-[12px] text-slate-600  md:pt-[3vh] md:pl-28 lg:pl-12 rounded-l-2xl">
         At MAS, our Pay After Placement (PAP) Model offers affordable, outcome-driven learning. No interest, no collateral. If placement isn't secured within a year, education is free. Your success, your terms. Join us for a brighter future.
         </div>
-        <iframe   className="m-auto lg:m-0  lg:h-[40vh] h-[30vh] w-[85vw] lg:w-[40vw]"  src="https://www.youtube.com/embed/WEyj2X3F6fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe   className="m-auto lg:m-0  lg:h-[40vh] h-[30vh] w-[85vw] lg:w-[40vw]"  src="https://www.youtube.com/embed/odw68CdGYgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         {/* <img
           src={Artboard1}
@@ -90,17 +90,17 @@ const Pap = () => {
           Terms and Conditions:
         </p>
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
-          <p className="bg-sky-700 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[9px] md:pt-[2px] pt-[4px]">
-            1
+          <p className="bg-sky-700 md:w-7 w-6 md:h-7 h-6 mr-7 text-white rounded-full md:pl-[8px] pl-[7px] md:pt-[2px] pt-[3px]">
+             1
           </p>
-          Just 6000/- Per month for 5 months will be charged as registration fees for joining My Analytics School (Inc all taxes)
+          Pay with ease using our No Cost EMI for affordable payments!
         </p>
 
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
           <p className="bg-sky-700 md:w-7 w-6 md:h-7 h-6 mr-7 text-white rounded-full md:pl-[8px] pl-[7px] md:pt-[2px] pt-[3px]">
             2
           </p>
-          No need to pay PAP charges if placed below 4.5 LPA
+          No need to pay PAP charges if placed below 4 LPA
 
         </p>
 
@@ -108,12 +108,12 @@ const Pap = () => {
           <p className="bg-sky-700 md:w-7 w-6 md:h-7 h-6 mr-7 text-white rounded-full md:pl-[8px] pl-[7px] md:pt-[2px] pt-[3px]">
             3
           </p>
-          You will be signing our PAP Agreement once you are registered with us
+          Sign the Pay After Placement (PAP) Agreement during Week 4 of our upskilling Bootcamp
         </p>
 
         <p className="md:text-[16px] text-[12px] flex md:py-6 py-4 border-b-2 border-solid border-blue-300">
-          <p className="bg-sky-700 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-5 rounded-full pr-[14px] md:pl-[10px] pl-[7px] md:pt-[2px] pt-[3px]">
-            4
+          <p className="bg-sky-700 md:w-7 w-6  md:h-7 h-6 mr-7 text-white md:mt-2 rounded-full pl-[8px] pr-[10px] pt-[3px] md:pt-[2px]">
+             4
           </p>
           You are entitled to share offer letter received from the company and other documents for assuring proper PAP transactions
         </p>
@@ -156,10 +156,11 @@ const Pap = () => {
         </div>
         <div className="flex flex-col-reverse justify-center md:flex-row">
           <div className="mt-8 ml-5 md:mt-14 lg:ml-0">
-            <div className="">*Registration Fees: 29999/-
+            <div className="">*Registration Fees: <b>&#8377;19999/-</b>
               <span className="line-through mx-2 ">
-              &#8377;49999 /-
+              &#8377;49999 /- 
               </span>
+              <b>(This offer is valid till 18th Jan)</b>
             </div>
             <div className="mt-4">*PAP Payments will be paid for the first 12 months from you join the Job</div>
           </div>
